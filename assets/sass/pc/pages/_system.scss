@@ -27,7 +27,7 @@
             height: 100px;
             margin: 28px auto 0;
             padding-top: 24px;
-            font-size: 40px;
+            font-size: 24px;
             color: #fff;
             background: url('//img.happyshopping.kr/img_static/img_pres/_v3/bg_system04_time.png') no-repeat 0 0;
             text-align: center;
@@ -61,7 +61,7 @@
 
             .system-body_04_bot_sns {
                 overflow: hidden;
-                padding: 50px 0 50px 48px;
+                padding: 50px 0 50px 30px;
                 border-left: 1px solid $base_color3;
                 @include clear;
 
