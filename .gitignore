@@ -3,3 +3,5 @@ node_modules
 .remote-sync.json
 sftp-config.json
 assets/sass/utils/_vivify.scss
+assets/maps
+gulpfile_bak.js
