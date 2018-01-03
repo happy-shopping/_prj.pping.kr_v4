@@ -164,7 +164,7 @@
 						opacity: 0.7;
 						width: 44px;
 						height: 54px;
-						margin-top: -27px;
+						margin-top: -5px;
 
 						&:hover {
 							opacity: 1;
@@ -4252,6 +4252,53 @@
 						img {
 							max-width: 100%;
 						}
+					}
+
+					.photo-list {
+						position: relative;
+						@include size(320px);
+
+						.photo-list_slider {
+							overflow: hidden;
+							@include size(320px);
+						}
+
+						.btn-next, .btn-prev {
+							display: none;
+							opacity: 0.7;
+							width: 44px;
+							height: 54px;
+							margin-top: -10px;
+
+							&:hover {
+								opacity: 1;
+							}
+
+						}
+
+						.btn-prev {
+							left: 10px;
+							background: url("//img.happyshopping.kr/img_static/img_pres/_v3/view_comm.png") no-repeat 0 -626px;
+						}
+
+						.btn-next {
+							right: 10px;
+							background: url("//img.happyshopping.kr/img_static/img_pres/_v3/view_comm.png") no-repeat -49px -626px;
+						}
+
+						&:hover {
+							.btn-next, .btn-prev {
+								display: block;
+							}
+
+						}
+
+					}
+
+					.btn-next, .btn-prev {
+						position: absolute;
+						top: 50%;
+						@include btn(null, null, 0, null, transparent);
 					}
 
 					.thumb_list {
