@@ -27,14 +27,14 @@
 	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/footer.css" />
 	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/mobile_order.css" />
 
-	<!-- <link rel="stylesheet" href="../../../assets/css/mobile_comm.css" />
+	<!-- <link rel="stylesheet" href="../../../assets/css/mobile/mobile_comm.css" />
 	<link rel="stylesheet" href="../../../assets/css/buttons.css" />
 	<link rel="stylesheet" href="../../../assets/css/board.css" />
-	<link rel="stylesheet" href="../../../assets/css/mobile_forms.css" />
-	<link rel="stylesheet" href="../../../assets/css/mobile_layers.css" />
+	<link rel="stylesheet" href="../../../assets/css/mobile/mobile_forms.css" />
+	<link rel="stylesheet" href="../../../assets/css/mobile/mobile_layers.css" />
 	<link rel="stylesheet" href="../../../assets/css/header.css" />
 	<link rel="stylesheet" href="../../../assets/css/footer.css" />
-	<link rel="stylesheet" href="../../../assets/css/mobile_order.css" /> -->
+	<link rel="stylesheet" href="../../../assets/css/mobile/mobile_order.css" /> -->
 </head>
 
 <body>
@@ -152,6 +152,169 @@
 						</div>
 					</div>
 
+
+					<div class="order_index_body_box recive-info">
+						<div class="order_index_body_box_head">
+							<h2 class="tit-h2"><button type="button" class="btn_tit">수령인 정보 <i class="icon-angle-up"></i></button></h2>
+
+							<div class="simple_info">홍길동</div>
+						</div>
+
+						<div class="order_index_body_box_body">
+							<span class="iradio">
+								<input type="radio" id="id-di1" name="name1" checked="checked">
+								<label for="id-di1"><span><b>본인수령(신분증 지참)</b></span></label>
+							</span>
+							<span class="iradio">
+								<input type="radio" id="id-di2" name="name1" checked="checked">
+								<label for="id-di2"><span>대리인 수령</span></label>
+							</span>
+						</div>
+						<div class="agent-info">
+							<span class="icheck">
+								<input type="checkbox" id="id-sadasa" name="sadasa">
+								<label for="id-sadasa"><span>대리인 수령동의<b>(대리인 신분증 지참)</b></span></label>
+							</span>
+							<table class="agent-info_detail">
+								<caption><span>대리인 정보</span></caption>
+								<colgroup>
+									<col style="width:90px" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" ><label for="id-bank">대리인 성명</label></th>
+										<td>
+											<div class="box-td ">
+												<input type="text" id="id-name" class="istyle" style="width: 100%" />
+
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" ><label for="id-name">대리인 연락처</label></th>
+										<td>
+											<div class="box-td second">
+												<select name="" title="선택" class="sstyle">
+													<option value="">010</option>
+												</select>
+												<span class="dash">-</span>
+												<input type="tel" title="중간번호" class="istyle" />
+												<span class="dash">-</span>
+												<input type="tel" title="끝번호" class="istyle" />
+											</div>
+
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<button type="button" class="btn_layer_info">등록</button>
+						</div>
+					</div>
+
+					<div class="order_index_body_box recive-time-info">
+						<div class="order_index_body_box_head">
+							<h2 class="tit-h2"><button type="button" class="btn_tit">결제/수령시간정보 <i class="icon-angle-up"></i></button></h2>
+						</div>
+						<div class="agent-time-info">
+							<table class="agent-time-info_detail">
+								<caption><span>대결제/수령시간정보</span></caption>
+								<colgroup>
+									<col style="width:90px" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" ><label for="id-bank">결제 예정일</label></th>
+										<td>
+											<div class="box-td ">
+												<select name="" title="선택" class="sstyle">
+													<option value="">2월 20(수)</option>
+												</select>
+
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" ><label for="id-name">결제 예정시간(변경가능)</label></th>
+										<td>
+											<div class="box-td second">
+												<select name="" title="선택" class="istyle">
+													<option value="">오전 4시</option>
+												</select>
+												<select name="" title="선택" class="istyle">
+													<option value="">59분</option>
+												</select>
+												<p>
+													까지 결제할경우
+												</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" ><label for="id-name">수령 가능시간(변경가능)</label></th>
+										<td>
+											<div class="box-td second">
+												<p><strong>12월 21 일</strong></p>
+												<select name="" title="선택" class="istyle">
+													<option value="">오전 12시</option>
+												</select>
+												<select name="" title="선택" class="istyle">
+													<option value="">50분 </option>
+												</select>
+												<p>
+													<b>이후에 수령 가능합니다.</b>
+												</p>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="text-info">
+								<table>
+									<caption><span>안내</span></caption>
+									<colgroup>
+										<col style="width:9px" />
+										<col />
+									</colgroup>
+									<tr>
+										<th>-</th>
+										<td>
+											결제 예정시간과 실제 결제 시간이 다를 경우에는 수령 가능 시간이 지연될 수 있습니다.
+										</td>
+									</tr>
+									<tr>
+										<th>-</th>
+										<td>
+											조립 PC의 경우 조립시간이 소요될 수 있으며, 포장완료 후 문자 메시지가 	발송됩니다.
+										</td>
+									</tr>
+								</table>
+							</div>
+							<button type="button" class="btn_layer_info">등록</button>
+						</div>
+					</div>
+
+					<div class="order_index_body_box recive-shop">
+						<div class="order_index_body_box_head">
+							<h2 class="tit-h2"><button type="button" class="btn_tit">방문영업소 정보 <i class="icon-angle-up"></i></button></h2>
+							<!-- <div class="simple_info">홍길동</div> -->
+						</div>
+
+						<div class="order_index_body_box_body">
+							<div class="search-info">
+								<input type="number" title="방문 영업소" placeholder="방문 영업소" class="istyle" />
+								<button type="button" class="btn_search">영업소 찾기</button>
+							</div>
+							<ul>
+							    <li>- 선택하신 영업소로 방문 수령시 정확한 화물비 확인이 가능합니다</li>
+							    <li>- 크기 및 무게에 따라 화물비가 정산됩니다</li>
+							    <li>- 영업소 보관료 별도/도서지역 별도 비용추가</li>
+							</ul>
+						</div>
+					</div>
+
+
 					<div class="order_index_body_box delivery-location">
 						<div class="order_index_body_box_head active">
 							<h2 class="tit-h2"><button type="button" class="btn_tit">배송지 정보 <i class="icon-angle-up"></i></button></h2>
@@ -177,7 +340,7 @@
 								<div class="box-textarea">
 									<textarea name="" cols="30" rows="5" title="전달사항" placeholder="글을 입력해 주세요." class="itext"></textarea>
 								</div>
-								
+
 								<button type="button" class="btn_change">변경</button>
 							</div>
 						</div>
@@ -260,10 +423,14 @@
 												</select>
 											</div>
 										</td>
+
 									</tr>
 									</tbody>
 								</table>
+								<button type="button" class="btn_layer_order_info">등록</button>
+
 							</div>
+
 						</div>
 					</div>
 					<!-- // 최초 -->
@@ -299,6 +466,41 @@
 						</div>
 					</div>
 
+					<div class="order_index_body_box happy-point">
+						<div class="order_index_body_box_head">
+							<h2 class="tit-h2"><button type="button" class="btn_tit">해피포인트 <i class="icon-angle-up"></i></button></h2>
+
+							<div class="simple_info">
+								<strong><i class="ico-minus"></i>3,700<span>원</span></strong>
+							</div>
+						</div>
+
+						<div class="order_index_body_box_body">
+							<div class="input-price ">
+								<input type="number" title="해피포인트" placeholder="해피포인트" class="istyle" />
+								<button type="button" class="btn_happy">전액사용</button>
+								<strong>123,700<span>P</span></strong>
+							</div>
+						</div>
+					</div>
+					<div class="order_index_body_box deposit-point">
+						<div class="order_index_body_box_head">
+							<h2 class="tit-h2"><button type="button" class="btn_tit">예치금</button> <i class="icon-angle-up"></i></button></h2>
+
+							<div class="simple_info">
+								<strong><i class="ico-minus"></i>3,700<span>원</span></strong>
+							</div>
+						</div>
+
+						<div class="order_index_body_box_body">
+							<div class="input-price ">
+								<input type="number" title="예치금" placeholder="예치금" class="istyle" />
+								<button type="button" class="btn_happy">전액사용</button>
+								<strong>123,700<span>P</span></strong>
+							</div>
+						</div>
+					</div>
+
 					<div class="order_index_body_box final-payment">
 						<div class="order_index_body_box_head">
 							<h2 class="tit-h2"><button type="button" class="btn_tit">최종 결제금액 <i class="icon-angle-up"></i></button></h2>
@@ -309,15 +511,15 @@
 						<div class="order_index_body_box_body">
 							<ul>
 								<li>
-									총 상품금액 
+									총 상품금액
 									<span class="payment">2,543,000<em>원</em></span>
 								</li>
 								<li>
-									배송비 
+									배송비
 									<span class="payment"><i class="ico-plus"></i> 2,500<em>원</em></span>
 								</li>
 								<li>
-									쿠폰 할인 금액 
+									쿠폰 할인 금액
 									<span class="payment">０<em>원</em></span>
 								</li>
 								<li>
@@ -325,7 +527,7 @@
 									<span class="payment"><i class="ico-minus"></i> 1,000<em>P</em></span>
 								</li>
 								<li>
-									예치금 
+									예치금
 									<span class="payment">0<em>원</em></span>
 								</li>
 							</ul>
@@ -343,7 +545,7 @@
 							<div class="simple_info">신용카드</div>
 						</div>
 
-						<!-- 신용카드 -->						
+						<!-- 신용카드 -->
 						<div class="order_index_body_box_body">
 							<div class="button-group ctr">
 								<button type="button" class="btn_blling-info active">신용카드</button>
@@ -653,7 +855,7 @@
 										<th scope="row"><label for="id-name">입금자명</label></th>
 										<td>
 											<div class="box-td">
-												<input type="text" id="id-name" class="istyle" style="width: 100%" />
+												<input type="text" id="id-name" class="istyle" style="width: 100%"  />
 											</div>
 										</td>
 									</tr>
@@ -661,10 +863,7 @@
 										<th scope="row"><label for="id-cdr">입금 예정일</label></th>
 										<td>
 											<div class="box-td">
-												<div class="icalendar">
-													<input type="text" id="id-cdr" placeholder="날짜를 선택해 주세요" />
-													<button type="button" class="btn_cal"><span class="ir">달력</span></button>
-												</div>
+												<input type="text" id="id-name" class="istyle" placeholder="12월 30일" style="width:100%" />
 											</div>
 										</td>
 									</tr>
@@ -763,6 +962,28 @@
 					</div>
 				</div>
 			</section>
+		</div>
+
+		<!-- 해피포인트 레이어 -->
+		<div class="layer-pop" style="display:none;">
+			<div class="layer-pop_center">
+				<div class="layer-pop_comm ">
+					<span class="layer-pop_msg"><b>해피포인트란?</b></span>
+					<div class="layer-pop_box">
+						구매확정(미니샵 이용후기 동시 작성) 또는 <br />
+						이벤트 참여시 제공되는 무상포인트 혜택입니다.
+						상품구매 합계액이 100,000원 이상이고,<br />
+						보유잔액이 1,000P 이상인 경우 상품 구매시
+						현금처럼 사용하실 수 있습니다
+					</div>
+
+					<div class="layer-pop_button">
+						<button type="button" class="btn_layer-pop_simple">확인</button>
+					</div>
+
+					<button type="button" class="btn_layer_clse"><i class="icon-close"></i><span class="ir">닫기</span></button>
+				</div>
+			</div>
 		</div>
 	</div>
 

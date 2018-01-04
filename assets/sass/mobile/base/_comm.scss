@@ -108,7 +108,7 @@ a {
 	&:focus {
 		outline: thin dotted;
 	}
-	
+
 	&:active,
 	&:hover {
 		outline: 0;
@@ -311,7 +311,7 @@ select {
 		font-size: 30px;
 		text-align: center;
 		@include btn(35px, 35px, 1px solid $base_color3, $base_color2, rgba(255,255,255,0.75));
-		
+
 		&:before {
 			position: relative;
 			top: 3px;
@@ -343,7 +343,7 @@ select {
 	background: #fff;
 	line-height: 36px;
 	@include clear;
-	
+
 	.tit-h2 {
 		float: left;
 		margin-right: 9px;
@@ -380,7 +380,7 @@ select {
 .comm_recently {
 	border-top: 3px solid $point_color1;
 	border-bottom: 1.5px solid $base_color3;
-	
+
 	.comm_recently_top {
 		position: relative;
 		height: 40px;
@@ -508,7 +508,7 @@ select {
 		line-height: 14px;
 		vertical-align: 2px;
 	}
-	
+
 	&.nor {
 		border: 1px solid #956ccc;
 		color: #956ccc;
@@ -887,13 +887,13 @@ select {
 					margin-left: 8px;
 					border-radius: 14px;
 					@include btn(28px, 28px, 1px solid #b2b2b2, #616161, #fff);
-					
+
 					&:before {
 						position: relative;
 						top: 2px;
 						font-size: 18px;
 					}
-					
+
 					&.icon-favorite:before {
 						color: $point_color1;
 					}
@@ -1005,11 +1005,22 @@ select {
 			color: $point_color1;
 		}
 	}
+	.layer-pop_box {
+
+		display: block;
+		margin-top: 14px;
+		padding: 15px 7px;
+		border:0px solid gray;
+		background: #f2f2f2;
+		color: #898989;
+		font-size: 12px;
+		line-height: 1.4;
+	}
 
 	.layer-pop_button {
 		margin-top: 20px;
 		font-size: 0;
-		
+
 		a {
 			display: inline-block;
 		}
@@ -1029,6 +1040,15 @@ select {
 			font-weight: bold;
 			text-align: center;
 			@include btn(null, 40px, 0, #FFF, $point_color1, null, 40px);
+		}
+
+		.btn_layer-pop_simple {
+			width: calc(50% - 3px);
+			margin-left: 6px;
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			@include btn(null, 40px, 1px solid #999999, #999999, #ffffff, null, 40px);
 		}
 	}
 
@@ -1085,7 +1105,7 @@ select {
 		margin-top: 20px;
 		font-size: 0;
 		@include flexbox();
-		
+
 		.btn_layer-pop_border {
 			font-size: 12px;
 			font-weight: bold;
@@ -1270,12 +1290,12 @@ select {
 
 		.tit-h4 {
 			padding: 10px 0;
-			font-size: 12px;	
+			font-size: 12px;
 		}
 
 		.tit-h5 {
 			padding: 10px 0;
-			font-size: 11px;	
+			font-size: 11px;
 		}
 
 		.tit-h3 + .tit-h4 {
@@ -1337,7 +1357,7 @@ select {
 	}
 }
 
-// 없음 
+// 없음
 .comm_notfound {
 	padding: 100px 0;
 	font-size: 16px;
@@ -1363,7 +1383,7 @@ select {
 		top: 50%;
 		margin: -20px 0 0 -20px;
 		background: url("//img.happyshopping.kr/img_static/img_pres/_v3/loading_w.gif") no-repeat 50% 50%;
-		background-size: cover;		
+		background-size: cover;
 		@include size(40px);
 	}
 
@@ -1386,7 +1406,7 @@ select {
 		top: 30%;
 		margin: -20px 0 0 -20px;
 		background: url("//img.happyshopping.kr/img_static/img_mobile/comm/comm_loading.gif") no-repeat 50% 50%;
-		background-size: 40px 40px;		
+		background-size: 40px 40px;
 		@include size(40px);
 	}
 

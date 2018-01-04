@@ -823,7 +823,7 @@
 
 				.button-group {
 					margin-top: 15px;
-					
+
 					.btn_tuning {
 						display: block;
 						margin: 0 auto;
@@ -1063,7 +1063,7 @@
 							float: left;
 							margin-left: 10px;
 							@include btn(30px, 30px, 1px solid #e5e5e5, null, #fff);
-							
+
 							img {
 								vertical-align: 0;
 							}
@@ -1133,7 +1133,7 @@
 	.btn-pop-cncl {
 		margin-right: 10px;
 		@include btn(140px, 43px, 1px solid $point_color1, $point_color1, #fff);
-		
+
 		&:hover {
 			background: #f6f6f6;
 		}

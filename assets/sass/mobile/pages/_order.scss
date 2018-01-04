@@ -282,7 +282,7 @@
 												font-size: 12px;
 												color: $base_color3;
 												font-weight: normal;
-											}										
+											}
 										}
 
 										.total_each {
@@ -331,12 +331,231 @@
 				&.delivery-method {
 					.order_index_body_box_body {
 						padding: 10px;
-						
+
 						strong {
 							display: inline-block;
 							line-height: 20px;
 							vertical-align: middle;
 						}
+					}
+				}
+
+				&.recive-info{
+					.order_index_body_box_body {
+						border-bottom: 1px solid #e5e5e5;
+						.iradio {
+							margin-right: 10px;
+						}
+
+					}
+					label span {
+						font-size: 13px;
+					}
+					.agent-info {
+						padding: 10px;
+						//border: 1px solid red;
+						border-bottom: 1px solid #999;
+						background-color: white;
+
+						.agent-info_detail {
+							width:100%;
+							margin-top: 15px;
+							border:1px solid #e5e5e5;
+
+							th {
+								width:90px;
+								text-align: left;
+								padding-left: 18px;
+								border: 1px solid #e5e5e5;
+								background-color: #f8f8f8;
+								font-size: 13px;
+								color: #333333;
+
+							}
+
+							.box-td {
+								//margin-top: 5px;
+								font-size: 0;
+								padding: 6px;
+
+								&.second {
+									border-top: 1px solid #e5e5e5;
+								}
+
+								.sstyle {
+									width: 60px;
+								}
+
+								.istyle {
+									width: calc((100% - 80px) / 2);
+									text-align: center;
+								}
+
+								.dash {
+									display: inline-block;
+									width: 10px;
+									font-size: 13px;
+									color: $base_color3;
+									text-align: center;
+									line-height: 34px;
+									vertical-align: top;
+								}
+
+								// input {
+								// 	width: 100%;
+                                //
+								// }
+							}
+						}
+						.btn_layer_order_info {
+
+							display: block;
+							font-size: 14px;
+							font-weight: bold;
+							@include btn(115px, 40px, 1px solid $point_color1, $point_color1, #fff);
+							margin:14px auto;
+						}
+
+					}
+				}
+
+				&.recive-time-info{
+					.order_index_body_box_body {
+						border-bottom: 1px solid #e5e5e5;
+						.iradio {
+							margin-right: 10px;
+						}
+					}
+					label span {
+						font-size: 13px;
+					}
+					.agent-time-info {
+						padding: 1px 10px 10px 10px;
+						//border: 1px solid red;
+						border-bottom: 1px solid #999;
+						background-color: white;
+
+						.agent-time-info_detail {
+							width:100%;
+							margin-top: 15px;
+							border:1px solid #e5e5e5;
+
+							th {
+								width:90px;
+								text-align: left;
+								padding-left: 18px;
+								border: 1px solid #e5e5e5;
+								background-color: #f8f8f8;
+								font-size: 13px;
+								color: #333333;
+
+							}
+
+							.box-td {
+								//margin-top: 5px;
+								font-size: 0;
+								padding: 6px;
+
+								&.second {
+									border-top: 1px solid #e5e5e5;
+								}
+								strong {
+									color: #418ded;
+								}
+								p {
+									height:32px;
+									line-height: 32px;
+									font-size: 13px;
+								}
+
+								.sstyle {
+									width: 100%;
+								    border: 1px solid #999;
+									color: #333333;
+
+								}
+
+								.istyle {
+									width:50%;
+									border: 1px solid #999;
+									text-align: center;
+									color: #333333;
+								}
+
+								.dash {
+									display: inline-block;
+									width: 10px;
+									font-size: 13px;
+									color: $base_color3;
+									text-align: center;
+									line-height: 34px;
+									vertical-align: top;
+								}
+
+								// input {
+								// 	width: 100%;
+								//
+								// }
+							}
+						}
+						.text-info {
+							font-size: 12px;
+							color: #999999;
+							line-height: 1.5;
+							table {
+								margin-top: 5px;
+								th {
+									vertical-align: top;
+								}
+							}
+							p {
+								display: inline;
+							}
+						}
+
+					}
+				}
+
+				&.recive-shop{
+
+					.order_index_body_box_body {
+						.search-info {
+
+							width: calc(100%);
+							font-size: 0px;
+							//margin: 10px;
+							.istyle {
+								width: calc(100% - 75px);
+								vertical-align: middle;
+							}
+							.btn_search {
+								font-size: 11px;
+								font-weight: bold;
+								@include btn(75px, 34px, 0, #fff, $base_color3);
+							}
+
+						}
+
+						ul {
+							margin-top: 10px;
+
+							li {
+							   font-size: 12px;
+							   color: #999999;
+							   line-height: 1.6;
+							   br {
+								 margin-left:5px;
+							 }
+						   }
+
+						}
+
+					}
+
+
+
+					label span {
+						font-size: 13px;
 					}
 				}
 
@@ -465,8 +684,26 @@
 												letter-spacing: -2px;
 											}
 										}
+
+										.button-group {
+											margin-top: 30px;
+
+											.btn_layer_order_terms_clse {
+												font-size: 14px;
+												font-weight: bold;
+												@include btn(118px, 40px, 1px solid $point_color1, $point_color1, #fff);
+											}
+										}
 									}
 								}
+							}
+							.btn_layer_order_info {
+
+								display: block;
+								font-size: 14px;
+								font-weight: bold;
+								@include btn(115px, 40px, 1px solid $point_color1, $point_color1, #fff);
+								margin:16px auto;
 							}
 						}
 					}
@@ -555,6 +792,132 @@
 						}
 					}
 				}
+				&.happy-point {
+					.simple_info {
+						strong {
+							position: relative;
+							top: 1px;
+							margin-left: 3px;
+							font-size: 15px;
+							color: $point_color2;
+							letter-spacing: 0;
+
+							span {
+								font-size: 12px;
+								color: $base_color2;
+								font-weight: normal;
+							}
+
+							.ico-minus {
+								margin-right: 2px;
+							}
+						}
+					}
+					.order_index_body_box_body {
+
+						// position: relative;
+						// padding: 0;
+
+						.input-price {
+							width: calc(100% - 89px);
+							font-size: 0px;
+							//margin: 10px;
+							.istyle {
+								width: calc(100% - 82px);
+								vertical-align: middle;
+							}
+							.btn_happy {
+								font-size: 11px;
+								font-weight: bold;
+								@include btn(77px, 34px, 0, #fff, $base_color3);
+							}
+							strong {
+								position: absolute;
+								right: 10px;
+								top: 20px;
+								margin-left: 3px;
+								font-size: 15px;
+								color: $point_color2;
+								letter-spacing: 0;
+
+								span {
+									font-size: 12px;
+									color: $base_color2;
+									font-weight: normal;
+								}
+
+								.ico-minus {
+									margin-right: 2px;
+								}
+							}
+						}
+
+					}
+
+				}
+				&.deposit-point {
+					.simple_info {
+						strong {
+							position: relative;
+							top: 1px;
+							margin-left: 3px;
+							font-size: 15px;
+							color: $point_color2;
+							letter-spacing: 0;
+
+							span {
+								font-size: 12px;
+								color: $base_color2;
+								font-weight: normal;
+							}
+
+							.ico-minus {
+								margin-right: 2px;
+							}
+						}
+					}
+					.order_index_body_box_body {
+
+						// position: relative;
+						// padding: 0;
+
+						.input-price {
+							width: calc(100% - 89px);
+							font-size: 0px;
+							//margin: 10px;
+							.istyle {
+								width: calc(100% - 82px);
+								vertical-align: middle;
+							}
+							.btn_happy {
+								font-size: 11px;
+								font-weight: bold;
+								@include btn(77px, 34px, 0, #fff, $base_color3);
+							}
+							strong {
+								position: absolute;
+								right: 10px;
+								top: 20px;
+								margin-left: 3px;
+								font-size: 15px;
+								color: $point_color2;
+								letter-spacing: 0;
+
+								span {
+									font-size: 12px;
+									color: $base_color2;
+									font-weight: normal;
+								}
+
+								.ico-minus {
+									margin-right: 2px;
+								}
+							}
+						}
+
+					}
+
+				}
 
 				&.final-payment {
 					.simple_info {
@@ -563,12 +926,12 @@
 							color: $point_color2;
 							letter-spacing: 0;
 						}
-						
+
 						span {
 							font-size: 12px;
 							color: $base_color2;
 							font-weight: normal;
-						}	
+						}
 					}
 
 					.order_index_body_box_body {
@@ -842,7 +1205,7 @@
 										text-align: center;
 										line-height: 34px;
 										vertical-align: top;
-									}	
+									}
 
 									.evidence_cash_card {
 										margin-top: 5px;
@@ -907,6 +1270,7 @@
 									&.birth {
 										margin-top: 6px;
 									}
+
 								}
 							}
 						}
@@ -926,7 +1290,7 @@
 							color: #ffff33;
 						}
 					}
-					
+
 					.simple_info {
 						color: #fff;
 
@@ -978,7 +1342,7 @@
 						background: #fff;
 						z-index: 11;
 						@include box-sizing();
-						
+
 						.layer_order_delivery_head {
 							height: 50px;
 							background: #e5e5e5;
@@ -1069,7 +1433,7 @@
 		}
 	}
 
-	// 배송방법 
+	// 배송방법
 	.order_delivery {
 		height: calc(100vh - 47px);
 		padding-bottom: 69px;
@@ -1115,7 +1479,7 @@
 				background: #fff;
 				z-index: 2;
 				@include box-sizing();
-				
+
 				.layer_order_delivery_head {
 					height: 50px;
 					background: #e5e5e5;
@@ -1182,7 +1546,7 @@
 
 								thead {
 									th {
-										
+
 										border-bottom: 1px solid $base_color3;
 										text-align: center;
 									}
@@ -1199,7 +1563,7 @@
 									}
 
 									td {
-										
+
 										color: $base_color2;
 
 										.box-td {
@@ -1272,7 +1636,7 @@
 
 	// 배송지 변경
 	.order_address {
-		min-height: calc(100vh - 47px - 59px);
+		min-height: calc(100vh - 27px - 59px);
 		margin-bottom: 59px;
 		border-top: 3px solid $point_color1;
 		background: #fff;
@@ -1327,7 +1691,7 @@
     								line-height: 13px;
     							}
 							}
-							
+
 							.bar {
 								margin: 0 6px;
     							color: $base_color3;
@@ -1346,8 +1710,8 @@
 				}
 
 				.order_address_method_bot {
-					margin: 7px 0 0 32px;	
-					font-size: 0;			
+					margin: 7px 0 0 32px;
+					font-size: 0;
 
 					.btn_edit,
 					.btn_del {
@@ -1358,6 +1722,291 @@
 						@include btn(36px, 25px, 1px solid $base_color3, $base_color2, #f8f8f8, center, 23px);
 					}
 				}
+			}
+		}
+
+		.order_address_input {
+			.board {
+				th {
+					font-size: 13px;
+					text-align: left;
+
+					label,
+					span {
+						padding: 0 10px;
+						line-height: 20px;
+					}
+
+					&.vt {
+						padding: 11px 0;
+						vertical-align: top;
+					}
+				}
+
+				td {
+					.box-td {
+						padding: 4px 10px;
+					}
+				}
+
+				th,
+				td {
+					border-bottom: 1px solid #e5e5e5;
+				}
+
+				.phonebox {
+					font-size: 0;
+
+					.istyle,
+					.sstyle {
+						width: calc((100% - 20px) / 3);
+						vertical-align: top;
+					}
+
+					.dash {
+						display: inline-block;
+						width: 10px;
+						font-size: 13px;
+						text-align: center;
+						vertical-align: top;
+						line-height: 34px;
+					}
+				}
+
+				.addressbox {
+					font-size: 0;
+
+					.istyle {
+						width: 100%;
+						margin-top: 5px;
+					}
+
+					.zipcode {
+						.istyle {
+							width: calc(100% - 59px - 118px);
+							margin-top: 0;
+							vertical-align: middle;
+						}
+
+						.btn_zipcode {
+							font-size: 12px;
+							font-weight: bold;
+							@include btn(59px, 34px, 0, #f8f8f8, $base_color3);
+						}
+
+						.icheck {
+							margin-left: 10px;
+							vertical-align: middle;
+
+							label span {
+								font-size: 12px;
+								letter-spacing: -2px;
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+		.btn_all_del {
+			position: absolute;
+			right: 10px;
+			top: 16px;
+			font-size: 11px;
+			font-weight: bold;
+			@include btn(null, null, 0, $base_color2, transparent);
+		}
+	}
+
+	// 영업소 찾기
+	.order_search-adress {
+
+		min-height: 100%;
+		margin-bottom: 59px;
+		border-top: 3px solid $point_color1;
+		background: #fff;
+		@include box-sizing();
+		.order_search_box {
+
+			.search-text {
+				//border:1px solid red;
+				width: 190px;
+				margin:30px auto 20px;
+				//font-size: 13px;
+				line-height: 1.5;
+				color:#333333;
+				span {
+					color: #f34522;
+				}
+
+			}
+			input {
+				border:2px solid $point_color1;
+				//margin:0px 15px 0px 10px;
+			    margin-left: 10px;
+				width: calc(100% - 25px);
+				height: 35px;
+			}
+
+
+		}
+
+		.order_address_select {
+			.search-alert{
+				//width: 100%;
+				height: 35px;
+				margin-top: 15px;
+				padding-left: 10px;
+				background-color: #e5e5e5;
+				font-size: 12px;
+				color:#333333;
+				line-height: 35px;
+			}
+			li {
+				padding: 10px;
+				border-bottom: 1px solid #e5e5e5;
+
+				.iradio {
+					display: block;
+					height: auto;
+					padding: 0;
+
+					label {
+						overflow: hidden;
+						display: block;
+						padding: 0 0 0 32px;
+
+						&:before {
+							position: absolute;
+							left: 0;
+							top: 50%;
+							margin-top: -8.5px;
+						}
+
+						span {
+							position:relative;
+							display: block;
+							margin: 0;
+							font-size: 13px;
+
+
+							.btn_edit {
+								position: absolute;
+								right:2px;
+								display: inline-block;
+								border-radius: 3px;
+								font-size: 12px;
+								@include btn(36px, 25px, 1px solid $base_color3, $base_color2, #f8f8f8, center, 23px);
+							}
+
+							.name {
+
+								height: 15px;
+								margin-bottom: 7px;
+								padding-top: 1px;
+								font-size: 15px;
+								line-height: 15px;
+							}
+
+							.tel {
+								margin-top: 5px;
+								display: block;
+								letter-spacing: 0;
+							}
+
+							.address {
+								display: block;
+								margin-top: 7px;
+							}
+						}
+					}
+				}
+				// 약관 레이어
+				.layer_map {
+					-webkit-overflow-scrolling : touch;
+					overflow-y: auto;
+					position: fixed;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					height: 100vh;
+					//padding-bottom: 30px;
+					background: #fff;
+					z-index: 11;
+					@include box-sizing();
+
+					.layer_head {
+						height: 50px;
+						background: #e5e5e5;
+						strong {
+							display: block;
+							padding: 0 14px;
+							font-size: 16px;
+							line-height: 50px;
+						}
+					}
+
+					.layer_body {
+
+						height:530px;
+						//padding: 25px 10px;
+
+						pre {
+							font-size: 12px;
+							color: $base_color2;
+							line-height: 1.6;
+							word-break: keep-all;
+							word-wrap: break-word;
+						}
+					}
+
+					.button-group {
+
+						margin-top: 5px;
+						width: 360px;
+
+						.btn_border {
+							display: inline-block;
+							width: calc(50% - 10px);
+							font-size: 14px;
+							font-weight: bold;
+							@include btn(null, 50px, 1px solid $point_color1, $point_color1, #fff, center, 48px);
+						}
+
+						.btn_flat {
+							display: inline-block;
+							width: calc(50% - 10px);
+							margin-left: 5px;
+							font-size: 14px;
+							font-weight: bold;
+							@include btn(null, 50px, 0, #fff, $point_color1, center, 50px);
+						}
+					}
+
+					.btn_layer_clse {
+						position: absolute;
+						right: 15px;
+						top: 13px;
+						@include btn(null, null, 0, null, transparent);
+
+						[class^="icon-"]:before {
+							font-size: 24px;
+						}
+					}
+				}
+
+
+
+
+			}
+			.no-result {
+				width: 135px;
+				margin: 80px  auto;
+				font-size: 12px;
+				color:#333333;
+
 			}
 		}
 
@@ -1697,6 +2346,17 @@
 			margin-top: 20px;
 		}
 	}
+
+	// 등록 버튼
+
+	.btn_layer_info {
+
+		display: block;
+		font-size: 14px;
+		font-weight: bold;
+		@include btn(115px, 40px, 1px solid $point_color1, $point_color1, #fff);
+		margin:14px auto;
+	}
 }
 
 // 배송지 삭제 확인 레이어
@@ -1725,7 +2385,7 @@
 		@include flexbox();
 		margin-top: 20px;
 		font-size: 0;
-		
+
 		.btn_layer-pop_border {
 			font-size: 12px;
 			font-weight: bold;
