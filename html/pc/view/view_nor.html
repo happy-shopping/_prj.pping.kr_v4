@@ -895,7 +895,7 @@
 					<!-- 함께 구매한 상품 -->
 					<div class="main-view_together">
 						<h3 class="tit-h3">함께 구매하는 상품</h3>
-						
+
 						<div class="main-view_together_body">
 							<div class="main-view_together_thumbs">
 								<ul>
@@ -1569,7 +1569,7 @@
 								<!-- // 오른쪽 -->
 							</div>
 							<!-- // 가격비교 -->
-							
+
 							<!-- 스펙 -->
 							<div class="main-view_info_body_spec">
 								<!-- 기존마크업과 같음 -->
@@ -1927,7 +1927,7 @@
 								</div>
 							</div>
 							<!-- // 표준PC 스펙 -->
-							
+
 							<!-- 상세 정보 -->
 							<div class="main-view_info_body_detail">
 								<div class="main-view_info_body_detail_head">
@@ -2119,7 +2119,7 @@
 
 												<span class="dsc"><strong>26개</strong>의 상품평이 있습니다.</span>
 											</div>
-											
+
 											<div class="review_box_main_top_sort">
 												<ul>
 													<li>
@@ -2180,7 +2180,7 @@
 													</li>
 												</ul>
 											</div>
-											
+
 											<div class="review_box_main_top_submit">
 												<button type="button" class="btn_reviewwrite">상품평 등록하기</button>
 												<br />
@@ -2565,21 +2565,15 @@
 
 										<div class="review_box_photo_list">
 											<ul>
-												<li>
+												<!-- 썸네일 중앙 : 태그 내부에 기존 alt값을 넣어주세요. 웹접근성은 물론이고, 추후 서버사이드 렌더링에 필요합니다. -->
+												<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+												<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+												<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+												<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+												<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+												<!-- 기존 before <li>
 													<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-												</li>
-												<li>
-													<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-												</li>
-												<li>
-													<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-												</li>
-												<li>
-													<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-												</li>
-												<li>
-													<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-												</li>
+												</li> -->
 											</ul>
 
 											<button type="button" class="btn_more">더보기</button>
@@ -2587,67 +2581,79 @@
 									</div>
 									<!-- // 상품평 이미지 -->
 
-									<!-- 상품평 이미지 레이어 -->
-									<div class="layer-pop_reviewphoto" style="display: none">
+									<!-- 상품평 이미지 레이어 : 포토 -->
+									<div class="layer-pop_reviewphoto" id="review_photo" style="display: none">
 										<h4 class="tit-h4">상품평 이미지</h4>
 
 										<div class="reviewphoto_body">
 											<div class="reviewphoto_body_list" style="display: ">
 												<ul>
-													<li>
+													<!-- 썸네일 중앙 : 태그 내부에 기존 alt값을 넣어주세요. 웹접근성은 물론이고, 추후 서버사이드 렌더링에 필요합니다. -->
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+													<!-- 기존 before <li>
 														<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-													</li>
-													<li>
-														<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-													</li>
-													<li>
-														<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-													</li>
-													<li>
-														<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-													</li>
-													<li>
-														<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-													</li>
-													<li>
-														<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-													</li>
-													<li>
-														<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-													</li>
-													<li>
-														<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-													</li>
-													<li>
-														<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-													</li>
-													<li>
-														<img src="//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg" alt="이미지이름" />
-													</li>
+													</li> -->
 												</ul>
 											</div>
+										</div>
 
+										<button type="button" class="btn-layer-pop_clse"><img src="//img.happyshopping.kr/img_static/img_pres/_v3/btn_layer_pop_clse.png" alt="닫기"></button>
+									</div>
+									<!-- // 상품평 이미지 레이어 : 포토-->
+
+									<!-- 상품평 이미지 레이어 : 디테일 -->
+									<div class="layer-pop_reviewphoto" id="review_detail" style="display: none">
+										<h4 class="tit-h4">상품평 이미지</h4>
+
+										<div class="reviewphoto_body">
 											<div class="reviewphoto_body_detail" style="display: ">
 												<div class="in">
 													<div class="reviewphoto_body_detail_lft">
-														<div class="big">
+														<!-- <div class="big">
 															<img src="//img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/500.jpg" alt="이름" />
+														</div> -->
+														<div class="photo-list big">
+														  <div class="photo-list_slider">
+														    <img src="https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/500.jpg" alt="사진1" />
+														  </div>
+														  <button type="button" class="btn-prev"><span class="ir">이전</span></button>
+														  <button type="button" class="btn-next"><span class="ir">다음</span></button>
 														</div>
 
 														<div class="thumb_list">
 															<div class="thumb_list_small">
-																<div class="item">
+																<!-- 썸네일 중앙 : 태그 내부에 기존 alt값을 넣어주세요. 웹접근성은 물론이고, 추후 서버사이드 렌더링에 필요합니다. -->
+																<div class="item" style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이름</div>
+																<div class="item" style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이름</div>
+																<div class="item" style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이름</div>
+																<div class="item" style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이름</div>
+																<!-- 기존 before <div class="item">
 																	<img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" />
-																</div>
-																<div class="item">
-																	<img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" />
-																</div>
-																<div class="item">
-																	<img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" />
-																</div>
-																<div class="item">
-																	<img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" />
-																</div>
+																</div> -->
 															</div>
 
 															<button type="button" class="btn_prev"><i class="icon-angle-left"></i><span class="ir">이전</span></button>
@@ -2691,7 +2697,23 @@
 																왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 																저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 																어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-																건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+																건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
+																왜 닥터자르트! 라고 극찬을하는지 알것같네요.
+																저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
+																어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
+																건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
+																왜 닥터자르트! 라고 극찬을하는지 알것같네요.
+																저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
+																어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
+																건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
+																왜 닥터자르트! 라고 극찬을하는지 알것같네요.
+																저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
+																어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
+																건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
+																왜 닥터자르트! 라고 극찬을하는지 알것같네요.
+																저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
+																어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
+																건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 															</div>
 														</div>
 
@@ -2730,7 +2752,7 @@
 
 										<button type="button" class="btn-layer-pop_clse"><img src="//img.happyshopping.kr/img_static/img_pres/_v3/btn_layer_pop_clse.png" alt="닫기"></button>
 									</div>
-									<!-- // 상품평 이미지 레이어 -->
+									<!-- // 상품평 이미지 레이어 : 디테일 -->
 
 									<!-- 상품평 리스트 -->
 									<div class="comment_box_list">
@@ -2794,9 +2816,13 @@
 
 												<div class="comment_box_img">
 													<ul>
-														<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-														<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-														<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
+														<!-- 썸네일 중앙 : 태그 내부에 기존 alt값을 넣어주세요. 웹접근성은 물론이고, 추후 서버사이드 렌더링에 필요합니다. -->
+														<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+														<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+														<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+														<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+														<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+														<!-- 기존 before <li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li> -->
 													</ul>
 												</div>
 
@@ -2887,9 +2913,13 @@
 
 												<div class="comment_box_img">
 													<ul>
-														<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-														<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-														<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
+														<!-- 썸네일 중앙 : 태그 내부에 기존 alt값을 넣어주세요. 웹접근성은 물론이고, 추후 서버사이드 렌더링에 필요합니다. -->
+														<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+														<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+														<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+														<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+														<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+														<!-- 기존 before <li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li> -->
 													</ul>
 												</div>
 
@@ -2961,15 +2991,19 @@
 															왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 															저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 															어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 														</div>
 													</div>
 
 													<div class="comment_box_img">
 														<ul>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
+															<!-- 썸네일 중앙 : 태그 내부에 기존 alt값을 넣어주세요. 웹접근성은 물론이고, 추후 서버사이드 렌더링에 필요합니다. -->
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+															<!-- 기존 before <li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li> -->
 														</ul>
 													</div>
 
@@ -3038,15 +3072,19 @@
 															왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 															저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 															어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 														</div>
 													</div>
 
 													<div class="comment_box_img">
 														<ul>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
+															<!-- 썸네일 중앙 : 태그 내부에 기존 alt값을 넣어주세요. 웹접근성은 물론이고, 추후 서버사이드 렌더링에 필요합니다. -->
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+															<!-- 기존 before <li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li> -->
 														</ul>
 													</div>
 
@@ -3090,7 +3128,7 @@
 																		<em class="emblem formula">공식답변</em>
 																		<em class="name_name">제조.수입사</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3115,7 +3153,7 @@
 																		<em class="mark-power">파워셀러</em>
 																		<em class="name_name">피씨몰</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3140,7 +3178,7 @@
 																		<em class="mark-new">뉴셀러</em>
 																		<em class="name_name">피씨몰</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3161,10 +3199,10 @@
 															<div class="comment_box_cmnts_box">
 																<div class="comment_box_cmnts_box_writer">
 																	<span class="name">
-																		<em class="emblem hangshow">행쇼</em> 
+																		<em class="emblem hangshow">행쇼</em>
 																		<em class="name_name">관리자</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3185,10 +3223,10 @@
 															<div class="comment_box_cmnts_box">
 																<div class="comment_box_cmnts_box_writer">
 																	<span class="name">
-																		<em class="emblem guest">비구매</em> 
+																		<em class="emblem guest">비구매</em>
 																		<em class="name_name">안산사람</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3209,10 +3247,10 @@
 															<div class="comment_box_cmnts_box">
 																<div class="comment_box_cmnts_box_writer">
 																	<span class="name">
-																		<em class="emblem buyer">구매</em> 
+																		<em class="emblem buyer">구매</em>
 																		<em class="name_name">구매한사람</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3238,7 +3276,7 @@
 																		<em class="emblem formula">공식답변</em>
 																		<em class="name_name">제조.수입사</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3275,7 +3313,7 @@
 																		<em class="emblem formula">공식답변</em>
 																		<em class="name_name">제조.수입사</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3346,15 +3384,19 @@
 															왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 															저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 															어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 														</div>
 													</div>
 
 													<div class="comment_box_img">
 														<ul>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
+															<!-- 썸네일 중앙 : 태그 내부에 기존 alt값을 넣어주세요. 웹접근성은 물론이고, 추후 서버사이드 렌더링에 필요합니다. -->
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+															<!-- 기존 before <li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li> -->
 														</ul>
 													</div>
 
@@ -3417,15 +3459,19 @@
 															왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 															저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 															어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 														</div>
 													</div>
 
 													<div class="comment_box_img">
 														<ul>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
-															<li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li>
+															<!-- 썸네일 중앙 : 태그 내부에 기존 alt값을 넣어주세요. 웹접근성은 물론이고, 추후 서버사이드 렌더링에 필요합니다. -->
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+															<li style="background-image: url('//img.happyshopping.kr/img_static/img_pres/_v3/sample_photo.jpg')">이미지이름</li>
+															<!-- 기존 before <li><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="이름" /></li> -->
 														</ul>
 													</div>
 
@@ -3564,8 +3610,8 @@
 														</tbody>
 													</table>
 												</div>
-	
-												<div class="report_body_button">	
+
+												<div class="report_body_button">
 													<button type="button" class="btn_flat">문의하기</button>
 												</div>
 											</fieldset>
@@ -3619,7 +3665,7 @@
 													왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 													저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 													어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 												</div>
 											</div>
 
@@ -3662,7 +3708,7 @@
 													왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 													저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 													어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 												</div>
 											</div>
 
@@ -3697,7 +3743,7 @@
 																<em class="emblem formula">공식답변</em>
 																<em class="name_name">제조.수입사</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3722,7 +3768,7 @@
 																<em class="mark-power">파워셀러</em>
 																<em class="name_name">피씨몰</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3747,7 +3793,7 @@
 																<em class="mark-new">뉴셀러</em>
 																<em class="name_name">피씨몰</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3768,10 +3814,10 @@
 													<div class="comment_box_cmnts_box">
 														<div class="comment_box_cmnts_box_writer">
 															<span class="name">
-																<em class="emblem hangshow">행쇼</em> 
+																<em class="emblem hangshow">행쇼</em>
 																<em class="name_name">관리자</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3792,10 +3838,10 @@
 													<div class="comment_box_cmnts_box">
 														<div class="comment_box_cmnts_box_writer">
 															<span class="name">
-																<em class="emblem guest">비구매</em> 
+																<em class="emblem guest">비구매</em>
 																<em class="name_name">안산사람</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3816,10 +3862,10 @@
 													<div class="comment_box_cmnts_box">
 														<div class="comment_box_cmnts_box_writer">
 															<span class="name">
-																<em class="emblem buyer">구매</em> 
+																<em class="emblem buyer">구매</em>
 																<em class="name_name">구매한사람</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3845,7 +3891,7 @@
 																<em class="emblem formula">공식답변</em>
 																<em class="name_name">제조.수입사</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3882,7 +3928,7 @@
 																<em class="emblem formula">공식답변</em>
 																<em class="name_name">제조.수입사</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3946,7 +3992,7 @@
 													왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 													저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 													어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 												</div>
 											</div>
 
@@ -3994,7 +4040,7 @@
 													왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 													저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 													어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 												</div>
 											</div>
 
@@ -4096,7 +4142,7 @@
 
 												<div class="report_body_main_box">
 													<h6 class="tit-h6"><label for="id-">신고 이유를 알려주세요</label></h6>
-													
+
 													<div class="report_body_main_box_textarea">
 														<textarea rows="5" cols="30" id="id-" placeholder="상품평과 관계없는 글을 신고해 주시면 관리자 확인 후 해당 상품평의 노출이 제한 될 수 있습니다."></textarea>
 													</div>
@@ -4107,7 +4153,7 @@
 												</div>
 											</div>
 
-											<div class="report_body_button">	
+											<div class="report_body_button">
 												<button type="button" class="btn_flat">신고하기</button>
 											</div>
 										</fieldset>
@@ -4834,19 +4880,22 @@ $(document).ready(function() {
 		$(".layer-pop_reviewguide").hide();
 	});
 
-	$(".review_box_photo_list li img").click(function() {
-		$(".layer-pop_reviewphoto").toggle();
+	$(".review_box_photo_list li:odd").click(function() {
+		$("#review_photo").toggle();
+	});
+	$(".review_box_photo_list li:even").click(function() {
+		$("#review_detail").toggle();
 	});
 
 	$(".layer-pop_reviewphoto .btn-layer-pop_clse").click(function() {
 		$(".layer-pop_reviewphoto").hide();
-	});	
+	});
 
 	$(".btn_market").click(function() {
 		$(".layer_open_market").toggle();
 	});
 
-	
+
 });
 </script>
 </body>

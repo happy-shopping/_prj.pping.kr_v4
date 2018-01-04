@@ -29,7 +29,7 @@
 			}
 
 		}
-		
+
 		//상세 정보
 		.main-view_head {
 			.product_info {
@@ -141,7 +141,7 @@
 			}
 
 		}
-		
+
 		// 상세 상단
 		.main-view_product {
 			margin-top: 50px;
@@ -164,7 +164,7 @@
 						opacity: 0.7;
 						width: 44px;
 						height: 54px;
-						margin-top: -27px;
+						margin-top: -5px;
 
 						&:hover {
 							opacity: 1;
@@ -890,7 +890,7 @@
 			}
 
 		}
-		
+
 		// 함께 구매하는 상품
 		.main-view_together {
 			margin-top: 30px;
@@ -1011,7 +1011,7 @@
 						top: 50%;
 						margin-top: -30px;
 						padding: 0 20px;
-						
+
 						.price_cnt {
 							display: block;
 							height: 22px;
@@ -1213,7 +1213,7 @@
 								padding: 13px 10px;
 
 								> ul {
-									@include clear; 
+									@include clear;
 
 									> li {
 										position: relative;
@@ -2089,7 +2089,7 @@
 							}
 						}
 					}
-				
+
 				}
 
 				// 엠블램
@@ -2104,7 +2104,7 @@
 					font-weight: normal;
 					line-height: 18px;
 					vertical-align: top;
-					
+
 					&.formula {
 						background: #2ba7da;
 					}
@@ -2134,7 +2134,7 @@
 					}
 				}
 
-				// 댓글(상품평)				
+				// 댓글(상품평)
 				.comment_box_list {
 					.comment_box {
 						padding: 20px 0;
@@ -2269,6 +2269,7 @@
 									background-size: cover;
 									background-repeat: no-repeat;
 									background-position: 50% 50%;
+									text-indent: -1000px;
 									cursor: pointer;
 									@include size(66px);
 
@@ -2449,7 +2450,7 @@
 
 							textarea:focus + .btn_submit {
 								color: $base_color1;
-								background: #ccc;			
+								background: #ccc;
 							}
 
 							.wordcheck {
@@ -2478,7 +2479,7 @@
 									border-left: 2px solid $base_color3;
 									border-bottom: 2px solid $base_color3;
 									@include size(9px);
-									@include box-sizing();					
+									@include box-sizing();
 								}
 
 								.comment_box_cmnts_box_writer {
@@ -2605,7 +2606,7 @@
 						}
 					}
 				}
-				
+
 				// 상품평
 				.main-view_info_body_review {
 					margin-top: 30px;
@@ -2646,7 +2647,7 @@
 												top: 0;
 												line-height: 13px;
 												letter-spacing: 0;
-												
+
 												em {
 													color: $point_color1;
 												}
@@ -2804,7 +2805,7 @@
 							border-top: 1px solid #d1d0d5;
 
 							.tit-h4 {
-								font-size: 16px; 
+								font-size: 16px;
 								color: #383e4a;
 							}
 
@@ -2822,6 +2823,7 @@
 										background-size: cover;
 										background-repeat: no-repeat;
 										background-position: 50% 50%;
+										text-indent: -1000px;
 										cursor: pointer;
 										@include size(100px);
 										@include box-sizing();
@@ -2993,7 +2995,7 @@
 						}
 					}
 
-					// 상품평 없음 
+					// 상품평 없음
 					.review_notfound {
 						padding: 40px 0;
 						text-align: center;
@@ -3158,7 +3160,7 @@
 			}
 
 		}
-		
+
 		// 취소·교환·반품 안내
 		.main-view_guide {
 			position: relative;
@@ -3552,7 +3554,7 @@
 			}
 
 		}
-		
+
 		// 공유
 		.main-view_share {
 			display: none;
@@ -4007,7 +4009,7 @@
 						.sstyle {
 							min-width: 300px;
 						}
-						
+
 						.starrating {
 							@include clear;
 
@@ -4024,8 +4026,8 @@
 							width: calc((33px * 5) + 4px);
 							@include clear;
 
-							input.star { 
-								display: none; 
+							input.star {
+								display: none;
 							}
 
 							label.star {
@@ -4209,8 +4211,9 @@
 						background-size: cover;
 						background-repeat: no-repeat;
 						background-position: 50% 50%;
+						text-indent: -1000px;
 						cursor: pointer;
-						@include size(calc((100% / 6) - 7px));
+						@include size(97px);
 						@include box-sizing();
 
 						img {
@@ -4251,6 +4254,53 @@
 						}
 					}
 
+					.photo-list {
+						position: relative;
+						@include size(320px);
+
+						.photo-list_slider {
+							overflow: hidden;
+							@include size(320px);
+						}
+
+						.btn-next, .btn-prev {
+							display: none;
+							opacity: 0.7;
+							width: 44px;
+							height: 54px;
+							margin-top: -10px;
+
+							&:hover {
+								opacity: 1;
+							}
+
+						}
+
+						.btn-prev {
+							left: 10px;
+							background: url("//img.happyshopping.kr/img_static/img_pres/_v3/view_comm.png") no-repeat 0 -626px;
+						}
+
+						.btn-next {
+							right: 10px;
+							background: url("//img.happyshopping.kr/img_static/img_pres/_v3/view_comm.png") no-repeat -49px -626px;
+						}
+
+						&:hover {
+							.btn-next, .btn-prev {
+								display: block;
+							}
+
+						}
+
+					}
+
+					.btn-next, .btn-prev {
+						position: absolute;
+						top: 50%;
+						@include btn(null, null, 0, null, transparent);
+					}
+
 					.thumb_list {
 						position: relative;
 
@@ -4267,6 +4317,10 @@
 							    cursor: pointer;
 							    @include size(66px);
 							    @include box-sizing();
+									background-size: cover;
+									background-repeat: no-repeat;
+									background-position: 50% 50%;
+									text-indent: -1000px;
 
 							    img {
 							    	max-width: 100%;
@@ -4350,7 +4404,7 @@
 													vertical-align: -3px;
 													@include truncate();
 												}
-												
+
 											}
 
 											.product_grade {
