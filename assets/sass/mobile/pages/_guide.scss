@@ -2,9 +2,6 @@
 
 .container_guide {
 	.guide_claim {
-		margin-bottom: 56px;
-		border-top: 3px solid $point_color1;
-
 		.guide_claim_body {
 			.guide_claim_body_lnb {
 				background: #fff;
@@ -16,6 +13,21 @@
 					li {
 						text-align: center;
 						@include flex(1, 1, auto);
+
+						a {
+							display: inline-block;
+							padding-top: 12px;
+							.btn {
+								font-size: 12px;
+								font-weight: bold;
+								@include btn(null, 42px, 0, $base_color1, #fff);
+
+								&.active {
+									color: $point_color1;
+									border-bottom: 3px solid $point_color1;
+								}
+							}							
+						}
 
 						.btn {
 							font-size: 12px;
@@ -93,12 +105,12 @@
 
 				// 취소
 				.guide_claim_cancel {
+					margin-bottom: 30px;
 					.board {
 						.step {
 							position: absolute;
 							left: 8px;
 							top: 8px;
-							padding-top: 2px;
 							border-radius: 8px;
 							font-size: 14px;
 							color: #fff;
@@ -121,7 +133,7 @@
 
 							.img {
 								padding: 20px 0 10px;
-								
+
 								img {
 									height: 32px;
 								}
@@ -136,7 +148,7 @@
 
 							.img {
 								padding: 40px 0 10px;
-								
+
 								img {
 									width: 43px;
 								}
@@ -162,7 +174,7 @@
 								height: 70px;
 								.img {
 									padding: 6px 0 6px;
-									
+
 									img {
 										width: 48px;
 									}
@@ -176,7 +188,7 @@
 
 								.img {
 									padding: 6px 0 6px;
-									
+
 									img {
 										width: 43px;
 									}
@@ -244,6 +256,7 @@
 
 				// 즉시 환불
 				.guide_claim_refund {
+					margin-bottom: 30px;
 					.board {
 						tbody {
 							td {
@@ -262,7 +275,9 @@
 
 				// 반품
 				.guide_claim_return {
+					margin-bottom: 30px;
 					.guide_claim_return_step {
+						margin-top: 0px;
 						overflow: hidden;
 						border: 1px solid $base_color3;
 						@include clear;
@@ -276,6 +291,7 @@
 							border-right: 1px solid $base_color3;
 							border-bottom: 1px solid $base_color3;
 							font-size: 14px;
+							margin-top: 0;
 							@include box-sizing();
 
 							&:after {
@@ -286,7 +302,6 @@
 
 							.step {
 								display: inline-block;
-								padding-top: 2px;
 								border-radius: 8px;
 								font-size: 14px;
 								color: #fff;
@@ -420,6 +435,7 @@
 
 				// 반품 배송비
 				.guide_claim_returncost {
+					margin-bottom: 30px;
 					.board {
 						.td_box {
 							padding: 15px;
@@ -436,6 +452,7 @@
 
 				// 취소·반품 실패
 				.guide_claim_fail {
+					margin-bottom: 30px;
 					.board {
 						.td_box {
 							padding: 10px;
@@ -451,4 +468,3 @@
 		}
 	}
 }
-	
