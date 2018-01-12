@@ -5,6 +5,7 @@
 		.guide_claim_body {
 			.guide_claim_body_lnb {
 				background: #fff;
+				border-bottom: 7px solid #f2f4f7;
 
 				ul {
 					padding: 0 5px;
@@ -13,21 +14,6 @@
 					li {
 						text-align: center;
 						@include flex(1, 1, auto);
-
-						a {
-							display: inline-block;
-							padding-top: 12px;
-							.btn {
-								font-size: 12px;
-								font-weight: bold;
-								@include btn(null, 42px, 0, $base_color1, #fff);
-
-								&.active {
-									color: $point_color1;
-									border-bottom: 3px solid $point_color1;
-								}
-							}							
-						}
 
 						.btn {
 							font-size: 12px;
@@ -44,7 +30,6 @@
 			}
 
 			.guide_claim_body_main {
-				margin-top: 7px;
 				padding: 20px 15px;
 				background: #fff;
 
