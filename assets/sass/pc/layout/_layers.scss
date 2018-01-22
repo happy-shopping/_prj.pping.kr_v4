@@ -20,6 +20,39 @@
 	}
 }
 
+.layer-pop {
+	&.off {
+		display: none;
+	}
+	&.est {
+		.layer-pop_cart_msg {
+			width: 440px;
+			h3 {
+				color: #ff6600;
+		    font-size: 21px;
+		    margin-bottom: 20px;
+			}
+			p {
+				font-size: 13px;
+		    background-color: #f7f7f7;
+		    border: 1px solid #cccccc;
+		    padding: 15px;
+		    text-align: center;
+				line-height: 1.4;
+				strong {
+					color: #418ded;
+				}
+			}
+			.button-group {
+				margin-bottom: 20px;
+				.btn_border {
+					width: calc(30% - 5px);
+				}
+			}
+		}
+	}
+}
+
 // 간단 툴팁
 .tooltip {
 	opacity: 0;
@@ -2049,7 +2082,7 @@
 			margin-top: -10px;
 			font-size: 14px;
 			font-weight: bold;
-			text-align: center;			
+			text-align: center;
 		}
 	}
 
@@ -2057,7 +2090,7 @@
 		padding: 20px 0;
 		border-top: 1px solid #e8e7ea;
 		@include clear;
-		
+
 		&:first-child {
 			border-top: 0;
 		}
@@ -2864,7 +2897,7 @@
 	background: #fff;
 	z-index: 51;
 	@include box-sizing();
-	
+
 	.tit-h4 {
 		height: 40px;
 		border-bottom: 1px solid $base_color1;
@@ -3228,7 +3261,7 @@
 	background: #fff;
 	z-index: 51;
 	@include box-sizing();
-	
+
 	.msg {
 		font-size: 18px;
 		font-weight: bold;
@@ -3714,7 +3747,7 @@
 		background: #fff;
 		z-index: 31;
 		@include translate(-50%, -50%);
-		
+
 
 		// 검색방법
 		.item_search_head {
@@ -3736,7 +3769,7 @@
 				}
 			}
 		}
-		
+
 		// 상품스펙
 		.item_search_spec {
 			margin: 20px 20px 0;
@@ -4177,7 +4210,7 @@
 		top: 20px;
 		@include btn(30px, 30px, 0, null, transparent);
 	}
-	
+
 	$w950: '(max-width:950px)';
 	@include respond-to($w950) {
 		&:before {
