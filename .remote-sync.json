@@ -1,0 +1,16 @@
+{
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "49.236.146.180",
+  "port": "10022",
+  "target": "/hosting/_prj/public_html/www",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "_prj",
+  "password": "@$_prj1dev1hping$@",
+  "watch": [],
+  "transport": "scp"
+}
