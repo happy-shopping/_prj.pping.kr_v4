@@ -65,6 +65,11 @@
                 border-left: 1px solid $base_color3;
                 @include clear;
 
+                img {
+                  width: 35px;
+                  height: 35px;
+                }
+
                 ul {
                     overflow: hidden;
                     float: left;
@@ -132,7 +137,7 @@
             position: relative;
             z-index: 1;
         }
-        
+
         .tit-h2 {
             margin-top: 45px;
             font-size: 26px;

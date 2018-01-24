@@ -1,5 +1,6 @@
 .sass-cache
 assets/css
+_img_bak
 node_modules
 .remote-sync.json
 sftp-config.json

@@ -502,6 +502,7 @@ input {
 		font-size: 16px;
 		color: $base_color2;
 		line-height: 18px;
+		margin-bottom: 10px;
 
 		span {
 			font-size: 12px;
@@ -521,7 +522,7 @@ input {
 
 	.question-helpservice_callnumber {
 		@include clear;
-		margin-top: 10px;
+		margin-top: -20px;
 		font-size: 0;
 
 		.callnumber {
@@ -541,7 +542,7 @@ input {
 			font-size: 11px;
 			font-weight: bold;
 			letter-spacing: 0;
-			margin-top: 40px;
+			margin-top: 30px;
 
 			.btn-ars {
 				display: block;
