@@ -60,7 +60,7 @@ $size960: '(min-width: 961px)';
 	//
 // }
 
-// grid 
+// grid
 @mixin grid-cols($col, $gap) {
 	width: percentage(1 / $col);
 	padding-left: $gap;
@@ -223,7 +223,7 @@ $size960: '(min-width: 961px)';
 		// font-weight: normal;
 		font-variant: normal;
 		text-transform: none;
-		line-height: 1;	
+		line-height: 1;
 		// Better Font Rendering
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -234,7 +234,7 @@ $size960: '(min-width: 961px)';
 
 }
 
-// 바로구매 
+// 바로구매
 @mixin btn_direct_buy($size, $icon_size, $font_size, $valign) {
 	overflow: hidden;
 	position: relative;
@@ -992,7 +992,7 @@ $btn_brandpc_on: -452px -268px;
 $btn_planpc: -198px -962px;
 $btn_planpc_on:  -448px -962px;
 
-//  icons variables 
+//  icons variables
 $icomoon-font-path: "fonts" !default;
 $icon-angle-double-down: "\e900";
 $icon-angle-double-left: "\e901";
@@ -1058,6 +1058,7 @@ $icon-credit-card: "\e93a";
 $icon-home2:"\e91c";
 $icon-paper: "\e944";
 $icon-cart: "\e945";
+$icon-direct_buy: "\E97D";
 $icon-arrow_upward: "\e943";
 $icon-redo: "\e947";
 $icon-bar_arrow_up: "\e94a";

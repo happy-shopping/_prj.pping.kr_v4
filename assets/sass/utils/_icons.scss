@@ -413,6 +413,12 @@
     }
 }
 
+.icon-direct_buy {
+    &:before {
+        content: $icon-direct_buy;
+    }
+}
+
 .icon-arrow_upward {
     &:before {
         content: $icon-arrow_upward;
