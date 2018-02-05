@@ -361,7 +361,7 @@
 						display: inline-block;
 						font-size: 11px;
 						@include btn(38px, 20px, 1px solid #d3d3d3, $base_color2, #fff, center, 18px);
-						
+
 						&.btn-minishop {
 							margin-right: 2px;
 						}
@@ -395,6 +395,10 @@
 						&.hotdeal {
 							background: #fcebfe;
 						}
+
+						&.lowprice {
+							color: #f34522;
+						}						
 
 						&:last-child {
 							border-bottom: 0;
@@ -491,7 +495,7 @@
 
 					.total_price {
 						color: #4576d1;
-						
+
 						.lowest {
 							color: #ff0000;
 						}
