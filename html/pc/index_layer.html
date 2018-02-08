@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="../../../assets/css/header.css" />
     <link rel="stylesheet" href="../../../assets/css/footer.css" />
     <link rel="stylesheet" href="../../../assets/css/pc/index.css" />
+    <link rel="stylesheet" href="../../../assets/css/pc/adv.css" />
 </head>
 
 <body>
@@ -3067,6 +3068,23 @@
 </div>
 <!-- // 장바구니 / 견적 담기 -->
 
+<div class="layer-pop" id="advLayer" style="display: none">
+    <div class="layer-pop_adv">
+        <div class="pop_adv_in">
+            <img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/700.jpg" alt="광고" />
+        </div>
+
+        <div class="pop_adv_bot">
+            <span class="icheck">
+                <input type="checkbox" id="todayNoMore">
+                <label for="todayNoMore"><span>오늘하루 보지않기</span></label>
+            </span>
+
+            <button id="closeAdvBanner" type="button" class="btn_pop_adv_clse"><i class="icon-close"></i><span class="ir">닫기</span></button>
+        </div>
+    </div>
+</div>
+
 <!-- 해피트리 레이어 -->
 <div class="layer-pop" style="display: none">
     <div class="layer-pop_photodetail">
@@ -3153,6 +3171,7 @@
 <link rel="stylesheet" type="text/css" href="//dev-ajax.pping.kr:8080/_v3/css/slick-theme.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="//dev-ajax.pping.kr:8080/_v3/js/slick.min.js"></script>
+<script src="//ajax.pping.kr/_v3/js/pg.util.js"></script>
 
 <script>
 $(document).ready(function() {

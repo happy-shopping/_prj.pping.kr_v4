@@ -243,7 +243,7 @@
 
 		@include respond-to($small_desktop) {
 			margin-left: -340px;
-			
+
 		}
 	}
 
@@ -458,7 +458,7 @@
 		.tit {
 			position: absolute;
 			left: 20px;
-			top: 17px;		
+			top: 17px;
 		}
 
 		.adv-event_head_cates {
@@ -927,7 +927,7 @@
 
 						&:first-child {
 							margin-top: 0;
-						}						
+						}
 					}
 				}
 			}
@@ -1061,6 +1061,155 @@
 		}
 
 		.btn_pop_estimate_adv_clse {
+			position: absolute;
+			right: 0;
+			top: 0;
+			font-size: 18px;
+			@include btn(26px, 26px, 0, #fff, transparent);
+		}
+	}
+}
+
+// 광고 팝업
+.layer-pop_adv {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 400px;
+	margin: -300px 0 0 -241px;
+	border: 1px solid #444;
+	background: #fff;
+	@include box-sizing();
+
+	.pop_adv_in {
+		@include clear;
+
+		img {
+			width: 400px;
+			height: 500px;
+		}
+
+		.pop_adv_in_bot {
+			margin-top: 10px;
+
+			.tit {
+				display: block;
+				padding-bottom: 6px;
+				border-bottom: 1px solid #444;
+				font-size: 14px;
+			}
+
+			.pop_adv_in_bot_items {
+				overflow-y: auto;
+				max-height: 218px;
+
+				li {
+					height: 109px;
+					padding: 10px;
+					border-bottom: 1px solid #d3d3d3;
+					@include box-sizing();
+
+					.pop_adv_in_bot_items_box {
+						@include clear;
+
+						.thumb {
+							float: left;
+							margin-right: 15px;
+							@include size(80px);
+						}
+
+						.pop_adv_in_bot_items_box_info {
+							overflow: hidden;
+
+							.name {
+								display: block;
+								height: 36px;
+								font-size: 14px;
+								line-height: 1.2;
+							}
+
+							.product_grade {
+								line-height: 13px;
+							}
+
+							.item_price {
+		                        height: 30px;
+		                        font-size: 0;
+		                        color: $base_color3;
+		                        text-align: right;
+
+		                        .spn {
+		                            display: inline-block;
+		                            height: 30px;
+		                            padding: 0 10px;
+		                            font-size: 14px;
+		                            line-height: 30px;
+		                            vertical-align: middle;
+
+		                            &.planned_comparison {
+		                                font-size: 28px;
+		                                font-weight: bold;
+		                                color: $base_color3;
+		                            }
+
+		                            &.soldout {
+		                                font-size: 28px;
+		                                font-weight: bold;
+		                                color: $base_color3;
+		                            }
+		                        }
+
+		                        strong {
+		                        	font-size: 18px;
+		                            color: $point_color2;
+		                        }
+
+		                        .btn-add-to,
+		                        .btn-cart-to {
+		                            font-size: 14px;
+		                            @include size(30px);
+
+		                            span {
+		                                font-size: 14px;
+		                                line-height: 30px;
+
+		                                &:before {
+		                                    font-size: 14px;
+		                                }
+		                            }
+		                        }
+		                    }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.pop_adv_bot {
+		position: relative;
+		padding: 4px 10px 0;
+		height: 26px;
+		color: #fff;
+		background: $base_color3;
+		@include box-sizing();
+
+		.icheck {
+			vertical-align: top;
+
+			label {
+				&:before {
+					vertical-align: top;
+				}
+
+				span {
+					display: inline-block;
+					vertical-align: top;
+				}
+			}
+		}
+
+		.btn_pop_adv_clse {
 			position: absolute;
 			right: 0;
 			top: 0;
