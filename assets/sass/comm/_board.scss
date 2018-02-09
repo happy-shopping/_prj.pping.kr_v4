@@ -93,7 +93,7 @@
 
 		td {
 			border-bottom: 1px solid #e8e7ea;
-			
+
 			.box-td {
 				padding: 5px 10px;
 			}
@@ -154,8 +154,8 @@
 					margin-right: 3px;
 					vertical-align: 2px;
 				}
-				
-				// 임시 
+
+				// 임시
 				// .cart-items_item_name {
 				// 	padding: 6px 0;
 				// }
@@ -506,6 +506,11 @@
 			color: $base_color1;
 			letter-spacing: 0;
 			text-align: right;
+			span {
+			    font-weight: 400;
+			    font-size: 12px;
+				margin-right: 10px;
+			}
 		}
 
 		.cnt-change_number {
@@ -514,13 +519,16 @@
 
 		.compare_price {
 			display: block;
-			font-size: 14px;
+			font-size: 12px;
+			font-weight: 400;
 			color: $base_color2;
 			letter-spacing: 0;
 			text-align: right;
 
 			span {
 				color: #f34522;
+			    font-weight: 700;
+			    font-size: 14px;
 			}
 		}
 
@@ -582,7 +590,7 @@
 						}
 
 						&.box-tr_bot_hotdeal {
-							font-size: 14px; 
+							font-size: 14px;
 
 							strong {
 								display: block;
