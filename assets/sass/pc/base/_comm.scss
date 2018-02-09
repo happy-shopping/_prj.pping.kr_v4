@@ -2222,3 +2222,60 @@ input {
 		background: #fffbfb !important;
 	}
 }
+
+:after, :before {
+	box-sizing: border-box;
+}
+
+.comm_loading {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.8);
+	z-index: 100;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin: -20px 0 0 -20px;
+		background: url(//img.happyshopping.kr/img_static/img_pres/_v3/loading_w.gif) no-repeat 50% 50%;
+		background-size: cover;
+		width: 40px;
+		height: 40px;
+	}
+
+	&.off {
+		display: none;
+	}
+}
+
+.comm_loading_inside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.8);
+    z-index: 1;
+
+	&.off {
+		display: none;
+	}
+
+	&:before {
+		content: "";
+	    position: absolute;
+	    left: 50%;
+	    top: 80%;
+	    margin: -20px 0 0 -20px;
+	    background: url(//img.happyshopping.kr/img_static/img_mobile/comm/comm_loading.gif) no-repeat 50% 50%;
+	    background-size: 40px 40px;
+	    width: 40px;
+	    height: 40px;
+	    box-sizing: border-box;
+	}
+}

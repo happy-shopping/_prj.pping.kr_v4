@@ -5,6 +5,7 @@
 
 	.header-body {
 		position: relative;
+		z-index: 100;
 
 		.header-body_main {
 			position: relative;
@@ -672,7 +673,7 @@
 				background-size: 18px 18px;
 				@include btn(40px, 40px, 0, null, transparent);
 			}
-			
+
 			.bar {
 				display: inline-block;
 				width: 1px;
@@ -694,7 +695,7 @@
 		position: relative;
 		min-height: 47px;
 	}
-	
+
 	.tit-h1 {
 		padding-top: 2px;
 		font-size: 16px;

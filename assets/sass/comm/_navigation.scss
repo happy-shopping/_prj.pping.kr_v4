@@ -134,7 +134,7 @@
 			padding: 1px;
 			border: 1px solid #0f4f9f;
 			background: #fff;
-			z-index: 13;
+			z-index: 50;
 
 			&:after {
 				content: "";
@@ -234,7 +234,7 @@
 			padding: 18px;
 			border: 1px solid #0f4f9f;
 			background: #fff;
-			z-index: 20;
+			z-index: 50;
 			@include breakpoint(max-width 1209px) {
 				width: 912px;
 			}
@@ -299,6 +299,10 @@
 				position: relative;
 				max-width: 1127px;
 				margin-top: 17px;
+
+				&>img {
+					max-width: 100%;
+				}
 
 				.nav-brand_sub_bnr_stage {
 					overflow: hidden;
@@ -441,7 +445,7 @@
 // 모바일
 .gnb-m-basic {
 	height: 45px;
-	
+
 	box-shadow: rgba(0, 0, 0, 0.05) 1px 2px 2px;
 	background: #fff;
 
@@ -635,7 +639,7 @@
 				.btn_comm_cate {
 					background: #ecf3fd;
 				}
-				
+
 				.comm_cate_depth2 {
 					display: block;
 				}
@@ -699,7 +703,7 @@
 	.comm_brand_tab {
 		font-size: 0;
 		@include clear;
-		
+
 		.btn {
 			width: calc(100% / 3);
 			height: 42px;
