@@ -12,6 +12,11 @@
 		}
 	}
 
+	.wordBreak  {
+	    white-space: pre-wrap !important;
+	    word-break: break-word !important;
+	}
+
 	img {
 		vertical-align: top;
 	}
@@ -3536,6 +3541,7 @@
 
 					.caution {
 						margin-top: 15px;
+						color: #f34522;
 
 						> li {
 							margin-top: 15px;
@@ -4517,10 +4523,11 @@
 							    cursor: pointer;
 							    @include size(66px);
 							    @include box-sizing();
-									background-size: cover;
-									background-repeat: no-repeat;
-									background-position: 50% 50%;
-									text-indent: -1000px;
+								background-size: cover;
+								background-repeat: no-repeat;
+								background-position: 50% 50%;
+								text-indent: -1000px;
+								width: 66px !important;
 
 							    img {
 							    	max-width: 100%;
