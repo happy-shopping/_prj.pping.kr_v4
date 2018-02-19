@@ -1596,11 +1596,15 @@
 
 										li {
 											float: left;
-											margin-right: 18px;
+											margin-right: 0px;
 											font-size: 0;
 
 											[class^="mark-"] {
 												margin-bottom: 10px;
+											}
+
+											.mark-power, .mark-new {
+												display: inline-block;
 											}
 
 											&.minishopLogo {
@@ -1611,8 +1615,9 @@
 												width: 66px;
 												height: 18px;
 												border-radius: 9px;
-												font-size: 11px;
+												font-size: 12px;
 												line-height: 16px;
+												color: $base_color2;
 											}
 
 											.ci {
@@ -1646,6 +1651,7 @@
 												line-height: 15px;
 												vertical-align: middle;
 												letter-spacing: -1px;
+												margin-left: 5px;
 
 												&.badge_dup {
 													border-color: #ff3333;
@@ -1665,7 +1671,7 @@
 
 											.price {
 												display: inline-block;
-												margin-left: 5px;
+												margin-left: 0px;
 												font-size: 12px;
 												vertical-align: middle;
 
@@ -1686,15 +1692,15 @@
 											}
 
 											.delivery_day {
-												display: block;
-												margin: 9px 0 0 53px;
+												display: inline-block;
+												margin: 9px 0 0 5px;
 												font-size: 12px;
 												color: $base_color1;
 												line-height: 18px;
 											}
 
 											&:first-child {
-												margin-right: 5px;
+												margin-right: 10px;
 											}
 
 											&:last-child {
