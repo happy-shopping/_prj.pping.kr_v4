@@ -20,7 +20,7 @@
     </script>
     <!-- // 웹폰트용 -->
 
-	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/comm.css" />
+	<!-- <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/comm.css" />
 	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/buttons.css" />
 	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/forms.css" />
 	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/board.css" />
@@ -29,18 +29,16 @@
 	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/header.css" />
 	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/footer.css" />
 	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/minishop.css" />
-	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/item_view.css" />
-	
-	<!-- <link rel="stylesheet" href="../../../assets/css/comm.css" />
-	<link rel="stylesheet" href="../../../assets/css/forms.css" />
+	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/item_view.css" /> -->
+
+	<link rel="stylesheet" href="../../../assets/css/pc/comm.css" />
+	<link rel="stylesheet" href="../../../assets/css/pc/forms.css" />
 	<link rel="stylesheet" href="../../../assets/css/buttons.css" />
 	<link rel="stylesheet" href="../../../assets/css/board.css" />
-	<link rel="stylesheet" href="../../../assets/css/product.css" />
-	<link rel="stylesheet" href="../../../assets/css/layers.css" />
+	<link rel="stylesheet" href="../../../assets/css/pc/layers.css" />
 	<link rel="stylesheet" href="../../../assets/css/header.css" />
 	<link rel="stylesheet" href="../../../assets/css/footer.css" />
-	<link rel="stylesheet" href="../../../assets/css/minishop.css" />
-	<link rel="stylesheet" href="../../../assets/css/item_view.css" /> -->
+	<link rel="stylesheet" href="../../../assets/css/pc/item_view.css" />
 </head>
 
 <body>
@@ -396,17 +394,16 @@
 								<button type="button" class="btn-prev"><span class="ir">이전</span></button>
 								<button type="button" class="btn-next"><span class="ir">다음</span></button>
 							</div>
-
 							<div class="thumb-list">
 								<div class="thumb-list_slider">
-									<ul style="width:200%">
-										<li class="item"><img src="https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg" alt="사진썸네일1"></li>
-										<li class="item"><img src="https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg" alt="사진썸네일2"></li>
-										<li class="item"><img src="https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg" alt="사진썸네일3"></li>
-										<li class="item"><img src="https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg" alt="사진썸네일4"></li>
-										<li class="item"><img src="https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg" alt="사진썸네일5"></li>
-										<li class="item"><img src="https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg" alt="사진썸네일6"></li>
-									</ul>
+									<div>
+										<div class="item slickList" style="background-image: url('https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg')">사진썸네일1</div>
+										<div class="item slickList" style="background-image: url('https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg')">사진썸네일1</div>
+										<div class="item slickList" style="background-image: url('https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg')">사진썸네일1</div>
+										<div class="item slickList" style="background-image: url('https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg')">사진썸네일1</div>
+										<div class="item slickList" style="background-image: url('https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg')">사진썸네일1</div>
+										<div class="item slickList" style="background-image: url('https://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/64.jpg')">사진썸네일1</div>
+									</div>
 									<button type="button" class="icon-chevron-thin-left btn-prev"><span class="ir">이전</span></button>
 									<button type="button" class="icon-chevron-thin-right btn-next"><span class="ir">다음</span></button>
 								</div>
@@ -758,7 +755,7 @@
 
 										<!-- 장바구니 담기 -->
 										<div class="product_add_btn">
-											<button type="button" class="btn_cart"><i class="icon-cart"></i> 장바구니 담기</button>
+											<button type="button" class="btn_cart em"><i class="icon-cart"> 장바구니 담기</i></button>
 
 											<!-- 담기 팝업 -->
 											<div class="product_add_btn_layer">
@@ -773,7 +770,7 @@
 
 										<!-- 바로구매 -->
 										<div class="product_add_btn">
-											<button type="button" class="btn_buy">바로구매</button>
+											<button type="button" class="btn_buy right"><i class="icon-direct_buy"> 바로 구매하기</i></button>
 										</div>
 										<!-- // 바로구매 -->
 									</div>
@@ -805,7 +802,12 @@
 							<div class="product_list">
 								<!-- item -->
 								<div class="product_item">
-									<span class="thumb"><a href="#"><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1432000/img_1431930/200.jpg" alt="인텔 펜티엄 G4560 (카비레이크) (정품)" /></a></span>
+									<div class="thumb"
+										style="width: 150px; height: 150px;
+										background-image: url('//img.happyshopping.kr/img_shopping/img_goods/img_4791000/img_4790251/200.jpg'),
+										url('//img.happyshopping.kr/img_shopping/img_goods/img_no/2010000000_200.png');
+										background-size: cover; background-repeat: no-repeat; background-position: 50% 50%; text-indent: -10000px;">
+									</div>
 
 									<strong class="product_item_info">
 										인텔 펜티엄 G4560 (카비레이크) (정품)<br />
@@ -900,7 +902,7 @@
 					<!-- 함께 구매한 상품 -->
 					<div class="main-view_together">
 						<h3 class="tit-h3">함께 구매하는 상품</h3>
-						
+
 						<div class="main-view_together_body">
 							<div class="main-view_together_thumbs">
 								<ul>
@@ -2124,7 +2126,7 @@
 
 												<span class="dsc"><strong>26개</strong>의 상품평이 있습니다.</span>
 											</div>
-											
+
 											<div class="review_box_main_top_sort">
 												<ul>
 													<li>
@@ -2185,7 +2187,7 @@
 													</li>
 												</ul>
 											</div>
-											
+
 											<div class="review_box_main_top_submit">
 												<button type="button" class="btn_reviewwrite">상품평 등록하기</button>
 												<br />
@@ -2696,7 +2698,7 @@
 																왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 																저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 																어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-																건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+																건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 															</div>
 														</div>
 
@@ -2966,7 +2968,7 @@
 															왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 															저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 															어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 														</div>
 													</div>
 
@@ -3043,7 +3045,7 @@
 															왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 															저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 															어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 														</div>
 													</div>
 
@@ -3095,7 +3097,7 @@
 																		<em class="emblem formula">공식답변</em>
 																		<em class="name_name">제조.수입사</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3120,7 +3122,7 @@
 																		<em class="mark-power">파워셀러</em>
 																		<em class="name_name">피씨몰</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3145,7 +3147,7 @@
 																		<em class="mark-new">뉴셀러</em>
 																		<em class="name_name">피씨몰</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3166,10 +3168,10 @@
 															<div class="comment_box_cmnts_box">
 																<div class="comment_box_cmnts_box_writer">
 																	<span class="name">
-																		<em class="emblem hangshow">행쇼</em> 
+																		<em class="emblem hangshow">행쇼</em>
 																		<em class="name_name">관리자</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3190,10 +3192,10 @@
 															<div class="comment_box_cmnts_box">
 																<div class="comment_box_cmnts_box_writer">
 																	<span class="name">
-																		<em class="emblem guest">비구매</em> 
+																		<em class="emblem guest">비구매</em>
 																		<em class="name_name">안산사람</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3214,10 +3216,10 @@
 															<div class="comment_box_cmnts_box">
 																<div class="comment_box_cmnts_box_writer">
 																	<span class="name">
-																		<em class="emblem buyer">구매</em> 
+																		<em class="emblem buyer">구매</em>
 																		<em class="name_name">구매한사람</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3243,7 +3245,7 @@
 																		<em class="emblem formula">공식답변</em>
 																		<em class="name_name">제조.수입사</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3280,7 +3282,7 @@
 																		<em class="emblem formula">공식답변</em>
 																		<em class="name_name">제조.수입사</em>
 																	</span>
-				
+
 																	<em class="bar"></em>
 																	<span class="date">2017.08.10</span>
 																</div>
@@ -3351,7 +3353,7 @@
 															왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 															저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 															어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 														</div>
 													</div>
 
@@ -3422,7 +3424,7 @@
 															왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 															저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 															어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+															건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 														</div>
 													</div>
 
@@ -3569,8 +3571,8 @@
 														</tbody>
 													</table>
 												</div>
-	
-												<div class="report_body_button">	
+
+												<div class="report_body_button">
 													<button type="button" class="btn_flat">문의하기</button>
 												</div>
 											</fieldset>
@@ -3624,7 +3626,7 @@
 													왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 													저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 													어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 												</div>
 											</div>
 
@@ -3667,7 +3669,7 @@
 													왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 													저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 													어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 												</div>
 											</div>
 
@@ -3702,7 +3704,7 @@
 																<em class="emblem formula">공식답변</em>
 																<em class="name_name">제조.수입사</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3727,7 +3729,7 @@
 																<em class="mark-power">파워셀러</em>
 																<em class="name_name">피씨몰</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3752,7 +3754,7 @@
 																<em class="mark-new">뉴셀러</em>
 																<em class="name_name">피씨몰</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3773,10 +3775,10 @@
 													<div class="comment_box_cmnts_box">
 														<div class="comment_box_cmnts_box_writer">
 															<span class="name">
-																<em class="emblem hangshow">행쇼</em> 
+																<em class="emblem hangshow">행쇼</em>
 																<em class="name_name">관리자</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3797,10 +3799,10 @@
 													<div class="comment_box_cmnts_box">
 														<div class="comment_box_cmnts_box_writer">
 															<span class="name">
-																<em class="emblem guest">비구매</em> 
+																<em class="emblem guest">비구매</em>
 																<em class="name_name">안산사람</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3821,10 +3823,10 @@
 													<div class="comment_box_cmnts_box">
 														<div class="comment_box_cmnts_box_writer">
 															<span class="name">
-																<em class="emblem buyer">구매</em> 
+																<em class="emblem buyer">구매</em>
 																<em class="name_name">구매한사람</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3850,7 +3852,7 @@
 																<em class="emblem formula">공식답변</em>
 																<em class="name_name">제조.수입사</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3887,7 +3889,7 @@
 																<em class="emblem formula">공식답변</em>
 																<em class="name_name">제조.수입사</em>
 															</span>
-		
+
 															<em class="bar"></em>
 															<span class="date">2017.08.10</span>
 														</div>
@@ -3951,7 +3953,7 @@
 													왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 													저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 													어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 												</div>
 											</div>
 
@@ -3999,7 +4001,7 @@
 													왜 닥터자르트! 라고 극찬을하는지 알것같네요.
 													저는 닥터자르트 제품을 처음으로 구매해 봤는데요.
 													어제 아침일찍 바르고 외출했다가 저녁 늦게 귀가했는데 그사이 단한번도
-													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.  
+													건조함도 들뜸도 없고 매트한 느낌도 정말좋고, 구입하기를 잘했구나.
 												</div>
 											</div>
 
@@ -4101,7 +4103,7 @@
 
 												<div class="report_body_main_box">
 													<h6 class="tit-h6"><label for="id-">신고 이유를 알려주세요</label></h6>
-													
+
 													<div class="report_body_main_box_textarea">
 														<textarea rows="5" cols="30" id="id-" placeholder="상품평과 관계없는 글을 신고해 주시면 관리자 확인 후 해당 상품평의 노출이 제한 될 수 있습니다."></textarea>
 													</div>
@@ -4112,7 +4114,7 @@
 												</div>
 											</div>
 
-											<div class="report_body_button">	
+											<div class="report_body_button">
 												<button type="button" class="btn_flat">신고하기</button>
 											</div>
 										</fieldset>
@@ -4928,7 +4930,7 @@ $(document).ready(function() {
 
 	$(".layer-pop_reviewphoto .btn-layer-pop_clse").click(function() {
 		$(".layer-pop_reviewphoto").hide();
-	});	
+	});
 });
 </script>
 </body>
