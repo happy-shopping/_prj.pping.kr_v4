@@ -950,6 +950,9 @@
 						&:hover .thumb {
 							border-color: $point_color1;
 						}
+						&:hover .thumb.soldout {
+							border-color: #fff;
+						}
 
 					}
 
