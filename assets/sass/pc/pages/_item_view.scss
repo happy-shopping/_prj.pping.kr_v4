@@ -740,6 +740,9 @@
 						.product_add_btn_layer {
 							right: 0;
 							bottom: 55px;
+							&.on {
+								display: block !important;
+							}
 						}
 
 					}
@@ -1167,6 +1170,9 @@
 						.product_add_btn_layer {
 							right: 20px;
 							bottom: 48px;
+							&.on {
+								display: block !important;
+							}
 						}
 					}
 				}
@@ -1732,6 +1738,9 @@
 
 											&:before {
 												right: 6px;
+											}
+											&.on {
+												display: block !important;
 											}
 										}
 									}
@@ -4074,6 +4083,9 @@
 						.product_add_btn_layer {
 							right: 0;
 							bottom: 35px;
+							&.on {
+								display: block !important;
+							}
 						}
 
 					}
