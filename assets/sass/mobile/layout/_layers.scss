@@ -194,6 +194,9 @@
 
 // 쿠폰받기
 .layer_coupon_receive {
+	&.on {
+		display: block !important;
+	}
 	-webkit-overflow-scrolling : touch;
 	overflow-y: auto;
 	position: fixed;
