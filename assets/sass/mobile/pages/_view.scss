@@ -165,6 +165,10 @@
 							font-size: 18px;
 							color: $point_color2;
 							letter-spacing: 0;
+							&.soldout {
+								color: $base_color3;
+								font-size: 16px;
+							}
 						}
 					}
 
@@ -398,7 +402,7 @@
 						padding: 15px 0 ;
 						border-bottom: 1px solid #dedede;
 					}
-					
+
 					.tit-h4 {
 						height: 28px;
 						margin-bottom: 15px;
@@ -481,7 +485,7 @@
 								height: 11px;
 								background: #c7c7c7;
 							}
-							
+
 							.ip {
 								float:left;
 								height: 11px;
@@ -533,7 +537,7 @@
 						font-weight: normal;
 						line-height: 18px;
 						vertical-align: 1px;
-						
+
 						&.formula {
 							background: #2ba7da;
 						}
@@ -619,7 +623,7 @@
 
 					.comment_box_bot {
 						position: relative;
-						margin-top: 30px;  
+						margin-top: 30px;
 						font-size: 0;
 
 						.btn_comnt {
@@ -682,7 +686,7 @@
 							}
 						}
 					}
-					
+
 					// 대댓글
 					.comment_box_cmnt {
 						margin-top: 10px;
@@ -725,10 +729,10 @@
 
 							textarea:focus + .btn_submit {
 								color: $base_color1;
-								background: #ccc;			
+								background: #ccc;
 							}
 						}
-					
+
 						.comment_box_cmnt_box {
 							position: relative;
 							margin-top: 10px;
@@ -743,7 +747,7 @@
 								border-left: 1px solid $base_color3;
 								border-bottom: 1px solid $base_color3;
 								@include size(7px);
-								@include box-sizing();					
+								@include box-sizing();
 							}
 
 							.comment_box_cmnt_box_writer {
@@ -883,7 +887,7 @@
 						}
 					}
 				}
-				
+
 				// 더보기
 				.comment_box-more {
 					position: relative;
@@ -1021,7 +1025,7 @@
 					.view_main_body_main_reviews_list {
 						margin-top: 15px;
 					}
-					
+
 				}
 
 				// 상품문의
@@ -1241,7 +1245,7 @@
 					}
 
 					.delivery {
-						margin-top: 10px; 
+						margin-top: 10px;
 
 						li {
 							font-size: 13px;
@@ -1371,7 +1375,7 @@
 						padding: 10px;
 						border: 1px solid $base_color3;
 						font-size: 12px;
-						line-height: 1.4;			
+						line-height: 1.4;
 						@include box-sizing();
 					}
 
@@ -1577,7 +1581,7 @@
 					}
 				}
 			}
-			
+
 			.button-group {
 				margin-top: 15px;
 
@@ -1665,7 +1669,7 @@
 							padding: 10px;
 							font-size: 14px;
 							color: $base_color2;
-							@include box-sizing();							
+							@include box-sizing();
 
 							&:focus {
 								color: $base_color1;
@@ -1788,7 +1792,7 @@
 						.total_each_input {
 							margin-left: 0;
 						}
-						
+
 						.total_each_price {
 							margin-left: 10px;
 							font-size: 18px;
@@ -1816,7 +1820,7 @@
 				}
 
 				.delivery {
-					margin-top: 10px; 
+					margin-top: 10px;
 
 					li {
 						font-size: 13px;
@@ -2030,7 +2034,7 @@
 	background: #fff;
 	z-index: 21;
 	@include box-sizing();
-	
+
 	.layer_review_policy_head {
 		height: 50px;
 		background: #e5e5e5;
@@ -2092,7 +2096,7 @@
 	background: #fff;
 	z-index: 21;
 	@include box-sizing();
-	
+
 	.layer_cmnt_img_head {
 		height: 50px;
 		background: #e5e5e5;
