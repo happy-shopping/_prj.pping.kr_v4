@@ -77,7 +77,7 @@
 
 	&:hover {
 		overflow: visible;
-		
+
 		span {
 			opacity: 1;
 			right: 0;
@@ -102,7 +102,7 @@
 	border-radius: 15px;
 	font-size: 17px;
 	@include btn(30px, 30px, 1px solid #ccc, $base_color2, #fff);
-	
+
 	&:before {
 		position: relative;
 		top: 2px;
@@ -118,6 +118,10 @@
 	border-radius: 3px;
 	z-index: 2;
 	@include btn(35px, 35px, 1px solid $base_color3, $base_color2, rgba(255, 255, 255, 0.7));
+
+	&.subpage {
+		bottom: 60px;
+	}
 
 	[class^="icon-"] {
 		font-size: 34px;
