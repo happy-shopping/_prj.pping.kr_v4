@@ -780,6 +780,10 @@
 	z-index: 11;
 	@include box-sizing();
 
+	&.pd {
+		z-index: 10;
+	}
+
 	a {
 		display: inline-block;
 	}
