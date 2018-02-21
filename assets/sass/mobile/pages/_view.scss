@@ -1158,7 +1158,7 @@
 
 				.btn_fork {
 					margin-left: 5px;
-					@include btn(50px, 50px, 1px solid #b2b2b2, $base_color2, #fff);
+					@include btn(50px, 50px, 1px solid #b2b2b2, $point_color1, #fff);
 					border-radius: 0;
 
 					&:before {
