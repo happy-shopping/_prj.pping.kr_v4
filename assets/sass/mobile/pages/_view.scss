@@ -1180,6 +1180,11 @@
 			.view_main_body_add {
 				width: 100%;
 
+				&.bottomBanner {
+				    position: fixed;
+				    left: 0px;
+				}
+
 				.btn_add {
 					position: relative;
 				    display: block;
