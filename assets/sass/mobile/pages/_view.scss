@@ -1258,6 +1258,10 @@
 							color: $base_color2;
 							line-height: 1.6;
 
+							div {
+								display: inline;
+							}
+
 							span {
 								color: $point_color2;
 
