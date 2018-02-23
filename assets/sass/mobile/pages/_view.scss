@@ -1862,6 +1862,20 @@
 					border-top: 1px solid #c6c6c6;
 					position: relative;
 
+					.dimmed {
+						text-align: center;
+						position: absolute;
+						top: 42px;
+						left: 0;
+						width: 100vw;
+						height: 310px;
+						background: rgba(255,255,255,0.7);
+
+						img {
+							width: 230px;
+						}
+					}
+
 					.view_market_body_list_box_top {
 						border-bottom: 1px solid #e5e5e5;
 						background: #f4f4f4;
