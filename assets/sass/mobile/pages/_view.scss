@@ -1860,6 +1860,7 @@
 				.view_market_body_list_box {
 					padding-bottom: 20px;
 					border-top: 1px solid #c6c6c6;
+					position: relative;
 
 					.view_market_body_list_box_top {
 						border-bottom: 1px solid #e5e5e5;
@@ -1979,6 +1980,14 @@
 									border-radius: 15px;
 									font-size: 18px;
 									@include btn(30px, 30px, 1px solid #ccc, $point_color1, #fff);
+									letter-spacing: 0;
+								}
+
+								.btn_market_cart {
+									padding-top: 4px;
+									border-radius: 15px;
+									font-size: 18px;
+									@include btn(30px, 30px, 1px solid #ccc, #fff, $point_color1);
 									letter-spacing: 0;
 								}
 
