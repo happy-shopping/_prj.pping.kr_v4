@@ -16,11 +16,13 @@
 		@include flex-wrap(wrap);
 		@include justify-content(center);
 
-		a {
+		a, button {
 			display: block;
 			margin-bottom: 7px;
 			font-size: 12px;
 			color: $base_color3;
+			border: none;
+			background: none;
 			@include flex(0, 0, auto);
 			@include grid-cols(3, 10px);
 			@include respond-to($size640) {
