@@ -770,6 +770,15 @@
 							background: #f8f8f8;
 						}
 
+						&.disabled:hover {
+							background-color: $base_color3;
+						}
+
+						&:disabled {
+							border: 2px solid $base_color3;
+							background-color: $base_color3;
+						}
+
 						&.btn_market {
 							margin-left: 5px;
 						}
