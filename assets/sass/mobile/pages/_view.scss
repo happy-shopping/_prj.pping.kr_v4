@@ -61,11 +61,13 @@
 				background: #464646;
 				line-height: 1.4;
 
-				a {
+				a, button {
 					display: block;
 					height: 65px;
 					padding-left: 35px;
 					color: $base_color3;
+					background: none;
+					border: none;
 					@include flexbox();
 					@include align-items(center);
 				}
