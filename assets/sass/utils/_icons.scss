@@ -719,3 +719,8 @@
         content: $icon-truck2;
     }
 }
+.icon-warning {
+    &:before {
+        content: $icon-warning;
+    }
+}
