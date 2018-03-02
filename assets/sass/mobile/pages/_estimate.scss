@@ -16,7 +16,7 @@
 				overflow: hidden;
 				height: 40px;
 				background: #000;
-				
+
 				a {
 					display: block;
 				}
@@ -200,14 +200,14 @@
 				.btn_border {
 					width: calc(50% - 3px);
 					font-size: 14px;
-					font-weight: bold;				
+					font-weight: bold;
 					@include btn(null, 50px, 1px solid $base_color3, $base_color2, #fff);
 				}
 
 				// .btn_border {
 				// 	width: calc(50% - 3px);
 				// 	font-size: 14px;
-				// 	font-weight: bold;				
+				// 	font-weight: bold;
 				// 	@include btn(null, 50px, 1px solid $point_color1, $point_color1, #fff);
 				// }
 

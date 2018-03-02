@@ -1000,6 +1000,12 @@
 							word-break: keep-all;
 							word-wrap: break-word;
 
+							.multiTextTrim {
+								.trim {
+								    max-width: 90%;
+								}
+							}
+
 							.price {
 								display: block;
 								margin-top: 4px;

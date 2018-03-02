@@ -2227,6 +2227,21 @@ input {
 // 	box-sizing: border-box;
 // }
 
+.multiTextTrim {
+	overflow: hidden;
+	.trim {
+	    display: -webkit-box;
+	    -webkit-line-clamp: 2;
+	    -o-text-overflow: ellipsis;
+	       text-overflow: ellipsis;
+	    overflow: hidden;
+	    max-width: 100%;
+	    height: 2.4rem;
+	    font-size: 100%;
+		-webkit-box-orient: vertical;
+	}
+}
+
 .comm_loading {
 	position: fixed;
 	left: 0;
