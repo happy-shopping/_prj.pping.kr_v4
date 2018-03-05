@@ -4020,6 +4020,7 @@
 			}
 
 			.btn_product_fork {
+				margin-left: 3px;
 				font-size: 14px;
 				@include btn(100px, 45px, 0, #fff, $point_color1);
 
@@ -4030,7 +4031,7 @@
 			}
 
 			.btn_product_cncl {
-				margin-left: 3px;
+				// margin-left: 3px;
 				font-size: 14px;
 				@include btn(100px, 45px, 1px solid #d3d3d3, null, #ececec);
 
