@@ -1,6 +1,5 @@
 .sass-cache
 node_modules
-.remote-sync.json
 sftp-config.json
 assets/css
 assets/sass/utils/_vivify.scss
