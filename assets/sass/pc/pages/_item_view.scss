@@ -1420,6 +1420,10 @@
 							.compare_buy_body_sort {
 								padding: 13px 10px;
 
+								&.buy_minishop {
+									padding-bottom: 6px;
+								}
+
 								> ul {
 									@include clear;
 
@@ -1459,6 +1463,70 @@
 
 										.toggle_switch {
 											vertical-align: top;
+										}
+
+										.switch {
+										    position: relative;
+										    overflow: hidden;
+										    display: inline-block;
+										    padding: 1px;
+										    font-size: 0;
+										    vertical-align: middle;
+										    border-radius: 5px;
+
+										    &.market {
+												position: relative;
+											    top: -3px;
+											    left: 55px;
+										    }
+
+										    input[type="radio"] {
+										        position: absolute;
+										        visibility: hidden;
+										        z-index: -1;
+
+										        &:checked + label {
+										            color: #fff;
+										        }
+										    }
+
+										    label {
+										        display: inline-block;
+										        width: 35px;
+										        height: 26px;
+										        padding-top: 1px;
+										        border-style: solid;
+										        font-size: 12px;
+										        color: $base_color3;
+										        font-weight: bold;
+										        background: #e5e5e5;
+										        vertical-align: top;
+										        text-align: center;
+										        line-height: 23px;
+										        @include box-sizing();
+										    }
+
+										    .nor + label {
+										        border-width: 1px 0 1px 1px;
+										        border-color: #0f4180;
+										        border-radius: 5px 0 0 5px;
+										    }
+
+										    .nor:checked + label {
+										        border-color: #753ebe;
+										        background: #956ccc;
+										    }
+
+										    .card + label {
+										        border-width: 1px 1px 1px 0;
+										        border-color: #753ebe;
+										        border-radius: 0 5px 5px 0;
+										    }
+
+										    .card:checked + label {
+										        border-color: #0f4180;
+										        background: #175aae;
+										    }
 										}
 
 										.btn_market {
