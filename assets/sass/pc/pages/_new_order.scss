@@ -189,17 +189,22 @@
 
 		.agree {
 
-			width:595px;
-			padding: 28px 20px 20px;
+			width:599px;
+			//padding: 28px 20px 20px;
+			padding: 28px 0px 20px;
 			border-bottom: 2px solid $point_color1;
 			font-size: 11px;
+			h3 {
+				padding: 0px 20px;
+			}
 
 			.all-agree {
-				margin-top: 10px;
+				margin: 10px 20px;
 				border-top: 2px solid #333;
 				padding: 10px 0px 4px;
 			}
 			.all-agree_list {
+				padding: 0px 20px;
 				ul {
 					margin-top: 10px;
 					border-top: 1px solid $base_color2;
@@ -223,7 +228,7 @@
 
 		.payment {
 
-			width:50%;
+			width:551px;
 			background-color: #ecf3fd;
 			border-bottom: 2px solid $point_color1;
 			padding: 28px 20px 30px;
