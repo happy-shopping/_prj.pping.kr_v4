@@ -3687,6 +3687,44 @@
 
 					}
 
+					.buy_caution {
+						margin-top: 15px;
+						color: $base_color1;
+
+						> li {
+							margin-top: 15px;
+							font-size: 14px;
+
+							&:first-child {
+								margin-top: 0;
+							}
+
+							ul {
+								margin-top: 10px;
+
+								li {
+									margin-top: 5px;
+									line-height: 18px;
+									letter-spacing: -1px;
+
+									&:first-child {
+										margin-top: 0;
+									}
+
+									span {
+										font-weight: bold;
+										color: $point_color1;
+										margin-left: 5px;
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
 					.fc_point1 {
 						color: $point_color1;
 						font-weight: bold;
