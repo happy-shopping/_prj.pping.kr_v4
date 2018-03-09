@@ -55,9 +55,9 @@ gulp.task('scss', function () {
     // .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(scss(scssOptions).on('error', scss.logError))
     // 위에서 생성한 소스맵을 사용한다.
-    // .pipe(sourcemaps.write({ addComment: false }))
+    .pipe(sourcemaps.write({ addComment: false }))
     // .pipe(sourcemaps.write())
-    .pipe(sourcemaps.write('../maps'))
+    // .pipe(sourcemaps.write('../maps'))
     // 목적지(destination)을 설정
     .pipe(gulp.dest(src + '/css'))
     .pipe(browserSync.reload({ stream : true }));
@@ -72,7 +72,7 @@ gulp.task('browserSync', ['html', 'scss'], function () {
    return browserSync.init({
        port : 3333,
        server: {
-           baseDir: 'C:/Workspace/DEV/Happy-Shopping/front.html.pping.kr'
+           baseDir: 'C:/Users/jeonj/happyshoppingEJ/front.html.pping.kr'
        }
    });
 });
