@@ -2031,6 +2031,10 @@
 								.name {
 									display: block;
 									padding: 0 15px;
+									button.ci {
+										background: none;
+										border: none;
+									}
 								}
 
 								.delivery {
