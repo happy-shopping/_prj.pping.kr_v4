@@ -1988,26 +1988,40 @@
 										@include box-sizing();
 									}
 
-									.nor + label {
+									.all + label {
 										border-width: 1px 0 1px 1px;
-										border-color: #0f4180;
+										border-color: $base_color3;
 										border-radius: 5px 0 0 5px;
 									}
 
+									.all:checked + label {
+										border-color: $point_color1;
+										background: $point_color1;
+									}
+
+									.all:checked + label + .nor + label {
+										border-width: 1px 1px 1px 0;
+									}
+
+									.nor + label {
+										border-width: 1px 0 1px 1px;
+										border-color: $base_color3;
+									}
+
 									.nor:checked + label {
-										border-color: #753ebe;
-										background: #956ccc;
+										border-color: #9933cc;
+										background: #9933cc;
 									}
 
 									.card + label {
 										border-width: 1px 1px 1px 0;
-										border-color: #753ebe;
+										border-color: $base_color3;
 										border-radius: 0 5px 5px 0;
 									}
 
 									.card:checked + label {
-										border-color: #0f4180;
-										background: #175aae;
+										border-color: #0f4f9f;
+										background: #0f4f9f;
 									}
 								}
 
