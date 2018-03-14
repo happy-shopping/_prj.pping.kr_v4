@@ -72,7 +72,7 @@ gulp.task('browserSync', ['html', 'scss'], function () {
    return browserSync.init({
        port : 3333,
        server: {
-           baseDir: 'C:/Users/jeonj/happyshoppingEJ/front.html.pping.kr'
+           baseDir: 'C:/Workspace/DEV/Happy-Shopping/front.html.pping.kr'
        }
    });
 });
