@@ -10,13 +10,14 @@
 	<link rel="shortcut icon" type="image/x-icon" href="//img.happyshopping.kr/img_static/img/_v3/pping.ico" />
 
     <!-- 웹폰트용 -->
-    <script src="https://ajax.pping.kr/font/js/hpping.webfont.js"></script>
+    <!-- <script src="https://ajax.pping.kr/font/js/hpping.webfont.js"></script>
     <script>
         const hpping = new hppingFont();
         hpping.init({
             href: 'https://ajax.pping.kr/font/css/hpping.webfont.css'
         });
-    </script>
+    </script> -->
+		<link rel="stylesheet" href="https://ajax.pping.kr/font/font.css" />
     <!-- // 웹폰트용 -->
 
 	<!-- <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/comm.css" />
@@ -185,19 +186,49 @@
                 <!-- gnb -->
                 <div class="gnb">
                     <ul>
-                        <li><a href="https://pc.pping.kr" target="_blank" class="btn-estimate">컴퓨터 견적</a></li>
-                        <li><a href="http://stdpc.pping.kr" target="_blank" class="btn-stdpc">행쇼 표준PC</a></li>
-                        <li><a href="https://notebook.pping.kr/" class="btn-notebook">노트북</a></li>
-                        <li><a href="https://www.pping.kr/event">이벤트 &amp; 기획전</a></li>
-                        <li><a href="http://talk.pping.kr/estpc" target="_blank">PC견적 상담</a></li>
-                        <li><a href="http://talk.pping.kr/dauc" target="_blank">PC견적 입찰</a></li>
+                        <li>
+													<!-- <em class="ico-new">N</em> -->
+													<a href="https://pc.pping.kr" target="_blank">컴퓨터 견적</a>
+												</li>
+                        <li>
+													<!-- <em class="ico-new">N</em> -->
+													<a href="http://stdpc.pping.kr" target="_blank">행쇼 표준PC</a>
+												</li>
+                        <li>
+													<!-- <em class="ico-new">N</em> -->
+													<a href="https://notebook.pping.kr/">노트북</a>
+												</li>
+                        <li class="view">
+													<em class="ico-new">N</em>
+													<button tyep="button">가전제품</button>
+													<span class="icon-angle-down"></span>
+                          <ul class="gnb-sub">
+                              <li><a href="#" class="btn1">주방가전</a></li>
+                              <li><a href="#" class="btn2">생활가전</a></li>
+                              <li><a href="#" class="btn3">계절가전</a></li>
+                              <li><a href="#" class="btn4">건강/미용가전</a></li>
+                              <li><a href="#" class="btn5">영상/음향가전</a></li>
+                          </ul>
+												</li>
+                        <li>
+													<em class="ico-new">N</em>
+													<a href="http://talk.pping.kr/estpc" target="_blank">자동차 용품</a>
+												</li>
+                        <li>
+													<!-- <em class="ico-new">N</em> -->
+													<a href="http://talk.pping.kr/dauc" target="_blank">이벤트&amp;기획전</a>
+												</li>
+                        <li>
+													<em class="ico-new">N</em>
+													<a href="http://talk.pping.kr/dauc" target="_blank">커뮤니티</a>
+												</li>
                         <li class="happyhotdeal"><a href="http://talk.pping.kr/dauc" target="_blank" class="btn-happyhotdeal">행복핫딜</a></li>
                     </ul>
                 </div>
                 <!-- // gnb -->
 
                 <div class="nav">
-                    <div class="nav-category">
+                    <!-- <div class="nav-category">
                         <h2 class="tit-h2">상품 분류</h2>
                         <div class="sub">
                             <ul>
@@ -208,11 +239,11 @@
                                 <li><a href="#" class="btn5">디지털 완제품</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- nav-brand -->
                     <div class="nav-brand">
-                        <h2 class="tit-h2">브랜드</h2>
+                        <h2 class="tit-h2">브랜드&nbsp;<em class="icon-angle-down"></em></h2>
 
                         <div class="sub">
                             <div class="sub_keyword">

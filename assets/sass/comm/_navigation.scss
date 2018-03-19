@@ -4,13 +4,13 @@
 .gnb {
 	float: left;
 
-	ul {
+	ul:not(.gnb-sub) {
 		@include clear;
 
-		li {
+		> li {
 			float: left;
 			height: 48px;
-			margin-left: 40px;
+			margin-left: 30px;
 			padding-top: 12px;
 			box-sizing: border-box;
 			@include breakpoint(max-width 1209px) {
@@ -21,15 +21,117 @@
 				margin-left: 0;
 			}
 
-			a {
+			.ico-new {
+				position: relative;
+				top: -5px;
+				left: 0;
+				border-radius: 15px;
+				width: 15px;
+				height: 15px;
+				background-color: $point_color2;
+				color: #fff;
+				font-weight: bold;
+				padding: 1px 4px 2px;
+				box-sizing: border-box;
+				font-size: 10px;
+			}
+
+			.icon-angle-down {
+				&:before {
+					font-size: 18px;
+					font-weight: bold;
+					position: relative;
+					left: 2px;
+					top: 2px;
+				}
+			}
+
+			&.view {
+				position: relative;
+
+				&:hover {
+					.gnb-sub {
+						visibility: visible;
+					}
+				}
+				.gnb-sub {
+					visibility: hidden;
+					position: absolute;
+					right: -30px;
+					top: 48px;
+					padding: 1px;
+					border: 1px solid #0f4f9f;
+					background: #fff;
+					z-index: 50;
+					width: 150px;
+					height: 212px;
+					box-sizing: border-box;
+					li > a {
+							display: block;
+					    width: 150px;
+					    height: 42px;
+					    padding-left: 48px;
+					    font-size: 13px;
+					    color: $base_color2;
+					    font-weight: bold;
+					    line-height: 42px;
+					    box-sizing: border-box;
+							&:hover {
+								color: $base_color1;
+							}
+							&:before {
+						    content: "";
+						    display: block;
+						    position: absolute;
+						    left: 1px;
+								width: 40px;
+								height: 40px;
+						    background: #bcc219 url(https://img.happyshopping.kr/img_static/img_pres/_v3/sprite_2.png) no-repeat;
+							}
+							&.btn1:before {
+							    background-position: -281px -848px;
+							}
+							&.btn2:before {
+							    background-position: -334px -848px;
+							}
+							&.btn3:before {
+							    background-position: -385px -848px;
+							}
+							&.btn4:before {
+							    background-position: -438px -848px;
+							}
+							&.btn5:before {
+							    background-position: -495px -849px;
+							}
+					}
+					&:after {
+					    content: "";
+					    position: absolute;
+					    top: -7px;
+					    left: 50%;
+					    width: 13px;
+					    height: 7px;
+					    margin-left: -6.5px;
+					    background: url(https://img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png) no-repeat -76px -5px;
+					}
+				}
+
+			}
+
+			a, button {
 				display: inline-block;
 				font-size: 14px;
 				color: $base_color1;
 				font-weight: bold;
 				line-height: 22px;
+				background: none;
+				border: none;
 
 				&:hover {
 					color: $point_color1;
+					+.icon-angle-down {
+						color: $point_color1;
+					}
 				}
 
 				&.btn-estimate {
