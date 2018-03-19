@@ -1935,3 +1935,95 @@
 	margin-top: 50px;
 	text-align: center;
 }
+
+// 레이어팝업 공통
+.layer-pop {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 90;
+
+	&:before {
+		content: "";
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(255, 255, 255, 0.75);
+	}
+
+	.layer-pop_header {
+		[class^="tit-"] {
+			height: 40px;
+			font-size: 20px;
+			border-bottom: 1px solid #333;
+		}
+
+		@include clear;
+	}
+
+	.btn-layer-pop_clse {
+		position: absolute;
+		top: 23px;
+		right: 20px;
+		@include btn(15px, 15px, 0, null, transparent);
+	}
+
+}
+.layer_terms {
+	z-index: 100;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include box-sizing;
+	width: 800px;
+	height: 600px;
+	margin: -300px 0 0 -400px;
+	padding: 20px;
+	border: #333 solid 2px;
+	background-color: white(1);
+
+	.pcon {
+		position: relative;
+		height: 490px;
+		margin-top: 20px;
+		overflow: auto;
+		color: #999;
+		line-height: 1.5em;
+	}
+
+	@include breakpoint(0 $responsive_break_width) {
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0;
+		width: auto;
+		height: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		background-color: white(.9);
+
+		.layer-pop_header {
+			position: absolute;
+			top: 20px;
+			left: 10px;
+			right: 10px;
+		}
+
+		.pcon {
+			position: absolute;
+			top: 51px;
+			left: 10px;
+			right: 10px;
+			bottom: 10px;
+			height: auto;
+		}
+
+	}
+
+}
