@@ -4,6 +4,7 @@ sftp-config.json
 assets/css
 assets/sass/utils/_vivify.scss
 <<<<<<< HEAD
+.gulpfile.js
 =======
 assets/maps
 gulpfile.js

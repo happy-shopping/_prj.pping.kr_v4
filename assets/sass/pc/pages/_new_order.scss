@@ -1526,8 +1526,12 @@
 
 	.btn-happypoint:hover ~ .layer-happypoint {
 		opacity: 1;
-		left: 44px;
-		margin-top: -13px;
+		left: 645px;
+		margin-top: -5px;
+		@include breakpoint(max-width 1209px) {
+			left: 524px;
+			margin-top: -5px;
+		}
 	}
 
 	.btn-safenumber-guide:hover ~ .layer-safenumber {
