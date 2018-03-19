@@ -213,7 +213,7 @@
 				padding-right: 10px;
 				font-size: 18px;
 				text-align: right;
-				line-height: 93px;
+				line-height: 103px;
 
 				span {
 					margin-left: 15px;
@@ -238,6 +238,11 @@
 					letter-spacing: 0
 				}
 
+				em {
+					color: $point_color1;
+					letter-spacing: 0
+				}
+
 				.btn_delivery_info {
 					@include btn(null, 20px, 0, $base_color2, transparent);
 					vertical-align: top;
@@ -252,7 +257,7 @@
 		}
 
 		.total_price {
-			height: 93px;
+			height: 103px;
 			border-top: 2px solid $point_color1;
 			border-bottom: 2px solid $point_color1;
 			background: #ecf3fd;
@@ -411,8 +416,8 @@
 				}
 
 				.total_price {
-					height: 73px;
-					padding-top: 20px;
+					height: 88px;
+					padding-top: 15px;
 					text-align: center;
 
 					strong {
@@ -425,8 +430,22 @@
 					.btn-buy {
 						font-size: 14px;
 						font-weight: bold;
+						margin-bottom: 5px;
 						@include btn (78px, 32px, 0, #fff);
 					}
+
+					.ico-cash-receipt {
+						color: $base_color2;
+						width: 68px;
+						height: 21px;
+						font-size: 11px;
+						text-align: center;
+						background: url('//img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png') no-repeat 0px -1369px;
+						display: inline-block;
+				    padding-top: 6px;
+						box-sizing: border-box;
+					}
+
 				}
 
 				&.greatseller {
