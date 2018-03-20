@@ -392,6 +392,116 @@
 			}
 		}
 
+		.search-auto-result {
+
+			box-sizing: border-box;
+			width: 540px;
+			border: $base_color2 1px solid;
+			background-color: #fff;
+			font-size: 14px;
+			position: absolute;
+	    left: 229px;
+	    top: 117px;
+
+			@include breakpoint(max-width 1209px) {
+				width: 410px;
+			}
+
+			&.on {
+				display: block;
+			}
+			&.off {
+				display: none;
+			}
+
+			.result-title {
+				font-size: 12px;
+				font-weight: 400;
+				height: 30px;
+				padding: 8px 0 8px 15px;
+				box-sizing: border-box;
+				color: $base_color2;
+				border-bottom: 1px solid #f2f2f2;
+
+				strong, button {
+					display: inline-block;
+				}
+				strong {
+					width: 450px;
+					text-align: left;
+					@include breakpoint(max-width 1209px) {
+						width: 320px;
+					}
+				}
+
+				button {
+					background: none;
+					border: none;
+					width: 55px;
+					text-align: right;
+				}
+			}
+			.result-list {
+
+				> .no-result {
+					padding: 50px 0;
+					text-align: center;
+					box-sizing: border-box;
+					font-size: 14px;
+					font-weight: bold;
+					height: 30px;
+					color: $base-color1;
+				}
+
+				> ul > li {
+					padding: 5px 0 5px 15px;
+					box-sizing: border-box;
+					font-size: 14px;
+					font-weight: bold;
+					height: 30px;
+
+					&:hover {
+						background-color: #f8f8f8;
+					}
+
+					span, button, a {
+						display: inline-block;
+						background: none;
+						border: none;
+
+						&.title {
+							width: 415px;
+							box-sizing: border-box;
+							font-weight: bold;
+							color: $base-color1;
+							cursor: pointer;
+							text-align: left;
+							@include breakpoint(max-width 1209px) {
+								width: 285px;
+							}
+						}
+
+						&.date {
+							width: 73px;
+	    				text-align: right;
+							color: $base-color3;
+						}
+
+						&.del {
+							color: $base-color3;
+							cursor: pointer;
+							width: 10px;
+					    font-size: 11px;
+					    position: relative;
+					    top: -1px;
+					    text-align: right;
+						}
+					}
+
+				}
+			}
+		}
+
 		.header-body_adv {
 			position: absolute;
 			right: 0;
