@@ -809,6 +809,9 @@ $size960: '(min-width: 961px)';
 
 // icons
 // 컴퓨터 주변부품
+$btn_all: -1px -4px;
+$btn_all_on: -251px -4px;
+
 $btn_cpu: -1px -46px;
 $btn_cpu_on: -250px -46px;
 
@@ -836,8 +839,8 @@ $btn_case_on: -250px -353px;
 $btn_power: -1px -398px;
 $btn_power_on: -250px -398px;
 
-$btn_cooler: -1px -442px;
-$btn_cooler_on: -250px -442px;
+$btn_cooler_tunning: -1px -442px;
+$btn_cooler_tunning_on: -250px -442px;
 
 $btn_keyboard: -1px -484px;
 $btn_keyboard_on: -250px -484px;

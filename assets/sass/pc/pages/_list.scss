@@ -122,7 +122,7 @@
 				}
 
 			}
-		
+
 		}
 
 		.cart-body_compare_sum + .button-group {
@@ -201,7 +201,7 @@
 			}
 
 		}
-		
+
 		// 중간 광고
 		.list-body_items_adv {
 			margin-top: 40px;
@@ -1544,7 +1544,16 @@
 		ul {
 			overflow: hidden;
 			margin-top: -5px;
+			margin-left: 10px;
+			padding-left: 10px;
+			border-left: 1px solid #d3d3d3;
 			@include clear;
+
+			&:first-child {
+				border-left: none;
+				margin-left: 0;
+				padding-left: 0;				
+			}
 
 			li {
 				position: relative;
@@ -1560,11 +1569,20 @@
 					position: absolute;
 					right: 0;
 					top: 0;
-					@include btn(20px, 20px, 0, $base_color2, transparent);					
+					@include btn(20px, 20px, 0, $base_color2, transparent);
 				}
 
 				&.btn_all_del {
 					background: #f2f2f2;
+					padding: 0 5px;
+				}
+
+				&.search_result {
+					background: #fafcfe;
+					border: 1px solid $point_color1;
+					&:hover {
+						border-color: $point_color1;
+					}
 				}
 
 				&:last-child {
@@ -1639,7 +1657,7 @@
 
 							em {
 								font-size: 24px;
-								color: $point_color1; 
+								color: $point_color1;
 							}
 						}
 
