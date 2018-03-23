@@ -1430,7 +1430,7 @@
 									> li {
 										position: relative;
 										float: left;
-										margin-right: 20px;
+										margin-right: 18px;
 										font-size: 0;
 
 										.btn_sort {
@@ -1662,6 +1662,7 @@
 							.compare_buy_body_list {
 								border-top: 1px solid #cdcdcd;
 								height: 100%;
+                                min-height: 300px;
 								position: relative;
 
 								.compare_buy_item_box {
@@ -1747,7 +1748,7 @@
 
 								.compare_buy_item_minishop {
 									position: relative;
-									padding: 25px 10px;
+									padding: 22px 10px 12px;
 									border-top: 1px solid #ececec;
 
 									&.soldout {
