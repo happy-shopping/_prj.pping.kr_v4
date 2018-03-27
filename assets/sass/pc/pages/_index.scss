@@ -1096,6 +1096,7 @@
 				.tit-h2 {
 					height: 34px;
 					font-size: 18px;
+                    padding-top: 10px;
 				}
 
 				.curation_list {
@@ -1198,6 +1199,12 @@
 							float: left;
 							width: calc(100% - 402px);
 							height: 578px;
+
+                            .soon {
+                                text-align: center;
+                                position: relative;
+                                top: 90px;
+                            }
 
 							.curation_box_items_list {
 								position: relative;
