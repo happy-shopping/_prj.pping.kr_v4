@@ -11,7 +11,7 @@
 		padding-top: 20px;
 		@include default_width;
 
-		// 최근 본 상품 
+		// 최근 본 상품
 		.product-lately {
 			margin-bottom: 50px;
 
@@ -21,7 +21,7 @@
 				font-size: 18px;
 			}
 		}
-		
+
 		// 장바구니 상품
 		.product-basket {
 			margin-bottom: 50px;
@@ -77,7 +77,7 @@
 						left: 50%;
 						width: 1000%;
 						margin-left: -500%;
-						height: 77px;
+						height: 90px;
 						border-top: 2px solid $point_color1;
 						border-bottom: 1px solid #d3d0e1;
 						font-size: 0;
@@ -91,14 +91,14 @@
 
 						.btn_all_cate {
 							font-size: 34px;
-							@include btn(78px, 77px, 0, #fff, $point_color1);
+							@include btn(78px, 90px, 0, #fff, $point_color1);
 						}
 
 						.lnb_curation_nav_cate_list {
 							position: absolute;
 							left: 0;
-							top: 77px;
-							width: 190px;
+							top: 90px;
+							width: 197px;
 
 							li {
 								border-bottom: 1px solid #fff;
@@ -126,24 +126,32 @@
 
 						.lnb_curation_nav_list_in {
 							.lnb_curation_nav_list_cates {
+								position: relative;
+								left: 0;
+								box-sizing: border-box;
 								overflow: hidden;
 								@include clear;
 
 								li {
 									float: left;
 									border-left: 1px solid #d3d0e1;
-									
+
 									// 아이콘
 									.btn {
 										display: block;
-										padding-top: 48px;
+										padding-top: 43px;
 										font-weight: bold;
 										background-image: url("//img.happyshopping.kr/img_static/img_pres/_v3/sprite_2.png");
 										background-repeat: no-repeat;
-										@include btn(88px, 77px, 0, $base_color1, #fff);
+										@include btn(79px, 90px, 0, $base_color1, #fff);
+										position: relative;
+										// left: -5px;
 
 										span {
 											display: block;
+											word-break: keep-all;
+                                            height: 18px;
+                                            line-height: 14px;
 										}
 
 										&:hover {
@@ -151,481 +159,894 @@
 										}
 
 										// 컴퓨터 주요부품
-										&.btn_cpu {
-											background-position: -114px 0;
+										&.ico_1010100000 {
+											background-position: -119px 0;
 										}
 
-										&.btn_mainboard {
-											background-position: -205px 0;
+										&.ico_1010200000 {
+											background-position: -210px 0;
 										}
 
-										&.btn_memory {
-											background-position: -296px 0;
+										&.ico_1010300000 {
+											background-position: -301px 0;
 										}
 
-										&.btn_hdd {
-											background-position: -567px 0;
+										&.ico_1010400000 {
+											background-position: -572px 0;
 										}
 
-										&.btn_ssd {
-											background-position: -477px 0;
+										&.ico_1010500000 {
+											background-position: -481px 0;
 										}
 
-										&.btn_graphic {
-											background-position: -387px 0;
+										&.ico_1010600000 {
+											background-position: -392px 0;
 										}
 
-										&.btn_odd {
-											background-position: -658px 0;
+										&.ico_1010700000 {
+											background-position: -662px 0;
 										}
 
-										&.btn_case {
-											background-position: -751px 0;
+										&.ico_1010800000 {
+											background-position: -755px 0;
 										}
 
-										&.btn_power {
-											background-position: -842px 0;
+										&.ico_1010900000 {
+											background-position: -845px 0;
 										}
 
-										&.btn_coolerntuning {
-											background-position: -115px -95px;
+										&.ico_1011000000 {
+											background-position: -120px -95px;
 										}
 
-										&.btn_keyboard {
-											background-position: -205px -95px;
+										&.ico_1011100000 {
+											background-position: -209px -95px;
 										}
 
-										&.btn_mouse {
-											background-position: -296px -95px;
+										&.ico_1011201000 {
+											background-position: -300px -95px;
 										}
 
-										&.btn_tablet {
-											background-position: -387px -95px;
+										&.ico_1011202000 {
+											background-position: -390px -95px;
 										}
 
 										// 컴퓨터 주변기기
-										&.btn_monitor {
-											background-position: -115px -190px;
+										&.ico_1020100000 {
+											background-position: -120px -190px;
 										}
 
-										&.btn_speaker {
-											background-position: -385px -190px;
+										&.ico_1020201000 {
+											background-position: -391px -190px;
 										}
 
-										&.btn_headset {
-											background-position: -205px -190px;
+										&.ico_1020202000 {
+											background-position: -211px -190px;
 										}
 
-										&.btn_sound {
-											background-position: -296px -190px;
+										&.ico_1020203000 {
+											background-position: -300px -190px;
 										}
 
-										&.btn_printer {
-											background-position: -568px -190px;
+										&.ico_1020301000 {
+											background-position: -573px -190px;
 										}
 
-										&.btn_combo {
-											background-position: -478px -190px;
+										&.ico_1020302000 {
+											background-position: -483px -190px;
 										}
 
-										&.btn_scaner {
-											background-position: -660px -190px;
+										&.ico_1020303000 {
+											background-position: -664px -190px;
 										}
 
-										&.btn_cam {
-											background-position: -478px -285px;
+										&.ico_1020401000 {
+											background-position: -483px -285px;
 										}
 
-										&.btn_cctv {
-											background-position: -387px -285px;
+										&.ico_1020402000 {
+											background-position: -392px -285px;
 										}
 
-										&.btn_wifi {
-											background-position: -296px -285px;
+										&.ico_1020501000 {
+											background-position: -300px -285px;
 										}
 
-										&.btn_network {
-											background-position: -205px -285px;
+										&.ico_1020503000 {
+											background-position: -210px -285px;
 										}
 
-										&.btn_usb {
-											background-position: -205px -285px;
+										&.ico_1020601000 {
+											background-position: -210px -285px;
 										}
 
-										&.btn_exthdd {
-											background-position: -751px -190px;
+										&.ico_1020602000 {
+											background-position: -757px -190px;
 										}
 
-										&.btn_nas {
-											background-position: -842px -190px;
+										&.ico_1020603000 {
+											background-position: -846px -190px;
 										}
 
-										&.btn_cable {
-											background-position: -842px -285px;
+										&.ico_1020701000 {
+											background-position: -851px -285px;
 										}
 
-										&.btn_controller {
-											background-position: -569px -285px;
+										&.ico_1020702000 {
+											background-position: -576px -285px;
 										}
 
-										&.btn_dvi {
-											background-position: -660px -285px;
+										&.ico_1020703000 {
+											background-position: -665px -285px;
 										}
 
-										&.btn_usbhub {
-											background-position: -751px -285px;
+										&.ico_1020704000 {
+											background-position: -757px -285px;
 										}
 
 										// 소프트웨어/전산소모품
-										&.btn_soft {
-											background-position: -112px -380px;
+										&.ico_1030100000 {
+											background-position: -116px -380px;
 										}
 
-										&.btn_emptymedia {
-											background-position: -388px -380px;
+										&.ico_1030201000 {
+											background-position: -393px -380px;
 										}
 
-										&.btn_paper {
-											background-position: -205px -380px;
+										&.ico_1030202000 {
+											background-position: -212px -380px;
 										}
 
-										&.btn_exp {
-											background-position: -297px -380px;
+										&.ico_1030203000 {
+											background-position: -302px -380px;
 										}
 
-										&.btn_ink {
-											background-position: -568px -380px;
+										&.ico_1030301000 {
+											background-position: -574px -380px;
 										}
 
-										&.btn_toner {
-											background-position: -481px -380px;
+										&.ico_1030302000 {
+											background-position: -488px -380px;
 										}
 
 										// DSLR/디카/캠코더
-										&.btn_memorycard {
-											background-position: -205px -475px;
+										&.ico_1040201000 {
+											background-position: -210px -475px;
 										}
 
-										&.btn_reader {
-											background-position: -115px -475px;
+										&.ico_1040202000 {
+											background-position: -119px -475px;
 										}
 
 										// 디지털 완제품
-										&.btn_notebook {
-											background-position: -114px -576px;
+										&.ico_1050101000 {
+											background-position: -118px -570px;
 										}
 
-										&.btn_tabletpc {
-											background-position: -205px -570px;
+										&.ico_1050201000 {
+											background-position: -210px -570px;
 										}
 
-										&.btn_adapter {
+										&.ico_1050301001 {
 											background-position: -303px -570px;
 										}
 
-										&.btn_battery {
-											background-position: -387px -570px;;
+										&.ico_1050301002 {
+											background-position: -393px -570px;;
 										}
 
-										&.btn_notebookskin {
-											background-position: -660px -570px;
+										&.ico_1050302001 {
+											background-position: -664px -570px;
 										}
 
-										&.btn_keyboardskin {
-											background-position: -116px -665px;
+										&.ico_1050302002 {
+											background-position: -121px -665px;
 										}
 
-										&.btn_protectfilm {
-											background-position: -843px -570px;
+										&.ico_1050302003 {
+											background-position: -846px -570px;
 										}
 
-										&.btn_notebookbag {
-											background-position: -208px -665px;
+										&.ico_1050302004 {
+											background-position: -214px -665px;
 										}
 
-										&.btn_protect {
-											background-position: -750px -570px;
+										&.ico_1050302005 {
+											background-position: -757px -570px;
 										}
 
-										&.btn_cooler {
-											background-position: -296px -665px;
+										&.ico_1050304001 {
+											background-position: -301px -665px;
 										}
 
-										&.btn_coolpad {
-											background-position: -387px -665px;
+										&.ico_1050304002 {
+											background-position: -391px -665px;
 										}
 
-										&.btn_stand {
-											background-position: -479px -665px;
+										&.ico_1050304003 {
+											background-position: -485px -665px;
 										}
 
-										&.btn_doking {
-											background-position: -571px -665px;
+										&.ico_1050304004 {
+											background-position: -576px -665px;
 										}
 
-										&.btn_multiboost {
-											background-position: -479px -570px;
+										&.ico_1050308004 {
+											background-position: -484px -570px;
 										}
 
-										&.btn_portlink {
-											background-position: -571px -570px;
+										&.ico_1050308005 {
+											background-position: -572px -570px;
 										}
 
-										&.btn_tabletcase {
-											background-position: -661px -665px;
+										&.ico_1050401000 {
+											background-position: -666px -665px;
 										}
 
-										&.btn_tabletfilm {
-											background-position: -754px -665px;
+										&.ico_1050402000 {
+											background-position: -757px -665px;
 										}
 
-										&.btn_minipc {
-											background-position: -842px -665px;
+										&.ico_1050502000 {
+											background-position: -848px -665px;
 										}
 
-										&.btn_brandpc {
-											background-position: -119px -760px;
+										&.ico_1050603000 {
+											background-position: -124px -760px;
+										}
+
+                                        // 주방가전
+										&.ico_1070100000 {
+											background-position: -20px -970px;
+										}
+
+										&.ico_1070200000 {
+											background-position: -98px -970px;
+										}
+
+										&.ico_1070300000 {
+											background-position: -177px -970px;
+										}
+
+										&.ico_1070400000 {
+											background-position: -256px -970px;
+										}
+
+										&.ico_1070500000 {
+											background-position: -335px -970px;
+										}
+
+										&.ico_1070600000 {
+											background-position: -415px -970px;
+										}
+
+										&.ico_1070700000 {
+											background-position: -492px -970px;
+										}
+
+										&.ico_1070800000 {
+											background-position: -572px -970px;
+										}
+
+										&.ico_1070900000 {
+											background-position: -652px -970px;
+										}
+
+										&.ico_1071000000 {
+											background-position: -732px -970px;
+										}
+
+                                        // 생활가전
+										&.ico_1080100000 {
+											background-position: -20px -1118px;
+										}
+
+										&.ico_1080200000 {
+											background-position: -98px -1118px;
+										}
+
+										&.ico_1080300000 {
+											background-position: -177px -1118px;
+										}
+
+										&.ico_1080400000 {
+											background-position: -256px -1118px;
+										}
+
+										&.ico_1080500000 {
+											background-position: -335px -1118px;
+										}
+
+										&.ico_1080600000 {
+											background-position: -415px -1118px;
+										}
+
+										&.ico_1080700000 {
+											background-position: -492px -1118px;
+										}
+
+										&.ico_1080800000 {
+											background-position: -572px -1118px;
+										}
+
+										&.ico_1080900000 {
+											background-position: -652px -1118px;
+										}
+
+                                        // 계절가전
+										&.ico_1090100000 {
+											background-position: -18px -1263px;
+										}
+
+										&.ico_1090200000 {
+											background-position: -98px -1263px;
+										}
+
+										&.ico_1090300000 {
+											background-position: -178px -1263px;
+										}
+
+										&.ico_1090400000 {
+											background-position: -256px -1263px;
+										}
+
+										&.ico_1090500000 {
+											background-position: -335px -1263px;
+										}
+
+										&.ico_1090600000 {
+											background-position: -415px -1263px;
+										}
+
+                                        // 건강미용가전
+										&.ico_1100100000 {
+											background-position: -18px -1410px;
+										}
+
+										&.ico_1100200000 {
+											background-position: -98px -1410px;
+										}
+
+										&.ico_1100300000 {
+											background-position: -178px -1410px;
+										}
+
+										&.ico_1100400000 {
+											background-position: -256px -1410px;
+										}
+
+										&.ico_1100500000 {
+											background-position: -335px -1410px;
+										}
+
+										&.ico_1100600000 {
+											background-position: -415px -1410px;
+										}
+
+                                        // 영상음향가전
+										&.ico_1110100000 {
+											background-position: -18px -1555px;
+										}
+
+										&.ico_1110200000 {
+											background-position: -98px -1555px;
+										}
+
+										&.ico_1110300000 {
+											background-position: -178px -1555px;
+										}
+
+										&.ico_1110400000 {
+											background-position: -256px -1555px;
+										}
+
+										&.ico_1110500000 {
+											background-position: -335px -1555px;
+										}
+
+										&.ico_1110600000 {
+											background-position: -415px -1555px;
+										}
+
+                                        &.ico_1110700000 {
+											background-position: -492px -1555px;
+										}
+
+										&.ico_1110800000 {
+											background-position: -572px -1555px;
+										}
+
+                                        // 자동차 용품
+										&.ico_1120100000 {
+											background-position: -18px -1706px;
+										}
+
+										&.ico_1120200000 {
+											background-position: -98px -1706px;
+										}
+
+										&.ico_1120300000 {
+											background-position: -178px -1706px;
+										}
+
+										&.ico_1120400000 {
+											background-position: -256px -1706px;
+										}
+
+										&.ico_1120500000 {
+											background-position: -335px -1706px;
+										}
+
+										&.ico_1120600000 {
+											background-position: -415px -1706px;
+										}
+
+                                        &.ico_1120700000 {
+											background-position: -492px -1706px;
+										}
+
+										&.ico_1120800000 {
+											background-position: -572px -1706px;
+										}
+
+										&.ico_1120900000 {
+											background-position: -652px -1706px;
+										}
+
+										&.ico_1121000000 {
+											background-position: -732px -1706px;
+										}
+
+										&.ico_1121100000 {
+											background-position: -810px -1706px;
 										}
 
 										&.active {
 											color: #fff;
 
 											// 컴퓨터 주요부품
-											&.btn_cpu {
-												background-position: -932px 0;
+											&.ico_1010100000 {
+												background-position: -938px 0;
 											}
 
-											&.btn_mainboard {
-												background-position: -1023px 0;
+											&.ico_1010200000 {
+												background-position: -1029px 0;
 											}
 
-											&.btn_memory {
-												background-position: -1114px 0;
+											&.ico_1010300000 {
+												background-position: -1119px 0;
 											}
 
-											&.btn_hdd {
-												background-position: -1384px 0;
+											&.ico_1010400000 {
+												background-position: -1389px 0;
 											}
 
-											&.btn_ssd {
-												background-position: -1295px 0;
+											&.ico_1010500000 {
+												background-position: -1300px 0;
 											}
 
-											&.btn_graphic {
-												background-position: -1205px 0;
+											&.ico_1010600000 {
+												background-position: -1210px 0;
 											}
 
-											&.btn_odd {
-												background-position: -1476px 0;
+											&.ico_1010700000 {
+												background-position: -1481px 0;
 											}
 
-											&.btn_case {
-												background-position: -1568px 0;
+											&.ico_1010800000 {
+												background-position: -1573px 0;
 											}
 
-											&.btn_power {
-												background-position: -1660px 0;
+											&.ico_1010900000 {
+												background-position: -1665px 0;
 											}
 
-											&.btn_coolerntuning {
-												background-position: -933px -95px;
+											&.ico_1011000000 {
+												background-position: -942px -95px;
 											}
 
-											&.btn_keyboard {
-												background-position: -1023px -95px;
+											&.ico_1011100000 {
+												background-position: -1028px -95px;
 											}
 
-											&.btn_mouse {
-												background-position: -1113px -95px;
+											&.ico_1011201000 {
+												background-position: -1117px -95px;
 											}
 
-											&.btn_tablet {
-												background-position: -1204px -95px;
+											&.ico_1011202000 {
+												background-position: -1207px -95px;
 											}
 
 											// 컴퓨터 주변기기
-											&.btn_monitor {
-												background-position: -934px -190px;
+											&.ico_1020100000 {
+												background-position: -940px -190px;
 											}
 
-											&.btn_speaker {
-												background-position: -1204px -190px;
+											&.ico_1020201000 {
+												background-position: -1209px -190px;
 											}
 
-											&.btn_headset {
-												background-position: -1025px -190px;
+											&.ico_1020202000 {
+												background-position: -1030px -190px;
 											}
 
-											&.btn_sound {
-												background-position: -1114px -190px;
+											&.ico_1020203000 {
+												background-position: -1120px -190px;
 											}
 
-											&.btn_printer {
-												background-position: -1389px -190px;
+											&.ico_1020301000 {
+												background-position: -1392px -190px;
 											}
 
-											&.btn_combo {
-												background-position: -1298px -190px;
+											&.ico_1020302000 {
+												background-position: -1302px -190px;
 											}
 
-											&.btn_scaner {
-												background-position: -1480px -190px;
+											&.ico_1020303000 {
+												background-position: -1484px -190px;
 											}
 
-											&.btn_cam {
-												background-position: -1298px -285px;
+											&.ico_1020401000 {
+												background-position: -1303px -285px;
 											}
 
-											&.btn_cctv {
-												background-position: -1207px -285px;
+											&.ico_1020402000 {
+												background-position: -1211px -285px;
 											}
 
-											&.btn_wifi {
-												background-position: -1114px -285px;
+											&.ico_1020501000 {
+												background-position: -1121px -285px;
 											}
 
-											&.btn_network {
-												background-position: -1025px -285px;
+											&.ico_1020503000 {
+												background-position: -1030px -285px;
 											}
 
-											&.btn_usb {
-												background-position: -1025px -285px;
+											&.ico_1020601000 {
+												background-position: -1029px -285px;
 											}
 
-											&.btn_exthdd {
-												background-position: -1571px -190px;
+											&.ico_1020602000 {
+												background-position: -1576px -190px;
 											}
 
-											&.btn_nas {
-												background-position: -1659px -190px;
+											&.ico_1020603000 {
+												background-position: -1665px -190px;
 											}
 
-											&.btn_cable {
-												background-position: -1666px -285px;
+											&.ico_1020701000 {
+												background-position: -1670px -285px;
 											}
 
-											&.btn_controller {
-												background-position: -1389px -285px;
+											&.ico_1020702000 {
+												background-position: -1394px -285px;
 											}
 
-											&.btn_dvi {
-												background-position: -1479px -285px;
+											&.ico_1020703000 {
+												background-position: -1484px -285px;
 											}
 
-											&.btn_usbhub {
-												background-position: -1571px -285px;
+											&.ico_1020704000 {
+												background-position: -1576px -285px;
 											}
 
 											// 소프트웨어/전산소모품
-											&.btn_soft {
-												background-position: -931px -380px;
+											&.ico_1030100000 {
+												background-position: -935px -380px;
 											}
 
-											&.btn_emptymedia {
-												background-position: -1207px -380px;
+											&.ico_1030201000 {
+												background-position: -1213px -380px;
 											}
 
-											&.btn_paper {
-												background-position: -1026px -380px;
+											&.ico_1030202000 {
+												background-position: -1031px -380px;
 											}
 
-											&.btn_exp {
-												background-position: -1116px -380px;
+											&.ico_1030203000 {
+												background-position: -1121px -380px;
 											}
 
-											&.btn_ink {
-												background-position: -1388px -380px;
+											&.ico_1030301000 {
+												background-position: -1393px -380px;
 											}
 
-											&.btn_toner {
-												background-position: -1300px -380px;
+											&.ico_1030302000 {
+												background-position: -1306px -380px;
 											}
 
 											// DSLR/디카/캠코더
-											&.btn_memorycard {
-												background-position: -1025px -475px;
+											&.ico_1040201000 {
+												background-position: -1029px -475px;
 											}
 
-											&.btn_reader {
-												background-position: -934px -475px;
+											&.ico_1040202000 {
+												background-position: -939px -475px;
 											}
 
 											// 디지털 완제품
-											&.btn_notebook {
-												background-position: -934px -570px;
+											&.ico_1050101000 {
+												background-position: -938px -570px;
 											}
 
-											&.btn_tabletpc {
-												background-position: -1023px -570px;
+											&.ico_1050201000 {
+												background-position: -1028px -570px;
 											}
 
-											&.btn_adapter {
-												background-position: -1123px -570px;
+											&.ico_1050301001 {
+												background-position: -1122px -570px;
 											}
 
-											&.btn_battery {
-												background-position: -1208px -570px;
+											&.ico_1050301002 {
+												background-position: -1211px -570px;
 											}
 
-											&.btn_notebookskin {
+											&.ico_1050302001 {
 												background-position: -1480px -570px;
 											}
 
-											&.btn_keyboardskin {
-												background-position: -936px -665px;
+											&.ico_1050302002 {
+												background-position: -940px -665px;
 											}
 
-											&.btn_protectfilm {
-												background-position: -1661px -570px;
+											&.ico_1050302003 {
+												background-position: -1665px -570px;
 											}
 
-											&.btn_notebookbag {
-												background-position: -1027px -665px;
+											&.ico_1050302004 {
+												background-position: -1035px -665px;
 											}
 
-											&.btn_protect {
-												background-position: -1568px -570px;
+											&.ico_1050302005 {
+												background-position: -1575px -570px;
 											}
 
-											&.btn_cooler {
-												background-position: -1116px -665px;
+											&.ico_1050304001 {
+												background-position: -1119px -665px;
 											}
 
-											&.btn_coolpad {
-												background-position: -1205px -665px;
+											&.ico_1050304002 {
+												background-position: -1211px -665px;
 											}
 
-											&.btn_stand {
-												background-position: -1299px -665px;
+											&.ico_1050304003 {
+												background-position: -1304px -665px;
 											}
 
-											&.btn_doking {
-												background-position: -1391px -665px;
+											&.ico_1050304004 {
+												background-position: -1395px -665px;
 											}
 
-											&.btn_multiboost {
-												background-position: -1298px -570px;
+											&.ico_1050308004 {
+												background-position: -1302px -570px;
 											}
 
-											&.btn_portlink {
-												background-position: -1387px -570px;
+											&.ico_1050308005 {
+												background-position: -1391px -570px;
 											}
 
-											&.btn_tabletcase {
-												background-position: -1480px -665px;
+											&.ico_1050401000 {
+												background-position: -1485px -665px;
 											}
 
-											&.btn_tabletfilm {
-												background-position: -1479px -570px;
+											&.ico_1050402000 {
+												background-position: -1484px -570px;
 											}
 
-											&.btn_minipc {
-												background-position: -1662px -665px;
+											&.ico_1050502000 {
+												background-position: -1667px -665px;
 											}
 
-											&.btn_brandpc {
-												background-position: -939px -760px;
+											&.ico_1050603000 {
+												background-position: -942px -760px;
 											}
+
+                                            // 주방가전
+    										&.ico_1070100000 {
+    											background-position: -932px -970px;
+    										}
+
+    										&.ico_1070200000 {
+    											background-position: -1010px -970px;
+    										}
+
+    										&.ico_1070300000 {
+    											background-position: -1089px -970px;
+    										}
+
+    										&.ico_1070400000 {
+    											background-position: -1168px -970px;
+    										}
+
+    										&.ico_1070500000 {
+    											background-position: -1246px -970px;
+    										}
+
+    										&.ico_1070600000 {
+    											background-position: -1325px -970px;
+    										}
+
+    										&.ico_1070700000 {
+    											background-position: -1404px -970px;
+    										}
+
+    										&.ico_1070800000 {
+    											background-position: -1484px -970px;
+    										}
+
+    										&.ico_1070900000 {
+    											background-position: -1564px -970px;
+    										}
+
+    										&.ico_1071000000 {
+    											background-position: -1645px -970px;
+    										}
+
+                                            // 생활가전
+    										&.ico_1080100000 {
+    											background-position: -932px -1118px;
+    										}
+
+    										&.ico_1080200000 {
+    											background-position: -1010px -1118px;
+    										}
+
+    										&.ico_1080300000 {
+    											background-position: -1089px -1118px;
+    										}
+
+    										&.ico_1080400000 {
+    											background-position: -1168px -1118px;
+    										}
+
+    										&.ico_1080500000 {
+    											background-position: -1246px -1118px;
+    										}
+
+    										&.ico_1080600000 {
+    											background-position: -1325px -1118px;
+    										}
+
+    										&.ico_1080700000 {
+    											background-position: -1404px -1118px;
+    										}
+
+    										&.ico_1080800000 {
+    											background-position: -1484px -1118px;
+    										}
+
+    										&.ico_1080900000 {
+    											background-position: -1564px -1118px;
+    										}
+
+                                            // 계절가전
+    										&.ico_1090100000 {
+    											background-position: -932px -1263px;
+    										}
+
+    										&.ico_1090200000 {
+    											background-position: -1010px -1263px;
+    										}
+
+    										&.ico_1090300000 {
+    											background-position: -1089px -1263px;
+    										}
+
+    										&.ico_1090400000 {
+    											background-position: -1168px -1263px;
+    										}
+
+    										&.ico_1090500000 {
+    											background-position: -1246px -1263px;
+    										}
+
+    										&.ico_1090600000 {
+    											background-position: -1325px -1263px;
+    										}
+
+                                            // 건강미용가전
+    										&.ico_1100100000 {
+    											background-position: -932px -1410px;
+    										}
+
+    										&.ico_1100200000 {
+    											background-position: -1010px -1410px;
+    										}
+
+    										&.ico_1100300000 {
+    											background-position: -1089px -1410px;
+    										}
+
+    										&.ico_1100400000 {
+    											background-position: -1168px -1410px;
+    										}
+
+    										&.ico_1100500000 {
+    											background-position: -1246px -1410px;
+    										}
+
+    										&.ico_1100600000 {
+    											background-position: -1325px -1410px;
+    										}
+
+                                            // 영상음향가전
+    										&.ico_1110100000 {
+    											background-position: -932px -1555px;
+    										}
+
+    										&.ico_1110200000 {
+    											background-position: -1010px -1555px;
+    										}
+
+    										&.ico_1110300000 {
+    											background-position: -1089px -1555px;
+    										}
+
+    										&.ico_1110400000 {
+    											background-position: -1168px -1555px;
+    										}
+
+    										&.ico_1110500000 {
+    											background-position: -1246px -1555px;
+    										}
+
+    										&.ico_1110600000 {
+    											background-position: -1325px -1555px;
+    										}
+
+                                            &.ico_1110700000 {
+    											background-position: -1404px -1555px;
+    										}
+
+    										&.ico_1110800000 {
+    											background-position: -1484px -1555px;
+    										}
+
+                                            // 자동차 용품
+    										&.ico_1120100000 {
+    											background-position: -932px -1706px;
+    										}
+
+    										&.ico_1120200000 {
+    											background-position: -1010px -1706px;
+    										}
+
+    										&.ico_1120300000 {
+    											background-position: -1089px -1706px;
+    										}
+
+    										&.ico_1120400000 {
+    											background-position: -1168px -1706px;
+    										}
+
+    										&.ico_1120500000 {
+    											background-position: -1246px -1706px;
+    										}
+
+    										&.ico_1120600000 {
+    											background-position: -1325px -1706px;
+    										}
+
+                                            &.ico_1120700000 {
+    											background-position: -1404px -1706px;
+    										}
+
+    										&.ico_1120800000 {
+    											background-position: -1484px -1706px;
+    										}
+
+    										&.ico_1120900000 {
+    											background-position: -1564px -1706px;
+    										}
+
+    										&.ico_1121000000 {
+    											background-position: -1645px -1706px;
+    										}
+
+    										&.ico_1121100000 {
+    											background-position: -1721px -1706px;
+    										}
+
 										}
 									}
 
@@ -641,10 +1062,10 @@
 							position: absolute;
 							top: 0;
 							font-size: 27px;
-							@include btn(40px, 77px, 0, #b5b0ce, #fff);
+							@include btn(40px, 90px, 0, #b5b0ce, #fff);
 
 							&:hover {
-								color: $point_color1;
+								color: $base_color2;
 							}
 						}
 
@@ -711,7 +1132,7 @@
 								font-size: 14px;
 								color: $base_color2;
 								font-weight: bold;
-								background: url("//img.happyshopping.kr/img_static/img_pres/_v3/ico_gnb_estimate.png") no-repeat 0 50%;	
+								background: url("//img.happyshopping.kr/img_static/img_pres/_v3/ico_gnb_estimate.png") no-repeat 0 50%;
 								line-height: 22px;
 
 								[class^="icon-"] {
@@ -900,7 +1321,7 @@
 													strong {
 														color: $base_color1;
 													}
-												}		
+												}
 											}
 										}
 									}
@@ -971,9 +1392,11 @@
 									.btn {
 										background-color: $point_color1;
 
-										&.active,
-										&:hover {
+										&.active {
 											background-color: #0f4f9f;
+										}
+										&:hover {
+											background-color: #2d7ee4;
 										}
 									}
 								}
@@ -1029,9 +1452,11 @@
 									.btn {
 										background-color: #00acc2;
 
-										&.active,
+										&.active {
+											background-color: #005a69;
+										}
 										&:hover {
-											background-color: #003b43;
+											background-color: #0092a5;
 										}
 									}
 								}
@@ -1086,9 +1511,11 @@
 									.btn {
 										background-color: #59a45f;
 
-										&.active,
+										&.active {
+											background-color: #006c0a;
+										}
 										&:hover {
-											background-color: #2c512f;
+											background-color: #4c8c51;
 										}
 									}
 								}
@@ -1143,9 +1570,11 @@
 									.btn {
 										background-color: #8865e7;
 
-										&.active,
-										&:hover {
+										&.active {
 											background-color: #441cb1;
+										}
+										&:hover {
+											background-color: #7859cc;
 										}
 									}
 								}
@@ -1200,9 +1629,11 @@
 									.btn {
 										background-color: #f3755b;
 
-										&.active,
-										&:hover {
+										&.active {
 											background-color: #c02d0e;
+										}
+										&:hover {
+											background-color: #db6a52;
 										}
 									}
 								}
@@ -1225,6 +1656,322 @@
 					}
 				}
 			}
+
+            &.cate6 {
+				.lnb_curation {
+					.lnb_curation_nav {
+						&:before {
+							border-top-color: #bcc219;
+						}
+
+						.lnb_curation_nav_cate {
+							.btn_all_cate {
+								background-color: #bcc219;
+							}
+
+							.lnb_curation_nav_cate_list {
+								li {
+									.btn {
+										background-color: #bcc219;
+
+										&.active {
+											background-color: #70740f;
+										}
+										&:hover {
+											background-color: #a1a716;
+										}
+									}
+								}
+							}
+						}
+
+						.lnb_curation_nav_list {
+							.lnb_curation_nav_list_in {
+								.lnb_curation_nav_list_cates {
+									li {
+										.btn {
+											&.active {
+												background-color: #bcc219;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+            &.cate6 {
+				.lnb_curation {
+					.lnb_curation_nav {
+						&:before {
+							border-top-color: #bcc219;
+						}
+
+						.lnb_curation_nav_cate {
+							.btn_all_cate {
+								background-color: #bcc219;
+							}
+
+							.lnb_curation_nav_cate_list {
+								li {
+									.btn {
+										background-color: #bcc219;
+
+										&.active {
+											background-color: #70740f;
+										}
+										&:hover {
+											background-color: #a1a716;
+										}
+									}
+								}
+							}
+						}
+
+						.lnb_curation_nav_list {
+							.lnb_curation_nav_list_in {
+								.lnb_curation_nav_list_cates {
+									li {
+										.btn {
+											&.active {
+												background-color: #bcc219;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+            &.cate7 {
+				.lnb_curation {
+					.lnb_curation_nav {
+						&:before {
+							border-top-color: #bcc219;
+						}
+
+						.lnb_curation_nav_cate {
+							.btn_all_cate {
+								background-color: #bcc219;
+							}
+
+							.lnb_curation_nav_cate_list {
+								li {
+									.btn {
+										background-color: #bcc219;
+
+										&.active {
+											background-color: #70740f;
+										}
+										&:hover {
+											background-color: #a1a716;
+										}
+									}
+								}
+							}
+						}
+
+						.lnb_curation_nav_list {
+							.lnb_curation_nav_list_in {
+								.lnb_curation_nav_list_cates {
+									li {
+										.btn {
+											&.active {
+												background-color: #bcc219;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+            &.cate8 {
+				.lnb_curation {
+					.lnb_curation_nav {
+						&:before {
+							border-top-color: #bcc219;
+						}
+
+						.lnb_curation_nav_cate {
+							.btn_all_cate {
+								background-color: #bcc219;
+							}
+
+							.lnb_curation_nav_cate_list {
+								li {
+									.btn {
+										background-color: #bcc219;
+
+										&.active {
+											background-color: #70740f;
+										}
+										&:hover {
+											background-color: #a1a716;
+										}
+									}
+								}
+							}
+						}
+
+						.lnb_curation_nav_list {
+							.lnb_curation_nav_list_in {
+								.lnb_curation_nav_list_cates {
+									li {
+										.btn {
+											&.active {
+												background-color: #bcc219;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+            &.cate9 {
+				.lnb_curation {
+					.lnb_curation_nav {
+						&:before {
+							border-top-color: #bcc219;
+						}
+
+						.lnb_curation_nav_cate {
+							.btn_all_cate {
+								background-color: #bcc219;
+							}
+
+							.lnb_curation_nav_cate_list {
+								li {
+									.btn {
+										background-color: #bcc219;
+
+										&.active {
+											background-color: #70740f;
+										}
+										&:hover {
+											background-color: #a1a716;
+										}
+									}
+								}
+							}
+						}
+
+						.lnb_curation_nav_list {
+							.lnb_curation_nav_list_in {
+								.lnb_curation_nav_list_cates {
+									li {
+										.btn {
+											&.active {
+												background-color: #bcc219;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+            &.cate10 {
+				.lnb_curation {
+					.lnb_curation_nav {
+						&:before {
+							border-top-color: #bcc219;
+						}
+
+						.lnb_curation_nav_cate {
+							.btn_all_cate {
+								background-color: #bcc219;
+							}
+
+							.lnb_curation_nav_cate_list {
+								li {
+									.btn {
+										background-color: #bcc219;
+
+										&.active {
+											background-color: #70740f;
+										}
+										&:hover {
+											background-color: #a1a716;
+										}
+									}
+								}
+							}
+						}
+
+						.lnb_curation_nav_list {
+							.lnb_curation_nav_list_in {
+								.lnb_curation_nav_list_cates {
+									li {
+										.btn {
+											&.active {
+												background-color: #bcc219;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+            &.cate11 {
+				.lnb_curation {
+					.lnb_curation_nav {
+						&:before {
+							border-top-color: #dc412c;
+						}
+
+						.lnb_curation_nav_cate {
+							.btn_all_cate {
+								background-color: #dc412c;
+							}
+
+							.lnb_curation_nav_cate_list {
+								li {
+									.btn {
+										background-color: #dc412c;
+
+										&.active {
+											background-color: #aa1111;
+										}
+										&:hover {
+											background-color: #c63b28;
+										}
+									}
+								}
+							}
+						}
+
+						.lnb_curation_nav_list {
+							.lnb_curation_nav_list_in {
+								.lnb_curation_nav_list_cates {
+									li {
+										.btn {
+											&.active {
+												background-color: #dc412c;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
 		}
 
 		.index-body_main_adv {
