@@ -1764,6 +1764,12 @@
 											float: left;
 											margin-right: 0px;
 											font-size: 0;
+                                            position: relative;
+                                            top: -7px;
+
+                                            &:first-child {
+                                                top: 0px;
+                                            }
 
 											[class^="mark-"] {
 												margin-bottom: 10px;
@@ -1809,8 +1815,9 @@
 
 											.badge {
 												display: inline-block;
-												width: 44px;
+                                                min-width: 24px;
 												height: 15px;
+                                                padding: 0 3px;
 												padding-top: 1px;
 												border: 1px solid #ccc;
 												font-family: "돋움", Dotum;
@@ -1818,23 +1825,59 @@
 												background: #fff;
 												text-align: center;
 												line-height: 15px;
-												vertical-align: middle;
 												letter-spacing: -1px;
-												margin-left: 5px;
+												margin-left: 3px;
+                                                position: relative;
+                                                top: 3px;
+
+												&.badge_power {
+													border-color: #865ebb;
+													color: #fff;
+                                                    background-color: #956ccc;
+												}
+
+												&.badge_new {
+													border-color: #cd3213;
+													color: #fff;
+                                                    background-color: #e65234;
+												}
+
+												&.badge_nor {
+													border-color: #956ccc;
+													color: #956ccc;
+												}
+
+												&.badge_card {
+													border-color: #0f4f9f;
+													color: #0f4f9f;
+												}
+
+												&.badge_cash {
+													border-color: $base_color2;
+													color: $base_color2;
+                                                    background-color: #f8f8f8;
+												}
 
 												&.badge_dup {
 													border-color: #ff3333;
 													color: #ff3333;
+                                                    top: 6px;
+                                                    margin-left: 5px;
 												}
 
 												&.badge_discount {
-													border-color: #3399cc;
-													color: #3399cc;
+													border-color: #0066cc;
+													color: #0066cc;
+                                                    position: relative;
+                                                    top: 6px;
+                                                    margin-left: 5px;
 												}
 
 												&.badge_saving {
 													border-color: #1aa827;
 													color: #1aa827;
+                                                    top: 6px;
+                                                    margin-left: 5px;
 												}
 											}
 
@@ -1866,6 +1909,48 @@
 												font-size: 12px;
 												color: $base_color1;
 												line-height: 18px;
+                                                position: relative;
+                                                top: 3px;
+                                                .delivery_day_help {
+                                                    position: relative;
+                                                    .help {
+                                                        margin-left: 2px;
+                                                        margin-top: 2px;
+                                                        cursor: pointer;
+                                                    }
+                                                    .layer_delivery_day_help {
+                                                        display: none;
+                                                        position: absolute;
+                                                        top: 22px;
+                                                        right: -13px;
+                                                        width: 215px;
+                                                        min-height: 64px;
+                                                        box-sizing: border-box;
+                                                        padding: 10px;
+                                                        border: 1px solid #000;
+                                                        z-index: 10;
+                                                        background-color: #fff;
+                                                        word-break: keep-all;
+                                                        span {
+                                                            color: #ff6600;
+                                                        }
+                                                        &:before {
+                                                            content: "";
+                                                            position: absolute;
+                                                            top: -6px;
+                                                            right: 12px;
+                                                            width: 13px;
+                                                            height: 7px;
+                                                            background: url(//img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png) no-repeat -4px -210px;
+                                                            z-index: 2;
+                                                        }
+                                                    }
+                                                    &:hover {
+                                                        .layer_delivery_day_help {
+                                                            display: block;
+                                                        }
+                                                    }
+                                                }
 											}
 
 											&:first-child {
