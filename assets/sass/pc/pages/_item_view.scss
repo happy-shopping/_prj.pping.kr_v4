@@ -1267,6 +1267,11 @@
 			margin-top: 30px;
 			padding-top: 15px;
 			border-top: 1px solid #d3d3d3;
+            iframe {
+                border: none;
+                width: 950px;
+                height: 165px;
+            }
 		}
 
 		// 상품정보
