@@ -1769,6 +1769,10 @@
 
                                             &:first-child {
                                                 top: 0px;
+                                                margin-right: 0;
+                                            }
+                                            &:nth-child(2) {
+                                                min-width: 300px;
                                             }
 
 											[class^="mark-"] {
@@ -1777,10 +1781,6 @@
 
 											.mark-power, .mark-new {
 												display: inline-block;
-											}
-
-											&.minishopLogo {
-												margin-right: 0;
 											}
 
 											.malltype {
@@ -1905,7 +1905,7 @@
 
 											.delivery_day {
 												display: inline-block;
-												margin: 9px 0 0 5px;
+												margin: 9px 0 0 12px;
 												font-size: 12px;
 												color: $base_color1;
 												line-height: 18px;
