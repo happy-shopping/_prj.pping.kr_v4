@@ -9,7 +9,7 @@
 		position: relative;
 		height: 50px;
 		padding-top: 40px;
-		border-bottom: 2px solid $point_color1;
+		border-bottom: 2px solid #333333;
 
 		.tit-h2 {
 			font-size: 30px;
@@ -26,7 +26,7 @@
 				position: relative;
 				float: left;
 				margin-left: 10px;
-				font-size: 14px;
+				font-size: 16px;
 				color: #ccc;
 				font-weight: bold;
 				@include loadIcon($icon-chevron-right);
@@ -43,9 +43,9 @@
 					}
 				}
 
-				span {
-					font-size: 24px;
-				}
+				// span {
+				// 	font-size: 24px;
+				// }
 
 				strong {
 					color: #000;
@@ -59,7 +59,7 @@
 
 		.tit-h3 {
 			min-height: 37px;
-			font-size: 20px;
+			font-size: 18px;
 			color: $base_color1;
 		}
 
@@ -119,8 +119,8 @@
 			//display: inline-block;
 			padding:13px 0;
 			font-size: 15px;
-			border-top: 2px solid #333333;
-			border-bottom: 2px solid #333333;
+			border-top: 1px solid #333333;
+			border-bottom: 1px solid #333333;
 			text-align: center;
 			vertical-align: middle;
 
@@ -200,20 +200,21 @@
 
 			.all-agree {
 				margin: 10px 20px;
-				border-top: 2px solid #333;
+				border-top: 1px solid #333;
 				padding: 10px 0px 4px;
 			}
 			.all-agree_list {
 				padding: 0px 20px;
 				ul {
 					margin-top: 10px;
-					border-top: 1px solid $base_color2;
+					border-top: 1px solid #e5e5e5;
 					padding-top: 10px;
 					height: 89px;
 				}
 				li {
 
 					margin-bottom: 5px;
+					font-size: 12px;
 
 				}
 				button {
@@ -230,13 +231,13 @@
 
 			width:551px;
 			background-color: #ecf3fd;
-			border-bottom: 2px solid $point_color1;
+			border-bottom: 1px solid $point_color1;
 			padding: 28px 20px 30px;
 			font-size: 14px;
 
 			ul {
 				margin-top: 10px;
-				border-top: 2px solid #333;
+				border-top: 1px solid #333;
 				padding-top: 13px;
 			}
 			li {
@@ -299,6 +300,9 @@
 		.payment-detail {
 			display: inline;
 			float: right;
+			span{
+				font-size: 16px;
+			}
 			p{
 				display: inline;
 				font-size: 12px;
@@ -394,12 +398,16 @@
 
 		.tit-h3 {
 			min-height: 37px;
-			font-size: 20px;
+			font-size: 18px;
 			color: $base_color1;
 		}
 
 		.box-board {
 			padding-top: 0.5px;
+
+		}
+		.line-set{
+			border-top: 0px solid #333;
 		}
 
 		.igroup {
@@ -501,7 +509,7 @@
 		border-top: 2px  solid #418ded;
 		border-bottom:2px solid #418ded;
 		height:85px;
-		margin-bottom: 40px;
+		//margin-bottom: 40px;
 		background-color: #f2f2f2;
 		@include clear;
 
@@ -509,7 +517,7 @@
 			float: left;
 			margin-left: 20px;
 			height:100%;
-			font-size: 15px;
+			font-size: 14px;
 			line-height: 85px;
 			vertical-align: middle;
 			color:#666666;
@@ -528,6 +536,7 @@
 				position:relative;
 				border-radius: 50%;
 				padding: 0 7px;
+				margin-right: 5px;
 				border-color: #418ded;
 				font-size: 30px;
 				color: white;
@@ -537,8 +546,8 @@
 			.name {
 				position:absolute;
 				top: 39px;
-				left: 120px;
-				font-size: 25px;
+				left: 115px;
+				font-size: 24px;
 			}
 
 		}
@@ -547,7 +556,7 @@
 
 			float: right;
 			vertical-align: middle;
-			font-size:11px;
+			font-size:12px;
 			color:#666666;
 			margin :20px 20px;
 			line-height: 1.4;
@@ -560,6 +569,7 @@
 				font-size: 22px;
 				color: #f36042;
 				background-color: #f2f2f2;
+				margin-right: 5px;
 				@include loadIcon($icon-warning);
 
 			}
@@ -885,7 +895,7 @@
 
 			//	@include btn(null, null, 0, $point_color1, transparent);
 			//	@include btn(96px, 34px, 0, , $base_color3);
-				@include btn(104px, 24px, 1px solid #cccccc, #333333, white, center);
+				@include btn(104px, 28px, 1px solid #cccccc, #333333, white, center);
 
 
 				margin: 10px 0px;
@@ -901,7 +911,7 @@
 	.coupon_status {
 		display: inline-block;
 		margin-right: 10px;
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: bold;
 		vertical-align: middle;
 
@@ -995,7 +1005,7 @@
 			.name {
 				display: inline-block;
 				margin-right: 60px;
-				font-size: 14px;
+				font-size: 16px;
 				color: #000;
 				vertical-align: middle;
 				line-height: 18px;
@@ -1081,8 +1091,8 @@
 	.order-body_row_head {
 		.btn-product-change {
 			display: inline-block;
-			@include btn(110px, 28px, 1px solid #ccc, #333, #fff, center, 26px);
-
+			@include btn(100px, 28px, 1px solid #ccc, #333, #fff, center, 26px);
+			padding: 0px 10px 0px 10px;
 			&:hover {
 				background: #f6f6f6;
 			}
@@ -1090,10 +1100,10 @@
 
 		.order-body_row_head_span {
 			float: left;
-			margin: -4px 0 0 20px;
+			margin: -4px 0 0 10px;
 
 			.order-body_row_head_span_noti {
-				margin-left: 9px;
+				margin-left: 10px;
 				color: $base_color3;
 			}
 		}
@@ -1104,7 +1114,7 @@
 		display: inline-block;
 		width: 16px;
 		height: 16px;
-		margin-right: 9px;
+		margin-right: 5px;
 		background: url('https://img.happyshopping.kr/img_static/img_pres/_v3/ico_grayplus.png') no-repeat 0 0;
 		vertical-align: middle;
 	}
@@ -1113,7 +1123,7 @@
 		display: inline-block;
 		width: 16px;
 		height: 16px;
-		margin-right: 9px;
+		margin-right: 5px;
 		background: url('https://img.happyshopping.kr/img_static/img_pres/_v3/ico_redminus.png') no-repeat 0 0;
 		vertical-align: middle;
 	}
@@ -1701,6 +1711,12 @@
 
 		.order-body_top {
 			border-bottom-color: $base_color1;
+			.thead-top_line{
+				th {
+					border-bottom: 1px solid #333333;
+
+				}
+			}
 		}
 
 		.order-body-result_main {
@@ -2024,6 +2040,68 @@
 			height: auto;
 		}
 
+	}
+
+}
+
+
+.box-main{
+	position: absolute;
+    left: 50%;
+    top: 40%;
+    //width: 430px;
+    min-height: 92px;
+    margin: -128px 0 0 -191px;
+    padding: 20px 20px 40px;
+    border: 2px solid #333;
+    background: #fff;
+    z-index: 100;
+    //text-align: center;
+	.box-info {
+		margin-top: 20px;
+		border-top: 1px solid black;
+		width:386px;
+		tr {
+				background: white;
+				font-size: 12px;
+			th {
+				border-bottom: 1px solid #e8e7ea;
+				text-align: left;
+				width:120px;
+				height: 40px;
+				padding-left: 20px;
+				background: white;
+				&:first-child {
+					background-color: #f7f7f7;
+				}
+
+			}
+			td {
+				border-bottom: 1px solid #e8e7ea;
+				height: 40px;
+				padding-left: 20px;
+				&:first-child {
+					background-color: #f7f7f7;
+				}
+			}
+
+
+		}
+	}
+
+}
+.title {
+
+	font-size: 20px;
+	text-align:left;
+}
+.btn-set{
+	border-top: 1px solid black;
+	padding-left: 160px;
+	.btn-set_pos{
+		margin: 20px auto 0px;
+		font-weight: bold;
+		@include btn(100px, 40px, 2px solid $point_color1, $point_color1, #fff);
 	}
 
 }
