@@ -541,6 +541,7 @@
 
 	.header-bot {
 		min-width: 950px;
+        border-top: 1px solid #e5e5e5;
 
 		.header-bot_body {
 			@include default_width;
@@ -548,6 +549,9 @@
 			@include breakpoint(max-width 1209px) {
 				width: 950px;
 			}
+            .gnb {
+                margin-left: 210px;
+            }
 		}
 	}
 
