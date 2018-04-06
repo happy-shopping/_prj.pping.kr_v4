@@ -62,7 +62,7 @@
 			margin-top: 50px;
 
 			.lnb_curation {
-				height: 80px;
+				height: 120px;
 
 				.lnb_curation_nav {
 					position: relative;
@@ -77,7 +77,7 @@
 						left: 50%;
 						width: 1000%;
 						margin-left: -500%;
-						height: 90px;
+						height: 120px;
 						border-top: 2px solid $point_color1;
 						border-bottom: 1px solid #d3d0e1;
 						font-size: 0;
@@ -91,14 +91,14 @@
 
 						.btn_all_cate {
 							font-size: 34px;
-							@include btn(78px, 90px, 0, #fff, $point_color1);
+							@include btn(70px, 120px, 0, #fff, $point_color1);
 						}
 
 						.lnb_curation_nav_cate_list {
 							position: absolute;
 							left: 0;
-							top: 90px;
-							width: 197px;
+							top: 120px;
+							width: 190px;
 
 							li {
 								border-bottom: 1px solid #fff;
@@ -134,925 +134,949 @@
 
 								li {
 									float: left;
-									border-left: 1px solid #d3d0e1;
-
-									// 아이콘
-									.btn {
-										display: block;
-										padding-top: 43px;
-										font-weight: bold;
-										background-image: url("//img.happyshopping.kr/img_static/img_pres/_v3/sprite_2.png");
-										background-repeat: no-repeat;
-										@include btn(79px, 90px, 0, $base_color1, #fff);
-										position: relative;
-										// left: -5px;
-
-										span {
-											display: block;
-											word-break: keep-all;
-                                            height: 18px;
-                                            line-height: 14px;
-										}
-
-										&:hover {
-											background-color: #f0eff5;
-										}
-
-										// 컴퓨터 주요부품
-										&.ico_1010100000 {
-											background-position: -119px 0;
-										}
-
-										&.ico_1010200000 {
-											background-position: -210px 0;
-										}
-
-										&.ico_1010300000 {
-											background-position: -301px 0;
-										}
-
-										&.ico_1010400000 {
-											background-position: -572px 0;
-										}
-
-										&.ico_1010500000 {
-											background-position: -481px 0;
-										}
-
-										&.ico_1010600000 {
-											background-position: -392px 0;
-										}
-
-										&.ico_1010700000 {
-											background-position: -662px 0;
-										}
-
-										&.ico_1010800000 {
-											background-position: -755px 0;
-										}
-
-										&.ico_1010900000 {
-											background-position: -845px 0;
-										}
-
-										&.ico_1011000000 {
-											background-position: -120px -95px;
-										}
-
-										&.ico_1011100000 {
-											background-position: -209px -95px;
-										}
-
-										&.ico_1011201000 {
-											background-position: -300px -95px;
-										}
-
-										&.ico_1011202000 {
-											background-position: -390px -95px;
-										}
-
-										// 컴퓨터 주변기기
-										&.ico_1020100000 {
-											background-position: -120px -190px;
-										}
-
-										&.ico_1020201000 {
-											background-position: -391px -190px;
-										}
-
-										&.ico_1020202000 {
-											background-position: -211px -190px;
-										}
-
-										&.ico_1020203000 {
-											background-position: -300px -190px;
-										}
-
-										&.ico_1020301000 {
-											background-position: -573px -190px;
-										}
-
-										&.ico_1020302000 {
-											background-position: -483px -190px;
-										}
-
-										&.ico_1020303000 {
-											background-position: -664px -190px;
-										}
-
-										&.ico_1020401000 {
-											background-position: -483px -285px;
-										}
-
-										&.ico_1020402000 {
-											background-position: -392px -285px;
-										}
-
-										&.ico_1020501000 {
-											background-position: -300px -285px;
-										}
-
-										&.ico_1020503000 {
-											background-position: -210px -285px;
-										}
-
-										&.ico_1020601000 {
-											background-position: -210px -285px;
-										}
-
-										&.ico_1020602000 {
-											background-position: -757px -190px;
-										}
-
-										&.ico_1020603000 {
-											background-position: -846px -190px;
-										}
-
-										&.ico_1020701000 {
-											background-position: -851px -285px;
-										}
-
-										&.ico_1020702000 {
-											background-position: -576px -285px;
-										}
-
-										&.ico_1020703000 {
-											background-position: -665px -285px;
-										}
-
-										&.ico_1020704000 {
-											background-position: -757px -285px;
-										}
-
-										// 소프트웨어/전산소모품
-										&.ico_1030100000 {
-											background-position: -116px -380px;
-										}
-
-										&.ico_1030201000 {
-											background-position: -393px -380px;
-										}
-
-										&.ico_1030202000 {
-											background-position: -212px -380px;
-										}
-
-										&.ico_1030203000 {
-											background-position: -302px -380px;
-										}
-
-										&.ico_1030301000 {
-											background-position: -574px -380px;
-										}
-
-										&.ico_1030302000 {
-											background-position: -488px -380px;
-										}
-
-										// DSLR/디카/캠코더
-										&.ico_1040201000 {
-											background-position: -210px -475px;
-										}
-
-										&.ico_1040202000 {
-											background-position: -119px -475px;
-										}
-
-										// 디지털 완제품
-										&.ico_1050101000 {
-											background-position: -118px -570px;
-										}
-
-										&.ico_1050201000 {
-											background-position: -210px -570px;
-										}
-
-										&.ico_1050301001 {
-											background-position: -303px -570px;
-										}
-
-										&.ico_1050301002 {
-											background-position: -393px -570px;;
-										}
-
-										&.ico_1050302001 {
-											background-position: -664px -570px;
-										}
-
-										&.ico_1050302002 {
-											background-position: -121px -665px;
-										}
-
-										&.ico_1050302003 {
-											background-position: -846px -570px;
-										}
-
-										&.ico_1050302004 {
-											background-position: -214px -665px;
-										}
-
-										&.ico_1050302005 {
-											background-position: -757px -570px;
-										}
-
-										&.ico_1050304001 {
-											background-position: -301px -665px;
-										}
-
-										&.ico_1050304002 {
-											background-position: -391px -665px;
-										}
-
-										&.ico_1050304003 {
-											background-position: -485px -665px;
-										}
-
-										&.ico_1050304004 {
-											background-position: -576px -665px;
-										}
-
-										&.ico_1050308004 {
-											background-position: -484px -570px;
-										}
-
-										&.ico_1050308005 {
-											background-position: -572px -570px;
-										}
-
-										&.ico_1050401000 {
-											background-position: -666px -665px;
-										}
-
-										&.ico_1050402000 {
-											background-position: -757px -665px;
-										}
-
-										&.ico_1050502000 {
-											background-position: -848px -665px;
-										}
-
-										&.ico_1050603000 {
-											background-position: -124px -760px;
-										}
-
-                                        // 주방가전
-										&.ico_1070100000 {
-											background-position: -20px -970px;
-										}
-
-										&.ico_1070200000 {
-											background-position: -98px -970px;
-										}
-
-										&.ico_1070300000 {
-											background-position: -177px -970px;
-										}
-
-										&.ico_1070400000 {
-											background-position: -256px -970px;
-										}
-
-										&.ico_1070500000 {
-											background-position: -335px -970px;
-										}
-
-										&.ico_1070600000 {
-											background-position: -415px -970px;
-										}
-
-										&.ico_1070700000 {
-											background-position: -492px -970px;
-										}
-
-										&.ico_1070800000 {
-											background-position: -572px -970px;
-										}
-
-										&.ico_1070900000 {
-											background-position: -652px -970px;
-										}
-
-										&.ico_1071000000 {
-											background-position: -732px -970px;
-										}
-
-                                        // 생활가전
-										&.ico_1080100000 {
-											background-position: -20px -1118px;
-										}
-
-										&.ico_1080200000 {
-											background-position: -98px -1118px;
-										}
-
-										&.ico_1080300000 {
-											background-position: -177px -1118px;
-										}
-
-										&.ico_1080400000 {
-											background-position: -256px -1118px;
-										}
-
-										&.ico_1080500000 {
-											background-position: -335px -1118px;
-										}
-
-										&.ico_1080600000 {
-											background-position: -415px -1118px;
-										}
-
-										&.ico_1080700000 {
-											background-position: -492px -1118px;
-										}
-
-										&.ico_1080800000 {
-											background-position: -572px -1118px;
-										}
-
-										&.ico_1080900000 {
-											background-position: -652px -1118px;
-										}
-
-                                        // 계절가전
-										&.ico_1090100000 {
-											background-position: -18px -1263px;
-										}
-
-										&.ico_1090200000 {
-											background-position: -98px -1263px;
-										}
-
-										&.ico_1090300000 {
-											background-position: -178px -1263px;
-										}
-
-										&.ico_1090400000 {
-											background-position: -256px -1263px;
-										}
-
-										&.ico_1090500000 {
-											background-position: -335px -1263px;
-										}
-
-										&.ico_1090600000 {
-											background-position: -415px -1263px;
-										}
-
-                                        // 건강미용가전
-										&.ico_1100100000 {
-											background-position: -18px -1410px;
-										}
-
-										&.ico_1100200000 {
-											background-position: -98px -1410px;
-										}
-
-										&.ico_1100300000 {
-											background-position: -178px -1410px;
-										}
-
-										&.ico_1100400000 {
-											background-position: -256px -1410px;
-										}
-
-										&.ico_1100500000 {
-											background-position: -335px -1410px;
-										}
-
-										&.ico_1100600000 {
-											background-position: -415px -1410px;
-										}
-
-                                        // 영상음향가전
-										&.ico_1110100000 {
-											background-position: -18px -1555px;
-										}
-
-										&.ico_1110200000 {
-											background-position: -98px -1555px;
-										}
-
-										&.ico_1110300000 {
-											background-position: -178px -1555px;
-										}
-
-										&.ico_1110400000 {
-											background-position: -256px -1555px;
-										}
-
-										&.ico_1110500000 {
-											background-position: -335px -1555px;
-										}
-
-										&.ico_1110600000 {
-											background-position: -415px -1555px;
-										}
-
-                                        &.ico_1110700000 {
-											background-position: -492px -1555px;
-										}
-
-										&.ico_1110800000 {
-											background-position: -572px -1555px;
-										}
-
-                                        // 자동차 용품
-										&.ico_1120100000 {
-											background-position: -18px -1706px;
-										}
-
-										&.ico_1120200000 {
-											background-position: -98px -1706px;
-										}
-
-										&.ico_1120300000 {
-											background-position: -178px -1706px;
-										}
-
-										&.ico_1120400000 {
-											background-position: -256px -1706px;
-										}
-
-										&.ico_1120500000 {
-											background-position: -335px -1706px;
-										}
-
-										&.ico_1120600000 {
-											background-position: -415px -1706px;
-										}
-
-                                        &.ico_1120700000 {
-											background-position: -492px -1706px;
-										}
-
-										&.ico_1120800000 {
-											background-position: -572px -1706px;
-										}
-
-										&.ico_1120900000 {
-											background-position: -652px -1706px;
-										}
-
-										&.ico_1121000000 {
-											background-position: -732px -1706px;
-										}
-
-										&.ico_1121100000 {
-											background-position: -810px -1706px;
-										}
-
-										&.active {
-											color: #fff;
-
-											// 컴퓨터 주요부품
-											&.ico_1010100000 {
-												background-position: -938px 0;
-											}
-
-											&.ico_1010200000 {
-												background-position: -1029px 0;
-											}
-
-											&.ico_1010300000 {
-												background-position: -1119px 0;
-											}
-
-											&.ico_1010400000 {
-												background-position: -1389px 0;
-											}
-
-											&.ico_1010500000 {
-												background-position: -1300px 0;
-											}
-
-											&.ico_1010600000 {
-												background-position: -1210px 0;
-											}
-
-											&.ico_1010700000 {
-												background-position: -1481px 0;
-											}
-
-											&.ico_1010800000 {
-												background-position: -1573px 0;
-											}
-
-											&.ico_1010900000 {
-												background-position: -1665px 0;
-											}
-
-											&.ico_1011000000 {
-												background-position: -942px -95px;
-											}
-
-											&.ico_1011100000 {
-												background-position: -1028px -95px;
-											}
-
-											&.ico_1011201000 {
-												background-position: -1117px -95px;
-											}
-
-											&.ico_1011202000 {
-												background-position: -1207px -95px;
-											}
-
-											// 컴퓨터 주변기기
-											&.ico_1020100000 {
-												background-position: -940px -190px;
-											}
-
-											&.ico_1020201000 {
-												background-position: -1209px -190px;
-											}
-
-											&.ico_1020202000 {
-												background-position: -1030px -190px;
-											}
-
-											&.ico_1020203000 {
-												background-position: -1120px -190px;
-											}
-
-											&.ico_1020301000 {
-												background-position: -1392px -190px;
-											}
-
-											&.ico_1020302000 {
-												background-position: -1302px -190px;
-											}
-
-											&.ico_1020303000 {
-												background-position: -1484px -190px;
-											}
-
-											&.ico_1020401000 {
-												background-position: -1303px -285px;
-											}
-
-											&.ico_1020402000 {
-												background-position: -1211px -285px;
-											}
-
-											&.ico_1020501000 {
-												background-position: -1121px -285px;
-											}
-
-											&.ico_1020503000 {
-												background-position: -1030px -285px;
-											}
-
-											&.ico_1020601000 {
-												background-position: -1029px -285px;
-											}
-
-											&.ico_1020602000 {
-												background-position: -1576px -190px;
-											}
-
-											&.ico_1020603000 {
-												background-position: -1665px -190px;
-											}
-
-											&.ico_1020701000 {
-												background-position: -1670px -285px;
-											}
-
-											&.ico_1020702000 {
-												background-position: -1394px -285px;
-											}
-
-											&.ico_1020703000 {
-												background-position: -1484px -285px;
-											}
-
-											&.ico_1020704000 {
-												background-position: -1576px -285px;
-											}
-
-											// 소프트웨어/전산소모품
-											&.ico_1030100000 {
-												background-position: -935px -380px;
-											}
-
-											&.ico_1030201000 {
-												background-position: -1213px -380px;
-											}
-
-											&.ico_1030202000 {
-												background-position: -1031px -380px;
-											}
-
-											&.ico_1030203000 {
-												background-position: -1121px -380px;
-											}
-
-											&.ico_1030301000 {
-												background-position: -1393px -380px;
-											}
-
-											&.ico_1030302000 {
-												background-position: -1306px -380px;
-											}
-
-											// DSLR/디카/캠코더
-											&.ico_1040201000 {
-												background-position: -1029px -475px;
-											}
-
-											&.ico_1040202000 {
-												background-position: -939px -475px;
-											}
-
-											// 디지털 완제품
-											&.ico_1050101000 {
-												background-position: -938px -570px;
-											}
-
-											&.ico_1050201000 {
-												background-position: -1028px -570px;
-											}
-
-											&.ico_1050301001 {
-												background-position: -1122px -570px;
-											}
-
-											&.ico_1050301002 {
-												background-position: -1211px -570px;
-											}
-
-											&.ico_1050302001 {
-												background-position: -1480px -570px;
-											}
-
-											&.ico_1050302002 {
-												background-position: -940px -665px;
-											}
-
-											&.ico_1050302003 {
-												background-position: -1665px -570px;
-											}
-
-											&.ico_1050302004 {
-												background-position: -1035px -665px;
-											}
-
-											&.ico_1050302005 {
-												background-position: -1575px -570px;
-											}
-
-											&.ico_1050304001 {
-												background-position: -1119px -665px;
-											}
-
-											&.ico_1050304002 {
-												background-position: -1211px -665px;
-											}
-
-											&.ico_1050304003 {
-												background-position: -1304px -665px;
-											}
-
-											&.ico_1050304004 {
-												background-position: -1395px -665px;
-											}
-
-											&.ico_1050308004 {
-												background-position: -1302px -570px;
-											}
-
-											&.ico_1050308005 {
-												background-position: -1391px -570px;
-											}
-
-											&.ico_1050401000 {
-												background-position: -1485px -665px;
-											}
-
-											&.ico_1050402000 {
-												background-position: -1484px -570px;
-											}
-
-											&.ico_1050502000 {
-												background-position: -1667px -665px;
-											}
-
-											&.ico_1050603000 {
-												background-position: -942px -760px;
-											}
+
+                                    &:last-child {
+                                        .depth2 {
+                                            border-right: 1px solid #d3d0e1;
+                                        }
+                                        ul > li {
+                                            &:last-child {
+                                                border-right: 1px solid #d3d0e1;
+                                            }
+                                        }
+                                    }
+
+                                    .depth2 {
+                                        min-height: 30px;
+                                        display: block;
+                                        padding-top: 8px;
+                                        padding-left: 10px;
+                                        box-sizing: border-box;
+                                        border-bottom: 1px solid #d3d0e1;
+                                        border-left: 1px solid #d3d0e1;
+                                        font-weight: 700;
+                                        &.no-bor {
+                                            border-left: 0;
+                                        }
+                                    }
+
+                                    ul > li {
+                                        border-left: 1px solid #d3d0e1;
+                                        // 아이콘
+    									.btn {
+    										display: block;
+    										padding-top: 43px;
+    										font-weight: bold;
+    										background-image: url("//img.happyshopping.kr/img_static/img_pres/_v3/sprite_2.png");
+    										background-repeat: no-repeat;
+    										@include btn(79px, 90px, 0, $base_color1, #fff);
+    										position: relative;
+    										// left: -5px;
+
+    										span {
+    											display: block;
+    											word-break: keep-all;
+                                                height: 18px;
+                                                line-height: 14px;
+    										}
+
+    										&:hover {
+    											background-color: #f0eff5;
+    										}
+
+    										// 컴퓨터 주요부품
+    										&.ico_1010100000 {
+    											background-position: -119px 0;
+    										}
+
+    										&.ico_1010200000 {
+    											background-position: -210px 0;
+    										}
+
+    										&.ico_1010300000 {
+    											background-position: -301px 0;
+    										}
+
+    										&.ico_1010400000 {
+    											background-position: -572px 0;
+    										}
+
+    										&.ico_1010500000 {
+    											background-position: -481px 0;
+    										}
+
+    										&.ico_1010600000 {
+    											background-position: -392px 0;
+    										}
+
+    										&.ico_1010700000 {
+    											background-position: -662px 0;
+    										}
+
+    										&.ico_1010800000 {
+    											background-position: -755px 0;
+    										}
+
+    										&.ico_1010900000 {
+    											background-position: -845px 0;
+    										}
+
+    										&.ico_1011000000 {
+    											background-position: -120px -95px;
+    										}
+
+    										&.ico_1011100000 {
+    											background-position: -209px -95px;
+    										}
+
+    										&.ico_1011201000 {
+    											background-position: -300px -95px;
+    										}
+
+    										&.ico_1011202000 {
+    											background-position: -390px -95px;
+    										}
+
+    										// 컴퓨터 주변기기
+    										&.ico_1020100000 {
+    											background-position: -120px -190px;
+    										}
+
+    										&.ico_1020201000 {
+    											background-position: -391px -190px;
+    										}
+
+    										&.ico_1020202000 {
+    											background-position: -211px -190px;
+    										}
+
+    										&.ico_1020203000 {
+    											background-position: -300px -190px;
+    										}
+
+    										&.ico_1020301000 {
+    											background-position: -573px -190px;
+    										}
+
+    										&.ico_1020302000 {
+    											background-position: -483px -190px;
+    										}
+
+    										&.ico_1020303000 {
+    											background-position: -664px -190px;
+    										}
+
+    										&.ico_1020401000 {
+    											background-position: -483px -285px;
+    										}
+
+    										&.ico_1020402000 {
+    											background-position: -392px -285px;
+    										}
+
+    										&.ico_1020501000 {
+    											background-position: -300px -285px;
+    										}
+
+    										&.ico_1020503000 {
+    											background-position: -210px -285px;
+    										}
+
+    										&.ico_1020601000 {
+    											background-position: -210px -285px;
+    										}
+
+    										&.ico_1020602000 {
+    											background-position: -757px -190px;
+    										}
+
+    										&.ico_1020603000 {
+    											background-position: -846px -190px;
+    										}
+
+    										&.ico_1020701000 {
+    											background-position: -851px -285px;
+    										}
+
+    										&.ico_1020702000 {
+    											background-position: -576px -285px;
+    										}
+
+    										&.ico_1020703000 {
+    											background-position: -665px -285px;
+    										}
+
+    										&.ico_1020704000 {
+    											background-position: -757px -285px;
+    										}
+
+    										// 소프트웨어/전산소모품
+    										&.ico_1030100000 {
+    											background-position: -116px -380px;
+    										}
+
+    										&.ico_1030201000 {
+    											background-position: -393px -380px;
+    										}
+
+    										&.ico_1030202000 {
+    											background-position: -212px -380px;
+    										}
+
+    										&.ico_1030203000 {
+    											background-position: -302px -380px;
+    										}
+
+    										&.ico_1030301000 {
+    											background-position: -574px -380px;
+    										}
+
+    										&.ico_1030302000 {
+    											background-position: -488px -380px;
+    										}
+
+    										// DSLR/디카/캠코더
+    										&.ico_1040201000 {
+    											background-position: -210px -475px;
+    										}
+
+    										&.ico_1040202000 {
+    											background-position: -119px -475px;
+    										}
+
+    										// 디지털 완제품
+    										&.ico_1050101000 {
+    											background-position: -118px -570px;
+    										}
+
+    										&.ico_1050201000 {
+    											background-position: -210px -570px;
+    										}
+
+    										&.ico_1050301001 {
+    											background-position: -303px -570px;
+    										}
+
+    										&.ico_1050301002 {
+    											background-position: -393px -570px;;
+    										}
+
+    										&.ico_1050302001 {
+    											background-position: -664px -570px;
+    										}
+
+    										&.ico_1050302002 {
+    											background-position: -121px -665px;
+    										}
+
+    										&.ico_1050302003 {
+    											background-position: -846px -570px;
+    										}
+
+    										&.ico_1050302004 {
+    											background-position: -214px -665px;
+    										}
+
+    										&.ico_1050302005 {
+    											background-position: -757px -570px;
+    										}
+
+    										&.ico_1050304001 {
+    											background-position: -301px -665px;
+    										}
+
+    										&.ico_1050304002 {
+    											background-position: -391px -665px;
+    										}
+
+    										&.ico_1050304003 {
+    											background-position: -485px -665px;
+    										}
+
+    										&.ico_1050304004 {
+    											background-position: -576px -665px;
+    										}
+
+    										&.ico_1050308004 {
+    											background-position: -484px -570px;
+    										}
+
+    										&.ico_1050308005 {
+    											background-position: -572px -570px;
+    										}
+
+    										&.ico_1050401000 {
+    											background-position: -666px -665px;
+    										}
+
+    										&.ico_1050402000 {
+    											background-position: -757px -665px;
+    										}
+
+    										&.ico_1050502000 {
+    											background-position: -848px -665px;
+    										}
+
+    										&.ico_1050603000 {
+    											background-position: -124px -760px;
+    										}
 
                                             // 주방가전
     										&.ico_1070100000 {
-    											background-position: -932px -970px;
+    											background-position: -20px -970px;
     										}
 
     										&.ico_1070200000 {
-    											background-position: -1010px -970px;
+    											background-position: -98px -970px;
     										}
 
     										&.ico_1070300000 {
-    											background-position: -1089px -970px;
+    											background-position: -177px -970px;
     										}
 
     										&.ico_1070400000 {
-    											background-position: -1168px -970px;
+    											background-position: -256px -970px;
     										}
 
     										&.ico_1070500000 {
-    											background-position: -1246px -970px;
+    											background-position: -335px -970px;
     										}
 
     										&.ico_1070600000 {
-    											background-position: -1325px -970px;
+    											background-position: -415px -970px;
     										}
 
     										&.ico_1070700000 {
-    											background-position: -1404px -970px;
+    											background-position: -492px -970px;
     										}
 
     										&.ico_1070800000 {
-    											background-position: -1484px -970px;
+    											background-position: -572px -970px;
     										}
 
     										&.ico_1070900000 {
-    											background-position: -1564px -970px;
+    											background-position: -652px -970px;
     										}
 
     										&.ico_1071000000 {
-    											background-position: -1645px -970px;
+    											background-position: -732px -970px;
     										}
 
                                             // 생활가전
     										&.ico_1080100000 {
-    											background-position: -932px -1118px;
+    											background-position: -20px -1118px;
     										}
 
     										&.ico_1080200000 {
-    											background-position: -1010px -1118px;
+    											background-position: -98px -1118px;
     										}
 
     										&.ico_1080300000 {
-    											background-position: -1089px -1118px;
+    											background-position: -177px -1118px;
     										}
 
     										&.ico_1080400000 {
-    											background-position: -1168px -1118px;
+    											background-position: -256px -1118px;
     										}
 
     										&.ico_1080500000 {
-    											background-position: -1246px -1118px;
+    											background-position: -335px -1118px;
     										}
 
     										&.ico_1080600000 {
-    											background-position: -1325px -1118px;
+    											background-position: -415px -1118px;
     										}
 
     										&.ico_1080700000 {
-    											background-position: -1404px -1118px;
+    											background-position: -492px -1118px;
     										}
 
     										&.ico_1080800000 {
-    											background-position: -1484px -1118px;
+    											background-position: -572px -1118px;
     										}
 
     										&.ico_1080900000 {
-    											background-position: -1564px -1118px;
+    											background-position: -652px -1118px;
     										}
 
                                             // 계절가전
     										&.ico_1090100000 {
-    											background-position: -932px -1263px;
+    											background-position: -18px -1263px;
     										}
 
     										&.ico_1090200000 {
-    											background-position: -1010px -1263px;
+    											background-position: -98px -1263px;
     										}
 
     										&.ico_1090300000 {
-    											background-position: -1089px -1263px;
+    											background-position: -178px -1263px;
     										}
 
     										&.ico_1090400000 {
-    											background-position: -1168px -1263px;
+    											background-position: -256px -1263px;
     										}
 
     										&.ico_1090500000 {
-    											background-position: -1246px -1263px;
+    											background-position: -335px -1263px;
     										}
 
     										&.ico_1090600000 {
-    											background-position: -1325px -1263px;
+    											background-position: -415px -1263px;
     										}
 
                                             // 건강미용가전
     										&.ico_1100100000 {
-    											background-position: -932px -1410px;
+    											background-position: -18px -1410px;
     										}
 
     										&.ico_1100200000 {
-    											background-position: -1010px -1410px;
+    											background-position: -98px -1410px;
     										}
 
     										&.ico_1100300000 {
-    											background-position: -1089px -1410px;
+    											background-position: -178px -1410px;
     										}
 
     										&.ico_1100400000 {
-    											background-position: -1168px -1410px;
+    											background-position: -256px -1410px;
     										}
 
     										&.ico_1100500000 {
-    											background-position: -1246px -1410px;
+    											background-position: -335px -1410px;
     										}
 
     										&.ico_1100600000 {
-    											background-position: -1325px -1410px;
+    											background-position: -415px -1410px;
     										}
 
                                             // 영상음향가전
     										&.ico_1110100000 {
-    											background-position: -932px -1555px;
+    											background-position: -18px -1555px;
     										}
 
     										&.ico_1110200000 {
-    											background-position: -1010px -1555px;
+    											background-position: -98px -1555px;
     										}
 
     										&.ico_1110300000 {
-    											background-position: -1089px -1555px;
+    											background-position: -178px -1555px;
     										}
 
     										&.ico_1110400000 {
-    											background-position: -1168px -1555px;
+    											background-position: -256px -1555px;
     										}
 
     										&.ico_1110500000 {
-    											background-position: -1246px -1555px;
+    											background-position: -335px -1555px;
     										}
 
     										&.ico_1110600000 {
-    											background-position: -1325px -1555px;
+    											background-position: -415px -1555px;
     										}
 
                                             &.ico_1110700000 {
-    											background-position: -1404px -1555px;
+    											background-position: -492px -1555px;
     										}
 
     										&.ico_1110800000 {
-    											background-position: -1484px -1555px;
+    											background-position: -572px -1555px;
     										}
 
                                             // 자동차 용품
     										&.ico_1120100000 {
-    											background-position: -932px -1706px;
+    											background-position: -18px -1706px;
     										}
 
     										&.ico_1120200000 {
-    											background-position: -1010px -1706px;
+    											background-position: -98px -1706px;
     										}
 
     										&.ico_1120300000 {
-    											background-position: -1089px -1706px;
+    											background-position: -178px -1706px;
     										}
 
     										&.ico_1120400000 {
-    											background-position: -1168px -1706px;
+    											background-position: -256px -1706px;
     										}
 
     										&.ico_1120500000 {
-    											background-position: -1246px -1706px;
+    											background-position: -335px -1706px;
     										}
 
     										&.ico_1120600000 {
-    											background-position: -1325px -1706px;
+    											background-position: -415px -1706px;
     										}
 
                                             &.ico_1120700000 {
-    											background-position: -1404px -1706px;
+    											background-position: -492px -1706px;
     										}
 
     										&.ico_1120800000 {
-    											background-position: -1484px -1706px;
+    											background-position: -572px -1706px;
     										}
 
     										&.ico_1120900000 {
-    											background-position: -1564px -1706px;
+    											background-position: -652px -1706px;
     										}
 
     										&.ico_1121000000 {
-    											background-position: -1645px -1706px;
+    											background-position: -732px -1706px;
     										}
 
     										&.ico_1121100000 {
-    											background-position: -1721px -1706px;
+    											background-position: -810px -1706px;
     										}
 
-										}
-									}
+    										&.active {
+    											color: #fff;
 
-									&:first-child {
-										border-left:0 ;
-									}
+    											// 컴퓨터 주요부품
+    											&.ico_1010100000 {
+    												background-position: -938px 0;
+    											}
+
+    											&.ico_1010200000 {
+    												background-position: -1029px 0;
+    											}
+
+    											&.ico_1010300000 {
+    												background-position: -1119px 0;
+    											}
+
+    											&.ico_1010400000 {
+    												background-position: -1389px 0;
+    											}
+
+    											&.ico_1010500000 {
+    												background-position: -1300px 0;
+    											}
+
+    											&.ico_1010600000 {
+    												background-position: -1210px 0;
+    											}
+
+    											&.ico_1010700000 {
+    												background-position: -1481px 0;
+    											}
+
+    											&.ico_1010800000 {
+    												background-position: -1573px 0;
+    											}
+
+    											&.ico_1010900000 {
+    												background-position: -1665px 0;
+    											}
+
+    											&.ico_1011000000 {
+    												background-position: -942px -95px;
+    											}
+
+    											&.ico_1011100000 {
+    												background-position: -1028px -95px;
+    											}
+
+    											&.ico_1011201000 {
+    												background-position: -1117px -95px;
+    											}
+
+    											&.ico_1011202000 {
+    												background-position: -1207px -95px;
+    											}
+
+    											// 컴퓨터 주변기기
+    											&.ico_1020100000 {
+    												background-position: -940px -190px;
+    											}
+
+    											&.ico_1020201000 {
+    												background-position: -1209px -190px;
+    											}
+
+    											&.ico_1020202000 {
+    												background-position: -1030px -190px;
+    											}
+
+    											&.ico_1020203000 {
+    												background-position: -1120px -190px;
+    											}
+
+    											&.ico_1020301000 {
+    												background-position: -1392px -190px;
+    											}
+
+    											&.ico_1020302000 {
+    												background-position: -1302px -190px;
+    											}
+
+    											&.ico_1020303000 {
+    												background-position: -1484px -190px;
+    											}
+
+    											&.ico_1020401000 {
+    												background-position: -1303px -285px;
+    											}
+
+    											&.ico_1020402000 {
+    												background-position: -1211px -285px;
+    											}
+
+    											&.ico_1020501000 {
+    												background-position: -1121px -285px;
+    											}
+
+    											&.ico_1020503000 {
+    												background-position: -1030px -285px;
+    											}
+
+    											&.ico_1020601000 {
+    												background-position: -1029px -285px;
+    											}
+
+    											&.ico_1020602000 {
+    												background-position: -1576px -190px;
+    											}
+
+    											&.ico_1020603000 {
+    												background-position: -1665px -190px;
+    											}
+
+    											&.ico_1020701000 {
+    												background-position: -1670px -285px;
+    											}
+
+    											&.ico_1020702000 {
+    												background-position: -1394px -285px;
+    											}
+
+    											&.ico_1020703000 {
+    												background-position: -1484px -285px;
+    											}
+
+    											&.ico_1020704000 {
+    												background-position: -1576px -285px;
+    											}
+
+    											// 소프트웨어/전산소모품
+    											&.ico_1030100000 {
+    												background-position: -935px -380px;
+    											}
+
+    											&.ico_1030201000 {
+    												background-position: -1213px -380px;
+    											}
+
+    											&.ico_1030202000 {
+    												background-position: -1031px -380px;
+    											}
+
+    											&.ico_1030203000 {
+    												background-position: -1121px -380px;
+    											}
+
+    											&.ico_1030301000 {
+    												background-position: -1393px -380px;
+    											}
+
+    											&.ico_1030302000 {
+    												background-position: -1306px -380px;
+    											}
+
+    											// DSLR/디카/캠코더
+    											&.ico_1040201000 {
+    												background-position: -1029px -475px;
+    											}
+
+    											&.ico_1040202000 {
+    												background-position: -939px -475px;
+    											}
+
+    											// 디지털 완제품
+    											&.ico_1050101000 {
+    												background-position: -938px -570px;
+    											}
+
+    											&.ico_1050201000 {
+    												background-position: -1028px -570px;
+    											}
+
+    											&.ico_1050301001 {
+    												background-position: -1122px -570px;
+    											}
+
+    											&.ico_1050301002 {
+    												background-position: -1211px -570px;
+    											}
+
+    											&.ico_1050302001 {
+    												background-position: -1480px -570px;
+    											}
+
+    											&.ico_1050302002 {
+    												background-position: -940px -665px;
+    											}
+
+    											&.ico_1050302003 {
+    												background-position: -1665px -570px;
+    											}
+
+    											&.ico_1050302004 {
+    												background-position: -1035px -665px;
+    											}
+
+    											&.ico_1050302005 {
+    												background-position: -1575px -570px;
+    											}
+
+    											&.ico_1050304001 {
+    												background-position: -1119px -665px;
+    											}
+
+    											&.ico_1050304002 {
+    												background-position: -1211px -665px;
+    											}
+
+    											&.ico_1050304003 {
+    												background-position: -1304px -665px;
+    											}
+
+    											&.ico_1050304004 {
+    												background-position: -1395px -665px;
+    											}
+
+    											&.ico_1050308004 {
+    												background-position: -1302px -570px;
+    											}
+
+    											&.ico_1050308005 {
+    												background-position: -1391px -570px;
+    											}
+
+    											&.ico_1050401000 {
+    												background-position: -1485px -665px;
+    											}
+
+    											&.ico_1050402000 {
+    												background-position: -1484px -570px;
+    											}
+
+    											&.ico_1050502000 {
+    												background-position: -1667px -665px;
+    											}
+
+    											&.ico_1050603000 {
+    												background-position: -942px -760px;
+    											}
+
+                                                // 주방가전
+        										&.ico_1070100000 {
+        											background-position: -932px -970px;
+        										}
+
+        										&.ico_1070200000 {
+        											background-position: -1010px -970px;
+        										}
+
+        										&.ico_1070300000 {
+        											background-position: -1089px -970px;
+        										}
+
+        										&.ico_1070400000 {
+        											background-position: -1168px -970px;
+        										}
+
+        										&.ico_1070500000 {
+        											background-position: -1246px -970px;
+        										}
+
+        										&.ico_1070600000 {
+        											background-position: -1325px -970px;
+        										}
+
+        										&.ico_1070700000 {
+        											background-position: -1404px -970px;
+        										}
+
+        										&.ico_1070800000 {
+        											background-position: -1484px -970px;
+        										}
+
+        										&.ico_1070900000 {
+        											background-position: -1564px -970px;
+        										}
+
+        										&.ico_1071000000 {
+        											background-position: -1645px -970px;
+        										}
+
+                                                // 생활가전
+        										&.ico_1080100000 {
+        											background-position: -932px -1118px;
+        										}
+
+        										&.ico_1080200000 {
+        											background-position: -1010px -1118px;
+        										}
+
+        										&.ico_1080300000 {
+        											background-position: -1089px -1118px;
+        										}
+
+        										&.ico_1080400000 {
+        											background-position: -1168px -1118px;
+        										}
+
+        										&.ico_1080500000 {
+        											background-position: -1246px -1118px;
+        										}
+
+        										&.ico_1080600000 {
+        											background-position: -1325px -1118px;
+        										}
+
+        										&.ico_1080700000 {
+        											background-position: -1404px -1118px;
+        										}
+
+        										&.ico_1080800000 {
+        											background-position: -1484px -1118px;
+        										}
+
+        										&.ico_1080900000 {
+        											background-position: -1564px -1118px;
+        										}
+
+                                                // 계절가전
+        										&.ico_1090100000 {
+        											background-position: -932px -1263px;
+        										}
+
+        										&.ico_1090200000 {
+        											background-position: -1010px -1263px;
+        										}
+
+        										&.ico_1090300000 {
+        											background-position: -1089px -1263px;
+        										}
+
+        										&.ico_1090400000 {
+        											background-position: -1168px -1263px;
+        										}
+
+        										&.ico_1090500000 {
+        											background-position: -1246px -1263px;
+        										}
+
+        										&.ico_1090600000 {
+        											background-position: -1325px -1263px;
+        										}
+
+                                                // 건강미용가전
+        										&.ico_1100100000 {
+        											background-position: -932px -1410px;
+        										}
+
+        										&.ico_1100200000 {
+        											background-position: -1010px -1410px;
+        										}
+
+        										&.ico_1100300000 {
+        											background-position: -1089px -1410px;
+        										}
+
+        										&.ico_1100400000 {
+        											background-position: -1168px -1410px;
+        										}
+
+        										&.ico_1100500000 {
+        											background-position: -1246px -1410px;
+        										}
+
+        										&.ico_1100600000 {
+        											background-position: -1325px -1410px;
+        										}
+
+                                                // 영상음향가전
+        										&.ico_1110100000 {
+        											background-position: -932px -1555px;
+        										}
+
+        										&.ico_1110200000 {
+        											background-position: -1010px -1555px;
+        										}
+
+        										&.ico_1110300000 {
+        											background-position: -1089px -1555px;
+        										}
+
+        										&.ico_1110400000 {
+        											background-position: -1168px -1555px;
+        										}
+
+        										&.ico_1110500000 {
+        											background-position: -1246px -1555px;
+        										}
+
+        										&.ico_1110600000 {
+        											background-position: -1325px -1555px;
+        										}
+
+                                                &.ico_1110700000 {
+        											background-position: -1404px -1555px;
+        										}
+
+        										&.ico_1110800000 {
+        											background-position: -1484px -1555px;
+        										}
+
+                                                // 자동차 용품
+        										&.ico_1120100000 {
+        											background-position: -932px -1706px;
+        										}
+
+        										&.ico_1120200000 {
+        											background-position: -1010px -1706px;
+        										}
+
+        										&.ico_1120300000 {
+        											background-position: -1089px -1706px;
+        										}
+
+        										&.ico_1120400000 {
+        											background-position: -1168px -1706px;
+        										}
+
+        										&.ico_1120500000 {
+        											background-position: -1246px -1706px;
+        										}
+
+        										&.ico_1120600000 {
+        											background-position: -1325px -1706px;
+        										}
+
+                                                &.ico_1120700000 {
+        											background-position: -1404px -1706px;
+        										}
+
+        										&.ico_1120800000 {
+        											background-position: -1484px -1706px;
+        										}
+
+        										&.ico_1120900000 {
+        											background-position: -1564px -1706px;
+        										}
+
+        										&.ico_1121000000 {
+        											background-position: -1645px -1706px;
+        										}
+
+        										&.ico_1121100000 {
+        											background-position: -1721px -1706px;
+        										}
+
+    										}
+    									}
+                                    }
+
 								}
 							}
 						}
@@ -1062,7 +1086,7 @@
 							position: absolute;
 							top: 0;
 							font-size: 27px;
-							@include btn(40px, 90px, 0, #b5b0ce, #fff);
+							@include btn(40px, 120px, 0, #b5b0ce, #fff);
 
 							&:hover {
 								color: $base_color2;
@@ -1096,7 +1120,6 @@
 				.tit-h2 {
 					height: 34px;
 					font-size: 18px;
-                    padding-top: 10px;
 				}
 
 				.curation_list {
@@ -1414,6 +1437,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #e0eefb;
+                                        }
 										.btn {
 											&.active {
 												background-color: $point_color1;
@@ -1474,6 +1500,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #d9f5f8;
+                                        }
 										.btn {
 											&.active {
 												background-color: #00acc2;
@@ -1533,6 +1562,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #e2fbe5;
+                                        }
 										.btn {
 											&.active {
 												background-color: #59a45f;
@@ -1592,6 +1624,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #ece8f9;
+                                        }
 										.btn {
 											&.active {
 												background-color: #8865e7;
@@ -1651,6 +1686,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #feefec;
+                                        }
 										.btn {
 											&.active {
 												background-color: #f3755b;
@@ -1696,6 +1734,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #fafbe0;
+                                        }
 										.btn {
 											&.active {
 												background-color: #bcc219;
@@ -1741,6 +1782,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #fafbe0;
+                                        }
 										.btn {
 											&.active {
 												background-color: #bcc219;
@@ -1786,6 +1830,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #fafbe0;
+                                        }
 										.btn {
 											&.active {
 												background-color: #bcc219;
@@ -1831,6 +1878,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #fafbe0;
+                                        }
 										.btn {
 											&.active {
 												background-color: #bcc219;
@@ -1876,6 +1926,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #fafbe0;
+                                        }
 										.btn {
 											&.active {
 												background-color: #bcc219;
@@ -1921,6 +1974,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #fafbe0;
+                                        }
 										.btn {
 											&.active {
 												background-color: #bcc219;
@@ -1966,6 +2022,9 @@
 							.lnb_curation_nav_list_in {
 								.lnb_curation_nav_list_cates {
 									li {
+                                        .depth2 {
+                                            background-color: #fbeae7;
+                                        }
 										.btn {
 											&.active {
 												background-color: #dc412c;
