@@ -19,22 +19,23 @@
         });
     </script>
     <!-- // 웹폰트용 -->
+    <link rel="stylesheet" href="https://ajax.pping.kr/font/font.css" />
 
     <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/common/buttons.css" />
     <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/common/board.css" />
-	<link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/comm.css" />
+	<link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/comm.css?v=0.01" />
 	<link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/forms.css" />
 	<link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/layers.css" />
-	<link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/pages/estimate.css?v=0.1" />
+	<link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/pages/estimate.css?v=0.11" />
     <link rel="stylesheet" href="//ajax.pping.kr/_v3/css/slick.css" />
     <link rel="stylesheet" href="//ajax.pping.kr/_v3/css/slick-theme.css" />
 
 	<!-- <link rel="stylesheet" href="../../../assets/css/buttons.css" />
-    <link rel="stylesheet" href="../../../assets/css/board.css" />
-    <link rel="stylesheet" href="../../../assets/css/pc/comm.css" />
-	<link rel="stylesheet" href="../../../assets/css/pc/forms.css" />
-	<link rel="stylesheet" href="../../../assets/css/pc/layers.css" />
-    <link rel="stylesheet" href="../../../assets/css/pc/estimate.css" /> -->
+    <link rel="stylesheet" href="../../../assets/css/board.css" /> -->
+    <!-- <link rel="stylesheet" href="../../../assets/css/pc/comm.css" /> -->
+	<!-- <link rel="stylesheet" href="../../../assets/css/pc/forms.css" />
+	<link rel="stylesheet" href="../../../assets/css/pc/layers.css" /> -->
+    <!-- <link rel="stylesheet" href="../../../assets/css/pc/estimate.css" /> -->
 
 	<link rel="stylesheet" href="../../../assets/css/pc/minishop.css" />
 	<link rel="stylesheet" href="../../../assets/css/pc/adv.css" />
@@ -554,7 +555,7 @@
 									<li>발송 예상일</li>
 									<li>(현재 <em>주문상황을 감안한 예상일</em> 입니다. 정확한 발송일은 <em>미니샵에 직접 문의</em>해주시기 바랍니다.)</li>
 									<!-- <li><span class="ir">발송 예상일</span></li> -->
-									<li>미니샵 배송정책</li>
+									<li>미니샵 배송정책 (배송비 클릭)</li>
 								</ul>
 
 								<div class="total_price">
@@ -988,6 +989,19 @@
 									</div>
 									<!-- // 우수셀러 -->
 								</div>
+
+                                <!-- 삭제 레이어 -->
+                                <div class="layer-pop cash-receipt on"><!-- on / off -->
+                                    <div class="layer-pop_comm_confirm">
+                                        <strong class="pop_comm_confirm_msg">
+                                            결제완료 시<br/>
+                                            <span>현금영수증이 자동발행</span>되는 미니샵입니다.
+                                        </strong>
+
+                                        <button type="button" class="icon-close btn-layer-pop_clse"><span class="ir">닫기</span></button>
+                                    </div>
+                                </div>
+                                <!-- // 삭제 레이어 -->
 
                                  <!-- 미니샵 배송정책 레이어 -->
                                 <div class="layer-minishop pop-delivery" style="display: none">

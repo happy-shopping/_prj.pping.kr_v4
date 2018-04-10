@@ -898,6 +898,20 @@ input {
 	height: 100%;
 	z-index: 100;
 
+    &.cash-receipt {
+        &.on {
+            display: block;
+        }
+        &.off {
+            display: none;
+        }
+        .layer-pop_comm_confirm {
+            width: 390px;
+            margin: -130px 0 0 -235px;
+            min-height: 80px;
+        }
+    }
+
 	&:before {
 		content: "";
 		position: fixed;

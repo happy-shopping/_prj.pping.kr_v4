@@ -1753,7 +1753,7 @@
 
 								.compare_buy_item_minishop {
 									position: relative;
-									padding: 22px 10px 12px;
+									padding: 22px 10px 2px;
 									border-top: 1px solid #ececec;
 
 									&.soldout {
@@ -1808,7 +1808,7 @@
 											.ci {
 												overflow: hidden;
 												display: block;
-												height: 17px;
+												height: 22px;
 												margin-bottom: 10px;
 												text-align: center;
 												background: none;
@@ -1823,6 +1823,8 @@
 												display: block;
 												height: 18px;
 												margin: 0 auto;
+                                                position: relative;
+                                                top: -8px;
 											}
 
 											.badge {
@@ -1978,7 +1980,7 @@
 									.compare_buy_item_minishop_add {
 										position: absolute;
 										right: 15px;
-										top: 20px;
+										top: 25px;
 
 										.btn_basket_add {
 											font-size: 15px;

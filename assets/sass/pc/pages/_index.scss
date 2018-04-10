@@ -121,6 +121,7 @@
 					.lnb_curation_nav_list {
 						overflow: hidden;
 						position: relative;
+                        width: 880px;
 						padding: 0 40px;
 						@include box-sizing();
 
@@ -422,209 +423,857 @@
     										}
 
                                             // 주방가전
-    										&.ico_1070100000 {
-    											background-position: -20px -970px;
+    										&.ico_1070101000 {
+    											background-position: -125px -965px;
+    										}
+    										&.ico_1070102000 {
+    											background-position: -202px -965px;
+    										}
+    										&.ico_1070103000 {
+    											background-position: -280px -965px;
+    										}
+    										&.ico_1070104000 {
+    											background-position: -362px -965px;
     										}
 
-    										&.ico_1070200000 {
-    											background-position: -98px -970px;
+    										&.ico_1070201000 {
+    											background-position: -440px -965px;
+    										}
+    										&.ico_1070202000 {
+    											background-position: -519px -965px;
+    										}
+    										&.ico_1070203000 {
+    											background-position: -599px -965px;
+    										}
+    										&.ico_1070204000 {
+    											background-position: -678px -965px;
     										}
 
-    										&.ico_1070300000 {
-    											background-position: -177px -970px;
+    										&.ico_1070301000 {
+    											background-position: -758px -965px;
+    										}
+    										&.ico_1070302000 {
+    											background-position: -836px -965px;
+    										}
+    										&.ico_1070303000 {
+    											background-position: -914px -965px;
+    										}
+    										&.ico_1070304000 {
+    											background-position: -993px -965px;
     										}
 
-    										&.ico_1070400000 {
-    											background-position: -256px -970px;
+    										&.ico_1070401000 {
+    											background-position: -1071px -965px;
+    										}
+    										&.ico_1070402000 {
+    											background-position: -1150px -965px;
+    										}
+    										&.ico_1070403000 {
+    											background-position: -1229px -965px;
+    										}
+    										&.ico_1070404000 {
+    											background-position: -1308px -965px;
     										}
 
-    										&.ico_1070500000 {
-    											background-position: -335px -970px;
+    										&.ico_1070501000 {
+    											background-position: -1387px -965px;
+    										}
+    										&.ico_1070502000 {
+    											background-position: -1467px -965px;
+    										}
+    										&.ico_1070503000 {
+    											background-position: -1546px -965px;
+    										}
+    										&.ico_1070504000 {
+    											background-position: -1624px -965px;
     										}
 
-    										&.ico_1070600000 {
-    											background-position: -415px -970px;
+    										&.ico_1070601000 {
+    											background-position: -1704px -965px;
+    										}
+    										&.ico_1070602000 {
+    											background-position: -1783px -965px;
+    										}
+    										&.ico_1070603000 {
+    											background-position: -1863px -965px;
+    										}
+    										&.ico_1070604000 {
+    											background-position: -1940px -965px;
+    										}
+    										&.ico_1070605000 {
+    											background-position: -2017px -965px;
+    										}
+    										&.ico_1070606000 {
+    											background-position: -2102px -965px;
     										}
 
-    										&.ico_1070700000 {
-    											background-position: -492px -970px;
+    										&.ico_1070701000 {
+    											background-position: -2178px -965px;
+    										}
+    										&.ico_1070702000 {
+    											background-position: -2257px -965px;
+    										}
+    										&.ico_1070703000 {
+    											background-position: -2336px -965px;
+    										}
+    										&.ico_1070704000 {
+    											background-position: -2416px -965px;
+    										}
+    										&.ico_1070705000 {
+    											background-position: -2493px -965px;
+    										}
+    										&.ico_1070706000 {
+    											background-position: -2572px -965px;
+    										}
+    										&.ico_1070707000 {
+    											background-position: -2649px -965px;
+    										}
+    										&.ico_1070708000 {
+    											background-position: -2731px -965px;
     										}
 
-    										&.ico_1070800000 {
-    											background-position: -572px -970px;
+    										&.ico_1070801000 {
+    											background-position: -2809px -965px;
+    										}
+    										&.ico_1070802000 {
+    											background-position: -2890px -965px;
+    										}
+    										&.ico_1070803000 {
+    											background-position: -2969px -965px;
+    										}
+    										&.ico_1070804000 {
+    											background-position: -3046px -965px;
+    										}
+    										&.ico_1070805000 {
+    											background-position: -3127px -965px;
+    										}
+    										&.ico_1070806000 {
+    											background-position: -3207px -965px;
+    										}
+    										&.ico_1070807000 {
+    											background-position: -3284px -965px;
+    										}
+    										&.ico_1070808000 {
+    											background-position: -3363px -965px;
     										}
 
-    										&.ico_1070900000 {
-    											background-position: -652px -970px;
+    										&.ico_1070901000 {
+    											background-position: -3442px -965px;
+    										}
+    										&.ico_1070902000 {
+    											background-position: -3521px -965px;
+    										}
+    										&.ico_1070903000 {
+    											background-position: -3600px -965px;
+    										}
+    										&.ico_1070904000 {
+    											background-position: -3679px -965px;
+    										}
+    										&.ico_1070905000 {
+    											background-position: -3758px -965px;
+    										}
+    										&.ico_1070906000 {
+    											background-position: -3837px -965px;
     										}
 
-    										&.ico_1071000000 {
-    											background-position: -732px -970px;
+    										&.ico_1071001000 {
+    											background-position: -3916px -965px;
+    										}
+    										&.ico_1071002000 {
+    											background-position: -3995px -965px;
+    										}
+    										&.ico_1071003000 {
+    											background-position: -4074px -965px;
+    										}
+    										&.ico_1071004000 {
+    											background-position: -4153px -965px;
     										}
 
                                             // 생활가전
-    										&.ico_1080100000 {
-    											background-position: -20px -1118px;
+    										&.ico_1080101000 {
+    											background-position: -125px -1190px;
+    										}
+    										&.ico_1080102000 {
+    											background-position: -202px -1190px;
+    										}
+    										&.ico_1080103000 {
+    											background-position: -280px -1190px;
+    										}
+    										&.ico_1080104000 {
+    											background-position: -362px -1190px;
+    										}
+    										&.ico_1080105000 {
+    											background-position: -440px -1190px;
     										}
 
-    										&.ico_1080200000 {
-    											background-position: -98px -1118px;
+    										&.ico_1080201000 {
+    											background-position: -519px -1190px;
+    										}
+    										&.ico_1080202000 {
+    											background-position: -599px -1190px;
+    										}
+    										&.ico_1080203000 {
+    											background-position: -678px -1190px;
+    										}
+    										&.ico_1080204000 {
+    											background-position: -758px -1190px;
+    										}
+    										&.ico_1080205000 {
+    											background-position: -836px -1190px;
+    										}
+    										&.ico_1080206000 {
+    											background-position: -914px -1190px;
+    										}
+    										&.ico_1080207000 {
+    											background-position: -993px -1190px;
+    										}
+    										&.ico_1080208000 {
+    											background-position: -1071px -1190px;
     										}
 
-    										&.ico_1080300000 {
-    											background-position: -177px -1118px;
+    										&.ico_1080301000 {
+    											background-position: -1150px -1190px;
+    										}
+    										&.ico_1080302000 {
+    											background-position: -1229px -1190px;
+    										}
+    										&.ico_1080303000 {
+    											background-position: -1308px -1190px;
+    										}
+    										&.ico_1080304000 {
+    											background-position: -1387px -1190px;
+    										}
+    										&.ico_1080305000 {
+    											background-position: -1467px -1190px;
+    										}
+    										&.ico_1080306000 {
+    											background-position: -1546px -1190px;
     										}
 
-    										&.ico_1080400000 {
-    											background-position: -256px -1118px;
+    										&.ico_1080401000 {
+    											background-position: -1624px -1190px;
+    										}
+    										&.ico_1080402000 {
+    											background-position: -1704px -1190px;
+    										}
+    										&.ico_1080403000 {
+    											background-position: -1783px -1190px;
+    										}
+    										&.ico_1080404000 {
+    											background-position: -1863px -1190px;
     										}
 
-    										&.ico_1080500000 {
-    											background-position: -335px -1118px;
+    										&.ico_1080501000 {
+    											background-position: -1940px -1190px;
+    										}
+    										&.ico_1080502000 {
+    											background-position: -2019px -1190px;
     										}
 
-    										&.ico_1080600000 {
-    											background-position: -415px -1118px;
+    										&.ico_1080601000 {
+    											background-position: -2099px -1190px;
+    										}
+    										&.ico_1080602000 {
+    											background-position: -2178px -1190px;
+    										}
+    										&.ico_1080603000 {
+    											background-position: -2257px -1190px;
+    										}
+    										&.ico_1080604000 {
+    											background-position: -2336px -1190px;
     										}
 
-    										&.ico_1080700000 {
-    											background-position: -492px -1118px;
+    										&.ico_1080701000 {
+    											background-position: -2416px -1190px;
+    										}
+    										&.ico_1080702000 {
+    											background-position: -2493px -1190px;
+    										}
+    										&.ico_1080703000 {
+    											background-position: -2572px -1190px;
     										}
 
-    										&.ico_1080800000 {
-    											background-position: -572px -1118px;
+    										&.ico_1080801000 {
+    											background-position: -2649px -1190px;
+    										}
+    										&.ico_1080802000 {
+    											background-position: -2731px -1190px;
+    										}
+    										&.ico_1080803000 {
+    											background-position: -2809px -1190px;
     										}
 
-    										&.ico_1080900000 {
-    											background-position: -652px -1118px;
+    										&.ico_1080901000 {
+    											background-position: -2890px -1190px;
+    										}
+    										&.ico_1080902000 {
+    											background-position: -2969px -1190px;
+    										}
+    										&.ico_1080903000 {
+    											background-position: -3046px -1190px;
+    										}
+    										&.ico_1080904000 {
+    											background-position: -3127px -1190px;
     										}
 
                                             // 계절가전
-    										&.ico_1090100000 {
-    											background-position: -18px -1263px;
+    										&.ico_1090101000 {
+    											background-position: -125px -1415px;
+    										}
+    										&.ico_1090102000 {
+    											background-position: -202px -1415px;
+    										}
+    										&.ico_1090103000 {
+    											background-position: -280px -1415px;
+    										}
+    										&.ico_1090104000 {
+    											background-position: -362px -1415px;
+    										}
+    										&.ico_1090105000 {
+    											background-position: -440px -1415px;
+    										}
+    										&.ico_1090106000 {
+    											background-position: -519px -1415px;
+    										}
+    										&.ico_1090107000 {
+    											background-position: -599px -1415px;
     										}
 
-    										&.ico_1090200000 {
-    											background-position: -98px -1263px;
+    										&.ico_1090201000 {
+    											background-position: -678px -1415px;
+    										}
+    										&.ico_1090202000 {
+    											background-position: -758px -1415px;
+    										}
+    										&.ico_1090203000 {
+    											background-position: -836px -1415px;
+    										}
+    										&.ico_1090204000 {
+    											background-position: -914px -1415px;
+    										}
+    										&.ico_1090205000 {
+    											background-position: -993px -1415px;
+    										}
+    										&.ico_1090206000 {
+    											background-position: -1071px -1415px;
+    										}
+    										&.ico_1090207000 {
+    											background-position: -1151px -1415px;
+    										}
+    										&.ico_1090208000 {
+    											background-position: -1229px -1415px;
+    										}
+    										&.ico_1090209000 {
+    											background-position: -1308px -1415px;
     										}
 
-    										&.ico_1090300000 {
-    											background-position: -178px -1263px;
+    										&.ico_1090301000 {
+    											background-position: -1387px -1415px;
+    										}
+    										&.ico_1090302000 {
+    											background-position: -1467px -1415px;
+    										}
+    										&.ico_1090303000 {
+    											background-position: -1546px -1415px;
     										}
 
-    										&.ico_1090400000 {
-    											background-position: -256px -1263px;
+    										&.ico_1090401000 {
+    											background-position: -1624px -1415px;
+    										}
+    										&.ico_1090402000 {
+    											background-position: -1704px -1415px;
+    										}
+    										&.ico_1090403000 {
+    											background-position: -1783px -1415px;
+    										}
+    										&.ico_1090404000 {
+    											background-position: -1863px -1415px;
     										}
 
-    										&.ico_1090500000 {
-    											background-position: -335px -1263px;
+    										&.ico_1090501000 {
+    											background-position: -1940px -1415px;
+    										}
+    										&.ico_1090502000 {
+    											background-position: -2017px -1415px;
+    										}
+    										&.ico_1090503000 {
+    											background-position: -2102px -1415px;
+    										}
+    										&.ico_1090504000 {
+    											background-position: -2178px -1415px;
+    										}
+    										&.ico_1090505000 {
+    											background-position: -2257px -1415px;
     										}
 
-    										&.ico_1090600000 {
-    											background-position: -415px -1263px;
+    										&.ico_1090601000 {
+    											background-position: -2336px -1415px;
+    										}
+    										&.ico_1090602000 {
+    											background-position: -2416px -1415px;
+    										}
+    										&.ico_1090603000 {
+    											background-position: -2494px -1415px;
+    										}
+    										&.ico_1090604000 {
+    											background-position: -2572px -1415px;
+    										}
+    										&.ico_1090605000 {
+    											background-position: -2652px -1415px;
+    										}
+    										&.ico_1090606000 {
+    											background-position: -2731px -1415px;
+    										}
+    										&.ico_1090607000 {
+    											background-position: -2809px -1415px;
+    										}
+    										&.ico_1090608000 {
+    											background-position: -2890px -1415px;
+    										}
+    										&.ico_1090609000 {
+    											background-position: -2969px -1415px;
     										}
 
                                             // 건강미용가전
-    										&.ico_1100100000 {
-    											background-position: -18px -1410px;
+    										&.ico_1100101000 {
+    											background-position: -125px -1638px;
+    										}
+    										&.ico_1100102000 {
+    											background-position: -202px -1638px;
+    										}
+    										&.ico_1100103000 {
+    											background-position: -280px -1638px;
+    										}
+    										&.ico_1100104000 {
+    											background-position: -362px -1638px;
+    										}
+    										&.ico_1100105000 {
+    											background-position: -440px -1638px;
+    										}
+    										&.ico_1100106000 {
+    											background-position: -519px -1638px;
     										}
 
-    										&.ico_1100200000 {
-    											background-position: -98px -1410px;
+    										&.ico_1100201000 {
+    											background-position: -599px -1638px;
+    										}
+    										&.ico_1100202000 {
+    											background-position: -678px -1638px;
+    										}
+    										&.ico_1100203000 {
+    											background-position: -758px -1638px;
+    										}
+    										&.ico_1100204000 {
+    											background-position: -836px -1638px;
+    										}
+    										&.ico_1100205000 {
+    											background-position: -914px -1638px;
+    										}
+    										&.ico_1100206000 {
+    											background-position: -993px -1638px;
     										}
 
-    										&.ico_1100300000 {
-    											background-position: -178px -1410px;
+    										&.ico_1100301000 {
+    											background-position: -1071px -1638px;
+    										}
+    										&.ico_1100302000 {
+    											background-position: -1150px -1638px;
+    										}
+    										&.ico_1100303000 {
+    											background-position: -1230px -1638px;
+    										}
+    										&.ico_1100304000 {
+    											background-position: -1308px -1638px;
     										}
 
-    										&.ico_1100400000 {
-    											background-position: -256px -1410px;
+    										&.ico_1100401000 {
+    											background-position: -1388px -1638px;
+    										}
+    										&.ico_1100402000 {
+    											background-position: -1467px -1638px;
+    										}
+    										&.ico_1100403000 {
+    											background-position: -1546px -1638px;
+    										}
+    										&.ico_1100404000 {
+    											background-position: -1626px -1638px;
+    										}
+    										&.ico_1100405000 {
+    											background-position: -1704px -1638px;
     										}
 
-    										&.ico_1100500000 {
-    											background-position: -335px -1410px;
+    										&.ico_1100501000 {
+    											background-position: -1783px -1638px;
+    										}
+    										&.ico_1100502000 {
+    											background-position: -1863px -1638px;
+    										}
+    										&.ico_1100503000 {
+    											background-position: -1940px -1638px;
+    										}
+    										&.ico_1100504000 {
+    											background-position: -2020px -1638px;
+    										}
+    										&.ico_1100506000 {
+    											background-position: -2102px -1638px;
     										}
 
-    										&.ico_1100600000 {
-    											background-position: -415px -1410px;
+    										&.ico_1100601000 {
+    											background-position: -2178px -1638px;
+    										}
+    										&.ico_1100602000 {
+    											background-position: -2257px -1638px;
+    										}
+    										&.ico_1100603000 {
+    											background-position: -2336px -1638px;
+    										}
+    										&.ico_1100604000 {
+    											background-position: -2416px -1638px;
     										}
 
                                             // 영상음향가전
-    										&.ico_1110100000 {
-    											background-position: -18px -1555px;
+    										&.ico_1110101000 {
+    											background-position: -125px -1863px;
+    										}
+    										&.ico_1110102000 {
+    											background-position: -202px -1863px;
+    										}
+    										&.ico_1110103000 {
+    											background-position: -280px -1863px;
+    										}
+    										&.ico_1110104000 {
+    											background-position: -362px -1863px;
+    										}
+    										&.ico_1110105000 {
+    											background-position: -440px -1863px;
     										}
 
-    										&.ico_1110200000 {
-    											background-position: -98px -1555px;
+    										&.ico_1110201000 {
+    											background-position: -519px -1863px;
+    										}
+    										&.ico_1110202000 {
+    											background-position: -599px -1863px;
+    										}
+    										&.ico_1110203000 {
+    											background-position: -678px -1863px;
+    										}
+    										&.ico_1110204000 {
+    											background-position: -758px -1863px;
     										}
 
-    										&.ico_1110300000 {
-    											background-position: -178px -1555px;
+    										&.ico_1110301000 {
+    											background-position: -836px -1863px;
+    										}
+    										&.ico_1110302000 {
+    											background-position: -914px -1863px;
+    										}
+    										&.ico_1110303000 {
+    											background-position: -993px -1863px;
+    										}
+    										&.ico_1110304000 {
+    											background-position: -1071px -1863px;
+    										}
+    										&.ico_1110305000 {
+    											background-position: -1150px -1863px;
     										}
 
-    										&.ico_1110400000 {
-    											background-position: -256px -1555px;
+    										&.ico_1110401000 {
+    											background-position: -1230px -1863px;
+    										}
+    										&.ico_1110402000 {
+    											background-position: -1310px -1863px;
+    										}
+    										&.ico_1110403000 {
+    											background-position: -1389px -1863px;
+    										}
+    										&.ico_1110404000 {
+    											background-position: -1467px -1863px;
+    										}
+    										&.ico_1110405000 {
+    											background-position: -1546px -1863px;
+    										}
+    										&.ico_1110406000 {
+    											background-position: -1626px -1863px;
+    										}
+    										&.ico_1110407000 {
+    											background-position: -1704px -1863px;
+    										}
+    										&.ico_1110408000 {
+    											background-position: -1783px -1863px;
     										}
 
-    										&.ico_1110500000 {
-    											background-position: -335px -1555px;
+    										&.ico_1110501000 {
+    											background-position: -1863px -1863px;
+    										}
+    										&.ico_1110502000 {
+    											background-position: -1941px -1863px;
     										}
 
-    										&.ico_1110600000 {
-    											background-position: -415px -1555px;
+    										&.ico_1110601000 {
+    											background-position: -2020px -1863px;
+    										}
+    										&.ico_1110602000 {
+    											background-position: -2099px -1863px;
+    										}
+    										&.ico_1110603000 {
+    											background-position: -2178px -1863px;
     										}
 
-                                            &.ico_1110700000 {
-    											background-position: -492px -1555px;
+                                            &.ico_1110701000 {
+    											background-position: -2257px -1863px;
+    										}
+                                            &.ico_1110702000 {
+    											background-position: -2336px -1863px;
     										}
 
-    										&.ico_1110800000 {
-    											background-position: -572px -1555px;
+    										&.ico_1110801000 {
+    											background-position: -2416px -1863px;
+    										}
+    										&.ico_1110802000 {
+    											background-position: -2494px -1863px;
+    										}
+    										&.ico_1110803000 {
+    											background-position: -2572px -1863px;
+    										}
+    										&.ico_1110804000 {
+    											background-position: -2652px -1863px;
+    										}
+    										&.ico_1110805000 {
+    											background-position: -2731px -1863px;
     										}
 
                                             // 자동차 용품
-    										&.ico_1120100000 {
-    											background-position: -18px -1706px;
+    										&.ico_1120101000 {
+    											background-position: -129px -2083px;
+    										}
+    										&.ico_1120102000 {
+    											background-position: -205px -2083px;
+    										}
+    										&.ico_1120103000 {
+    											background-position: -286px -2083px;
     										}
 
-    										&.ico_1120200000 {
-    											background-position: -98px -1706px;
+    										&.ico_1120201000 {
+    											background-position: -365px -2083px;
+    										}
+    										&.ico_1120202000 {
+    											background-position: -444px -2083px;
+    										}
+    										&.ico_1120203000 {
+    											background-position: -524px -2083px;
+    										}
+    										&.ico_1120204000 {
+    											background-position: -602px -2083px;
+    										}
+    										&.ico_1120205000 {
+    											background-position: -682px -2083px;
+    										}
+    										&.ico_1120206000 {
+    											background-position: -760px -2083px;
     										}
 
-    										&.ico_1120300000 {
-    											background-position: -178px -1706px;
+    										&.ico_1120301000 {
+    											background-position: -840px -2083px;
+    										}
+    										&.ico_1120302000 {
+    											background-position: -918px -2083px;
+    										}
+    										&.ico_1120303000 {
+    											background-position: -995px -2083px;
+    										}
+    										&.ico_1120304000 {
+    											background-position: -1076px -2083px;
+    										}
+    										&.ico_1120305000 {
+    											background-position: -1155px -2083px;
+    										}
+    										&.ico_1120306000 {
+    											background-position: -1234px -2083px;
     										}
 
-    										&.ico_1120400000 {
-    											background-position: -256px -1706px;
+    										&.ico_1120401000 {
+    											background-position: -1314px -2083px;
+    										}
+    										&.ico_1120402000 {
+    											background-position: -1392px -2083px;
+    										}
+    										&.ico_1120403000 {
+    											background-position: -1471px -2083px;
+    										}
+    										&.ico_1120404000 {
+    											background-position: -1549px -2083px;
+    										}
+    										&.ico_1120405000 {
+    											background-position: -1628px -2083px;
     										}
 
-    										&.ico_1120500000 {
-    											background-position: -335px -1706px;
+    										&.ico_1120501000 {
+    											background-position: -1707px -2083px;
+    										}
+    										&.ico_1120502000 {
+    											background-position: -1786px -2083px;
+    										}
+    										&.ico_1120503000 {
+    											background-position: -1863px -2083px;
+    										}
+    										&.ico_1120504000 {
+    											background-position: -1940px -2083px;
+    										}
+    										&.ico_1120505000 {
+    											background-position: -2022px -2083px;
+    										}
+    										&.ico_1120506000 {
+    											background-position: -2103px -2083px;
+    										}
+    										&.ico_1120507000 {
+    											background-position: -2181px -2083px;
+    										}
+    										&.ico_1120508000 {
+    											background-position: -2261px -2083px;
+    										}
+    										&.ico_1120509000 {
+    											background-position: -2340px -2083px;
+    										}
+    										&.ico_1120510000 {
+    											background-position: -2417px -2083px;
+    										}
+    										&.ico_1120511000 {
+    											background-position: -2496px -2083px;
+    										}
+    										&.ico_1120512000 {
+    											background-position: -2577px -2083px;
     										}
 
-    										&.ico_1120600000 {
-    											background-position: -415px -1706px;
+    										&.ico_1120601000 {
+    											background-position: -2655px -2083px;
+    										}
+    										&.ico_1120602000 {
+    											background-position: -2022px -2282px;
+    										}
+    										&.ico_1120603000 {
+    											background-position: -2735px -2083px;
+    										}
+    										&.ico_1120604000 {
+    											background-position: -2814px -2083px;
     										}
 
-                                            &.ico_1120700000 {
-    											background-position: -492px -1706px;
+                                            &.ico_1120701000 {
+    											background-position: -2899px -2083px;
+    										}
+                                            &.ico_1120702000 {
+    											background-position: -2972px -2083px;
+    										}
+                                            &.ico_1120703000 {
+    											background-position: -3052px -2083px;
+    										}
+                                            &.ico_1120704000 {
+    											background-position: -3130px -2083px;
+    										}
+                                            &.ico_1120705000 {
+    											background-position: -3210px -2083px;
+    										}
+                                            &.ico_1120706000 {
+    											background-position: -3288px -2083px;
+    										}
+                                            &.ico_1120707000 {
+    											background-position: -3368px -2083px;
+    										}
+                                            &.ico_1120708000 {
+    											background-position: -3446px -2083px;
     										}
 
-    										&.ico_1120800000 {
-    											background-position: -572px -1706px;
+    										&.ico_1120801000 {
+    											background-position: -3526px -2083px;
+    										}
+    										&.ico_1120802000 {
+    											background-position: -3604px -2083px;
+    										}
+    										&.ico_1120803000 {
+    											background-position: -3683px -2083px;
+    										}
+    										&.ico_1120804000 {
+    											background-position: -3762px -2083px;
+    										}
+    										&.ico_1120805000 {
+    											background-position: -3841px -2083px;
+    										}
+    										&.ico_1120806000 {
+    											background-position: -3921px -2083px;
     										}
 
-    										&.ico_1120900000 {
-    											background-position: -652px -1706px;
+    										&.ico_1120901000 {
+    											background-position: -129px -2282px;
+    										}
+    										&.ico_1120902000 {
+    											background-position: -206px -2282px;
+    										}
+    										&.ico_1120903000 {
+    											background-position: -287px -2282px;
+    										}
+    										&.ico_1120904000 {
+    											background-position: -365px -2282px;
+    										}
+    										&.ico_1120905000 {
+    											background-position: -444px -2282px;
+    										}
+    										&.ico_1120906000 {
+    											background-position: -523px -2282px;
     										}
 
-    										&.ico_1121000000 {
-    											background-position: -732px -1706px;
+    										&.ico_1121001000 {
+    											background-position: -602px -2282px;
+    										}
+    										&.ico_1121002000 {
+    											background-position: -682px -2282px;
+    										}
+    										&.ico_1121003000 {
+    											background-position: -760px -2282px;
+    										}
+    										&.ico_1121004000 {
+    											background-position: -840px -2282px;
+    										}
+    										&.ico_1121005000 {
+    											background-position: -918px -2282px;
+    										}
+    										&.ico_1121006000 {
+    											background-position: -996px -2282px;
+    										}
+    										&.ico_1121007000 {
+    											background-position: -1076px -2282px;
+    										}
+    										&.ico_1121008000 {
+    											background-position: -2104px -2282px;
+    										}
+    										&.ico_1121009000 {
+    											background-position: -1234px -2282px;
+    										}
+    										&.ico_1121010000 {
+    											background-position: -1314px -2282px;
+    										}
+    										&.ico_1121011000 {
+    											background-position: -1392px -2282px;
+    										}
+    										&.ico_1121012000 {
+    											background-position: -1471px -2282px;
     										}
 
-    										&.ico_1121100000 {
-    											background-position: -810px -1706px;
+    										&.ico_1121101000 {
+    											background-position: -1550px -2282px;
+    										}
+    										&.ico_1121104000 {
+    											background-position: -1630px -2282px;
+    										}
+    										&.ico_1121105000 {
+    											background-position: -1708px -2282px;
+    										}
+    										&.ico_1121106000 {
+    											background-position: -1787px -2282px;
+    										}
+    										&.ico_1121107000 {
+    											background-position: -1866px -2282px;
+    										}
+    										&.ico_1121108000 {
+    											background-position: -1945px -2282px;
     										}
 
     										&.active {
@@ -668,7 +1317,7 @@
     											}
 
     											&.ico_1011000000 {
-    												background-position: -942px -95px;
+    												background-position: -939px -95px;
     											}
 
     											&.ico_1011100000 {
@@ -680,7 +1329,7 @@
     											}
 
     											&.ico_1011202000 {
-    												background-position: -1207px -95px;
+    												background-position: -1210px -95px;
     											}
 
     											// 컴퓨터 주변기기
@@ -721,7 +1370,7 @@
     											}
 
     											&.ico_1020501000 {
-    												background-position: -1121px -285px;
+    												background-position: -1118px -285px;
     											}
 
     											&.ico_1020503000 {
@@ -868,209 +1517,857 @@
     											}
 
                                                 // 주방가전
-        										&.ico_1070100000 {
-        											background-position: -932px -970px;
+        										&.ico_1070101000 {
+        											background-position: -125px -1076px;
+        										}
+        										&.ico_1070102000 {
+        											background-position: -202px -1076px;
+        										}
+        										&.ico_1070103000 {
+        											background-position: -280px -1076px;
+        										}
+        										&.ico_1070104000 {
+        											background-position: -362px -1076px;
         										}
 
-        										&.ico_1070200000 {
-        											background-position: -1010px -970px;
+        										&.ico_1070201000 {
+        											background-position: -440px -1076px;
+        										}
+        										&.ico_1070202000 {
+        											background-position: -519px -1076px;
+        										}
+        										&.ico_1070203000 {
+        											background-position: -599px -1076px;
+        										}
+        										&.ico_1070204000 {
+        											background-position: -678px -1076px;
         										}
 
-        										&.ico_1070300000 {
-        											background-position: -1089px -970px;
+        										&.ico_1070301000 {
+        											background-position: -758px -1076px;
+        										}
+        										&.ico_1070302000 {
+        											background-position: -836px -1076px;
+        										}
+        										&.ico_1070303000 {
+        											background-position: -914px -1076px;
+        										}
+        										&.ico_1070304000 {
+        											background-position: -993px -1076px;
         										}
 
-        										&.ico_1070400000 {
-        											background-position: -1168px -970px;
+        										&.ico_1070401000 {
+        											background-position: -1071px -1076px;
+        										}
+        										&.ico_1070402000 {
+        											background-position: -1150px -1076px;
+        										}
+        										&.ico_1070403000 {
+        											background-position: -1229px -1076px;
+        										}
+        										&.ico_1070404000 {
+        											background-position: -1308px -1076px;
         										}
 
-        										&.ico_1070500000 {
-        											background-position: -1246px -970px;
+        										&.ico_1070501000 {
+        											background-position: -1387px -1076px;
+        										}
+        										&.ico_1070502000 {
+        											background-position: -1467px -1076px;
+        										}
+        										&.ico_1070503000 {
+        											background-position: -1546px -1076px;
+        										}
+        										&.ico_1070504000 {
+        											background-position: -1624px -1076px;
         										}
 
-        										&.ico_1070600000 {
-        											background-position: -1325px -970px;
+        										&.ico_1070601000 {
+        											background-position: -1704px -1076px;
+        										}
+        										&.ico_1070602000 {
+        											background-position: -1783px -1076px;
+        										}
+        										&.ico_1070603000 {
+        											background-position: -1863px -1076px;
+        										}
+        										&.ico_1070604000 {
+        											background-position: -1940px -1076px;
+        										}
+        										&.ico_1070605000 {
+        											background-position: -2017px -1076px;
+        										}
+        										&.ico_1070606000 {
+        											background-position: -2102px -1076px;
         										}
 
-        										&.ico_1070700000 {
-        											background-position: -1404px -970px;
+        										&.ico_1070701000 {
+        											background-position: -2178px -1076px;
+        										}
+        										&.ico_1070702000 {
+        											background-position: -2257px -1076px;
+        										}
+        										&.ico_1070703000 {
+        											background-position: -2336px -1076px;
+        										}
+        										&.ico_1070704000 {
+        											background-position: -2416px -1076px;
+        										}
+        										&.ico_1070705000 {
+        											background-position: -2493px -1076px;
+        										}
+        										&.ico_1070706000 {
+        											background-position: -2572px -1076px;
+        										}
+        										&.ico_1070707000 {
+        											background-position: -2649px -1076px;
+        										}
+        										&.ico_1070708000 {
+        											background-position: -2731px -1076px;
         										}
 
-        										&.ico_1070800000 {
-        											background-position: -1484px -970px;
+        										&.ico_1070801000 {
+        											background-position: -2809px -1076px;
+        										}
+        										&.ico_1070802000 {
+        											background-position: -2890px -1076px;
+        										}
+        										&.ico_1070803000 {
+        											background-position: -2969px -1076px;
+        										}
+        										&.ico_1070804000 {
+        											background-position: -3046px -1076px;
+        										}
+        										&.ico_1070805000 {
+        											background-position: -3127px -1076px;
+        										}
+        										&.ico_1070806000 {
+        											background-position: -3207px -1076px;
+        										}
+        										&.ico_1070807000 {
+        											background-position: -3284px -1076px;
+        										}
+        										&.ico_1070808000 {
+        											background-position: -3363px -1076px;
         										}
 
-        										&.ico_1070900000 {
-        											background-position: -1564px -970px;
+        										&.ico_1070901000 {
+        											background-position: -3442px -1076px;
+        										}
+        										&.ico_1070902000 {
+        											background-position: -3521px -1076px;
+        										}
+        										&.ico_1070903000 {
+        											background-position: -3600px -1076px;
+        										}
+        										&.ico_1070904000 {
+        											background-position: -3679px -1076px;
+        										}
+        										&.ico_1070905000 {
+        											background-position: -3758px -1076px;
+        										}
+        										&.ico_1070906000 {
+        											background-position: -3837px -1076px;
         										}
 
-        										&.ico_1071000000 {
-        											background-position: -1645px -970px;
+        										&.ico_1071001000 {
+        											background-position: -3916px -1076px;
+        										}
+        										&.ico_1071002000 {
+        											background-position: -3995px -1076px;
+        										}
+        										&.ico_1071003000 {
+        											background-position: -4074px -1076px;
+        										}
+        										&.ico_1071004000 {
+        											background-position: -4153px -1076px;
         										}
 
                                                 // 생활가전
-        										&.ico_1080100000 {
-        											background-position: -932px -1118px;
+        										&.ico_1080101000 {
+        											background-position: -125px -1190px;
+        										}
+        										&.ico_1080102000 {
+        											background-position: -202px -1190px;
+        										}
+        										&.ico_1080103000 {
+        											background-position: -280px -1190px;
+        										}
+        										&.ico_1080104000 {
+        											background-position: -362px -1190px;
+        										}
+        										&.ico_1080105000 {
+        											background-position: -440px -1190px;
         										}
 
-        										&.ico_1080200000 {
-        											background-position: -1010px -1118px;
+        										&.ico_1080201000 {
+        											background-position: -519px -1190px;
+        										}
+        										&.ico_1080202000 {
+        											background-position: -599px -1190px;
+        										}
+        										&.ico_1080203000 {
+        											background-position: -678px -1190px;
+        										}
+        										&.ico_1080204000 {
+        											background-position: -758px -1190px;
+        										}
+        										&.ico_1080205000 {
+        											background-position: -836px -1190px;
+        										}
+        										&.ico_1080206000 {
+        											background-position: -914px -1190px;
+        										}
+        										&.ico_1080207000 {
+        											background-position: -993px -1190px;
+        										}
+        										&.ico_1080208000 {
+        											background-position: -1071px -1190px;
         										}
 
-        										&.ico_1080300000 {
-        											background-position: -1089px -1118px;
+        										&.ico_1080301000 {
+        											background-position: -1150px -1190px;
+        										}
+        										&.ico_1080302000 {
+        											background-position: -1229px -1190px;
+        										}
+        										&.ico_1080303000 {
+        											background-position: -1308px -1190px;
+        										}
+        										&.ico_1080304000 {
+        											background-position: -1387px -1190px;
+        										}
+        										&.ico_1080305000 {
+        											background-position: -1467px -1190px;
+        										}
+        										&.ico_1080306000 {
+        											background-position: -1546px -1190px;
         										}
 
-        										&.ico_1080400000 {
-        											background-position: -1168px -1118px;
+        										&.ico_1080401000 {
+        											background-position: -1624px -1190px;
+        										}
+        										&.ico_1080402000 {
+        											background-position: -1704px -1190px;
+        										}
+        										&.ico_1080403000 {
+        											background-position: -1783px -1190px;
+        										}
+        										&.ico_1080404000 {
+        											background-position: -1863px -1190px;
         										}
 
-        										&.ico_1080500000 {
-        											background-position: -1246px -1118px;
+        										&.ico_1080501000 {
+        											background-position: -1940px -1190px;
+        										}
+        										&.ico_1080502000 {
+        											background-position: -2019px -1190px;
         										}
 
-        										&.ico_1080600000 {
-        											background-position: -1325px -1118px;
+        										&.ico_1080601000 {
+        											background-position: -2099px -1190px;
+        										}
+        										&.ico_1080602000 {
+        											background-position: -2178px -1190px;
+        										}
+        										&.ico_1080603000 {
+        											background-position: -2257px -1190px;
+        										}
+        										&.ico_1080604000 {
+        											background-position: -2336px -1190px;
         										}
 
-        										&.ico_1080700000 {
-        											background-position: -1404px -1118px;
+        										&.ico_1080701000 {
+        											background-position: -2416px -1190px;
+        										}
+        										&.ico_1080702000 {
+        											background-position: -2493px -1190px;
+        										}
+        										&.ico_1080703000 {
+        											background-position: -2572px -1190px;
         										}
 
-        										&.ico_1080800000 {
-        											background-position: -1484px -1118px;
+        										&.ico_1080801000 {
+        											background-position: -2649px -1190px;
+        										}
+        										&.ico_1080802000 {
+        											background-position: -2731px -1190px;
+        										}
+        										&.ico_1080803000 {
+        											background-position: -2809px -1190px;
         										}
 
-        										&.ico_1080900000 {
-        											background-position: -1564px -1118px;
+        										&.ico_1080901000 {
+        											background-position: -2890px -1190px;
+        										}
+        										&.ico_1080902000 {
+        											background-position: -2969px -1190px;
+        										}
+        										&.ico_1080903000 {
+        											background-position: -3046px -1190px;
+        										}
+        										&.ico_1080904000 {
+        											background-position: -3127px -1190px;
         										}
 
                                                 // 계절가전
-        										&.ico_1090100000 {
-        											background-position: -932px -1263px;
+        										&.ico_1090101000 {
+        											background-position: -125px -1415px;
+        										}
+        										&.ico_1090102000 {
+        											background-position: -202px -1415px;
+        										}
+        										&.ico_1090103000 {
+        											background-position: -280px -1415px;
+        										}
+        										&.ico_1090104000 {
+        											background-position: -362px -1415px;
+        										}
+        										&.ico_1090105000 {
+        											background-position: -440px -1415px;
+        										}
+        										&.ico_1090106000 {
+        											background-position: -519px -1415px;
+        										}
+        										&.ico_1090107000 {
+        											background-position: -599px -1415px;
         										}
 
-        										&.ico_1090200000 {
-        											background-position: -1010px -1263px;
+        										&.ico_1090201000 {
+        											background-position: -678px -1415px;
+        										}
+        										&.ico_1090202000 {
+        											background-position: -758px -1415px;
+        										}
+        										&.ico_1090203000 {
+        											background-position: -836px -1415px;
+        										}
+        										&.ico_1090204000 {
+        											background-position: -914px -1415px;
+        										}
+        										&.ico_1090205000 {
+        											background-position: -993px -1415px;
+        										}
+        										&.ico_1090206000 {
+        											background-position: -1071px -1415px;
+        										}
+        										&.ico_1090207000 {
+        											background-position: -1151px -1415px;
+        										}
+        										&.ico_1090208000 {
+        											background-position: -1229px -1415px;
+        										}
+        										&.ico_1090209000 {
+        											background-position: -1308px -1415px;
         										}
 
-        										&.ico_1090300000 {
-        											background-position: -1089px -1263px;
+        										&.ico_1090301000 {
+        											background-position: -1387px -1415px;
+        										}
+        										&.ico_1090302000 {
+        											background-position: -1467px -1415px;
+        										}
+        										&.ico_1090303000 {
+        											background-position: -1546px -1415px;
         										}
 
-        										&.ico_1090400000 {
-        											background-position: -1168px -1263px;
+        										&.ico_1090401000 {
+        											background-position: -1624px -1415px;
+        										}
+        										&.ico_1090402000 {
+        											background-position: -1704px -1415px;
+        										}
+        										&.ico_1090403000 {
+        											background-position: -1783px -1415px;
+        										}
+        										&.ico_1090404000 {
+        											background-position: -1863px -1415px;
         										}
 
-        										&.ico_1090500000 {
-        											background-position: -1246px -1263px;
+        										&.ico_1090501000 {
+        											background-position: -1940px -1415px;
+        										}
+        										&.ico_1090502000 {
+        											background-position: -2017px -1415px;
+        										}
+        										&.ico_1090503000 {
+        											background-position: -2102px -1415px;
+        										}
+        										&.ico_1090504000 {
+        											background-position: -2178px -1415px;
+        										}
+        										&.ico_1090505000 {
+        											background-position: -2257px -1415px;
         										}
 
-        										&.ico_1090600000 {
-        											background-position: -1325px -1263px;
+        										&.ico_1090601000 {
+        											background-position: -2336px -1415px;
+        										}
+        										&.ico_1090602000 {
+        											background-position: -2416px -1415px;
+        										}
+        										&.ico_1090603000 {
+        											background-position: -2494px -1415px;
+        										}
+        										&.ico_1090604000 {
+        											background-position: -2572px -1415px;
+        										}
+        										&.ico_1090605000 {
+        											background-position: -2652px -1415px;
+        										}
+        										&.ico_1090606000 {
+        											background-position: -2731px -1415px;
+        										}
+        										&.ico_1090607000 {
+        											background-position: -2809px -1415px;
+        										}
+        										&.ico_1090608000 {
+        											background-position: -2890px -1415px;
+        										}
+        										&.ico_1090609000 {
+        											background-position: -2969px -1415px;
         										}
 
                                                 // 건강미용가전
-        										&.ico_1100100000 {
-        											background-position: -932px -1410px;
+        										&.ico_1100101000 {
+        											background-position: -125px -1638px;
+        										}
+        										&.ico_1100102000 {
+        											background-position: -202px -1638px;
+        										}
+        										&.ico_1100103000 {
+        											background-position: -280px -1638px;
+        										}
+        										&.ico_1100104000 {
+        											background-position: -362px -1638px;
+        										}
+        										&.ico_1100105000 {
+        											background-position: -440px -1638px;
+        										}
+        										&.ico_1100106000 {
+        											background-position: -519px -1638px;
         										}
 
-        										&.ico_1100200000 {
-        											background-position: -1010px -1410px;
+        										&.ico_1100201000 {
+        											background-position: -599px -1638px;
+        										}
+        										&.ico_1100202000 {
+        											background-position: -678px -1638px;
+        										}
+        										&.ico_1100203000 {
+        											background-position: -758px -1638px;
+        										}
+        										&.ico_1100204000 {
+        											background-position: -836px -1638px;
+        										}
+        										&.ico_1100205000 {
+        											background-position: -914px -1638px;
+        										}
+        										&.ico_1100206000 {
+        											background-position: -993px -1638px;
         										}
 
-        										&.ico_1100300000 {
-        											background-position: -1089px -1410px;
+        										&.ico_1100301000 {
+        											background-position: -1071px -1638px;
+        										}
+        										&.ico_1100302000 {
+        											background-position: -1150px -1638px;
+        										}
+        										&.ico_1100303000 {
+        											background-position: -1230px -1638px;
+        										}
+        										&.ico_1100304000 {
+        											background-position: -1308px -1638px;
         										}
 
-        										&.ico_1100400000 {
-        											background-position: -1168px -1410px;
+        										&.ico_1100401000 {
+        											background-position: -1388px -1638px;
+        										}
+        										&.ico_1100402000 {
+        											background-position: -1467px -1638px;
+        										}
+        										&.ico_1100403000 {
+        											background-position: -1546px -1638px;
+        										}
+        										&.ico_1100404000 {
+        											background-position: -1626px -1638px;
+        										}
+        										&.ico_1100405000 {
+        											background-position: -1704px -1638px;
         										}
 
-        										&.ico_1100500000 {
-        											background-position: -1246px -1410px;
+        										&.ico_1100501000 {
+        											background-position: -1783px -1638px;
+        										}
+        										&.ico_1100502000 {
+        											background-position: -1863px -1638px;
+        										}
+        										&.ico_1100503000 {
+        											background-position: -1940px -1638px;
+        										}
+        										&.ico_1100504000 {
+        											background-position: -2020px -1638px;
+        										}
+        										&.ico_1100506000 {
+        											background-position: -2102px -1638px;
         										}
 
-        										&.ico_1100600000 {
-        											background-position: -1325px -1410px;
+        										&.ico_1100601000 {
+        											background-position: -2178px -1638px;
+        										}
+        										&.ico_1100602000 {
+        											background-position: -2257px -1638px;
+        										}
+        										&.ico_1100603000 {
+        											background-position: -2336px -1638px;
+        										}
+        										&.ico_1100604000 {
+        											background-position: -2416px -1638px;
         										}
 
                                                 // 영상음향가전
-        										&.ico_1110100000 {
-        											background-position: -932px -1555px;
+        										&.ico_1110101000 {
+        											background-position: -125px -1863px;
+        										}
+        										&.ico_1110102000 {
+        											background-position: -202px -1863px;
+        										}
+        										&.ico_1110103000 {
+        											background-position: -280px -1863px;
+        										}
+        										&.ico_1110104000 {
+        											background-position: -362px -1863px;
+        										}
+        										&.ico_1110105000 {
+        											background-position: -440px -1863px;
         										}
 
-        										&.ico_1110200000 {
-        											background-position: -1010px -1555px;
+        										&.ico_1110201000 {
+        											background-position: -519px -1863px;
+        										}
+        										&.ico_1110202000 {
+        											background-position: -599px -1863px;
+        										}
+        										&.ico_1110203000 {
+        											background-position: -678px -1863px;
+        										}
+        										&.ico_1110204000 {
+        											background-position: -758px -1863px;
         										}
 
-        										&.ico_1110300000 {
-        											background-position: -1089px -1555px;
+        										&.ico_1110301000 {
+        											background-position: -836px -1863px;
+        										}
+        										&.ico_1110302000 {
+        											background-position: -914px -1863px;
+        										}
+        										&.ico_1110303000 {
+        											background-position: -993px -1863px;
+        										}
+        										&.ico_1110304000 {
+        											background-position: -1071px -1863px;
+        										}
+        										&.ico_1110305000 {
+        											background-position: -1150px -1863px;
         										}
 
-        										&.ico_1110400000 {
-        											background-position: -1168px -1555px;
+        										&.ico_1110401000 {
+        											background-position: -1230px -1863px;
+        										}
+        										&.ico_1110402000 {
+        											background-position: -1310px -1863px;
+        										}
+        										&.ico_1110403000 {
+        											background-position: -1389px -1863px;
+        										}
+        										&.ico_1110404000 {
+        											background-position: -1467px -1863px;
+        										}
+        										&.ico_1110405000 {
+        											background-position: -1546px -1863px;
+        										}
+        										&.ico_1110406000 {
+        											background-position: -1626px -1863px;
+        										}
+        										&.ico_1110407000 {
+        											background-position: -1704px -1863px;
+        										}
+        										&.ico_1110408000 {
+        											background-position: -1783px -1863px;
         										}
 
-        										&.ico_1110500000 {
-        											background-position: -1246px -1555px;
+        										&.ico_1110501000 {
+        											background-position: -1863px -1863px;
+        										}
+        										&.ico_1110502000 {
+        											background-position: -1941px -1863px;
         										}
 
-        										&.ico_1110600000 {
-        											background-position: -1325px -1555px;
+        										&.ico_1110601000 {
+        											background-position: -2020px -1863px;
+        										}
+        										&.ico_1110602000 {
+        											background-position: -2099px -1863px;
+        										}
+        										&.ico_1110603000 {
+        											background-position: -2178px -1863px;
         										}
 
-                                                &.ico_1110700000 {
-        											background-position: -1404px -1555px;
+                                                &.ico_1110701000 {
+        											background-position: -2257px -1863px;
+        										}
+                                                &.ico_1110702000 {
+        											background-position: -2336px -1863px;
         										}
 
-        										&.ico_1110800000 {
-        											background-position: -1484px -1555px;
+        										&.ico_1110801000 {
+        											background-position: -2416px -1863px;
+        										}
+        										&.ico_1110802000 {
+        											background-position: -2494px -1863px;
+        										}
+        										&.ico_1110803000 {
+        											background-position: -2572px -1863px;
+        										}
+        										&.ico_1110804000 {
+        											background-position: -2652px -1863px;
+        										}
+        										&.ico_1110805000 {
+        											background-position: -2731px -1863px;
         										}
 
                                                 // 자동차 용품
-        										&.ico_1120100000 {
-        											background-position: -932px -1706px;
+        										&.ico_1120101000 {
+        											background-position: -129px -2083px;
+        										}
+        										&.ico_1120102000 {
+        											background-position: -205px -2083px;
+        										}
+        										&.ico_1120103000 {
+        											background-position: -286px -2083px;
         										}
 
-        										&.ico_1120200000 {
-        											background-position: -1010px -1706px;
+        										&.ico_1120201000 {
+        											background-position: -365px -2083px;
+        										}
+        										&.ico_1120202000 {
+        											background-position: -444px -2083px;
+        										}
+        										&.ico_1120203000 {
+        											background-position: -524px -2083px;
+        										}
+        										&.ico_1120204000 {
+        											background-position: -602px -2083px;
+        										}
+        										&.ico_1120205000 {
+        											background-position: -682px -2083px;
+        										}
+        										&.ico_1120206000 {
+        											background-position: -760px -2083px;
         										}
 
-        										&.ico_1120300000 {
-        											background-position: -1089px -1706px;
+        										&.ico_1120301000 {
+        											background-position: -840px -2083px;
+        										}
+        										&.ico_1120302000 {
+        											background-position: -918px -2083px;
+        										}
+        										&.ico_1120303000 {
+        											background-position: -995px -2083px;
+        										}
+        										&.ico_1120304000 {
+        											background-position: -1076px -2083px;
+        										}
+        										&.ico_1120305000 {
+        											background-position: -1155px -2083px;
+        										}
+        										&.ico_1120306000 {
+        											background-position: -1234px -2083px;
         										}
 
-        										&.ico_1120400000 {
-        											background-position: -1168px -1706px;
+        										&.ico_1120401000 {
+        											background-position: -1314px -2083px;
+        										}
+        										&.ico_1120402000 {
+        											background-position: -1392px -2083px;
+        										}
+        										&.ico_1120403000 {
+        											background-position: -1471px -2083px;
+        										}
+        										&.ico_1120404000 {
+        											background-position: -1549px -2083px;
+        										}
+        										&.ico_1120405000 {
+        											background-position: -1628px -2083px;
         										}
 
-        										&.ico_1120500000 {
-        											background-position: -1246px -1706px;
+        										&.ico_1120501000 {
+        											background-position: -1707px -2083px;
+        										}
+        										&.ico_1120502000 {
+        											background-position: -1786px -2083px;
+        										}
+        										&.ico_1120503000 {
+        											background-position: -1863px -2083px;
+        										}
+        										&.ico_1120504000 {
+        											background-position: -1940px -2083px;
+        										}
+        										&.ico_1120505000 {
+        											background-position: -2022px -2083px;
+        										}
+        										&.ico_1120506000 {
+        											background-position: -2103px -2083px;
+        										}
+        										&.ico_1120507000 {
+        											background-position: -2181px -2083px;
+        										}
+        										&.ico_1120508000 {
+        											background-position: -2261px -2083px;
+        										}
+        										&.ico_1120509000 {
+        											background-position: -2340px -2083px;
+        										}
+        										&.ico_1120510000 {
+        											background-position: -2417px -2083px;
+        										}
+        										&.ico_1120511000 {
+        											background-position: -2496px -2083px;
+        										}
+        										&.ico_1120512000 {
+        											background-position: -2577px -2083px;
         										}
 
-        										&.ico_1120600000 {
-        											background-position: -1325px -1706px;
+        										&.ico_1120601000 {
+        											background-position: -2655px -2083px;
+        										}
+        										&.ico_1120602000 {
+        											background-position: -2022px -2282px;
+        										}
+        										&.ico_1120603000 {
+        											background-position: -2735px -2083px;
+        										}
+        										&.ico_1120604000 {
+        											background-position: -2814px -2083px;
         										}
 
-                                                &.ico_1120700000 {
-        											background-position: -1404px -1706px;
+                                                &.ico_1120701000 {
+        											background-position: -2899px -2083px;
+        										}
+                                                &.ico_1120702000 {
+        											background-position: -2972px -2083px;
+        										}
+                                                &.ico_1120703000 {
+        											background-position: -3052px -2083px;
+        										}
+                                                &.ico_1120704000 {
+        											background-position: -3130px -2083px;
+        										}
+                                                &.ico_1120705000 {
+        											background-position: -3210px -2083px;
+        										}
+                                                &.ico_1120706000 {
+        											background-position: -3288px -2083px;
+        										}
+                                                &.ico_1120707000 {
+        											background-position: -3368px -2083px;
+        										}
+                                                &.ico_1120708000 {
+        											background-position: -3446px -2083px;
         										}
 
-        										&.ico_1120800000 {
-        											background-position: -1484px -1706px;
+        										&.ico_1120801000 {
+        											background-position: -3526px -2083px;
+        										}
+        										&.ico_1120802000 {
+        											background-position: -3604px -2083px;
+        										}
+        										&.ico_1120803000 {
+        											background-position: -3683px -2083px;
+        										}
+        										&.ico_1120804000 {
+        											background-position: -3762px -2083px;
+        										}
+        										&.ico_1120805000 {
+        											background-position: -3841px -2083px;
+        										}
+        										&.ico_1120806000 {
+        											background-position: -3921px -2083px;
         										}
 
-        										&.ico_1120900000 {
-        											background-position: -1564px -1706px;
+        										&.ico_1120901000 {
+        											background-position: -129px -2282px;
+        										}
+        										&.ico_1120902000 {
+        											background-position: -206px -2282px;
+        										}
+        										&.ico_1120903000 {
+        											background-position: -287px -2282px;
+        										}
+        										&.ico_1120904000 {
+        											background-position: -365px -2282px;
+        										}
+        										&.ico_1120905000 {
+        											background-position: -444px -2282px;
+        										}
+        										&.ico_1120906000 {
+        											background-position: -523px -2282px;
         										}
 
-        										&.ico_1121000000 {
-        											background-position: -1645px -1706px;
+        										&.ico_1121001000 {
+        											background-position: -602px -2282px;
+        										}
+        										&.ico_1121002000 {
+        											background-position: -682px -2282px;
+        										}
+        										&.ico_1121003000 {
+        											background-position: -760px -2282px;
+        										}
+        										&.ico_1121004000 {
+        											background-position: -840px -2282px;
+        										}
+        										&.ico_1121005000 {
+        											background-position: -918px -2282px;
+        										}
+        										&.ico_1121006000 {
+        											background-position: -996px -2282px;
+        										}
+        										&.ico_1121007000 {
+        											background-position: -1076px -2282px;
+        										}
+        										&.ico_1121008000 {
+        											background-position: -2104px -2282px;
+        										}
+        										&.ico_1121009000 {
+        											background-position: -1234px -2282px;
+        										}
+        										&.ico_1121010000 {
+        											background-position: -1314px -2282px;
+        										}
+        										&.ico_1121011000 {
+        											background-position: -1392px -2282px;
+        										}
+        										&.ico_1121012000 {
+        											background-position: -1471px -2282px;
         										}
 
-        										&.ico_1121100000 {
-        											background-position: -1721px -1706px;
+        										&.ico_1121101000 {
+        											background-position: -1550px -2282px;
+        										}
+        										&.ico_1121104000 {
+        											background-position: -1630px -2282px;
+        										}
+        										&.ico_1121105000 {
+        											background-position: -1708px -2282px;
+        										}
+        										&.ico_1121106000 {
+        											background-position: -1787px -2282px;
+        										}
+        										&.ico_1121107000 {
+        											background-position: -1866px -2282px;
+        										}
+        										&.ico_1121108000 {
+        											background-position: -1945px -2282px;
         										}
 
     										}
@@ -1108,7 +2405,8 @@
 						z-index: 11;
 
 						.lnb_curation_nav_list {
-							width: calc(950px - 78px);
+							// width: calc(950px - 78px);
+                            width: 880px;
 						}
 					}
 				}
