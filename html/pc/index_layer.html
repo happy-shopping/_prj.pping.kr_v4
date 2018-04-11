@@ -10,35 +10,37 @@
 	<link rel="shortcut icon" type="image/x-icon" href="//img.happyshopping.kr/img_static/img/_v3/pping.ico" />
 
     <!-- 웹폰트용 -->
-    <script src="https://ajax.pping.kr/font/js/hpping.webfont.js"></script>
+    <!-- <script src="https://ajax.pping.kr/font/js/hpping.webfont.js"></script>
     <script>
         const hpping = new hppingFont();
         hpping.init({
             href: 'https://ajax.pping.kr/font/css/hpping.webfont.css'
         });
-    </script>
+    </script> -->
+    <link rel="stylesheet" href="https://ajax.pping.kr/font/font.css" />
     <!-- // 웹폰트용 -->
 
-	<!-- <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/comm.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/buttons.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/forms.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/board.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/layers.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/minishop.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/header.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/footer.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/index.css" /> -->
+    <link rel="stylesheet" href="//ajax.pping.kr/_v3/css/jquery.bxslider.1516088653.css" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v3/css/normalize.1516088653.css" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v3/css/pc/style.1521460678.css" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v3/css/react_slider.1516088653.css" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v3/css/slick.1516088653.css" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v3/css/slick-theme.1516088653.css" />
 
-    <link rel="stylesheet" href="../../../assets/css/pc/comm.css" />
-    <link rel="stylesheet" href="../../../assets/css/buttons.css" />
-    <link rel="stylesheet" href="../../../assets/css/board.css" />
-    <link rel="stylesheet" href="../../../assets/css/pc/layers.css" />
-    <link rel="stylesheet" href="../../../assets/css/pc/minishop.css" />
-    <link rel="stylesheet" href="../../../assets/css/pc/forms.css" />
-    <link rel="stylesheet" href="../../../assets/css/header.css" />
-    <link rel="stylesheet" href="../../../assets/css/footer.css" />
-    <link rel="stylesheet" href="../../../assets/css/pc/index.css" />
-    <link rel="stylesheet" href="../../../assets/css/pc/adv.css" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/common/buttons.css" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/common/board.css" />
+	<link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/comm.css?v=0.01" />
+	<link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/forms.css" />
+	<link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/layers.css" />
+	<link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/pages/estimate.css?v=0.11" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v3/css/slick.css" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v3/css/slick-theme.css" />
+
+    <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/minishop.css" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/common/header.css?ver=1.111" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/common/footer.css" />
+    <!-- <link rel="stylesheet" href="../../../assets/css/pc/index.css?ver=1.112" /> -->
+    <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/pages/index.css?v=0.113" />
 </head>
 
 <body>
@@ -990,7 +992,7 @@
                         </div>
                         <!-- // 표준pc -->
 
-                        <!-- 행쇼 큐레이션 메뉴변경 cate1 ~ cate5 -->
+                        <!-- 행쇼 큐레이션 메뉴변경 cate1 ~ cate11 -->
                         <div class="curation-wrap cate1">
                             <!-- 큐레이션 lnb -->
                             <div class="lnb_curation">
@@ -1007,6 +1009,12 @@
                                                 <li><button type="button" class="btn btn_cate3">소프트웨어/전산소모품</button></li>
                                                 <li><button type="button" class="btn btn_cate4">DSLR/디카/캠코더</button></li></li>
                                                 <li><button type="button" class="btn btn_cate5">디저털 완제품</button></li>
+                                                <li><button type="button" class="btn btn_cate6">주방가전</button></li>
+                                                <li><button type="button" class="btn btn_cate7">생활가전</button></li>
+                                                <li><button type="button" class="btn btn_cate8">계절가전</button></li>
+                                                <li><button type="button" class="btn btn_cate9">건강/미용가전</button></li>
+                                                <li><button type="button" class="btn btn_cate10">영상/음향가전</button></li>
+                                                <li><button type="button" class="btn btn_cate11">자동차 용품</button></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1016,87 +1024,779 @@
                                     <div class="lnb_curation_nav_list">
                                         <div class="lnb_curation_nav_list_in">
                                             <!-- 컴퓨터 주요부품 -->
-                                            <ul class="lnb_curation_nav_list_cates" style="width: 200%;">
-                                                <li><button type="button" class="btn btn_cpu active"><span>CPU</span></button></li>
-                                                <li><button type="button" class="btn btn_mainboard"><span>메인보드</span></button></li>
-                                                <li><button type="button" class="btn btn_memory"><span>메모리</span></button></li>
-                                                <li><button type="button" class="btn btn_hdd"><span>하드디스크</span></button></li>
-                                                <li><button type="button" class="btn btn_ssd"><span>SSD</span></button></li>
-                                                <li><button type="button" class="btn btn_graphic"><span>그래픽카드</span></button></li>
-                                                <li><button type="button" class="btn btn_odd"><span>ODD</span></button></li>
-                                                <li><button type="button" class="btn btn_case"><span>케이스</span></button></li>
-                                                <li><button type="button" class="btn btn_power"><span>파워</span></button></li>
-                                                <li><button type="button" class="btn btn_coolerntuning"><span>쿨러/튜닝</span></button></li>
-                                                <li><button type="button" class="btn btn_keyboard"><span>키보드</span></button></li>
-                                                <li><button type="button" class="btn btn_mouse"><span>마우스</span></button></li>
-                                                <li><button type="button" class="btn btn_tablet"><span>타블렛</span></button></li>
+                                            <ul class="lnb_curation_nav_list_cates" style="display: block; width: 5000px; left: 0px"><!-- width값은 임시 -->
+                                                <li>
+                                                    <span class="depth2"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1010100000 active"><span>CPU</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2 no-bor"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1010200000 "><span>메인보드</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2 no-bor"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1010300000 "><span>메모리</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2 no-bor"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1010400000 "><span>하드디스크</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2 no-bor"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1010500000 "><span>SSD</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2 no-bor"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1010600000 "><span>그래픽카드</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2 no-bor"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1010700000 "><span>ODD</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2 no-bor"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1010800000 "><span>케이스</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2 no-bor"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1010900000 "><span>파워</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2 no-bor"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1011000000 "><span>쿨러/튜닝</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2 no-bor"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1011100000 "><span>키보드</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">마우스/타블렛</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1011201000 "><span>마우스</span></button></li>
+                                                        <li><button type="button" class="btn ico_1011202000 "><span>타블렛</span></button></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                             <!-- // 컴퓨터 주요부품 -->
 
                                             <!-- 컴퓨터 주변기기 -->
-                                            <ul class="lnb_curation_nav_list_cates" style="display:none;width: 200%;">
-                                                <li><button type="button" class="btn btn_monitor active"><span>모니터</span></button></li>
-                                                <li><button type="button" class="btn btn_speaker"><span>스피커</span></button></li>
-                                                <li><button type="button" class="btn btn_headset"><span>헤드셋/이어폰</span></button></li>
-                                                <li><button type="button" class="btn btn_sound"><span>사운드</span></button></li>
-                                                <li><button type="button" class="btn btn_printer"><span>프린터</span></button></li>
-                                                <li><button type="button" class="btn btn_combo"><span>복합기</span></button></li>
-                                                <li><button type="button" class="btn btn_scaner"><span>스캐너</span></button></li>
-                                                <li><button type="button" class="btn btn_cam"><span>영상/TV/PC캠</span></button></li>
-                                                <li><button type="button" class="btn btn_cctv"><span>CCTV/보안</span></button></li>
-                                                <li><button type="button" class="btn btn_wifi"><span>IP공유기/무선랜</span></button></li>
-                                                <li><button type="button" class="btn btn_network"><span>네트워크/장비</span></button></li>
-                                                <li><button type="button" class="btn btn_usb"><span>USB</span></button></li>
-                                                <li><button type="button" class="btn btn_exthdd"><span>외장하드</span></button></li>
-                                                <li><button type="button" class="btn btn_nas"><span>NAS</span></button></li>
-                                                <li><button type="button" class="btn btn_cable"><span>케이블</span></button></li>
-                                                <li><button type="button" class="btn btn_controller"><span>컨트롤러</span></button></li>
-                                                <li><button type="button" class="btn btn_dvi"><span>DVI/HDMI</span></button></li>
-                                                <li><button type="button" class="btn btn_usbhub"><span>USB허브</span></button></li>
+                                            <ul class="lnb_curation_nav_list_cates" style="display: none; width: 5000px; left: 0px"><!-- width값은 임시 -->
+                                                <li>
+                                                    <span class="depth2"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1020100000 active"><span>모니터</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">스피커/헤드셋/사운드</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1020201000 "><span>스피커</span></button></li>
+                                                        <li><button type="button" class="btn ico_1020202000 "><span>헤드셋/이어폰</span></button></li>
+                                                        <li><button type="button" class="btn ico_1020203000 "><span>사운드</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">프린터/복합기/스캐너</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1020301000 "><span>프린터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1020302000 "><span>복합기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1020303000 "><span>스캐너</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">영상/CCTV</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1020401000 "><span>영상/TV/PC캠</span></button></li>
+                                                        <li><button type="button" class="btn ico_1020402000 "><span>CCTV/보안</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">IP공유기/무선랜/네트워크</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1020501000 "><span>IP공유기/무선랜</span></button></li>
+                                                        <li><button type="button" class="btn ico_1020503000 "><span>네트워크/장비</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">USB/외장하드/저장장치</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1020601000 "><span>USB</span></button></li>
+                                                        <li><button type="button" class="btn ico_1020602000 "><span>외장하드</span></button></li>
+                                                        <li><button type="button" class="btn ico_1020603000 "><span>NAS</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">케이블/분배기/공유기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1020701000 "><span>케이블</span></button></li>
+                                                        <li><button type="button" class="btn ico_1020702000 "><span>컨트롤러</span></button></li>
+                                                        <li><button type="button" class="btn ico_1020703000 "><span>DVI/HDMI</span></button></li>
+                                                        <li><button type="button" class="btn ico_1020704000 "><span>USB허브</span></button></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                             <!-- // 컴퓨터 주변기기 -->
 
                                             <!-- 소프트웨어/전산소모품 -->
-                                            <ul class="lnb_curation_nav_list_cates" style="display:none;width: 200%;">
-                                                <li><button type="button" class="btn btn_soft active"><span>소프트웨어</span></button></li>
-                                                <li><button type="button" class="btn btn_emptymedia"><span>공미디어</span></button></li>
-                                                <li><button type="button" class="btn btn_paper"><span>종이/용지</span></button></li>
-                                                <li><button type="button" class="btn btn_exp"><span>소모품</span></button></li>
-                                                <li><button type="button" class="btn btn_ink"><span>잉크</span></button></li>
-                                                <li><button type="button" class="btn btn_toner"><span>토너</span></button></li>
+                                            <ul class="lnb_curation_nav_list_cates" style="display: none; width: 5000px; left: 0px"><!-- width값은 임시 -->
+                                                <li>
+                                                    <span class="depth2"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1030100000 active"><span>소프트웨어</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">전산소모품</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1030201000 "><span>공미디어</span></button></li>
+                                                        <li><button type="button" class="btn ico_1030202000 "><span>종이/용지</span></button></li>
+                                                        <li><button type="button" class="btn ico_1030203000 "><span>소모품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">잉크/토너</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1030301000 "><span>잉크</span></button></li>
+                                                        <li><button type="button" class="btn ico_1030302000 "><span>토너</span></button></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                             <!-- // 소프트웨어/전산소모품 -->
 
                                             <!-- DSLR/디카/캠코더 -->
-                                            <ul class="lnb_curation_nav_list_cates" style="display:none;width: 200%;">
-                                                <li><button type="button" class="btn btn_memorycard active"><span>메노리카드</span></button></li>
-                                                <li><button type="button" class="btn btn_reader"><span>리더기</span></button></li>
+                                            <ul class="lnb_curation_nav_list_cates" style="display: none; width: 5000px; left: 0px"><!-- width값은 임시 -->
+                                                <li>
+                                                    <span class="depth2">메모리/리더기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1040201000 active"><span>메모리카드</span></button></li>
+                                                        <li><button type="button" class="btn ico_1040202000 "><span>리더기</span></button></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                             <!-- // DSLR/디카/캠코더 -->
 
                                             <!-- 디지털 완제품 -->
-                                            <ul class="lnb_curation_nav_list_cates" style="display:none;width: 200%;">
-                                                <li><button type="button" class="btn btn_notebook active"><span>노트북</span></button></li>
-                                                 <li><button type="button" class="btn btn_tabletpc"><span>태블릿PC</span></button></li>
-                                                <li><button type="button" class="btn btn_cooler"><span>쿨러</span></button></li>
-                                                <li><button type="button" class="btn btn_adapter"><span>어댑터</span></button></li>
-                                                <li><button type="button" class="btn btn_battery"><span>배터리</span></button></li>
-                                                <li><button type="button" class="btn btn_coolpad"><span>쿨링패드</span></button></li>
-                                                <li><button type="button" class="btn btn_notebookskin"><span>노트북 스킨</span></button></li>
-                                                <li><button type="button" class="btn btn_keyboardskin"><span>키보드 스킨</span></button></li>
-                                                <li><button type="button" class="btn btn_protectfilm"><span>액정 보호필름</span></button></li>
-                                                <li><button type="button" class="btn btn_notebookbag"><span>노트북 가방</span></button></li>
-                                                 <li><button type="button" class="btn btn_protect"><span>도난 방지장치</span></button></li>
-                                                <li><button type="button" class="btn btn_stand"><span>받침대/스탠드</span></button></li>
-                                                <li><button type="button" class="btn btn_doking"><span>도킹스테이션</span></button></li>
-                                                <li><button type="button" class="btn btn_multiboost"><span>멀티 부스트</span></button></li>
-                                                <li><button type="button" class="btn btn_portlink"><span>변환젠더</span></button></li>
-                                                <li><button type="button" class="btn btn_tabletcase"><span>태블릿케이스</span></button></li>
-                                                <li><button type="button" class="btn btn_tabletfilm"><span>태블릿필름</span></button></li>
-                                                <li><button type="button" class="btn btn_minipc"><span>미니PC</span></button></li>
-                                                <li><button type="button" class="btn btn_brandpc"><span>브랜드PC</span></button></li>
+                                            <ul class="lnb_curation_nav_list_cates" style="display: none; width: 5000px; left: 0px"><!-- width값은 임시 -->
+                                                <li>
+                                                    <span class="depth2"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1050101000 active"><span>노트북</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1050201000"><span>태블릿</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">노트북 액세서리</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1050301001"><span>어댑터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050301002"><span>배터리</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050302001"><span>노트북 스킨</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050302002"><span>키보드 스킨</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050302003"><span>액정 보호필름</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050302004"><span>노트북 가방</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050302005"><span>도난 방지장치</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050304001"><span>쿨러</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050304002"><span>쿨링패드</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050304003"><span>받침대/스탠드</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050304004"><span>도킹스테이션</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050308004"><span>멀티부스트</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050308005"><span>변환젠더</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">태블릿 액세서리</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1050401000"><span>태블릿 케이스</span></button></li>
+                                                        <li><button type="button" class="btn ico_1050402000"><span>태블릿 필름</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1050502000"><span>미니PC</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2"></span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1050603000"><span>브랜드PC</span></button></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                             <!-- // 디지털 완제품 -->
+
+                                            <!-- 주방가전 -->
+                                            <ul class="lnb_curation_nav_list_cates" style="display: none; width: 5000px; left: 0px"><!-- width값은 임시 -->
+                                                <li>
+                                                    <span class="depth2">냉장고</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1070101000 active"><span>양문형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070102000 "><span>일반형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070103000 "><span>전용냉장고</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070104000 "><span>업소용/제빙기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">김치냉장고</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1070201000 "><span>스탠드형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070202000 "><span>뚜껑형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070203000 "><span>업소용</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070204000 "><span>김치통</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">전기밥솥</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1070301000 "><span>압력밥솥</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070302000 "><span>비압력밥솥</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070303000 "><span>업소용</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070304000 "><span>내솥/부속품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">오븐/전자레인지</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1070401000 "><span>전자레인지</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070402000 "><span>전기오븐</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070403000 "><span>오븐레인지</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070404000 "><span>미니오븐</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">가스/전기레인지</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1070501000 "><span>가스레인지</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070502000 "><span>전기레인지</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070503000 "><span>레인지후드</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070504000 "><span>업소용</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">커피메이커/머신</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1070601000 "><span>자동머신</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070602000 "><span>캡슐커피머신</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070603000 "><span>원두분쇄기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070604000 "><span>커피메이커</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070605000 "><span>커피자판기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070606000 "><span>커피용품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">믹서/원액기/블랜더</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1070701000 "><span>믹서기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070702000 "><span>원액기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070703000 "><span>분쇄기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070704000 "><span>핸드블랜더</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070705000 "><span>반죽/제면기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070706000 "><span>빙수기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070707000 "><span>녹즙기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070708000 "><span>용기/부속품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">전기포트/그릴/튀김기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1070801000 "><span>전기포트</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070802000 "><span>에어프라이어/튀김기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070803000 "><span>전기그릴</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070804000 "><span>토스터/제빵기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070805000 "><span>간식메이커</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070806000 "><span>전기쿠커</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070807000 "><span>생선그릴</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070808000 "><span>전기프라이팬</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">기타 주방가전</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1070901000 "><span>식품건조기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070902000 "><span>약탕기/홍삼액제조기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070903000 "><span>음식물처리기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070904000 "><span>진공포장기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070905000 "><span>영양식/발효기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1070906000 "><span>탄산수/맥주제조기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">식기세척/살균건조기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1071001000 "><span>식기세척기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1071002000 "><span>살균건조기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1071003000 "><span>업소용</span></button></li>
+                                                        <li><button type="button" class="btn ico_1071004000 "><span>야채과일세척기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- // 주방가전 -->
+
+                                            <!-- 생활가전 -->
+                                            <ul class="lnb_curation_nav_list_cates" style="display: none; width: 5000px; left: 0px"><!-- width값은 임시 -->
+                                                <li>
+                                                    <span class="depth2">세탁기/의류건조기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1080101000 active"><span>일반세탁기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080102000 "><span>드럼세탁기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080103000 "><span>의류건조기/탈수기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080104000 "><span>의류관리기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080105000 "><span>세탁용품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">청소기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1080201000 "><span>진공청소기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080202000 "><span>스팀청소기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080203000 "><span>물걸레청소기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080204000 "><span>로봇청소기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080205000 "><span>소형청소기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080206000 "><span>침구살균청소기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080207000 "><span>업소용</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080208000 "><span>필터/부속품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">비데/욕실가전</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1080301000 "><span>전자식비데</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080302000 "><span>기계식비데</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080303000 "><span>연수기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080304000 "><span>손소독기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080305000 "><span>손건조기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080306000 "><span>필터/부속품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">전동칫솔</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1080401000 "><span>진동칫솔</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080402000 "><span>구강세정기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080403000 "><span>칫솔살균기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080404000 "><span>리필칫솔모</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">도어락/보안용품</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1080501000 "><span>도어락</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080502000 "><span>보안용품/부속품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">전화기/무전기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1080601000 "><span>일반형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080602000 "><span>사무용</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080603000 "><span>인테리어용</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080604000 "><span>무전기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">탁상용스탠드</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1080701000 "><span>LED</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080702000 "><span>인버터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080703000 "><span>일반형</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">다리미/재봉/보풀제거</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1080801000 "><span>다리미</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080802000 "><span>재봉틀</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080803000 "><span>보풀제거기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">정수기/냉온수기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1080901000 "><span>정수기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080902000 "><span>필터/부속품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080903000 "><span>냉온수기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1080904000 "><span>이온수기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- // 생활가전 -->
+
+                                            <!-- 계절가전 -->
+                                            <ul class="lnb_curation_nav_list_cates" style="display: none; width: 5000px; left: 0px"><!-- width값은 임시 -->
+                                                <li>
+                                                    <span class="depth2">에어컨/냉난방기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1090101000 active"><span>스탠드형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090102000 "><span>벽걸이형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090103000 "><span>멀티형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090104000 "><span>이동식</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090105000 "><span>창문/천장형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090106000 "><span>냉난방/업소용</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090107000 "><span>필터/설치용품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">선풍기/공기순환기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1090201000 "><span>스탠드형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090202000 "><span>벽걸이/천장형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090203000 "><span>탁상형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090204000 "><span>타워형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090205000 "><span>서큐레이터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090206000 "><span>냉풍기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090207000 "><span>환풍기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090208000 "><span>USB/휴대용</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090209000 "><span>날개/부속품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">제습기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1090301000 "><span>가정용</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090302000 "><span>업소용</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090303000 "><span>미니형</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">가습기/공기청정기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1090401000 "><span>공기청정기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090402000 "><span>에어워셔</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090403000 "><span>가습기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090404000 "><span>필터/소모품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">온수매트/전기장판</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1090501000 "><span>온수매트</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090502000 "><span>카페트/건강매트</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090503000 "><span>전기요</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090504000 "><span>전기장판</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090505000 "><span>전기방석</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">히터/온풍기/보일러</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1090601000 "><span>전기히터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090602000 "><span>온풍기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090603000 "><span>석유히터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090604000 "><span>가스히터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090605000 "><span>라디에이터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090606000 "><span>보일러</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090607000 "><span>온수기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090608000 "><span>돈풍기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1090609000 "><span>연탄/화목난로</span></button></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- // 계절가전 -->
+
+                                            <!-- 건강미용가전 -->
+                                            <ul class="lnb_curation_nav_list_cates" style="display: none; width: 5000px; left: 0px"><!-- width값은 임시 -->
+                                                <li>
+                                                    <span class="depth2">면도기/제모기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1100101000 active"><span>전기면도기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100102000 "><span>날면도기/소모품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100103000 "><span>여성용제모기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100104000 "><span>코털정리기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100105000 "><span>전기면도기 소모품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100106000 "><span>차량용면도기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">헤어/이미용기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1100201000 "><span>헤어드라이어</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100202000 "><span>매직/고데기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100203000 "><span>에어브러쉬</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100204000 "><span>셋팅롤/세트</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100205000 "><span>이발기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100206000 "><span>두피/모발관리기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">안마의자/안마기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1100301000 "><span>안마의자</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100302000 "><span>어깨안마기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100303000 "><span>핸디/눈안마기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100304000 "><span>발/다리마사지기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">찜질기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1100401000 "><span>족탕기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100402000 "><span>찜질기/팩</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100403000 "><span>부항/쑥뜸기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100404000 "><span>좌훈/좌욕기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100405000 "><span>반/전신욕기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">건강측정/의료기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1100501000 "><span>체온계</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100502000 "><span>체중/신장계</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100503000 "><span>혈당계</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100504000 "><span>혈압계</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100506000 "><span>혈당소모품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">피부관리기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1100601000 "><span>손발관리기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100602000 "><span>눈썹관리기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100603000 "><span>진동클렌저</span></button></li>
+                                                        <li><button type="button" class="btn ico_1100604000 "><span>피부미용기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- // 건강미용가전 -->
+
+                                            <!-- 영상음향가전 -->
+                                            <ul class="lnb_curation_nav_list_cates" style="display: none; width: 5000px; left: 0px"><!-- width값은 임시 -->
+                                                <li>
+                                                    <span class="depth2">TV</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1110101000 active"><span>60형이상</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110102000 "><span>59형이하</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110103000 "><span>49형이하</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110104000 "><span>39형이하</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110105000 "><span>상업용디스플레이</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">블루레이/미디어</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1110201000 "><span>블루레이플레이어</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110202000 "><span>DVD플레이어</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110203000 "><span>미디어플레이어</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110204000 "><span>블루레이 타이틀</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">프로젝터/스크린</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1110301000 "><span>프로젝터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110302000 "><span>스크린</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110303000 "><span>프리젠터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110304000 "><span>램프/기타용품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110305000 "><span>실물화상기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">TV 악세사리</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1110401000 "><span>3D입체안경</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110402000 "><span>브라켓/스탠드</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110403000 "><span>안테나</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110404000 "><span>리모컨</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110405000 "><span>스피커용스탠드</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110406000 "><span>랙케이스</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110407000 "><span>셀렉터/분배기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110408000 "><span>기타/케이블</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">홈시어터</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1110501000 "><span>홈시어터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110502000 "><span>AV리시버</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">오디오/HiFi</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1110601000 "><span>오디오</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110602000 "><span>앰프/DAC</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110603000 "><span>턴테이블/플레이어</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">스피커</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1110701000 "><span>하이파이/AV</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110702000 "><span>탁상용</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">마이크/노래반주기</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1110801000 "><span>PA앰프</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110802000 "><span>PA스피커</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110803000 "><span>믹서</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110804000 "><span>마이크</span></button></li>
+                                                        <li><button type="button" class="btn ico_1110805000 "><span>노래반주기</span></button></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- // 영상음향가전 -->
+
+                                            <!-- 자동차 용품 -->
+                                            <ul class="lnb_curation_nav_list_cates" style="display: none; width: 7000px; left: 0px"><!-- width값은 임시 -->
+                                                <li>
+                                                    <span class="depth2">블랙박스</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1120101000 active"><span>블랙박스</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120102000 "><span>블랙박스용품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120103000 "><span>후방카메라</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">내비게이션/하이패스</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1120201000 "><span>거치형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120202000 "><span>매립형</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120203000 "><span>HUD</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120204000 "><span>내비게이션용품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120205000 "><span>하이패스</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120206000 "><span>하이패스용품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">카오디오</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1120301000 "><span>카오디오</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120302000 "><span>카비디오</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120303000 "><span>카팩</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120304000 "><span>스피커/앰프</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120305000 "><span>케이블/기타</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120306000 "><span>방음/방진</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">타이어</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1120401000 "><span>타이어</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120402000 "><span>휠</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120403000 "><span>스노우체인</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120404000 "><span>타이어용품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120405000 "><span>휠용품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">배터리/전기제품</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1120501000 "><span>배터리</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120502000 "><span>배터리용품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120503000 "><span>전압안정장치</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120504000 "><span>멀티소켓</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120505000 "><span>인버터/컨버터</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120506000 "><span>공기청정기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120507000 "><span>청소기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120508000 "><span>냉장고</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120509000 "><span>선풍기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120510000 "><span>컴프레셔</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120511000 "><span>전기포트</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120512000 "><span>기타전기제품</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">엔진오일/필터</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1120601000 "><span>엔진오일</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120602000 "><span>첨가제</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120603000 "><span>미션오일/브레이크오일</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120604000 "><span>차량용필터</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">세차/광택/탈취</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1120701000 "><span>광택제/코팅제</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120702000 "><span>워셔액/세정제</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120703000 "><span>기타세정제</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120704000 "><span>세차도구</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120705000 "><span>차량보수용품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120706000 "><span>실외커버</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120707000 "><span>탈취제</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120708000 "><span>방향제</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">램프/LED</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1120801000 "><span>LED/HID</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120802000 "><span>실내등</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120803000 "><span>헤드/테일램프</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120804000 "><span>안개등</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120805000 "><span>시그널램프</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120806000 "><span>기타램프</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">외장/와이퍼</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1120901000 "><span>와이퍼</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120902000 "><span>실내몰딩/가드</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120903000 "><span>캐리어/루프박스</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120904000 "><span>선바이저</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120905000 "><span>미러용품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1120906000 "><span>사이드스텝</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">실내/안전</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1121001000 "><span>차량매트</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121002000 "><span>차량시트</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121003000 "><span>차량커버</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121004000 "><span>차량쿠션</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121005000 "><span>차량방석/담요</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121006000 "><span>차량거치대</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121007000 "><span>차량충전기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121008000 "><span>수납정리용품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121009000 "><span>주차번호판/장식</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121010000 "><span>스마트키/경보기</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121011000 "><span>안전/비상용품</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121012000 "><span>햇빛차단</span></button></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="depth2">튜닝</span>
+                                                    <ul>
+                                                        <li><button type="button" class="btn ico_1121101000 "><span>서스펜션</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121104000 "><span>브레이크</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121105000 "><span>점화플러그</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121106000 "><span>계기판</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121107000 "><span>크락션</span></button></li>
+                                                        <li><button type="button" class="btn ico_1121108000 "><span>에어로파츠</span></button></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- // 자동차 용품 -->
                                         </div>
 
                                         <button type="button" class="btn_prev"><i class="icon-angle-left"></i><span class="ir">이전</span></button>
@@ -1806,277 +2506,23 @@
 
                                         <div class="curation_box_imgs">
                                             <div class="curation_box_imgs_bnr">
-                                                <div><a href="//curation.pping.kr/1010100000/1" target="_blank"><img src="//img.happyshopping.kr/img_static/img_curation/1010100000/1/248.jpg" alt="이름" /></a></div>
-                                                <div><a href="//curation.pping.kr/1010100000/2" target="_blank"><img src="//img.happyshopping.kr/img_static/img_curation/1010100000/2/248.jpg" alt="이름" /></a></div>
-                                                <div><a href="//curation.pping.kr/1010100000/3" target="_blank"><img src="//img.happyshopping.kr/img_static/img_curation/1010100000/3/248.jpg" alt="이름" /></a></div>
+                                                <div><a href="//curation.pping.kr/1010100000/1" target="_blank">
+                                                    <img src="//img.happyshopping.kr/img_static/img_curation/empty/common1.png" alt="" />
+                                                </a></div>
                                             </div>
 
-                                            <button type="button" class="btn_prev"><i class="icon-chevron-thin-left"></i><span class="ir">이전</span></button>
-                                            <button type="button" class="btn_next"><i class="icon-chevron-thin-right"></i><span class="ir">다음</span></button>
+                                            <!-- <button type="button" class="btn_prev"><i class="icon-chevron-thin-left"></i><span class="ir">이전</span></button>
+                                            <button type="button" class="btn_next"><i class="icon-chevron-thin-right"></i><span class="ir">다음</span></button> -->
 
-                                            <div class="carousel">
+                                            <!-- <div class="carousel">
                                                 <button type="button" class="btn active"><span class="ir">1</span></button>
                                                 <button type="button" class="btn"><span class="ir">2</span></button>
                                                 <button type="button" class="btn"><span class="ir">3</span></button>
-                                            </div>
+                                            </div> -->
                                         </div>
-
                                         <div class="curation_box_items">
-                                            <div class="curation_box_items_list">
-                                                <div class="item-product happytree">
-                                                    <div class="thumb">
-                                                        <a href="#">
-                                                            <img src="http://img.happyshopping.kr/img_shopping/img_goods/img_964000/img_963934/200.jpg" alt="상품명" />
-                                                        </a>
-
-                                                        <button type="button" class="btn_happytree"><span class="ir">해피트리</span></button>
-                                                    </div>
-
-                                                    <div class="item-product_conts">
-                                                        <a href="#" class="productname">인텔 코어 I5-7세대 7600 (카비레이크) (정품)</a>
-
-                                                        <div class="productprice">
-                                                            <div class="productprice_basic">
-                                                                <span class="vm">
-                                                                    <em class="lowest">최저</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-
-                                                            <!-- 특가 -->
-                                                            <div class="productprice_spc">
-                                                                <span class="vm">
-                                                                    <em class="spc">특가</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="item-product happytree">
-                                                    <div class="thumb">
-                                                        <a href="#">
-                                                            <img src="http://img.happyshopping.kr/img_shopping/img_goods/img_964000/img_963934/200.jpg" alt="상품명" />
-                                                        </a>
-
-                                                        <button type="button" class="btn_happytree"><span class="ir">해피트리</span></button>
-                                                    </div>
-
-                                                    <div class="item-product_conts">
-                                                        <a href="#" class="productname">인텔 코어 I5-7세대 7600 (카비레이크) (정품)</a>
-
-                                                        <div class="productprice">
-                                                            <div class="productprice_basic">
-                                                                <span class="vm">
-                                                                    <em class="lowest">최저</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-
-                                                            <!-- 특가 -->
-                                                            <div class="productprice_spc">
-                                                                <span class="vm">
-                                                                    <em class="spc">특가</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="item-product happytree">
-                                                    <div class="thumb">
-                                                        <a href="#">
-                                                            <img src="http://img.happyshopping.kr/img_shopping/img_goods/img_964000/img_963934/200.jpg" alt="상품명" />
-                                                        </a>
-
-                                                        <button type="button" class="btn_happytree"><span class="ir">해피트리</span></button>
-                                                    </div>
-
-                                                    <div class="item-product_conts">
-                                                        <a href="#" class="productname">인텔 코어 I5-7세대 7600 (카비레이크) (정품)</a>
-
-                                                        <div class="productprice">
-                                                            <div class="productprice_basic">
-                                                                <span class="vm">
-                                                                    <em class="lowest">최저</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-
-                                                            <!-- 특가 -->
-                                                            <div class="productprice_spc">
-                                                                <span class="vm">
-                                                                    <em class="spc">특가</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="item-product happytree">
-                                                    <div class="thumb">
-                                                        <a href="#">
-                                                            <img src="http://img.happyshopping.kr/img_shopping/img_goods/img_964000/img_963934/200.jpg" alt="상품명" />
-                                                        </a>
-
-                                                        <button type="button" class="btn_happytree"><span class="ir">해피트리</span></button>
-                                                    </div>
-
-                                                    <div class="item-product_conts">
-                                                        <a href="#" class="productname">인텔 코어 I5-7세대 7600 (카비레이크) (정품)</a>
-
-                                                        <div class="productprice">
-                                                            <div class="productprice_basic">
-                                                                <span class="vm">
-                                                                    <em class="lowest">최저</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-
-                                                            <!-- 특가 -->
-                                                            <div class="productprice_spc">
-                                                                <span class="vm">
-                                                                    <em class="spc">특가</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="item-product happytree">
-                                                    <div class="thumb">
-                                                        <a href="#">
-                                                            <img src="http://img.happyshopping.kr/img_shopping/img_goods/img_964000/img_963934/200.jpg" alt="상품명" />
-                                                        </a>
-
-                                                        <button type="button" class="btn_happytree"><span class="ir">해피트리</span></button>
-                                                    </div>
-
-                                                    <div class="item-product_conts">
-                                                        <a href="#" class="productname">인텔 코어 I5-7세대 7600 (카비레이크) (정품)</a>
-
-                                                        <div class="productprice">
-                                                            <div class="productprice_basic">
-                                                                <span class="vm">
-                                                                    <em class="lowest">최저</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-
-                                                            <!-- 특가 -->
-                                                            <div class="productprice_spc">
-                                                                <span class="vm">
-                                                                    <em class="spc">특가</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="item-product happytree">
-                                                    <div class="thumb">
-                                                        <a href="#">
-                                                            <img src="http://img.happyshopping.kr/img_shopping/img_goods/img_964000/img_963934/200.jpg" alt="상품명" />
-                                                        </a>
-
-                                                        <button type="button" class="btn_happytree"><span class="ir">해피트리</span></button>
-                                                    </div>
-
-                                                    <div class="item-product_conts">
-                                                        <a href="#" class="productname">인텔 코어 I5-7세대 7600 (카비레이크) (정품)</a>
-
-                                                        <div class="productprice">
-                                                            <div class="productprice_basic">
-                                                                <span class="vm">
-                                                                    <em class="lowest">최저</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-
-                                                            <!-- 특가 -->
-                                                            <div class="productprice_spc">
-                                                                <span class="vm">
-                                                                    <em class="spc">특가</em>
-                                                                    <strong>112,000</strong>
-                                                                    <em>원</em>
-                                                                </span>
-
-                                                                <button type="button" class="btn-add-to">
-                                                                    <span>상품견적 담기</span>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <button type="button" class="btn_prev"><i class="icon-chevron-thin-left"></i><span class="ir">이전</span></button>
-                                            <button type="button" class="btn_next"><i class="icon-chevron-thin-right"></i><span class="ir">다음</span></button>
-
-                                            <div class="carousel">
-                                                <button type="button" class="btn active"><span class="ir">1</span></button>
-                                                <button type="button" class="btn"><span class="ir">2</span></button>
-                                                <button type="button" class="btn"><span class="ir">3</span></button>
+                                            <div class="soon">
+                                                <img src="//img.happyshopping.kr/img_static/img_curation/empty/soon.png" alt="행복쇼핑에서 더 좋은 서비스를 선보일 예정입니다. Comming Soon" />
                                             </div>
                                         </div>
                                     </div>
@@ -3253,27 +3699,87 @@ $(document).ready(function() {
     });
 
      $(".lnb_curation_nav_cate_list .btn").click(function() {
-        $(".curation-wrap").removeClass("cate1 cate2 cate3 cate4 cate5");
+        $(".curation-wrap").removeClass("cate1 cate2 cate3 cate4 cate5 cate6 cate7 cate8 cate9 cate10 cate11");
+        idx = 0;
+        $(".lnb_curation_nav_list_cates").css("left", idx);
     });
 
     $(".lnb_curation_nav_cate_list .btn_cate1").click(function() {
         $(".curation-wrap").addClass("cate1");
+        $(".lnb_curation_nav_list_cates").css("display", "none");
+        $(".lnb_curation_nav_list_cates:eq(0)").css("display", "block");
     });
 
     $(".lnb_curation_nav_cate_list .btn_cate2").click(function() {
         $(".curation-wrap").addClass("cate2");
+        $(".lnb_curation_nav_list_cates").css("display", "none");
+        $(".lnb_curation_nav_list_cates:eq(1)").css("display", "block");
     });
 
     $(".lnb_curation_nav_cate_list .btn_cate3").click(function() {
         $(".curation-wrap").addClass("cate3");
+        $(".lnb_curation_nav_list_cates").css("display", "none");
+        $(".lnb_curation_nav_list_cates:eq(2)").css("display", "block");
     });
 
     $(".lnb_curation_nav_cate_list .btn_cate4").click(function() {
         $(".curation-wrap").addClass("cate4");
+        $(".lnb_curation_nav_list_cates").css("display", "none");
+        $(".lnb_curation_nav_list_cates:eq(3)").css("display", "block");
     });
 
     $(".lnb_curation_nav_cate_list .btn_cate5").click(function() {
         $(".curation-wrap").addClass("cate5");
+        $(".lnb_curation_nav_list_cates").css("display", "none");
+        $(".lnb_curation_nav_list_cates:eq(4)").css("display", "block");
+    });
+
+    $(".lnb_curation_nav_cate_list .btn_cate6").click(function() {
+        $(".curation-wrap").addClass("cate6");
+        $(".lnb_curation_nav_list_cates").css("display", "none");
+        $(".lnb_curation_nav_list_cates:eq(5)").css("display", "block");
+    });
+
+    $(".lnb_curation_nav_cate_list .btn_cate7").click(function() {
+        $(".curation-wrap").addClass("cate7");
+        $(".lnb_curation_nav_list_cates").css("display", "none");
+        $(".lnb_curation_nav_list_cates:eq(6)").css("display", "block");
+    });
+
+    $(".lnb_curation_nav_cate_list .btn_cate8").click(function() {
+        $(".curation-wrap").addClass("cate8");
+        $(".lnb_curation_nav_list_cates").css("display", "none");
+        $(".lnb_curation_nav_list_cates:eq(7)").css("display", "block");
+    });
+
+    $(".lnb_curation_nav_cate_list .btn_cate9").click(function() {
+        $(".curation-wrap").addClass("cate9");
+        $(".lnb_curation_nav_list_cates").css("display", "none");
+        $(".lnb_curation_nav_list_cates:eq(8)").css("display", "block");
+    });
+
+    $(".lnb_curation_nav_cate_list .btn_cate10").click(function() {
+        $(".curation-wrap").addClass("cate10");
+        $(".lnb_curation_nav_list_cates").css("display", "none");
+        $(".lnb_curation_nav_list_cates:eq(9)").css("display", "block");
+    });
+
+    $(".lnb_curation_nav_cate_list .btn_cate11").click(function() {
+        $(".curation-wrap").addClass("cate11");
+        $(".lnb_curation_nav_list_cates").css("display", "none");
+        $(".lnb_curation_nav_list_cates:eq(10)").css("display", "block");
+    });
+    var idx = 0;
+    $(".lnb_curation_nav_list .btn_prev").click(function() {
+        if(idx < 0) {
+            idx += 800;
+        }
+        $(".lnb_curation_nav_list_in > ul").css("left", idx);
+    });
+
+    $(".lnb_curation_nav_list .btn_next").click(function() {
+        idx -= 800;
+        $(".lnb_curation_nav_list_in > ul").css("left", idx);
     });
 
     $(document).on("click", ".btn-ars-guide", function() {
@@ -3282,6 +3788,14 @@ $(document).ready(function() {
 
     $(document).on("click", ".layer-pop-ars .btn-layer-pop_clse", function() {
         $(".layer-pop-ars").hide();
+    });
+
+    $('.isearch').on('focus', function() {
+        $('.search-auto-result').removeClass('off').addClass('on');
+    });
+
+    $('.isearch').on('blur', function() {
+        $('.search-auto-result').removeClass('on').addClass('off');
     });
 
     $(window).scroll(function() {
