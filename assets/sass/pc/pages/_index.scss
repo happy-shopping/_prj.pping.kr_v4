@@ -3423,15 +3423,15 @@
             border: 1px solid #0f4f9f;
 
             .tit-h2 {
-                height: 43px;
+                height: 40px;
                 padding-left: 14px;
-                border-bottom: 1px solid #d3d0e1;
-                font-size: 14px;
-                font-weight: normal;
+                font-size: 12px;
                 line-height: 43px;
+                color: $base_color2;
+                font-weight: normal;
 
                 [class^="icon-"] {
-                    margin-right: 8px;
+                    margin-right: 6px;
                     font-size: 12px;
                     color: $point_color2;
                     vertical-align: 1px;
@@ -3443,16 +3443,24 @@
 
                 .btn {
                     font-size: 14px;
-                    @include btn(20%, 40px, 0, #000, #fff);
+                    @include btn(20%, 40px, 0, #666, #fff);
                     border-left: 1px solid #d3d0e1;
+                    border-top: 1px solid #d3d0e1;
 
-                    &:first-child {
+                    &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
+                        border-top: 1px solid #333;
+                    }
+                    &:nth-child(5n+1) {
                         border-left: 0;
                     }
 
                     &:hover,
                     &.active {
                         background: #f0eff5;
+                        &.space {
+                            background: none;
+                            cursor: default;
+                        }
                     }
 
                     &.active {

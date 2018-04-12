@@ -55,7 +55,7 @@
             border-left: $point_color1 1px solid;
             border-bottom: $point_color1 1px solid;
             > li {
-                border-bottom: 1px solid #fff;
+                border-bottom: 1px solid #7aaff2;
                 min-height: 40px;
                 font-size: 14px;
 
@@ -113,6 +113,7 @@
                                 background-color: #fff;
                                 box-sizing: border-box;
                                 width: 252px;
+                                height: 360px;
                                 display: none;
                                 > ul {
                                     height: 347px;
@@ -124,6 +125,7 @@
 
                                     > li {
                                         min-height: 20px;
+                                        border-bottom: none;
                                         > button {
                                             line-height: 1.8;
                                             min-height: 20px;
