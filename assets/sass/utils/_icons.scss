@@ -410,6 +410,9 @@
 .icon-cart {
     &:before {
         content: $icon-cart;
+        position: relative;
+        top: -2px;
+        left: -1px;
     }
 }
 

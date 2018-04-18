@@ -2038,9 +2038,9 @@
 							width: 100%;
 
 							td {
-								height: 50px;
+								height: 65px;
 								border-bottom: 1px solid #f2f2f2;
-								font-size: 15px;
+								font-size: 14px;
 
 								.name {
 									display: block;
@@ -2053,20 +2053,62 @@
 
 								.delivery {
 									display: block;
-									text-align: center;
+                                    font-size: 13px;
+                                    letter-spacing: -1px;
+                                    font-weight: bold;
 
 									[class^="icon-"] {
 										margin-right: 4px;
 										color: $base_color2;
+                                        font-weight: bold;
 									}
 
-									&.free {
+									.free {
 										color: #f60;
 
 										[class^="icon-"] {
 											color: #f60;
 										}
 									}
+								}
+
+								.selltype {
+									display: block;
+                                    text-align: right;
+                                    font-size: 12px;
+                                    letter-spacing: -1px;
+                                    margin-top: 10px;
+                                    margin-right: 10px;
+
+                                    em {
+                                        border-radius: 12px;
+                                        padding: 4px 8px;
+                                        min-width: 20px;
+                                        display: inline-block;
+                                        text-align: center;
+
+                                        &.power {
+                                            color: #fff;
+                                            background-color: #8860bd;
+                                        }
+                                        &.card {
+                                            color: #0f4f9f;
+                                            border: 1px solid #0f4f9f;
+                                        }
+                                        &.cash {
+                                            color: #666;
+                                            border: 1px solid #666;
+                                        }
+                                        &.new {
+                                            color: #fff;
+                                            background-color: #e65234;
+                                        }
+                                        &.gen {
+                                            color: #9933cc;
+                                            border: 1px solid #9933cc;
+                                        }
+                                    }
+
 								}
 
 								.price {
@@ -2097,7 +2139,7 @@
 									padding-top: 4px;
 									border-radius: 15px;
 									font-size: 18px;
-									@include btn(30px, 30px, 1px solid #ccc, #fff, $point_color1);
+									@include btn(30px, 30px, 1px solid $point_color1, #fff, $point_color1);
 									letter-spacing: 0;
 								}
 
