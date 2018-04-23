@@ -1387,6 +1387,7 @@ input {
                         font-size: 12px;
                         line-height: 1.3;
                         font-weight: bold;
+                        word-wrap: break-word;
                         word-break: keep-all;
                         text-align: center;
                         cursor: default;
@@ -1445,6 +1446,17 @@ input {
                                 &.all:before {
                                     background-position: $btn_all;
                                 }
+                                &.all-1:before { background-position: $btn_all-1; }
+                                &.all-2:before { background-position: $btn_all-2; }
+                                &.all-3:before { background-position: $btn_all-3; }
+                                &.all-4:before { background-position: $btn_all-4; }
+                                &.all-5:before { background-position: $btn_all-5; }
+                                &.all-6:before { background-position: $btn_all-6; }
+                                &.all-7:before { background-position: $btn_all-7; }
+                                &.all-8:before { background-position: $btn_all-8; }
+                                &.all-9:before { background-position: $btn_all-9; }
+                                &.all-10:before { background-position: $btn_all-10; }
+                                &.all-11:before { background-position: $btn_all-11; }
 
                                 // 컴퓨터 주변부품
                                 &.icos_1010100000:before {
@@ -1683,6 +1695,328 @@ input {
                                     background-position: $btn_brandpc;
                                 }
 
+                                // 주방가전
+                                &.icos_1070101000:before { background-position: $icos_1070101000; }
+                                &.icos_1070102000:before { background-position: $icos_1070102000; }
+                                &.icos_1070103000:before { background-position: $icos_1070103000; }
+                                &.icos_1070104000:before { background-position: $icos_1070104000; }
+
+                                &.icos_1070201000:before { background-position: $icos_1070201000; }
+                                &.icos_1070202000:before { background-position: $icos_1070202000; }
+                                &.icos_1070203000:before { background-position: $icos_1070203000; }
+                                &.icos_1070204000:before { background-position: $icos_1070204000; }
+
+                                &.icos_1070301000:before { background-position: $icos_1070301000; }
+                                &.icos_1070302000:before { background-position: $icos_1070302000; }
+                                &.icos_1070303000:before { background-position: $icos_1070303000; }
+                                &.icos_1070304000:before { background-position: $icos_1070304000; }
+
+                                &.icos_1070401000:before { background-position: $icos_1070401000; }
+                                &.icos_1070402000:before { background-position: $icos_1070402000; }
+                                &.icos_1070403000:before { background-position: $icos_1070403000; }
+                                &.icos_1070404000:before { background-position: $icos_1070404000; }
+
+                                &.icos_1070501000:before { background-position: $icos_1070501000; }
+                                &.icos_1070502000:before { background-position: $icos_1070502000; }
+                                &.icos_1070503000:before { background-position: $icos_1070503000; }
+                                &.icos_1070504000:before { background-position: $icos_1070504000; }
+
+                                &.icos_1070601000:before { background-position: $icos_1070601000; }
+                                &.icos_1070602000:before { background-position: $icos_1070602000; }
+                                &.icos_1070603000:before { background-position: $icos_1070603000; }
+                                &.icos_1070604000:before { background-position: $icos_1070604000; }
+                                &.icos_1070605000:before { background-position: $icos_1070605000; }
+                                &.icos_1070606000:before { background-position: $icos_1070606000; }
+
+                                &.icos_1070701000:before { background-position: $icos_1070701000; }
+                                &.icos_1070702000:before { background-position: $icos_1070702000; }
+                                &.icos_1070703000:before { background-position: $icos_1070703000; }
+                                &.icos_1070704000:before { background-position: $icos_1070704000; }
+                                &.icos_1070705000:before { background-position: $icos_1070705000; }
+                                &.icos_1070706000:before { background-position: $icos_1070706000; }
+                                &.icos_1070707000:before { background-position: $icos_1070707000; }
+                                &.icos_1070708000:before { background-position: $icos_1070708000; }
+
+                                &.icos_1070801000:before { background-position: $icos_1070801000; }
+                                &.icos_1070802000:before { background-position: $icos_1070802000; }
+                                &.icos_1070803000:before { background-position: $icos_1070803000; }
+                                &.icos_1070804000:before { background-position: $icos_1070804000; }
+                                &.icos_1070805000:before { background-position: $icos_1070805000; }
+                                &.icos_1070806000:before { background-position: $icos_1070806000; }
+                                &.icos_1070807000:before { background-position: $icos_1070807000; }
+                                &.icos_1070808000:before { background-position: $icos_1070808000; }
+
+                                &.icos_1070901000:before { background-position: $icos_1070901000; }
+                                &.icos_1070902000:before { background-position: $icos_1070902000; }
+                                &.icos_1070903000:before { background-position: $icos_1070903000; }
+                                &.icos_1070904000:before { background-position: $icos_1070904000; }
+                                &.icos_1070905000:before { background-position: $icos_1070905000; }
+                                &.icos_1070906000:before { background-position: $icos_1070906000; }
+
+                                &.icos_1071001000:before { background-position: $icos_1071001000; }
+                                &.icos_1071002000:before { background-position: $icos_1071002000; }
+                                &.icos_1071003000:before { background-position: $icos_1071003000; }
+                                &.icos_1071004000:before { background-position: $icos_1071004000; }
+
+                                // 생활가전
+                                &.icos_1080101000:before { background-position: $icos_1080101000; }
+                                &.icos_1080102000:before { background-position: $icos_1080102000; }
+                                &.icos_1080103000:before { background-position: $icos_1080103000; }
+                                &.icos_1080104000:before { background-position: $icos_1080104000; }
+                                &.icos_1080105000:before { background-position: $icos_1080105000; }
+
+                                &.icos_1080201000:before { background-position: $icos_1080201000; }
+                                &.icos_1080202000:before { background-position: $icos_1080202000; }
+                                &.icos_1080203000:before { background-position: $icos_1080203000; }
+                                &.icos_1080204000:before { background-position: $icos_1080204000; }
+                                &.icos_1080205000:before { background-position: $icos_1080205000; }
+                                &.icos_1080206000:before { background-position: $icos_1080206000; }
+                                &.icos_1080207000:before { background-position: $icos_1080207000; }
+                                &.icos_1080208000:before { background-position: $icos_1080208000; }
+
+                                &.icos_1080301000:before { background-position: $icos_1080301000; }
+                                &.icos_1080302000:before { background-position: $icos_1080302000; }
+                                &.icos_1080303000:before { background-position: $icos_1080303000; }
+                                &.icos_1080304000:before { background-position: $icos_1080304000; }
+                                &.icos_1080305000:before { background-position: $icos_1080305000; }
+                                &.icos_1080306000:before { background-position: $icos_1080306000; }
+
+                                &.icos_1080401000:before { background-position: $icos_1080401000; }
+                                &.icos_1080402000:before { background-position: $icos_1080402000; }
+                                &.icos_1080403000:before { background-position: $icos_1080403000; }
+                                &.icos_1080404000:before { background-position: $icos_1080404000; }
+
+                                &.icos_1080501000:before { background-position: $icos_1080501000; }
+                                &.icos_1080502000:before { background-position: $icos_1080502000; }
+
+                                &.icos_1080601000:before { background-position: $icos_1080601000; }
+                                &.icos_1080602000:before { background-position: $icos_1080602000; }
+                                &.icos_1080603000:before { background-position: $icos_1080603000; }
+                                &.icos_1080604000:before { background-position: $icos_1080604000; }
+
+                                &.icos_1080701000:before { background-position: $icos_1080701000; }
+                                &.icos_1080702000:before { background-position: $icos_1080702000; }
+                                &.icos_1080703000:before { background-position: $icos_1080703000; }
+
+                                &.icos_1080801000:before { background-position: $icos_1080801000; }
+                                &.icos_1080802000:before { background-position: $icos_1080802000; }
+                                &.icos_1080803000:before { background-position: $icos_1080803000; }
+
+                                &.icos_1080901000:before { background-position: $icos_1080901000; }
+                                &.icos_1080902000:before { background-position: $icos_1080902000; }
+                                &.icos_1080903000:before { background-position: $icos_1080903000; }
+                                &.icos_1080904000:before { background-position: $icos_1080904000; }
+
+                                // 계절가전
+                                &.icos_1090101000:before { background-position: $icos_1090101000; }
+                                &.icos_1090102000:before { background-position: $icos_1090102000; }
+                                &.icos_1090103000:before { background-position: $icos_1090103000; }
+                                &.icos_1090104000:before { background-position: $icos_1090104000; }
+                                &.icos_1090105000:before { background-position: $icos_1090105000; }
+                                &.icos_1090106000:before { background-position: $icos_1090106000; }
+                                &.icos_1090107000:before { background-position: $icos_1090107000; }
+
+                                &.icos_1090201000:before { background-position: $icos_1090201000; }
+                                &.icos_1090202000:before { background-position: $icos_1090202000; }
+                                &.icos_1090203000:before { background-position: $icos_1090203000; }
+                                &.icos_1090204000:before { background-position: $icos_1090204000; }
+                                &.icos_1090205000:before { background-position: $icos_1090205000; }
+                                &.icos_1090206000:before { background-position: $icos_1090206000; }
+                                &.icos_1090207000:before { background-position: $icos_1090207000; }
+                                &.icos_1090208000:before { background-position: $icos_1090208000; }
+                                &.icos_1090209000:before { background-position: $icos_1090209000; }
+
+                                &.icos_1090301000:before { background-position: $icos_1090301000; }
+                                &.icos_1090302000:before { background-position: $icos_1090302000; }
+                                &.icos_1090303000:before { background-position: $icos_1090303000; }
+
+                                &.icos_1090401000:before { background-position: $icos_1090401000; }
+                                &.icos_1090402000:before { background-position: $icos_1090402000; }
+                                &.icos_1090403000:before { background-position: $icos_1090403000; }
+                                &.icos_1090404000:before { background-position: $icos_1090404000; }
+
+                                &.icos_1090501000:before { background-position: $icos_1090501000; }
+                                &.icos_1090502000:before { background-position: $icos_1090502000; }
+                                &.icos_1090503000:before { background-position: $icos_1090503000; }
+                                &.icos_1090504000:before { background-position: $icos_1090504000; }
+                                &.icos_1090505000:before { background-position: $icos_1090505000; }
+
+                                &.icos_1090601000:before { background-position: $icos_1090601000; }
+                                &.icos_1090602000:before { background-position: $icos_1090602000; }
+                                &.icos_1090603000:before { background-position: $icos_1090603000; }
+                                &.icos_1090604000:before { background-position: $icos_1090604000; }
+                                &.icos_1090605000:before { background-position: $icos_1090605000; }
+                                &.icos_1090606000:before { background-position: $icos_1090606000; }
+                                &.icos_1090607000:before { background-position: $icos_1090607000; }
+                                &.icos_1090608000:before { background-position: $icos_1090608000; }
+                                &.icos_1090609000:before { background-position: $icos_1090609000; }
+
+                                // 건강/미용가전
+                                &.icos_1100101000:before { background-position: $icos_1100101000; }
+                                &.icos_1100102000:before { background-position: $icos_1100102000; }
+                                &.icos_1100103000:before { background-position: $icos_1100103000; }
+                                &.icos_1100104000:before { background-position: $icos_1100104000; }
+                                &.icos_1100105000:before { background-position: $icos_1100105000; }
+                                &.icos_1100106000:before { background-position: $icos_1100106000; }
+
+                                &.icos_1100201000:before { background-position: $icos_1100201000; }
+                                &.icos_1100202000:before { background-position: $icos_1100202000; }
+                                &.icos_1100203000:before { background-position: $icos_1100203000; }
+                                &.icos_1100204000:before { background-position: $icos_1100204000; }
+                                &.icos_1100205000:before { background-position: $icos_1100205000; }
+                                &.icos_1100206000:before { background-position: $icos_1100206000; }
+
+                                &.icos_1100301000:before { background-position: $icos_1100301000; }
+                                &.icos_1100302000:before { background-position: $icos_1100302000; }
+                                &.icos_1100303000:before { background-position: $icos_1100303000; }
+                                &.icos_1100304000:before { background-position: $icos_1100304000; }
+
+                                &.icos_1100401000:before { background-position: $icos_1100401000; }
+                                &.icos_1100402000:before { background-position: $icos_1100402000; }
+                                &.icos_1100403000:before { background-position: $icos_1100403000; }
+                                &.icos_1100404000:before { background-position: $icos_1100404000; }
+                                &.icos_1100405000:before { background-position: $icos_1100405000; }
+
+                                &.icos_1100501000:before { background-position: $icos_1100501000; }
+                                &.icos_1100502000:before { background-position: $icos_1100502000; }
+                                &.icos_1100503000:before { background-position: $icos_1100503000; }
+                                &.icos_1100504000:before { background-position: $icos_1100504000; }
+                                &.icos_1100506000:before { background-position: $icos_1100506000; }
+
+                                &.icos_1100601000:before { background-position: $icos_1100601000; }
+                                &.icos_1100602000:before { background-position: $icos_1100602000; }
+                                &.icos_1100603000:before { background-position: $icos_1100603000; }
+                                &.icos_1100604000:before { background-position: $icos_1100604000; }
+
+                                // 영상/음향가전
+                                &.icos_1110101000:before { background-position: $icos_1110101000; }
+                                &.icos_1110102000:before { background-position: $icos_1110102000; }
+                                &.icos_1110103000:before { background-position: $icos_1110103000; }
+                                &.icos_1110104000:before { background-position: $icos_1110104000; }
+                                &.icos_1110105000:before { background-position: $icos_1110105000; }
+
+                                &.icos_1110201000:before { background-position: $icos_1110201000; }
+                                &.icos_1110202000:before { background-position: $icos_1110202000; }
+                                &.icos_1110203000:before { background-position: $icos_1110203000; }
+                                &.icos_1110204000:before { background-position: $icos_1110204000; }
+
+                                &.icos_1110301000:before { background-position: $icos_1110301000; }
+                                &.icos_1110302000:before { background-position: $icos_1110302000; }
+                                &.icos_1110303000:before { background-position: $icos_1110303000; }
+                                &.icos_1110304000:before { background-position: $icos_1110304000; }
+                                &.icos_1110305000:before { background-position: $icos_1110305000; }
+
+                                &.icos_1110401000:before { background-position: $icos_1110401000; }
+                                &.icos_1110402000:before { background-position: $icos_1110402000; }
+                                &.icos_1110403000:before { background-position: $icos_1110403000; }
+                                &.icos_1110404000:before { background-position: $icos_1110404000; }
+                                &.icos_1110405000:before { background-position: $icos_1110405000; }
+                                &.icos_1110406000:before { background-position: $icos_1110406000; }
+                                &.icos_1110407000:before { background-position: $icos_1110407000; }
+                                &.icos_1110408000:before { background-position: $icos_1110408000; }
+
+                                &.icos_1110501000:before { background-position: $icos_1110501000; }
+                                &.icos_1110502000:before { background-position: $icos_1110502000; }
+
+                                &.icos_1110601000:before { background-position: $icos_1110601000; }
+                                &.icos_1110602000:before { background-position: $icos_1110602000; }
+                                &.icos_1110603000:before { background-position: $icos_1110603000; }
+
+                                &.icos_1110701000:before { background-position: $icos_1110701000; }
+                                &.icos_1110702000:before { background-position: $icos_1110702000; }
+
+                                &.icos_1110801000:before { background-position: $icos_1110801000; }
+                                &.icos_1110802000:before { background-position: $icos_1110802000; }
+                                &.icos_1110803000:before { background-position: $icos_1110803000; }
+                                &.icos_1110804000:before { background-position: $icos_1110804000; }
+                                &.icos_1110805000:before { background-position: $icos_1110805000; }
+
+                                // 자동차 용품
+                                &.icos_1120101000:before { background-position: $icos_1120101000; }
+                                &.icos_1120102000:before { background-position: $icos_1120102000; }
+                                &.icos_1120103000:before { background-position: $icos_1120103000; }
+
+                                &.icos_1120201000:before { background-position: $icos_1120201000; }
+                                &.icos_1120202000:before { background-position: $icos_1120202000; }
+                                &.icos_1120203000:before { background-position: $icos_1120203000; }
+                                &.icos_1120204000:before { background-position: $icos_1120204000; }
+                                &.icos_1120205000:before { background-position: $icos_1120205000; }
+                                &.icos_1120206000:before { background-position: $icos_1120206000; }
+
+                                &.icos_1120301000:before { background-position: $icos_1120301000; }
+                                &.icos_1120302000:before { background-position: $icos_1120302000; }
+                                &.icos_1120303000:before { background-position: $icos_1120303000; }
+                                &.icos_1120304000:before { background-position: $icos_1120304000; }
+                                &.icos_1120305000:before { background-position: $icos_1120305000; }
+                                &.icos_1120306000:before { background-position: $icos_1120306000; }
+
+                                &.icos_1120401000:before { background-position: $icos_1120401000; }
+                                &.icos_1120402000:before { background-position: $icos_1120402000; }
+                                &.icos_1120403000:before { background-position: $icos_1120403000; }
+                                &.icos_1120404000:before { background-position: $icos_1120404000; }
+                                &.icos_1120405000:before { background-position: $icos_1120405000; }
+
+                                &.icos_1120501000:before { background-position: $icos_1120501000; }
+                                &.icos_1120502000:before { background-position: $icos_1120502000; }
+                                &.icos_1120503000:before { background-position: $icos_1120503000; }
+                                &.icos_1120504000:before { background-position: $icos_1120504000; }
+                                &.icos_1120505000:before { background-position: $icos_1120505000; }
+                                &.icos_1120506000:before { background-position: $icos_1120506000; }
+                                &.icos_1120507000:before { background-position: $icos_1120507000; }
+                                &.icos_1120508000:before { background-position: $icos_1120508000; }
+                                &.icos_1120509000:before { background-position: $icos_1120509000; }
+                                &.icos_1120510000:before { background-position: $icos_1120510000; }
+                                &.icos_1120511000:before { background-position: $icos_1120511000; }
+                                &.icos_1120512000:before { background-position: $icos_1120512000; }
+
+                                &.icos_1120601000:before { background-position: $icos_1120601000; }
+                                &.icos_1120602000:before { background-position: $icos_1120602000; }
+                                &.icos_1120603000:before { background-position: $icos_1120603000; }
+                                &.icos_1120604000:before { background-position: $icos_1120604000; }
+
+                                &.icos_1120701000:before { background-position: $icos_1120701000; }
+                                &.icos_1120702000:before { background-position: $icos_1120702000; }
+                                &.icos_1120703000:before { background-position: $icos_1120703000; }
+                                &.icos_1120704000:before { background-position: $icos_1120704000; }
+                                &.icos_1120705000:before { background-position: $icos_1120705000; }
+                                &.icos_1120706000:before { background-position: $icos_1120706000; }
+                                &.icos_1120707000:before { background-position: $icos_1120707000; }
+                                &.icos_1120708000:before { background-position: $icos_1120708000; }
+
+                                &.icos_1120801000:before { background-position: $icos_1120801000; }
+                                &.icos_1120802000:before { background-position: $icos_1120802000; }
+                                &.icos_1120803000:before { background-position: $icos_1120803000; }
+                                &.icos_1120804000:before { background-position: $icos_1120804000; }
+                                &.icos_1120805000:before { background-position: $icos_1120805000; }
+                                &.icos_1120806000:before { background-position: $icos_1120806000; }
+
+                                &.icos_1120901000:before { background-position: $icos_1120901000; }
+                                &.icos_1120902000:before { background-position: $icos_1120902000; }
+                                &.icos_1120903000:before { background-position: $icos_1120903000; }
+                                &.icos_1120904000:before { background-position: $icos_1120904000; }
+                                &.icos_1120905000:before { background-position: $icos_1120905000; }
+                                &.icos_1120906000:before { background-position: $icos_1120906000; }
+
+                                &.icos_1121001000:before { background-position: $icos_1121001000; }
+                                &.icos_1121002000:before { background-position: $icos_1121002000; }
+                                &.icos_1121003000:before { background-position: $icos_1121003000; }
+                                &.icos_1121004000:before { background-position: $icos_1121004000; }
+                                &.icos_1121005000:before { background-position: $icos_1121005000; }
+                                &.icos_1121006000:before { background-position: $icos_1121006000; }
+                                &.icos_1121007000:before { background-position: $icos_1121007000; }
+                                &.icos_1121008000:before { background-position: $icos_1121008000; }
+                                &.icos_1121009000:before { background-position: $icos_1121009000; }
+                                &.icos_1121010000:before { background-position: $icos_1121010000; }
+                                &.icos_1121011000:before { background-position: $icos_1121011000; }
+                                &.icos_1121012000:before { background-position: $icos_1121012000; }
+
+                                &.icos_1121101000:before { background-position: $icos_1121101000; }
+                                &.icos_1121104000:before { background-position: $icos_1121104000; }
+                                &.icos_1121105000:before { background-position: $icos_1121105000; }
+                                &.icos_1121106000:before { background-position: $icos_1121106000; }
+                                &.icos_1121107000:before { background-position: $icos_1121107000; }
+                                &.icos_1121108000:before { background-position: $icos_1121108000; }
+
                                 // 기획PC
                                 &.btn_planpc:before {
                                     background-position: $btn_planpc;
@@ -1695,6 +2029,17 @@ input {
                                     &.all:before {
                                         background-position: $btn_all_on;
                                     }
+                                    &.all-1:before { background-position: $btn_all_on; }
+                                    &.all-2:before { background-position: $btn_all_on; }
+                                    &.all-3:before { background-position: $btn_all_on; }
+                                    &.all-4:before { background-position: $btn_all_on; }
+                                    &.all-5:before { background-position: $btn_all_on; }
+                                    &.all-6:before { background-position: $btn_all_on; }
+                                    &.all-7:before { background-position: $btn_all_on; }
+                                    &.all-8:before { background-position: $btn_all_on; }
+                                    &.all-9:before { background-position: $btn_all_on; }
+                                    &.all-10:before { background-position: $btn_all_on; }
+                                    &.all-11:before { background-position: $btn_all_on; }
 
                                     // 컴퓨터 주변부품
                                     &.icos_1010100000:before {
@@ -1932,6 +2277,328 @@ input {
                                     &.icos_1050603000:before {
                                         background-position: $btn_brandpc_on;
                                     }
+
+                                    // 주방가전
+                                    &.icos_1070101000:before { background-position: $icos_1070101000_on; }
+                                    &.icos_1070102000:before { background-position: $icos_1070102000_on; }
+                                    &.icos_1070103000:before { background-position: $icos_1070103000_on; }
+                                    &.icos_1070104000:before { background-position: $icos_1070104000_on; }
+
+                                    &.icos_1070201000:before { background-position: $icos_1070201000_on; }
+                                    &.icos_1070202000:before { background-position: $icos_1070202000_on; }
+                                    &.icos_1070203000:before { background-position: $icos_1070203000_on; }
+                                    &.icos_1070204000:before { background-position: $icos_1070204000_on; }
+
+                                    &.icos_1070301000:before { background-position: $icos_1070301000_on; }
+                                    &.icos_1070302000:before { background-position: $icos_1070302000_on; }
+                                    &.icos_1070303000:before { background-position: $icos_1070303000_on; }
+                                    &.icos_1070304000:before { background-position: $icos_1070304000_on; }
+
+                                    &.icos_1070401000:before { background-position: $icos_1070401000_on; }
+                                    &.icos_1070402000:before { background-position: $icos_1070402000_on; }
+                                    &.icos_1070403000:before { background-position: $icos_1070403000_on; }
+                                    &.icos_1070404000:before { background-position: $icos_1070404000_on; }
+
+                                    &.icos_1070501000:before { background-position: $icos_1070501000_on; }
+                                    &.icos_1070502000:before { background-position: $icos_1070502000_on; }
+                                    &.icos_1070503000:before { background-position: $icos_1070503000_on; }
+                                    &.icos_1070504000:before { background-position: $icos_1070504000_on; }
+
+                                    &.icos_1070601000:before { background-position: $icos_1070601000_on; }
+                                    &.icos_1070602000:before { background-position: $icos_1070602000_on; }
+                                    &.icos_1070603000:before { background-position: $icos_1070603000_on; }
+                                    &.icos_1070604000:before { background-position: $icos_1070604000_on; }
+                                    &.icos_1070605000:before { background-position: $icos_1070605000_on; }
+                                    &.icos_1070606000:before { background-position: $icos_1070606000_on; }
+
+                                    &.icos_1070701000:before { background-position: $icos_1070701000_on; }
+                                    &.icos_1070702000:before { background-position: $icos_1070702000_on; }
+                                    &.icos_1070703000:before { background-position: $icos_1070703000_on; }
+                                    &.icos_1070704000:before { background-position: $icos_1070704000_on; }
+                                    &.icos_1070705000:before { background-position: $icos_1070705000_on; }
+                                    &.icos_1070706000:before { background-position: $icos_1070706000_on; }
+                                    &.icos_1070707000:before { background-position: $icos_1070707000_on; }
+                                    &.icos_1070708000:before { background-position: $icos_1070708000_on; }
+
+                                    &.icos_1070801000:before { background-position: $icos_1070801000_on; }
+                                    &.icos_1070802000:before { background-position: $icos_1070802000_on; }
+                                    &.icos_1070803000:before { background-position: $icos_1070803000_on; }
+                                    &.icos_1070804000:before { background-position: $icos_1070804000_on; }
+                                    &.icos_1070805000:before { background-position: $icos_1070805000_on; }
+                                    &.icos_1070806000:before { background-position: $icos_1070806000_on; }
+                                    &.icos_1070807000:before { background-position: $icos_1070807000_on; }
+                                    &.icos_1070808000:before { background-position: $icos_1070808000_on; }
+
+                                    &.icos_1070901000:before { background-position: $icos_1070901000_on; }
+                                    &.icos_1070902000:before { background-position: $icos_1070902000_on; }
+                                    &.icos_1070903000:before { background-position: $icos_1070903000_on; }
+                                    &.icos_1070904000:before { background-position: $icos_1070904000_on; }
+                                    &.icos_1070905000:before { background-position: $icos_1070905000_on; }
+                                    &.icos_1070906000:before { background-position: $icos_1070906000_on; }
+
+                                    &.icos_1071001000:before { background-position: $icos_1071001000_on; }
+                                    &.icos_1071002000:before { background-position: $icos_1071002000_on; }
+                                    &.icos_1071003000:before { background-position: $icos_1071003000_on; }
+                                    &.icos_1071004000:before { background-position: $icos_1071004000_on; }
+
+                                    // 생활가전
+                                    &.icos_1080101000:before { background-position: $icos_1080101000_on; }
+                                    &.icos_1080102000:before { background-position: $icos_1080102000_on; }
+                                    &.icos_1080103000:before { background-position: $icos_1080103000_on; }
+                                    &.icos_1080104000:before { background-position: $icos_1080104000_on; }
+                                    &.icos_1080105000:before { background-position: $icos_1080105000_on; }
+
+                                    &.icos_1080201000:before { background-position: $icos_1080201000_on; }
+                                    &.icos_1080202000:before { background-position: $icos_1080202000_on; }
+                                    &.icos_1080203000:before { background-position: $icos_1080203000_on; }
+                                    &.icos_1080204000:before { background-position: $icos_1080204000_on; }
+                                    &.icos_1080205000:before { background-position: $icos_1080205000_on; }
+                                    &.icos_1080206000:before { background-position: $icos_1080206000_on; }
+                                    &.icos_1080207000:before { background-position: $icos_1080207000_on; }
+                                    &.icos_1080208000:before { background-position: $icos_1080208000_on; }
+
+                                    &.icos_1080301000:before { background-position: $icos_1080301000_on; }
+                                    &.icos_1080302000:before { background-position: $icos_1080302000_on; }
+                                    &.icos_1080303000:before { background-position: $icos_1080303000_on; }
+                                    &.icos_1080304000:before { background-position: $icos_1080304000_on; }
+                                    &.icos_1080305000:before { background-position: $icos_1080305000_on; }
+                                    &.icos_1080306000:before { background-position: $icos_1080306000_on; }
+
+                                    &.icos_1080401000:before { background-position: $icos_1080401000_on; }
+                                    &.icos_1080402000:before { background-position: $icos_1080402000_on; }
+                                    &.icos_1080403000:before { background-position: $icos_1080403000_on; }
+                                    &.icos_1080404000:before { background-position: $icos_1080404000_on; }
+
+                                    &.icos_1080501000:before { background-position: $icos_1080501000_on; }
+                                    &.icos_1080502000:before { background-position: $icos_1080502000_on; }
+
+                                    &.icos_1080601000:before { background-position: $icos_1080601000_on; }
+                                    &.icos_1080602000:before { background-position: $icos_1080602000_on; }
+                                    &.icos_1080603000:before { background-position: $icos_1080603000_on; }
+                                    &.icos_1080604000:before { background-position: $icos_1080604000_on; }
+
+                                    &.icos_1080701000:before { background-position: $icos_1080701000_on; }
+                                    &.icos_1080702000:before { background-position: $icos_1080702000_on; }
+                                    &.icos_1080703000:before { background-position: $icos_1080703000_on; }
+
+                                    &.icos_1080801000:before { background-position: $icos_1080801000_on; }
+                                    &.icos_1080802000:before { background-position: $icos_1080802000_on; }
+                                    &.icos_1080803000:before { background-position: $icos_1080803000_on; }
+
+                                    &.icos_1080901000:before { background-position: $icos_1080901000_on; }
+                                    &.icos_1080902000:before { background-position: $icos_1080902000_on; }
+                                    &.icos_1080903000:before { background-position: $icos_1080903000_on; }
+                                    &.icos_1080904000:before { background-position: $icos_1080904000_on; }
+
+                                    // 계절가전
+                                    &.icos_1090101000:before { background-position: $icos_1090101000_on; }
+                                    &.icos_1090102000:before { background-position: $icos_1090102000_on; }
+                                    &.icos_1090103000:before { background-position: $icos_1090103000_on; }
+                                    &.icos_1090104000:before { background-position: $icos_1090104000_on; }
+                                    &.icos_1090105000:before { background-position: $icos_1090105000_on; }
+                                    &.icos_1090106000:before { background-position: $icos_1090106000_on; }
+                                    &.icos_1090107000:before { background-position: $icos_1090107000_on; }
+
+                                    &.icos_1090201000:before { background-position: $icos_1090201000_on; }
+                                    &.icos_1090202000:before { background-position: $icos_1090202000_on; }
+                                    &.icos_1090203000:before { background-position: $icos_1090203000_on; }
+                                    &.icos_1090204000:before { background-position: $icos_1090204000_on; }
+                                    &.icos_1090205000:before { background-position: $icos_1090205000_on; }
+                                    &.icos_1090206000:before { background-position: $icos_1090206000_on; }
+                                    &.icos_1090207000:before { background-position: $icos_1090207000_on; }
+                                    &.icos_1090208000:before { background-position: $icos_1090208000_on; }
+                                    &.icos_1090209000:before { background-position: $icos_1090209000_on; }
+
+                                    &.icos_1090301000:before { background-position: $icos_1090301000_on; }
+                                    &.icos_1090302000:before { background-position: $icos_1090302000_on; }
+                                    &.icos_1090303000:before { background-position: $icos_1090303000_on; }
+
+                                    &.icos_1090401000:before { background-position: $icos_1090401000_on; }
+                                    &.icos_1090402000:before { background-position: $icos_1090402000_on; }
+                                    &.icos_1090403000:before { background-position: $icos_1090403000_on; }
+                                    &.icos_1090404000:before { background-position: $icos_1090404000_on; }
+
+                                    &.icos_1090501000:before { background-position: $icos_1090501000_on; }
+                                    &.icos_1090502000:before { background-position: $icos_1090502000_on; }
+                                    &.icos_1090503000:before { background-position: $icos_1090503000_on; }
+                                    &.icos_1090504000:before { background-position: $icos_1090504000_on; }
+                                    &.icos_1090505000:before { background-position: $icos_1090505000_on; }
+
+                                    &.icos_1090601000:before { background-position: $icos_1090601000_on; }
+                                    &.icos_1090602000:before { background-position: $icos_1090602000_on; }
+                                    &.icos_1090603000:before { background-position: $icos_1090603000_on; }
+                                    &.icos_1090604000:before { background-position: $icos_1090604000_on; }
+                                    &.icos_1090605000:before { background-position: $icos_1090605000_on; }
+                                    &.icos_1090606000:before { background-position: $icos_1090606000_on; }
+                                    &.icos_1090607000:before { background-position: $icos_1090607000_on; }
+                                    &.icos_1090608000:before { background-position: $icos_1090608000_on; }
+                                    &.icos_1090609000:before { background-position: $icos_1090609000_on; }
+
+                                    // 건강/미용가전
+                                    &.icos_1100101000:before { background-position: $icos_1100101000_on; }
+                                    &.icos_1100102000:before { background-position: $icos_1100102000_on; }
+                                    &.icos_1100103000:before { background-position: $icos_1100103000_on; }
+                                    &.icos_1100104000:before { background-position: $icos_1100104000_on; }
+                                    &.icos_1100105000:before { background-position: $icos_1100105000_on; }
+                                    &.icos_1100106000:before { background-position: $icos_1100106000_on; }
+
+                                    &.icos_1100201000:before { background-position: $icos_1100201000_on; }
+                                    &.icos_1100202000:before { background-position: $icos_1100202000_on; }
+                                    &.icos_1100203000:before { background-position: $icos_1100203000_on; }
+                                    &.icos_1100204000:before { background-position: $icos_1100204000_on; }
+                                    &.icos_1100205000:before { background-position: $icos_1100205000_on; }
+                                    &.icos_1100206000:before { background-position: $icos_1100206000_on; }
+
+                                    &.icos_1100301000:before { background-position: $icos_1100301000_on; }
+                                    &.icos_1100302000:before { background-position: $icos_1100302000_on; }
+                                    &.icos_1100303000:before { background-position: $icos_1100303000_on; }
+                                    &.icos_1100304000:before { background-position: $icos_1100304000_on; }
+
+                                    &.icos_1100401000:before { background-position: $icos_1100401000_on; }
+                                    &.icos_1100402000:before { background-position: $icos_1100402000_on; }
+                                    &.icos_1100403000:before { background-position: $icos_1100403000_on; }
+                                    &.icos_1100404000:before { background-position: $icos_1100404000_on; }
+                                    &.icos_1100405000:before { background-position: $icos_1100405000_on; }
+
+                                    &.icos_1100501000:before { background-position: $icos_1100501000_on; }
+                                    &.icos_1100502000:before { background-position: $icos_1100502000_on; }
+                                    &.icos_1100503000:before { background-position: $icos_1100503000_on; }
+                                    &.icos_1100504000:before { background-position: $icos_1100504000_on; }
+                                    &.icos_1100506000:before { background-position: $icos_1100506000_on; }
+
+                                    &.icos_1100601000:before { background-position: $icos_1100601000_on; }
+                                    &.icos_1100602000:before { background-position: $icos_1100602000_on; }
+                                    &.icos_1100603000:before { background-position: $icos_1100603000_on; }
+                                    &.icos_1100604000:before { background-position: $icos_1100604000_on; }
+
+                                    // 영상/음향가전
+                                    &.icos_1110101000:before { background-position: $icos_1110101000_on; }
+                                    &.icos_1110102000:before { background-position: $icos_1110102000_on; }
+                                    &.icos_1110103000:before { background-position: $icos_1110103000_on; }
+                                    &.icos_1110104000:before { background-position: $icos_1110104000_on; }
+                                    &.icos_1110105000:before { background-position: $icos_1110105000_on; }
+
+                                    &.icos_1110201000:before { background-position: $icos_1110201000_on; }
+                                    &.icos_1110202000:before { background-position: $icos_1110202000_on; }
+                                    &.icos_1110203000:before { background-position: $icos_1110203000_on; }
+                                    &.icos_1110204000:before { background-position: $icos_1110204000_on; }
+
+                                    &.icos_1110301000:before { background-position: $icos_1110301000_on; }
+                                    &.icos_1110302000:before { background-position: $icos_1110302000_on; }
+                                    &.icos_1110303000:before { background-position: $icos_1110303000_on; }
+                                    &.icos_1110304000:before { background-position: $icos_1110304000_on; }
+                                    &.icos_1110305000:before { background-position: $icos_1110305000_on; }
+
+                                    &.icos_1110401000:before { background-position: $icos_1110401000_on; }
+                                    &.icos_1110402000:before { background-position: $icos_1110402000_on; }
+                                    &.icos_1110403000:before { background-position: $icos_1110403000_on; }
+                                    &.icos_1110404000:before { background-position: $icos_1110404000_on; }
+                                    &.icos_1110405000:before { background-position: $icos_1110405000_on; }
+                                    &.icos_1110406000:before { background-position: $icos_1110406000_on; }
+                                    &.icos_1110407000:before { background-position: $icos_1110407000_on; }
+                                    &.icos_1110408000:before { background-position: $icos_1110408000_on; }
+
+                                    &.icos_1110501000:before { background-position: $icos_1110501000_on; }
+                                    &.icos_1110502000:before { background-position: $icos_1110502000_on; }
+
+                                    &.icos_1110601000:before { background-position: $icos_1110601000_on; }
+                                    &.icos_1110602000:before { background-position: $icos_1110602000_on; }
+                                    &.icos_1110603000:before { background-position: $icos_1110603000_on; }
+
+                                    &.icos_1110701000:before { background-position: $icos_1110701000_on; }
+                                    &.icos_1110702000:before { background-position: $icos_1110702000_on; }
+
+                                    &.icos_1110801000:before { background-position: $icos_1110801000_on; }
+                                    &.icos_1110802000:before { background-position: $icos_1110802000_on; }
+                                    &.icos_1110803000:before { background-position: $icos_1110803000_on; }
+                                    &.icos_1110804000:before { background-position: $icos_1110804000_on; }
+                                    &.icos_1110805000:before { background-position: $icos_1110805000_on; }
+
+                                    // 자동차 용품
+                                    &.icos_1120101000:before { background-position: $icos_1120101000_on; }
+                                    &.icos_1120102000:before { background-position: $icos_1120102000_on; }
+                                    &.icos_1120103000:before { background-position: $icos_1120103000_on; }
+
+                                    &.icos_1120201000:before { background-position: $icos_1120201000_on; }
+                                    &.icos_1120202000:before { background-position: $icos_1120202000_on; }
+                                    &.icos_1120203000:before { background-position: $icos_1120203000_on; }
+                                    &.icos_1120204000:before { background-position: $icos_1120204000_on; }
+                                    &.icos_1120205000:before { background-position: $icos_1120205000_on; }
+                                    &.icos_1120206000:before { background-position: $icos_1120206000_on; }
+
+                                    &.icos_1120301000:before { background-position: $icos_1120301000_on; }
+                                    &.icos_1120302000:before { background-position: $icos_1120302000_on; }
+                                    &.icos_1120303000:before { background-position: $icos_1120303000_on; }
+                                    &.icos_1120304000:before { background-position: $icos_1120304000_on; }
+                                    &.icos_1120305000:before { background-position: $icos_1120305000_on; }
+                                    &.icos_1120306000:before { background-position: $icos_1120306000_on; }
+
+                                    &.icos_1120401000:before { background-position: $icos_1120401000_on; }
+                                    &.icos_1120402000:before { background-position: $icos_1120402000_on; }
+                                    &.icos_1120403000:before { background-position: $icos_1120403000_on; }
+                                    &.icos_1120404000:before { background-position: $icos_1120404000_on; }
+                                    &.icos_1120405000:before { background-position: $icos_1120405000_on; }
+
+                                    &.icos_1120501000:before { background-position: $icos_1120501000_on; }
+                                    &.icos_1120502000:before { background-position: $icos_1120502000_on; }
+                                    &.icos_1120503000:before { background-position: $icos_1120503000_on; }
+                                    &.icos_1120504000:before { background-position: $icos_1120504000_on; }
+                                    &.icos_1120505000:before { background-position: $icos_1120505000_on; }
+                                    &.icos_1120506000:before { background-position: $icos_1120506000_on; }
+                                    &.icos_1120507000:before { background-position: $icos_1120507000_on; }
+                                    &.icos_1120508000:before { background-position: $icos_1120508000_on; }
+                                    &.icos_1120509000:before { background-position: $icos_1120509000_on; }
+                                    &.icos_1120510000:before { background-position: $icos_1120510000_on; }
+                                    &.icos_1120511000:before { background-position: $icos_1120511000_on; }
+                                    &.icos_1120512000:before { background-position: $icos_1120512000_on; }
+
+                                    &.icos_1120601000:before { background-position: $icos_1120601000_on; }
+                                    &.icos_1120602000:before { background-position: $icos_1120602000_on; }
+                                    &.icos_1120603000:before { background-position: $icos_1120603000_on; }
+                                    &.icos_1120604000:before { background-position: $icos_1120604000_on; }
+
+                                    &.icos_1120701000:before { background-position: $icos_1120701000_on; }
+                                    &.icos_1120702000:before { background-position: $icos_1120702000_on; }
+                                    &.icos_1120703000:before { background-position: $icos_1120703000_on; }
+                                    &.icos_1120704000:before { background-position: $icos_1120704000_on; }
+                                    &.icos_1120705000:before { background-position: $icos_1120705000_on; }
+                                    &.icos_1120706000:before { background-position: $icos_1120706000_on; }
+                                    &.icos_1120707000:before { background-position: $icos_1120707000_on; }
+                                    &.icos_1120708000:before { background-position: $icos_1120708000_on; }
+
+                                    &.icos_1120801000:before { background-position: $icos_1120801000_on; }
+                                    &.icos_1120802000:before { background-position: $icos_1120802000_on; }
+                                    &.icos_1120803000:before { background-position: $icos_1120803000_on; }
+                                    &.icos_1120804000:before { background-position: $icos_1120804000_on; }
+                                    &.icos_1120805000:before { background-position: $icos_1120805000_on; }
+                                    &.icos_1120806000:before { background-position: $icos_1120806000_on; }
+
+                                    &.icos_1120901000:before { background-position: $icos_1120901000_on; }
+                                    &.icos_1120902000:before { background-position: $icos_1120902000_on; }
+                                    &.icos_1120903000:before { background-position: $icos_1120903000_on; }
+                                    &.icos_1120904000:before { background-position: $icos_1120904000_on; }
+                                    &.icos_1120905000:before { background-position: $icos_1120905000_on; }
+                                    &.icos_1120906000:before { background-position: $icos_1120906000_on; }
+
+                                    &.icos_1121001000:before { background-position: $icos_1121001000_on; }
+                                    &.icos_1121002000:before { background-position: $icos_1121002000_on; }
+                                    &.icos_1121003000:before { background-position: $icos_1121003000_on; }
+                                    &.icos_1121004000:before { background-position: $icos_1121004000_on; }
+                                    &.icos_1121005000:before { background-position: $icos_1121005000_on; }
+                                    &.icos_1121006000:before { background-position: $icos_1121006000_on; }
+                                    &.icos_1121007000:before { background-position: $icos_1121007000_on; }
+                                    &.icos_1121008000:before { background-position: $icos_1121008000_on; }
+                                    &.icos_1121009000:before { background-position: $icos_1121009000_on; }
+                                    &.icos_1121010000:before { background-position: $icos_1121010000_on; }
+                                    &.icos_1121011000:before { background-position: $icos_1121011000_on; }
+                                    &.icos_1121012000:before { background-position: $icos_1121012000_on; }
+
+                                    &.icos_1121101000:before { background-position: $icos_1121101000_on; }
+                                    &.icos_1121104000:before { background-position: $icos_1121104000_on; }
+                                    &.icos_1121105000:before { background-position: $icos_1121105000_on; }
+                                    &.icos_1121106000:before { background-position: $icos_1121106000_on; }
+                                    &.icos_1121107000:before { background-position: $icos_1121107000_on; }
+                                    &.icos_1121108000:before { background-position: $icos_1121108000_on; }
 
                                     // 기획PC
                                     &.btn_planpc:before {
