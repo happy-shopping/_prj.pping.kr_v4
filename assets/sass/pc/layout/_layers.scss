@@ -3868,8 +3868,15 @@
 
 							label {
 								width: 100%;
-								color: $point_color1;
-								font-weight: bold;
+								color: $base_color1;
+
+                                &.active {
+                                    font-weight: bold;
+                                }
+                                &.on {
+                                    font-weight: bold;
+                                    color: $point_color1;
+                                }
 
 								&:before {
 									vertical-align: middle;

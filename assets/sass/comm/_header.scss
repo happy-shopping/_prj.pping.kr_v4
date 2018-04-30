@@ -15,6 +15,18 @@
             @include breakpoint(max-width 1209px) {
                 width: 950px;
             }
+            .detail-search-btn {
+                position: absolute;
+                top: 83px;
+                left: 780px;
+                color: $base-color2;
+                i {
+                    vertical-align: -1px;
+                }
+                @include breakpoint(max-width 1209px) {
+                    left: 648px;
+                }
+            }
         }
 
         .tit-h1 {
@@ -400,8 +412,8 @@
             background-color: #fff;
             font-size: 14px;
             position: absolute;
-        left: 229px;
-        top: 117px;
+            left: 229px;
+            top: 117px;
 
             @include breakpoint(max-width 1209px) {
                 width: 410px;
@@ -505,6 +517,148 @@
                         }
                     }
 
+                }
+            }
+        }
+
+        .search-detail {
+
+            box-sizing: border-box;
+            width: 605px;
+            border: $base_color2 1px solid;
+            box-sizing: border-box;
+            background-color: #fff;
+            font-size: 14px;
+            position: absolute;
+            left: 229px;
+            top: 117px;
+
+            @include breakpoint(max-width 1209px) {
+                width: 475px;
+            }
+
+            &.on {
+                display: block;
+            }
+            &.off {
+                display: none;
+            }
+
+            .detail-title {
+                font-size: 14px;
+                font-weight: 700;
+                height: 30px;
+                padding: 20px 0 10px 20px;
+                box-sizing: border-box;
+                color: $base_color1;
+
+                strong, button {
+                    display: inline-block;
+                }
+                strong {
+                    width: 510px;
+                    text-align: left;
+                    @include breakpoint(max-width 1209px) {
+                        width: 380px;
+                    }
+                }
+
+                button {
+                    background: none;
+                    border: none;
+                    width: 55px;
+                    text-align: right;
+                    color: $point-color1;
+                    font-weight: bold;
+                }
+            }
+            .detail-in-search {
+
+                > .d-in-search {
+                    margin: 20px;
+                    padding: 5px 10px;
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    width: calc(100% - 40px);
+                    font-weight: bold;
+                    color: $point-color1;
+                    border: 2px solid $point-color1;
+                    background-color: #ecf3fd;
+                }
+
+                > ul > li {
+                    margin: 5px 20px;
+                    box-sizing: border-box;
+                    font-size: 12px;
+                    color: $base-color2;
+                    label {
+                        width: 117px;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        font-weight: 700;
+                    }
+                    label + input[type=text] {
+                        border: 1px solid $base_color3;
+                        width: calc(100% - 120px);
+                        padding: 5px 10px;
+                        box-sizing: border-box;
+                        color: $base-color2;
+                        &:focus {
+                            border: 1px solid $point-color1;
+                        }
+                    }
+                }
+
+                > p {
+                    font-size: 12px;
+                    color: $base-color3;
+                    border-top: 1px solid #e5e5e5;
+                    padding: 10px 0;
+                    margin: 10px 20px;
+                }
+            }
+
+            .btn_detail {
+                text-align: center;
+                position: relative;
+                margin-bottom: 20px;
+                ul > li {
+                    display: inline-block;
+                    text-align: center;
+                }
+                button {
+                    color: $point-color1;
+                    border: $point-color1 1px solid;
+                    background: #fff;
+                    padding: 5px;
+                    min-width: 80px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    font-size: 12px;
+                    &:hover {
+                        background: #f6f6f6 ;
+                    }
+                    &.on {
+                        color: #fff;
+                        border-color: $point-color1;
+                        background: $point-color1;
+                        &:hover {
+                            background: #2d7ee4;
+                        }
+                    }
+                    &.reset {
+                        color: $base-color2;
+                        font-weight: bold;
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        border: none;
+                        background: none;
+                        i {
+                            vertical-align: -1px;
+                            margin-right: 4px;
+                        }
+                    }
                 }
             }
         }

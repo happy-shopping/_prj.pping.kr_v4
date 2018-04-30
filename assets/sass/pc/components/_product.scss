@@ -881,8 +881,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 890px;
-            height: 419px;
+            width: 100%;
+            height: 100%;
             background: rgba(255,255,255,0.7) url(//img.happyshopping.kr/img_static/img_pres/_v3/bg_comming_soon.png);
             background-repeat: no-repeat;
             background-position: 50% 0;
@@ -943,14 +943,13 @@
                     margin-right: 3px;
                 }
             }
-
              .name {
                 display: block;
             }
 
             .item-product_conts_box_main {
                 .cate_location {
-                    margin-top: 15px;
+                    margin-top: 10px;
                     color: $base_color3;
                 }
 
@@ -1095,6 +1094,18 @@
                     }
                 }
 
+
+                .related_info.search {
+                    width: 100%;
+                    strong {
+                        color: #ff6600;
+                        line-height: 1.5;
+                    }
+                    dl > dt {
+                        width: 100px;
+                    }
+                }
+
                 .speclist {
                     margin-top: 15px;
                     font-size: 0;
@@ -1136,7 +1147,7 @@
                 }
 
                 .item-product_conts_box_main_bot {
-                    margin-top: 10px;
+                    margin-top: 15px;
 
                     ul {
                         @include clear;
@@ -1517,8 +1528,68 @@
         border-bottom: 1px solid #ccc;
         background: #fff;
 
+        &:first-child {
+            border-top: none;
+        }
+
         .in {
             @include clear;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            background-color: #f7f7fa;
+            padding: 20px 0;
+            margin-top: 30px;
+            float: left;
+            position: relative;
+            min-width: 930px;
+            .more {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-size: 19px;
+                width: 25px;
+                height: 25px;
+                border: 0;
+                color: #fff;
+                background-color: #ccc;
+                vertical-align: middle;
+                letter-spacing: 0;
+                cursor: pointer;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                i {
+                    position: absolute;
+                    top: 3px;
+                    left: 10px;
+                }
+                &:hover {
+                    background-color: #b8b8b8;
+                }
+            }
+            ul {
+                li {
+                    padding: 5px 0 5px 20px;
+                    box-sizing: border-box;
+                    width: 50%;
+                    color: $base_color3;
+                    float: left;
+                    strong {
+                        color: $base_color1;
+                        margin-right: 10px;
+                    }
+                    .quantity {
+                        padding-left: 10px;
+                        margin-left: 10px;
+                        border-left: 1px solid #e5e5e5;
+                    }
+                    &:nth-child(odd) {
+                        border-right: 1px solid #e5e5e5;
+                    }
+                }
+            }
         }
 
         .item-product_conts_photo {
@@ -1534,9 +1605,85 @@
             float: left;
             width: calc(100% - 160px);
 
+            &.search {
+                width: calc(100% - 390px);
+                border-right: 1px solid #e5e5e5;
+                padding-right: 20px;
+                .lowprice {
+                    font-size: 14px;
+                    color: #999;
+                    font-weight: normal;
+                    margin-top: 15px;
+                    display: block;
+                    em {
+                        color: $point_color2;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    span {
+                        color: #fff;
+                        background-color: #999;
+                        display: inline-block;
+                        margin-left: 10px;
+                        padding: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
             .name {
                 font-size: 20px;
                  @include truncate();
+            }
+
+            .open_market {
+                box-sizing: border-box;
+                position: absolute;
+                top: 30px;
+                right: 10px;
+
+                .logo {
+                    img {
+                        width: auto;
+                        max-height: 100%;
+                    }
+                }
+                ul > li {
+                    color: $base_color3;
+                    line-height: 1.8;
+                    strong {
+                        width: 100px;
+                        display: inline-block;
+                    }
+                    .price {
+                        text-align: right;
+                        width: 80px;
+                        display: inline-block;
+                    }
+                    &.active {
+                        strong {
+                            color: $point_color1;
+                        }
+                        .price {
+                            .icon-low {
+                                color: #f34522;
+                                &:before {
+                                    content: "\e983";
+                                    font-size: 16px;
+                                    vertical-align: middle;
+                                }
+                            }
+                            em {
+                                color: #f34522;
+                            }
+                        }
+                    }
+                    a:hover {
+                        strong, .price>em {
+                            text-decoration: underline;
+                        }
+                    }
+                }
             }
 
             .item-product_conts_box_main {
@@ -1724,6 +1871,7 @@
 .adv_items {
     position: relative;
     margin-bottom: -1px;
+    margin-top: 20px;
 
     .adv_items_top {
         height: 29px;
