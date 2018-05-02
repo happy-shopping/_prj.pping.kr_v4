@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 // old base.scss
+//$responsive_break_width:2000;
 html {
 	-webkit-text-size-adjust: none;
 	-moz-text-size-adjust: none;
@@ -93,12 +94,6 @@ $width_large: 1220px;
 	padding-top: 30px;
 	@include box-sizing;
 
-	@include breakpoint(0 $responsive_break_width) {
-		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
 	&.t2 {
 		width: 640px;
 		text-align: center;
@@ -117,6 +112,16 @@ $width_large: 1220px;
 		// margin-top: -360px;
 		// z-index: 10;
 	}
+	@include breakpoint(0 $responsive_break_width) {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		&.join {
+			padding-top: 25px;
+		}
+
+	}
+
 
 	&.login {
 		width: 800px;
@@ -147,7 +152,41 @@ $width_large: 1220px;
 		@include breakpoint(0 $responsive_break_width) {
 			margin: 0 auto;
 			padding: 0;
-			width: 400px;
+			width: 360px;
+			@include breakpoint(0 320px) {
+				margin: 0 auto;
+				padding: 0;
+				width: 320px;
+			}
+
+				@include breakpoint(0 320px) {
+					margin: 0 auto;
+					padding: 0 10px;
+					width: 320px;
+				}
+
+				@include breakpoint(330px 360px) {
+					margin: 0 auto;
+					padding: 0 10px;
+					width: 360px;
+				}
+
+				@include breakpoint(361px 375px) {
+					margin: 0 auto;
+					padding: 0 10px;
+					width: 375px;
+				}
+
+				@include breakpoint(380px 400px) {
+					margin: 0 auto;
+					padding: 0 10px;
+					width: 400px;
+				}
+				@include breakpoint(405px 414px) {
+					margin: 0 auto;
+					padding: 0 10px;
+					width: 414px;
+				}
 		}
 
 	}
@@ -155,13 +194,6 @@ $width_large: 1220px;
 	&.admin {
 		width: 800px;
 		padding: 145px 400px 0 0;
-		// position: absolute;
-		// top: 50%;
-		// left: 50%;
-		// margin-left: -400px;
-		// margin-top: -300px;
-		// background-color: white(.8);
-		// z-index: 10;
 
 		.section_top {
 			position: relative;
@@ -177,6 +209,9 @@ $width_large: 1220px;
 				font-weight: 600;
 				text-align: center;
 				background-color: #1163a8;
+				@include breakpoint(0 320px) {
+					font-size: 20px;
+				}
 
 				span {
 					display: inline-block;
@@ -328,6 +363,10 @@ $width_large: 1220px;
 						vertical-align: middle;
 						margin-bottom: 3px;
 						background-color: #d7d7d7;
+						@include breakpoint(0 320px) {
+							margin: 0 5px;
+						}
+
 					}
 
 					&:first-child:before {
@@ -456,7 +495,78 @@ $width_large: 1220px;
 						color: #666;
 						font-size: 14px;
 					}
+					.select-auth {
 
+						line-height: 20px;
+						margin: 0 -58px -1px -52px;
+						background-color: #f7f7f7;
+						border-right: 1px solid #cccccc;
+						box-sizing: border-box;
+						color: #333;
+						table {
+							height:40px;
+							background: white;
+							width: calc(50% + 170px);
+							@include breakpoint(0 $responsive_break_width) {
+
+								@include breakpoint(0 320px) {
+									width: calc(50% + 140px);
+								}
+								@include breakpoint(330px 360px) {
+									width: calc(50% + 160px);
+								}
+								@include breakpoint(361px 375px) {
+									width: calc(50% + 167px);
+								}
+								@include breakpoint(380px 400px) {
+									width: calc(50% + 180px);
+								}
+								@include breakpoint(405px 414px) {
+									width: calc(50% + 187px);
+								}
+							}
+
+							td {
+								// margin-right: -4px;
+								// display: inline-block;
+								font-size: 14px;
+								font-weight: 700;
+								text-align: center;
+								// //height:20px;
+								border-right: 1px solid #cccccc;
+								border-top: 1px solid #cccccc;
+								border-bottom: 2px solid $point_color1;
+								&:first-child {
+
+									// 	display: inline-block;
+									border-right:1px solid $point_color1;
+									border-left: 1px solid #cccccc;
+									//
+								}
+
+							}
+						}
+
+						.hp-on {
+							border-bottom:0px solid #cccccc;
+							border-left: 1px solid $point_color1 !important;
+							border-top: 1px solid $point_color1;
+						    padding-bottom: 2px;
+							background:  #f7f7f7 !important;
+
+						}
+						.email-on {
+							background:  #f7f7f7 ;
+							border-bottom:0px solid #cccccc;
+							border-right: 1px solid $point_color1;
+							border-left: 1px solid $point_color1 !important;
+							border-top: 1px solid $point_color1;
+							padding-bottom: 2px;
+
+
+
+						}
+					}
 					.box_certi {
 						position: relative;
 						z-index: 2;
@@ -467,12 +577,15 @@ $width_large: 1220px;
 						padding: 10px 20px 15px;
 						background-color: #f7f7f7;
 						border: 1px solid $point_color1;
+						border-top: 0px;
 						color: #333;
 
 						.form_certi {
 							overflow: hidden;
 							margin-top: 12px;
-
+							@include breakpoint(0 320px) {
+								margin-top: 2px;
+							}
 							input {
 								@include box-sizing;
 								float: left;
@@ -483,6 +596,9 @@ $width_large: 1220px;
 								border-color: #999;
 								border-width: 1px 0 1px 1px;
 								background-color: white(1);
+								@include breakpoint(0 320px) {
+									width: 100px;
+								}
 							}
 
 							button {
@@ -491,10 +607,16 @@ $width_large: 1220px;
 								background-color: $point_color1;
 								color: white(1);
 								text-align: center;
+								@include breakpoint(0 320px) {
+									width: 72px;
+								}
 							}
 
 							&.validate_msg {
 								margin-top: 30px;
+								@include breakpoint(0 320px) {
+									margin-top: 10px;
+								}
 							}
 
 						}
@@ -553,36 +675,175 @@ $width_large: 1220px;
 
 		}
 
+		// @include breakpoint(0 360px) {
+		// 	// position: static;
+		// 	// //margin: -20px 0 -50px;
+		// 	// margin: 0 auto;
+		// 	// padding: 0;
+		// 	// width: 360px;
+		//
+		// 	// 상단 이름
+		// 	.section_info {
+		// 		padding-left: 10px;
+		// 	}
+		// 	.section_cont {
+		// 		height: auto;
+		// 		padding: 10px;
+		// 		//border-width: 0;
+		// 		.area_search {
+		// 			//검색창사이즈
+		// 			.search {
+		// 				width: 120px;
+		// 			}
+		// 		}
+		// 		// 젤 하단 페이징  패딩
+		// 		.area_paging .btn_tx {
+		// 			padding: 0 5px;
+		// 		}
+		// 	}
+		//
+		// }
+
+
 		@include breakpoint(0 $responsive_break_width) {
-			position: static;
-			margin: -20px 0 -50px;
-			padding: 0;
 
-			.section_cont {
-				height: auto;
-				padding: 10px;
-				border-width: 0;
-			}
-
-		}
-
-		@include breakpoint(0 $responsive_break_minwidth) {
-			.section_cont {
-				.area_search {
-					.search {
-						width: 120px;
+			@include breakpoint(0 320px) {
+				margin: 0 auto;
+				padding: 0 10px;
+				width: 320px;
+				// 상단 이름
+				.section_info {
+					padding-left: 10px;
+				}
+				.section_cont {
+					height: auto;
+					padding: 10px;
+					//border-width: 0;
+					.area_search {
+						//검색창사이즈
+						.search {
+							width: 90px;
+						}
 					}
-
+					// 젤 하단 페이징  패딩
+					.area_paging .btn_tx {
+						padding: 0 1px;
+					}
 				}
-
-				.area_paging .btn_tx {
-					padding: 0 5px;
-				}
-
 			}
 
-		}
+			@include breakpoint(330px 360px) {
+				margin: 0 auto;
+				padding: 0 10px;
+				width: 360px;
+				// 상단 이름
+				.section_info {
+					padding-left: 10px;
+				}
+				.section_cont {
+					height: auto;
+					padding: 10px;
+					//border-width: 0;
+					.area_search {
+						//검색창사이즈
+						.search {
+							width: 120px;
+						}
+					}
+					// 젤 하단 페이징  패딩
+					.area_paging .btn_tx {
+						padding: 0 5px;
+					}
+				}
+			}
 
+			@include breakpoint(361px 375px) {
+				margin: 0 auto;
+				padding: 0 10px;
+				width: 375px;
+				// 상단 이름
+				.section_info {
+					padding-left: 10px;
+				}
+				.section_cont {
+					height: auto;
+					padding: 10px;
+					//border-width: 0;
+					.area_search {
+						//검색창사이즈
+						.search {
+							width: 120px;
+						}
+					}
+					// 젤 하단 페이징  패딩
+					.area_paging .btn_tx {
+						padding: 0 5px;
+					}
+				}
+			}
+
+			@include breakpoint(380px 400px) {
+				margin: 0 auto;
+				padding: 0 10px;
+				width: 400px;
+				// 상단 이름
+				.section_info {
+					padding-left: 10px;
+				}
+				.section_cont {
+					height: auto;
+					padding: 10px;
+					//border-width: 0;
+					.area_search {
+						//검색창사이즈
+						.search {
+							width: 120px;
+						}
+					}
+					// 젤 하단 페이징  패딩
+					.area_paging .btn_tx {
+						padding: 0 5px;
+					}
+				}
+			}
+			@include breakpoint(405px 414px) {
+				margin: 0 auto;
+				padding: 0 10px;
+				width: 414px;
+				// 상단 이름
+				.section_info {
+					padding-left: 10px;
+				}
+				.section_cont {
+					height: auto;
+					padding: 10px;
+					//border-width: 0;
+					.area_search {
+						//검색창사이즈
+						.search {
+							width: 120px;
+						}
+					}
+					// 젤 하단 페이징  패딩
+					.area_paging .btn_tx {
+						padding: 0 5px;
+					}
+				}
+			}
+		}
+		//
+		// @include breakpoint(0 360px) {
+		// 	.section_cont {
+		// 		.area_search {
+		// 			.search {
+		// 				width: 120px;
+		// 			}
+		// 		}
+		// 		.area_paging .btn_tx {
+		// 			padding: 0 5px;
+		// 		}
+		// 	}
+		// }
 	}
 
 	h2 {
@@ -708,7 +969,7 @@ $width_large: 1220px;
 
 			.istyle {
 				border-width: 0;
-			}	
+			}
 
 			label {
 				margin-right: 70px;
@@ -1464,7 +1725,7 @@ $width_large: 1220px;
 					}
 
 					dd {
-						margin-left: -5px;		
+						margin-left: -5px;
 					}
 
 				}
@@ -2337,7 +2598,7 @@ $width_large: 1220px;
 				color: $point_color2;
 			}
 		}
-		
+
 		.secession_box {
 			margin-top: 20px;
 			border: 1px solid $base_color3;
@@ -2534,7 +2795,7 @@ $width_large: 1220px;
 
 	@include breakpoint(0 $responsive_break_width) {
 		width: 100%;
-		padding-left: 10px;
+		padding-left: 100px;
 		padding-right: 10px;
 
 		.desc br {
@@ -2668,7 +2929,7 @@ input:disabled {
 				color: $point_color2;
 			}
 		}
-		
+
 		.secession_box {
 			margin-top: 20px;
 			border: 1px solid $base_color3;
@@ -2769,7 +3030,6 @@ input:disabled {
 			.username {
 				padding-left: 5px;
 			}
-
 			.email {
 				padding-left: 5px;
 				@include  clear;
@@ -2962,7 +3222,7 @@ input:disabled {
 		padding: 0;
 
 		.password_reset_wrap {
-			border: 0;		
+			border: 0;
 		}
 	}
 }
