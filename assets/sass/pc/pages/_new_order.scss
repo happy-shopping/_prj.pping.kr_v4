@@ -558,11 +558,11 @@
 			vertical-align: middle;
 			font-size:12px;
 			color:#666666;
-			margin :20px 20px;
+			margin :20px 20px 0px;
 			line-height: 1.4;
 			@include breakpoint(max-width 1209px) {
 				width: 450px;
-				margin :5px 20px;
+				margin :15px 20px;
 			}
 
 			.icon_warn {
@@ -574,14 +574,12 @@
 
 			}
 			p {
-				margin-left: 97px;
+				margin-left: 153px;
 				@include breakpoint(max-width 1209px) {
 					display: inline;
 					margin-left: 0px;
 				}
 			}
-
-
 		}
 
 		.noti-required {
