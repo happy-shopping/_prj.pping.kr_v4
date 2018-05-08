@@ -437,6 +437,19 @@
 							height: 44px;
 							vertical-align: top;
 
+							&.focus {
+								border:1px solid #418ded;
+								box-sizing: border-box;
+							}
+							@include breakpoint (min-width 700px) {
+								&.focus:last-child {
+									border:1px solid #418ded;
+									box-sizing: border-box;
+									width:102.35px;
+								}
+							}
+
+
 							&:before {
 								content: "";
 								position: absolute;
@@ -453,7 +466,10 @@
 									display: none;
 								}
 							}
+
 						}
+
+
 
 						.sstyle {
 							-webkit-appearance: none;
