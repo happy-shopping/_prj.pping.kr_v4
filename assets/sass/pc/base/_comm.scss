@@ -3124,7 +3124,10 @@ input {
         background: #fffbfb !important;
     }
 }
-.itext {
+.itext-focus {
+    border:1px solid $point_color1 !important;
+}
+.ifocus-2px {
     border:1px solid $point_color1 !important;
 }
 
