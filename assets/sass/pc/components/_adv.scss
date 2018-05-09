@@ -478,6 +478,7 @@
 							overflow: hidden;
 							padding: 5px;
 							@include btn(80px, 80px, 1px solid #ccc, null, #fff);
+                            border-color: #ccc #ccc $point_color1 #ccc;
 
 							img {
 								max-height: 100%;
@@ -571,7 +572,7 @@
 				.adv-event_main_body_items_item {
 					float: left;
 					width: 200px;
-					margin-left: 15px;
+					margin-left: 0;
 
 					.thumb {
 						overflow: hidden;

@@ -1071,7 +1071,11 @@
 
                                     a {
                                         color: $base_color2;
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
                                     }
+
                                 }
 
                                 &.open {
@@ -1504,6 +1508,8 @@
         }
 
         .product-stdpc {
+            margin-top:40px;
+
             .product-stdpc_tab {
                 &.tab3 {
                     .btn {
@@ -1518,6 +1524,7 @@
         }
     }
 }
+
 
 // 리스트 타입
 .type_list {
@@ -1748,6 +1755,10 @@
         .item-product_conts_box {
             margin-top: 10px;
 
+            .item-product_conts_box_top {
+                height: 18px;
+            }
+
             .name {
                 height: 48px;
                 font-size: 18px;
@@ -1840,6 +1851,7 @@
     }
 }
 
+
 // 큐레이션 타입
 .type_curation {
     .item-product_conts {
@@ -1870,7 +1882,7 @@
 // 광고 상품 리스트
 .adv_items {
     position: relative;
-    margin-bottom: -1px;
+    margin-bottom: 1px;
     margin-top: 20px;
 
     .adv_items_top {
