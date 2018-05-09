@@ -3128,7 +3128,28 @@ input {
     border:1px solid $point_color1 !important;
 }
 .ifocus-2px {
-    border:1px solid $point_color1 !important;
+    border:2px solid $point_color1 !important;
+}
+.ifocus-4px {
+    border:4px solid $point_color1 !important;
+}
+.ifocus-gray-1px {
+    border:1px solid gray !important;
+}
+.ifocus-black-1px {
+    border:1px solid black !important;
+}
+.ifocus-gray-2px {
+    border:2px solid gray !important;
+}
+.ifocus-black-2px {
+    border:2px solid black !important;
+}
+.ifocus-gray-4px {
+    border:4px solid gray !important;
+}
+.ifocus-black-4px {
+    border:4px solid black !important;
 }
 
 // :after, :before {
