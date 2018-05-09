@@ -2055,6 +2055,30 @@
     background: #fff;
     z-index: 100;
     //text-align: center;
+	.set {
+		display: inline-block;
+	    width: 66px;
+	    height: 24px;
+	    border: 1px solid #d3d3d3;
+	    color: #333;
+	    background-color: #f7f7f7;
+	    text-align: center;
+	    line-height: 24px;
+	    //vertical-align: middle;
+	    letter-spacing: 0;
+	    cursor: pointer;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+		margin-left: 10px;
+		.icon-shop {
+			display: inline-block;
+			font-size: 16px;
+			color: #418ded;
+			vertical-align: middle;
+			margin: -3px 4px 0 0;
+		}
+	}
 	.box-info {
 		margin-top: 20px;
 		border-top: 1px solid black;
