@@ -727,3 +727,13 @@
         content: $icon-warning;
     }
 }
+.icon-MY_phone{
+  &:before {
+      content: $icon-MY_phone;
+  }
+}
+.icon-MY_commenting {
+    &:before {
+        content: $icon-MY_commenting;
+    }
+}
