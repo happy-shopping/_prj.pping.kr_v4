@@ -65,6 +65,7 @@
 
 		.box-board {
 			padding-top: 0.5px;
+
 		}
 
 		.igroup {
@@ -119,8 +120,8 @@
 			//display: inline-block;
 			padding:13px 0;
 			font-size: 15px;
-			border-top: 1px solid #333333;
-			border-bottom: 1px solid #333333;
+			border-top: 2px solid #333333;
+			border-bottom: 2px solid #333333;
 			text-align: center;
 			vertical-align: middle;
 
@@ -222,7 +223,15 @@
 					border: 1px solid #cccccc;
 					padding:0 5px;
 					background-color: white;
+					&:hover {
+						background: #f6f6f6;
+					}
+					&.focus {
+						background: #f6f6f6 !important;
+					}
+
 				}
+
 
 			}
 		}
@@ -274,7 +283,7 @@
 				font-size: 30px;
 				color: $point_color2;
 				@include breakpoint(max-width 1209px) {
-					right: -320px;
+					right: -324px;
 				}
 			}
 			p{
@@ -404,8 +413,11 @@
 
 		.box-board {
 			padding-top: 0.5px;
-
+			&.none-box{
+				border-top: 0px!important;
+			}
 		}
+
 		.line-set{
 			border-top: 0px solid #333;
 		}
@@ -462,8 +474,8 @@
 			//display: inline-block;
 			padding:13px 0;
 			font-size: 15px;
-			border-top: 2px solid #333333;
-			border-bottom: 2px solid #333333;
+			border-top: 1px solid #333333;
+			border-bottom: 1px solid #333333;
 			text-align: center;
 			vertical-align: middle;
 
@@ -709,11 +721,18 @@
 		.btn-zipcode {
 			background: $base_color3;
 			@include btn(78px, 34px, 0, #fff, $base_color3, center, 34px);
+			&.ifocus {
+				background: #828282;
+			}
+			&:hover {
+				background: #828282;
+			}
 		}
 
 		.defalut-delivery {
 			margin-left: 20px;
 		}
+
 	}
 
 	.zipcode + .istyle {
@@ -889,15 +908,16 @@
 			}
 
 			.btn-buyer{
-
-
 			//	@include btn(null, null, 0, $point_color1, transparent);
 			//	@include btn(96px, 34px, 0, , $base_color3);
 				@include btn(104px, 28px, 1px solid #cccccc, #333333, white, center);
-
-
 				margin: 10px 0px;
-
+				&:hover {
+					background: #f6f6f6;
+				}
+				&.ifocus {
+					background: #f6f6f6;
+				}
 			}
 		}
 
@@ -935,12 +955,19 @@
 			color: #fff;
 			background: $point_color1;
 
+
 			&:hover {
+				background: $point_color1_over;
+			}
+			&.ifocus {
 				background: $point_color1_over;
 			}
 		}
 
 		&:hover {
+			background: #f8f8f8;
+		}
+		&.ifocus {
 			background: #f8f8f8;
 		}
 
@@ -1266,10 +1293,13 @@
 				li {
 					//padding: 10px 0;
 					select {
-						margin-left: 10px;
+						margin:10px 10px 0px 10px;
+						// &:first-child {
+						// 	margin:10px 10px 0px 10px;
+						// }
 					}
 					input {
-						margin-left: 10px;
+						margin:5px 10px 10px 10px;
 					}
 
 
@@ -1278,8 +1308,9 @@
 					}
 
 					.t {
-						width: 45px;
+						width: 50px;
 						margin-left: 20px;
+						padding: 5px 0 !important;
 					}
 					span {
 						margin-left: 0px;
@@ -1298,7 +1329,7 @@
 						border: 1px solid #f9f9fa;
 						background-color: #f9f9fa;
 						display: inline-block;
-						margin-left: 85px;
+						margin-left: 80px;
 						padding: 10px;
 						color: $base_color3;
 						font-weight: normal;
@@ -1324,14 +1355,15 @@
 						}
 
 						.istyle {
-							width: 117px;
+							width: 110px;
 							border-right: 0;
 						}
 
 						.btn-cal {
 							position: absolute;
-							right: -33px;
-							top: 21px;
+							// right: -33px;
+							right: -23px;
+							top: 26px;
 							@include btn(33px, 34px, 1px solid $base_color3, null, #e8e7ea);
 							border-left: 0;
 
@@ -1684,6 +1716,9 @@
 		&:hover {
 			background: #f6f6f6;
 		}
+		&.focus {
+			background: #f6f6f6;
+		}
 	}
 
 	.btn-buy-submit {
@@ -1692,6 +1727,9 @@
 		@include btn(300px, 70px, 0, #fff, $point_color1, center, 70px);
 
 		&:hover {
+			background: #2d7ee4;
+		}
+		&.focus {
 			background: #2d7ee4;
 		}
 	}
