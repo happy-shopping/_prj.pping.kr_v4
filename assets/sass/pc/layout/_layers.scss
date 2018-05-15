@@ -433,7 +433,23 @@
 		}
 	}
 }
-
+.reset_coupon {
+	position: absolute;
+	left: -300px;
+	top: -300px;
+	width: 636px;
+	margin: -302px 0 0 -340px;
+	padding: 20px;
+	border: 2px solid $base_color1;
+	background: #fff;
+	z-index: -100;
+}
+.opacity-zero {
+	opacity: 0;
+}
+.opacity-default {
+	opacity: 1 !important;
+}
 // 주문 퀵서비스
 .layer-pop_quickservice {
 	position: absolute;

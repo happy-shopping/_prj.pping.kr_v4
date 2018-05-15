@@ -1314,6 +1314,7 @@
 					}
 					span {
 						margin-left: 0px;
+						padding: 0px;
 					}
 					.left-10 {
 						margin-left: 10px;
@@ -1345,7 +1346,7 @@
 						position: relative;
 						display: inline-block;
 						margin-left: 0px !important;
-						padding-right: 33px;
+						//padding-right: 33px;
 						vertical-align: middle;
 
 						label {
@@ -1363,7 +1364,7 @@
 							position: absolute;
 							// right: -33px;
 							right: -23px;
-							top: 26px;
+							top: 7px;
 							@include btn(33px, 34px, 1px solid $base_color3, null, #e8e7ea);
 							border-left: 0;
 
@@ -1496,7 +1497,7 @@
 		.doc-evidence_detail {
 			width: 515px;
 			margin: 10px 20px;
-			padding: 10px 20px;
+			padding: 10px 20px 5px;
 			border: 2px solid #ccc;
 			font-size: 0;
 			@include breakpoint(max-width 1209px) {
@@ -1518,12 +1519,16 @@
 				.sstyle:first-child {
 					margin-right: 10px;
 				}
+				span {
+					padding: 0px;
+				}
 			}
 			.padding-0{
 				padding: 0px;
 			}
 			.doc-line {
 				border-bottom: 1px solid #ccc;
+				padding-bottom: 10px;
 			}
 		}
 	}
@@ -2025,6 +2030,19 @@
 	}
 
 }
+.coupon_reset {
+	position: fixed;
+	left: -40px;
+	top: -40px;
+	bottom:-0px;
+	width: 100%;
+	z-index: -10;
+	&:before {
+		content: "";
+		background:0;
+
+	}
+}
 .layer_terms {
 	z-index: 100;
 	position: absolute;
@@ -2127,7 +2145,7 @@
 			th {
 				border-bottom: 1px solid #e8e7ea;
 				text-align: left;
-				width:120px;
+				width:70px;
 				height: 40px;
 				padding-left: 20px;
 				background: white;
