@@ -472,6 +472,7 @@
 		}
 		.except {
 			//display: inline-block;
+			position: relative;
 			padding:13px 0;
 			font-size: 15px;
 			border-top: 1px solid #333333;
@@ -480,23 +481,24 @@
 			vertical-align: middle;
 
 			.circle {
+
 				border-radius: 50%;
 				padding: 3px;
 				border-color: #418ded;
 				font-size: 15px;
 				color: white;
 				background-color: #418ded;
-
 			}
 			i {
-
+				position: absolute;
+				top:14px;
+				left:655px;
 				margin-left: 10px;
 				font-size: 20px;
+				@include breakpoint(max-width 1209px) {
+					left:535px;
+				}
 			}
-
-
-
-
 		}
 	}
 
@@ -1497,7 +1499,7 @@
 		.doc-evidence_detail {
 			width: 515px;
 			margin: 10px 20px;
-			padding: 10px 20px 5px;
+			padding: 10px 20px 10px;
 			border: 2px solid #ccc;
 			font-size: 0;
 			@include breakpoint(max-width 1209px) {
