@@ -149,7 +149,12 @@
 			.icon-card {
 				font-size: 14px;
 				@include loadIcon($icon-credit-card);
-
+				b {
+					cursor: pointer;
+				}
+				&:hover{
+					text-decoration: underline;
+				}
 
 			}
 			.go {
@@ -278,18 +283,19 @@
 
 			span {
 				position: absolute;
-				right: -440px;
+				right: -425px; //-440px;
 				bottom: 0px;
 				font-size: 30px;
 				color: $point_color2;
 				@include breakpoint(max-width 1209px) {
-					right: -324px;
+					right: -312px;
 				}
 			}
 			p{
 				display: inline;
 				font-size: 12px;
 				color: #333;
+				font-weight: 500;
 			}
 
 			.earn_point {
@@ -316,6 +322,7 @@
 				display: inline;
 				font-size: 12px;
 				color: #333;
+				font-weight: 500;
 			}
 		}
 
@@ -492,7 +499,7 @@
 			i {
 				position: absolute;
 				top:14px;
-				left:655px;
+				left:649px;
 				margin-left: 10px;
 				font-size: 20px;
 				@include breakpoint(max-width 1209px) {
@@ -574,10 +581,10 @@
 			color:#666666;
 			margin :20px 20px 0px;
 			line-height: 1.4;
-			@include breakpoint(max-width 1209px) {
-				width: 450px;
-				margin :15px 20px;
-			}
+			// @include breakpoint(max-width 1209px) {
+			// 	width: 450px;
+			// 	margin :15px 20px;
+			// }
 
 			.icon_warn {
 				font-size: 22px;
@@ -587,13 +594,13 @@
 				@include loadIcon($icon-warning);
 
 			}
-			p {
-				margin-left: 145px;
-				@include breakpoint(max-width 1209px) {
-					display: inline;
-					margin-left: 0px;
-				}
-			}
+			// p {
+			// 	//margin-left: 145px;
+			// 	@include breakpoint(max-width 1209px) {
+			// 		display: inline;
+			// 		margin-left: 0px;
+			// 	}
+			// }
 		}
 
 		.noti-required {
@@ -1105,6 +1112,7 @@
 		height: 28px;
 		margin-bottom: 10px;
 		border: 1px solid #ff6600;
+		color: #ff6600;
 		font-weight: bold;
 		line-height: 28px;
 		text-align: center;
@@ -1312,7 +1320,7 @@
 					.t {
 						width: 50px;
 						margin-left: 20px;
-						padding: 5px 0 !important;
+						padding: 5px 0 7px !important;
 					}
 					span {
 						margin-left: 0px;
@@ -1354,6 +1362,7 @@
 						label {
 							display: inline-block;
 						    margin-left: 10px !important;
+							padding: 21px 0 23px !important;
 							vertical-align: middle;
 						}
 
@@ -1366,7 +1375,7 @@
 							position: absolute;
 							// right: -33px;
 							right: -23px;
-							top: 7px;
+							top: 8.5px;
 							@include btn(33px, 34px, 1px solid $base_color3, null, #e8e7ea);
 							border-left: 0;
 
@@ -1494,6 +1503,7 @@
 			font-size: 11px;
 			color: $base_color3;
 			line-height: 18px;
+			font-weight: 500;
 		}
 
 		.doc-evidence_detail {
@@ -2119,7 +2129,7 @@
 	    height: 24px;
 	    border: 1px solid #d3d3d3;
 	    color: #333;
-	    background-color: #f7f7f7;
+
 	    text-align: center;
 	    line-height: 24px;
 	    //vertical-align: middle;
@@ -2136,7 +2146,11 @@
 			vertical-align: middle;
 			margin: -3px 4px 0 0;
 		}
+		&:hover {
+			background-color: #f7f7f7;
+		}
 	}
+
 	.box-info {
 		margin-top: 20px;
 		border-top: 1px solid black;
