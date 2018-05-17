@@ -605,15 +605,15 @@
             z-index: 10;
             @include box-sizing;
 
-            &:before {
-                content: "";
-                position: fixed;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background: #fff;
-            }
+            // &:before {
+            //     content: "";
+            //     position: fixed;
+            //     left: 0;
+            //     top: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     background: #fff;
+            // }
 
             [class^="estimate-body_minishop_"] {
                 position: relative;

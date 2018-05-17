@@ -808,7 +808,7 @@
 		}
 
 		label {
-			width: 150px; //width: 90px;
+			width: 90px; //width: 150px;
 			font-weight: bold;
 		}
 
@@ -1013,6 +1013,10 @@
 				.order-items_cell,
 				.order-items_item {
 					display: table-cell;
+					.name {
+						display: block;
+						margin-top: 5px;
+					}
 				}
 
 				.order-items_cell {
@@ -1375,7 +1379,7 @@
 							position: absolute;
 							// right: -33px;
 							right: -23px;
-							top: 8.5px;
+							top: 9px;
 							@include btn(33px, 34px, 1px solid $base_color3, null, #e8e7ea);
 							border-left: 0;
 
