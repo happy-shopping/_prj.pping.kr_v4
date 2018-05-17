@@ -1455,7 +1455,7 @@
 		li {
 			position: relative;
 			float: left;
-			width: calc((100% - 32px) / 3);
+			width: calc((100% - 33px) / 3);
 			height: 112px;
 			margin-left: 16px;
 			padding: 20px;
@@ -1551,12 +1551,14 @@
 			margin-left: 10px;
 			padding-left: 10px;
 			border-left: 1px solid #d3d3d3;
+            width:calc(100% - 120px);
 			@include clear;
 
 			&:first-child {
 				border-left: none;
 				margin-left: 0;
 				padding-left: 0;
+                width: 100%;
 			}
 
 			li {

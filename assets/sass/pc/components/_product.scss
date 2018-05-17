@@ -1529,9 +1529,9 @@
 // 리스트 타입
 .type_list {
     .item-product_conts {
-        margin-bottom: -1px;
+        margin-bottom: 0;
         padding: 30px 10px;
-        border-top: 1px solid #ccc;
+        border-top: none;
         border-bottom: 1px solid #ccc;
         background: #fff;
 
@@ -1725,7 +1725,7 @@
 
         .adv-event {
             padding-top: 30px;
-            border-top: 1px solid #ccc;
+            border-top: none;
         }
 
         &:last-child {
@@ -1883,7 +1883,7 @@
 .adv_items {
     position: relative;
     margin-bottom: 1px;
-    margin-top: 20px;
+    // margin-top: 20px;
 
     .adv_items_top {
         height: 29px;
@@ -1891,6 +1891,7 @@
         font-size: 11px;
         color: $base_color3;
         line-height: 19px;
+        border-bottom: 1px solid #ccc;
         @include box-sizing();
 
         .btn {

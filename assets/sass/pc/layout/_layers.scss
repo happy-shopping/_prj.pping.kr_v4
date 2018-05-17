@@ -75,7 +75,7 @@
 		top: -7px;
 		width: 13px;
 		height: 7px;
-		background: url('https://img.happyshopping.kr/img_static/img_pres/_v3/arw_delivery_recent.gif') no-repeat 0 0;
+		background: url('//img.happyshopping.kr/img_static/img_pres/_v3/arw_delivery_recent.gif') no-repeat 0 0;
 	}
 
 	&:before {
@@ -85,7 +85,7 @@
 		bottom: -7px;
 		width: 13px;
 		height: 7px;
-		background: url('https://img.happyshopping.kr/img_static/img_pres/_v3/arw_delivery_recent_b.gif') no-repeat 0 0;
+		background: url('//img.happyshopping.kr/img_static/img_pres/_v3/arw_delivery_recent_b.gif') no-repeat 0 0;
 	}
 
 	.tit,
@@ -1346,7 +1346,7 @@
 	.layer-pop_box_head {
 		height: 234px;
 		padding-top: 25px;
-		background: url('https://img.happyshopping.kr/img_static/img_pres/_v3/sprite_pop4.png') no-repeat 0 -477px;
+		background: url('//img.happyshopping.kr/img_static/img_pres/_v3/sprite_pop4.png') no-repeat 0 -477px;
 
 		.tit-h4 {
 			position: relative;
@@ -1403,7 +1403,7 @@
 					width: 82px;
 					height: 82px;
 					margin-right: 18px;
-					background: url('http://img.happyshopping.kr/img_static/img_pres/_v3/sprite_pop4.png') no-repeat;
+					background: url('//img.happyshopping.kr/img_static/img_pres/_v3/sprite_pop4.png') no-repeat;
 					vertical-align: middle;
 				}
 
@@ -4230,8 +4230,8 @@
 
 	.btn_layer_item_search_clse {
 		position: absolute;
-		right: 20px;
-		top: 20px;
+		right: -50px;
+		top: 15px;
 		@include btn(30px, 30px, 0, null, transparent);
 	}
 
@@ -4246,5 +4246,115 @@
 			top: 0;
 			@include translate(0, 0);
 		}
+	}
+}
+
+
+
+// default layer pop
+.layer-common-confirm {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+
+    & *{
+        box-sizing: border-box;
+    }
+    &.hide {
+        display:none;
+    }
+
+    &.show {
+        display: '';
+    }
+
+	&:before {
+		content: "";
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.7);
+	}
+
+	.layer-common-confirm-wrap {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		min-width: 420px;
+		min-height: 200px;
+		background: #fff;
+		z-index: 31;
+		@include translate(-50%, -50%);
+
+        .layer-common-confirm-title {
+            font-size: 20px;
+            font-weight: 700;
+            padding: 15px;
+            border-bottom: 1px solid #418ded;
+        }
+
+        .layer-common-confirm-content {
+            font-size: 20px;
+            line-height: 1.4;
+            font-weight: 700;
+            margin-top: 36px;
+            padding: 20px;
+
+            &.center {
+                text-align: center;
+            }
+        }
+		// 버튼 group
+		.layer-common-confirm-button-group {
+            position: absolute;
+            width:100%;
+            bottom: 0;
+			padding: 20px;
+			border-top: 1px solid $point_color1;
+			font-size: 0;
+            text-align: center;
+
+			.btn_false {
+				font-size: 18px;
+				font-weight: bold;
+				@include btn(180px, 50px, 2px solid $point_color1, $point_color1, #fff);
+
+				&:hover {
+					background: #f8f8f8;
+				}
+			}
+
+			.btn_true {
+				font-size: 18px;
+				font-weight: bold;
+				@include btn(180px, 50px, 0, #fff, $point_color1);
+
+				&:hover {
+					background: $point_color1_over;
+				}
+			}
+
+			[class^="btn_"] + [class^="btn_"] {
+				margin-left: 20px;
+			}
+		}
+	}
+
+	.layer-common-confirm-close {
+		position: absolute;
+        font-family: ppingkr_v4!important;
+		right: 10px;
+		top: 10px;
+        font-size: 36px;
+        @include btn(36px, 36px, 0, #418ded, transparent);
+
+        &:before {
+            content: "";
+        }
 	}
 }
