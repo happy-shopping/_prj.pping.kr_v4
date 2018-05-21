@@ -570,6 +570,9 @@
 				top: 39px;
 				left: 115px;
 				font-size: 24px;
+				&:hover {
+						text-decoration: underline;
+				}
 			}
 
 		}
@@ -589,7 +592,7 @@
 
 			.icon_warn {
 				position:absolute;
-				top: -11px;
+				//top: -11px;
 				left:-27px;
 				font-size: 22px;
 				color: #f36042;
@@ -1060,6 +1063,11 @@
 				.seleter {
 					color:#999;
 				}
+				strong {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
 			}
 
 			.order-items_item_cnt {
@@ -1168,7 +1176,7 @@
 		height: 16px;
 		margin-right: 5px;
 		background: url('https://img.happyshopping.kr/img_static/img_pres/_v3/ico_grayplus.png') no-repeat 0 0;
-		vertical-align: middle;
+		vertical-align: -2px;
 	}
 	.ico-minus:before {
 		content: "";
@@ -1177,7 +1185,7 @@
 		height: 16px;
 		margin-right: 5px;
 		background: url('https://img.happyshopping.kr/img_static/img_pres/_v3/ico_redminus.png') no-repeat 0 0;
-		vertical-align: middle;
+		vertical-align: -2px;
 	}
 
 
@@ -1260,6 +1268,7 @@
 			width: 555px;
 			margin: 0px 20px 10px;
 			//padding: 10px 10px 10px 20px;
+			//padding-bottom: 10px;
 			border: 2px solid #ccc;
 			@include breakpoint(max-width 1209px) {
 				width: 430px;
