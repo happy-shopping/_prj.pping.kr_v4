@@ -807,6 +807,16 @@ $size960: '(min-width: 961px)';
 	align-content: $value;
 }
 
+//// add 180525 jspark@pping.kr
+@mixin BgwhtBdpit {
+	border-color:$point_color1;
+	background:#fff;
+}
+@mixin txtVer1Li($hei)
+{
+	height:$hei+px;
+	line-height:$hei+px;
+}
 // icons
 // 컴퓨터 주변부품
 $btn_all: -1px -4px;
