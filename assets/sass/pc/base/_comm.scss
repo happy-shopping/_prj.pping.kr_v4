@@ -1147,79 +1147,11 @@ input {
                 margin-bottom: 10px;
                 .btn {
                     @include btn(null, null, 0, null, transparent);
-                }
-                &:nth-child(1) {
-                    .btn {
-                        &.active {
-                            color: $point_color1;
-                        }
-                        &:hover {
-                            color: $point_color1;
-                        }
+                    &.active {
+                        color: $point_color1;
                     }
-                }
-                &:nth-child(2) {
-                    .btn {
-                        &.active {
-                            color: #00acc2;
-                        }
-                        &:hover {
-                            color: #00acc2;
-                        }
-                    }
-                }
-                &:nth-child(3) {
-                    .btn {
-                        &.active {
-                            color: #59a45f;
-                        }
-                        &:hover {
-                            color: #59a45f;
-                        }
-                    }
-                }
-                &:nth-child(4) {
-                    .btn {
-                        &.active {
-                            color: #8865e7;
-                        }
-                        &:hover {
-                            color: #8865e7;
-                        }
-                    }
-                }
-                &:nth-child(5) {
-                    .btn {
-                        &.active {
-                            color: #f3755b;
-                        }
-                        &:hover {
-                            color: #f3755b;
-                        }
-                    }
-                }
-                &:nth-child(6),
-                &:nth-child(7),
-                &:nth-child(8),
-                &:nth-child(9),
-                &:nth-child(10) {
-                    .btn {
-                        &.active {
-                            color: #bcc219;
-                        }
-                        &:hover {
-                            color: #bcc219;
-                        }
-                    }
-                }
-                &:nth-child(11) {
-                    .btn {
-                        &.active {
-                            color: #dc412c;
-                        }
-                        &:hover {
-                            color: #dc412c;
-                        }
+                    &:hover {
+                        color: $point_color1;
                     }
                 }
             }
