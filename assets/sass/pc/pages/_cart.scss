@@ -179,9 +179,13 @@
 				position: relative;
 				padding-right: 130px;
 				.hover-img {
+					width: 99px;
+					height: 99px;
+					border: 1px solid white;
+					box-sizing: border-box;
 					&:hover{
 						border: 1px solid #418ded;
-						box-sizing: border-box;
+						//box-sizing: border-box;
 					}
 				}
 				.hover-text-link {
