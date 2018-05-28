@@ -752,7 +752,10 @@
               color:$point_color1;
               z-index:2;
             }
-            &:hover{background:$bg_color1_over;}
+            &:hover:not(.on){
+              background:#fff;
+              color:$point_color1;
+            }
           }
         }
       }
@@ -777,9 +780,11 @@
         }
         &:hover{
           @include BgwhtBdpit;
+          color:$point_color1;
         }
         &:active{
           @include BgwhtBdpit;
+          color:$point_color1;
         }
         .TopBanBtn{
           border:1px solid #ccc;
