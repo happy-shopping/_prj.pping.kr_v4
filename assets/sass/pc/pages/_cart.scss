@@ -178,6 +178,24 @@
 			.box-board {
 				position: relative;
 				padding-right: 130px;
+				.hover-img {
+					&:hover{
+						border: 1px solid #418ded;
+						box-sizing: border-box;
+					}
+				}
+				.hover-text-link {
+					&:hover{
+						text-decoration:underline;
+
+					}
+				}
+				.no-hover {
+					&:hover{
+						text-decoration:none;
+						cursor: default;
+					}
+				}
 			}
 
 			.cart-body_row_botmenu {
