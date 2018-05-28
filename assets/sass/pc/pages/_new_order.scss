@@ -1047,7 +1047,10 @@
 			img {
 				max-width: 100%;
 			}
-			&:hover {
+
+		}
+		.border-hover {
+			&:hover{
 				border: 1px solid #418ded;
 				box-sizing: border-box;
 			}
@@ -1070,6 +1073,12 @@
 				strong {
 					&:hover {
 						text-decoration: underline;
+					}
+				}
+				.no-hover {
+					&:hover {
+						text-decoration:none;
+						cursor: default;
 					}
 				}
 			}
