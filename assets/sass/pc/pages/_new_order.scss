@@ -1047,6 +1047,10 @@
 			img {
 				max-width: 100%;
 			}
+			&:hover {
+				border: 1px solid #418ded;
+				box-sizing: border-box;
+			}
 		}
 
 		.order-items_item {
