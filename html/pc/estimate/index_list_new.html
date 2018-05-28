@@ -35,8 +35,8 @@
     <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/common/header.css?ver=1.111" />
     <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/common/footer.css" />
 
-    <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/comm.css?v=0.0123" />
-    <!-- <link rel="stylesheet" href="../../../assets/css/pc/comm.css?v=1.0" /> -->
+    <!-- <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/comm.css?v=0.0123" /> -->
+    <link rel="stylesheet" href="../../../assets/css/pc/comm.css?v=1.0" />
     <!-- <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/pages/index.css?v=0.113" /> -->
     <!-- <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/pages/adv.css?v=1.11111" /> -->
     <!-- <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/pages/list.css?v=1.11111" /> -->
@@ -351,25 +351,39 @@
                 <div class="column-wrap width-fixed">
                     <div class="column-main">
                         <div class="estimateTopBanner">
-                          <h2 class="tbTitle fs16px">행쇼 CM 큐레이션</h2>
+                          <h2 class="tbTitle fs16px">행쇼CM 큐레이션</h2>
                           <div class="estimateTopBanArea">
                             <div class="TopBanLeft">
                               <div class="TopBanTabArea">
-                                <ul class="TopBanTabs">
-                                  <li class="TopBanTabItem">CPU</li>
-                                  <li class="TopBanTabItem onl">메인보드</li>
-                                  <li class="TopBanTabItem on">메모리</li>
-                                  <li class="TopBanTabItem">그래픽카드</li>
-                                  <li class="TopBanTabItem">SSD</li>
-                                </ul>
-                                <button class="TopBanBtn TopBanLeftBtn"><i class="icon-angle-left"></i></button>
-                                <button class="TopBanBtn TopBanRightBtn"><i class="icon-angle-right"></i></button>
+                                <div class="TopBanTabsWrap">
+                                  <ul class="TopBanTabs">
+                                    <li class="TopBanTabItem">CPU</li>
+                                    <li class="TopBanTabItem">메인보드</li>
+                                    <li class="TopBanTabItem">메모리</li>
+                                    <li class="TopBanTabItem on">그래픽카드</li>
+                                    <li class="TopBanTabItem">SSD</li>
+                                    <li class="TopBanTabItem on">하드디스크</li>
+                                    <li class="TopBanTabItem">ODD</li>
+                                    <li class="TopBanTabItem on">케이스</li>
+                                    <li class="TopBanTabItem">파워</li>
+                                    <li class="TopBanTabItem">쿨러/튜닝</li>
+                                    <li class="TopBanTabItem on">키보드</li>
+                                    <li class="TopBanTabItem">마우스</li>
+                                    <li class="TopBanTabItem">타블렛</li>
+                                  </ul>
+                                </div>
+                                <span class="TopBanBtns TopBanLeftBtn">
+                                  <button class="TopBanBtn" onclick="$('.TopBanTabs').css('margin-left','0')"><i class="icon-angle-left"></i></button>
+                                </span>
+                                <span class="TopBanBtns TopBanRightBtn">
+                                  <button class="TopBanBtn" onclick="$('.TopBanTabs').css('margin-left','-1256px')"><i class="icon-angle-right"></i></button>
+                                </span>
                               </div>
                               <div class="TopBanConArea">
                                 <h4 class="TopBanPointItem">
                                   <a href="" class="TBItemLink">
                                     요즘 이게 대세라며? AMD 라이젠 / 레이븐 릿지
-                                    <i class="icon-angle-right"></i>
+                                    <img class="TBItemLinkimg" src="https://img.happyshopping.kr/img_static/img_pres/estimatetopban/icon-angle-right.png">
                                   </a>
                                 </h4>
                                 <ul class="TBItemList">
