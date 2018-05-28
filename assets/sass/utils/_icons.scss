@@ -737,3 +737,8 @@
         content: $icon-MY_commenting;
     }
 }
+.icon-movie_play {
+    &:before {
+        content: $movie_play;
+    }
+}
