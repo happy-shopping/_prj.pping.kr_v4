@@ -372,6 +372,66 @@ input {
         color: #0f4f9f;
     }
 }
+// 판매자 뱃지 18.05.29 item-view.scss 에서 가져옴
+.badge {
+    display: inline-block;
+    min-width: 24px;
+    height: 15px;
+    padding: 0 3px;
+    padding-top: 1px;
+    border: 1px solid #ccc;
+    font-family: "돋움", Dotum;
+    font-size: 11px;
+    background: #fff;
+    text-align: center;
+    line-height: 15px;
+    letter-spacing: -1px;
+    margin-left: 3px;
+    position: relative;
+    top: 3px;
+    &.badge_power {
+      border-color: #865ebb;
+      color: #fff;
+      background-color: #956ccc;
+    }
+    &.badge_new {
+      border-color: #cd3213;
+      color: #fff;
+      background-color: #e65234;
+    }
+    &.badge_nor {
+      border-color: #956ccc;
+      color: #956ccc;
+    }
+    &.badge_card {
+      border-color: #0f4f9f;
+      color: #0f4f9f;
+    }
+    &.badge_cash {
+      border-color: $base_color2;
+      color: $base_color2;
+      background-color: #f8f8f8;
+    }
+    &.badge_dup {
+      border-color: #ff3333;
+      color: #ff3333;
+      top: 6px;
+      margin-left: 5px;
+    }
+    &.badge_discount {
+      border-color: #0066cc;
+      color: #0066cc;
+      position: relative;
+      top: 6px;
+      margin-left: 5px;
+    }
+    &.badge_saving {
+      border-color: #1aa827;
+      color: #1aa827;
+      top: 6px;
+      margin-left: 5px;
+    }
+}
 
 // 메세지
 .alert-msg {

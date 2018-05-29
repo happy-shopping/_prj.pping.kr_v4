@@ -19,22 +19,38 @@
     </script>
     <!-- // 웹폰트용 -->
 
-	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/comm.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/buttons.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/board.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/forms.css" />
-    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/layers.css" />
-    
-    <!-- <link rel="stylesheet" href="../../../assets/css/pc/comm.css" />
+	  <!-- <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/comm.css"/>
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/buttons.css"/>
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/board.css"/>
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/forms.css"/>
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/layers.css"/>-->
+
+    <link rel="stylesheet" href="../../../assets/css/pc/comm.css" />
     <link rel="stylesheet" href="../../../assets/css/buttons.css" />
     <link rel="stylesheet" href="../../../assets/css/board.css" />
     <link rel="stylesheet" href="../../../assets/css/pc/forms.css" />
-    <link rel="stylesheet" href="../../../assets/css/pc/layers.css" /> -->
+    <link rel="stylesheet" href="../../../assets/css/pc/layers.css" />
+		<style>
+			/* 버튼 샘플 스타일 레이어팝업과 관련없음 */
+			.compare_buy_item_minishop_add {position:relative;margin:10% auto;text-align: center;}
+			.btn_basket_add {font-size: 15px;width: 26px;height: 26px;border: 0;color: #fff;background-color: #418ded;vertical-align: middle;letter-spacing: 0;cursor: pointer;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+			.btn_basket_add span {visibility: hidden;position: absolute;margin-left: 3px;font-size: 12px;font-weight: 400;}
+			.btn_basket_add:hover{width:110px;}
+			.btn_basket_add:hover span {visibility: visible;position: relative;top: -1px;}
+		</style>
+		<!-- 테스트용 개발시 제거 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body>
+	<div class="compare_buy_item_minishop_add">
+		<button type="button" class="btn_basket_add" onclick="$($('.layer-pop')[0]).fadeIn()">
+			<i class="icon-cart"></i>
+			<span>장바구니 담기</span>
+		</button>
+	</div>
 <!-- 구매 팝업 -->
-<div class="layer-pop" style="display:">
+<div class="layer-pop" style="display:none">
 	<div class="layer-pop_cart_add">
 		<h4 class="tit-h4">장바구니 담기 <!-- 상품견적 담기 --></h4>
 
@@ -42,34 +58,36 @@
 			<div class="pop_cart_add_top">
 				<span class="thumb">
 					<a href="#">
-					<img src="//img.happyshopping.kr/img_shopping/img_goods/img_496000/img_495216/200.jpg" alt="이름" /></a>
+					<img src="//img.happyshopping.kr/img_shopping/img_goods/img_496000/img_495216/200.jpg" alt="이름"/></a>
 				</span>
 
 				<div class="conts">
 					<strong class="name">GIGABYTE GA-B150M-DS3H 듀러블에디션 GIGABYTE GA-B150M-DS3H 듀러블에디션</strong>
 
 					<div class="conts_bot">
-						<span class="inunmer">
-							<input type="text" value="1" title="입력" />
-
-							<button type="button" class="btn_cnt down"><i class="icon-remove"></i><em class="ir">제거</em></button>
-							<button type="button" class="btn_cnt up"><i class="icon-add"></i><em class="ir">추가</em></button>
-						</span>
-
+						<div class="each_input">
+							<button type="button" class="btn_cnt_minus">
+								<i class="icon-remove"></i>
+								<span class="ir">감소</span>
+							</button>
+							<button type="button" class="btn_cnt_plus">
+								<i class="icon-add"></i>
+								<span class="ir">증가</span>
+							</button>
+							<input type="text" class="inum" title="개수" value="1">
+						</div>
 						<span class="price_sum"><strong>1,111,111</strong>원</span>
 
 						<div class="product_add">
-							<button type="button" class="btn_cart_add"><i class="icon-cart"></i> 장바구니 담기</button>
-
-							<!-- <button type="button" class="btn_cart_add"><i class="icon-in"></i> 상품견적 담기</button> -->
+							<button type="button" class="btn_cart_add" onclick="$($('.layer-pop')[0]).hide();$($('.layer-pop')[1]).fadeIn()"><i class="icon-cart"></i> 장바구니 담기</button>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="pop_cart_add_info">
-				<span>배송비 5,000원</span> <span class="free">무료배송</span> <em class="bar">|</em> <span class="day">9/9 (토)</span> 도착 예정
-				<p class="sellerinfo">이 상품은 <span class="malltype nor">일반전문몰</span> <span class="malltype card">카드전문몰</span> <strong>에이치제이컴퍼니</strong>이(가) 판매하고 배송합니다.</p>
+				<span>배송비 5,000원</span> <span class="free">무료배송</span> <em class="bar">|</em> <span class="day">9/9 (토)</span> 발송예정
+				<p class="sellerinfo">이 상품은 <span class="badge badge_nor">일반</span> <span class="badge badge_card">카드</span> <strong>에이치제이컴퍼니</strong>이(가) 판매하고 배송합니다.</p>
 			</div>
 
 			<div class="fast-delivery">
@@ -80,21 +98,21 @@
 
 					<span class="price"><strong>162,000</strong>원</span>
 					<em class="bar">|</em>
-					<span><strong class="date">2/23 (수)요일</strong> 도착예정</span>
+					<span><strong class="date">2/23 (수)</strong> 발송예정</span>
 				</div>
 				<a href="#" class="icon-chevron-thin-right btn_go"><span class="ir">바로가기</span></a>
 			</div>
 
-			<button type="button" class="btn_other_minishop"><i class="icon-cart_B"></i> 다른 미니샵에서 구매하기</button>
+			<button type="button" class="btn_other_minishop" onclick="$(this).hide();$('.pop_cart_add_othershop').fadeIn();"><i class="icon-cart_B"></i> 다른 미니샵에서 구매하기</button>
 
 			<!-- 다른 미니샵에서 구매하기 클릭시 보임 -->
-			<div class="pop_cart_add_othershop">
+			<div class="pop_cart_add_othershop" style="display:none;">
 				<table class="board">
 					<caption><span class="ir">판매하는 미니샵</span></caption>
 					<thead>
 					<tr>
-						<th scope="col">상품가</th>
-						<th scope="col">결제서비스</th>
+						<th scope="col">금액</th>
+						<th scope="col">배송비</th>
 						<th scope="col">배송예정일</th>
 						<th scope="col">판매자</th>
 					</tr>
@@ -107,18 +125,22 @@
 								<label for="id-dsi1"><span class="ir">선택</span></label>
 							</span>
 							<span class="product_price">
-								<strong class="price">375,000</strong>원<br>
-								<span class="deliveryfee free">무료배송</span>
+								<strong>375,000</strong>원
 							</span>
 						</td>
 						<td>
-							<span class="malltype nor">일반전물몰</span>
+							<span class="deliveryfee">10,000원</span>
 						</td>
 						<td>
-							7/15 (토)요일
+							7/15 (토)
 						</td>
 						<td>
-							<span class="mark-new">뉴셀러</span> <span class="sellername"><a href="#">EnterPC</a></span>
+							<div class="badgeArea">
+								<span class="badge badge_power">파워</span>
+								<span class="badge badge_card">카드</span>
+								<span class="badge badge_cash">현금영수증</span>
+							</div>
+							<span class="sellername"><a href="#">EnterPC</a></span>
 						</td>
 					</tr>
 					<tr>
@@ -128,18 +150,22 @@
 								<label for="id-dsi2"><span class="ir">선택</span></label>
 							</span>
 							<span class="product_price">
-								<strong class="price">75,000</strong>원<br>
-								<span class="deliveryfee">2,500원</span>
+								<strong class="lowprice">75,000</strong>원
 							</span>
 						</td>
 						<td>
-							<span class="malltype nor">일반전물몰</span>
+							<span class="deliveryfee free"><i class="icon-truck"></i>무료</span>
 						</td>
 						<td>
-							7/15 (토)요일
+							7/15 (토)
 						</td>
 						<td>
-							<span class="mark-new">뉴셀러</span> <span class="sellername"><a href="#">EnterPCerPC EnterPC</a></span>
+							<div class="badgeArea">
+								<span class="badge badge_power">파워</span>
+								<span class="badge badge_card">카드</span>
+								<span class="badge badge_cash">현금영수증</span>
+							</div>
+							<span class="sellername"><a href="#">EnterPC</a></span>
 						</td>
 					</tr>
 					<tr>
@@ -149,18 +175,22 @@
 								<label for="id-dsi3"><span class="ir">선택</span></label>
 							</span>
 							<span class="product_price">
-								<strong>19,375,000</strong>원<br>
-								<span class="deliveryfee">2,500원</span>
+								<strong class="lowprice">75,000</strong>원
 							</span>
 						</td>
 						<td>
-							<span class="malltype card">카드전물몰</span>
+							<span class="deliveryfee">10,000원</span>
 						</td>
 						<td>
-							7/15 (토)요일
+							7/15 (토)
 						</td>
 						<td>
-							<span class="mark-power">파워셀러</span> <span class="sellername"><a href="#">EnterPC</a></span>
+							<div class="badgeArea">
+								<span class="badge badge_power">파워</span>
+								<span class="badge badge_card">카드</span>
+								<span class="badge badge_cash">현금영수증</span>
+							</div>
+							<span class="sellername"><a href="#">EnterPC</a></span>
 						</td>
 					</tr>
 					<tr>
@@ -170,18 +200,22 @@
 								<label for="id-dsi4"><span class="ir">선택</span></label>
 							</span>
 							<span class="product_price">
-								<strong>1,375,000</strong>원<br>
-								<span class="deliveryfee">2,500원</span>
+								<strong>131,375,000</strong>원
 							</span>
 						</td>
 						<td>
-							<span class="malltype card">카드전물몰</span>
+							<span class="deliveryfee">10,000원</span>
 						</td>
 						<td>
-							7/15 (토)요일
+							7/15 (토)
 						</td>
 						<td>
-							<span class="mark-new">뉴셀러</span> <span class="sellername"><a href="#">EnterPC</a></span>
+							<div class="badgeArea">
+								<span class="badge badge_power">파워</span>
+								<span class="badge badge_card">카드</span>
+								<span class="badge badge_cash">현금영수증</span>
+							</div>
+							<span class="sellername"><a href="#">EnterPC</a></span>
 						</td>
 					</tr>
 					<tr>
@@ -191,18 +225,22 @@
 								<label for="id-dsi5"><span class="ir">선택</span></label>
 							</span>
 							<span class="product_price">
-								<strong>1,375,000</strong>원<br>
-								<span class="deliveryfee">2,500원</span>
+								<strong>1,375,000</strong>원
 							</span>
 						</td>
 						<td>
-							<span class="malltype card">카드전물몰</span>
+							<span class="deliveryfee">10,000원</span>
 						</td>
 						<td>
-							7/15 (토)요일
+							7/15 (토)
 						</td>
 						<td>
-							<span class="mark-new">뉴셀러</span> <span class="sellername"><a href="#">EnterPC</a></span>
+							<div class="badgeArea">
+								<span class="badge badge_power">파워</span>
+								<span class="badge badge_card">카드</span>
+								<span class="badge badge_cash">현금영수증</span>
+							</div>
+							<span class="sellername"><a href="#">EnterPC</a></span>
 						</td>
 					</tr>
 					</tbody>
@@ -221,11 +259,11 @@
 		<p class="msg">판매자 <span class="malltype nor">일반전문몰</span> <span class="malltype card">카드전문몰</span> 티유컴시엔에스<br />상품이 장바구니에 담겼습니다.</p>
 
     	<div class="button-group">
-    		<button type="button" class="btn_border">계속 쇼핑하기</button>
+    		<button type="button" class="btn_border" onclick="$('.layer-pop').hide();">계속 쇼핑하기</button>
     		<a href="#" class="btn_flat">장바구니 바로가기</a>
     	</div>
 
-    	<button type="button" class="btn-layer-pop_clse"><img src="//img.happyshopping.kr/img_static/img_pres/_v3/btn_layer_pop_clse.png" alt="닫기"></button>
+    	<button type="button" class="btn-layer-pop_clse" onclick="$('.layer-pop').hide();"><img src="//img.happyshopping.kr/img_static/img_pres/_v3/btn_layer_pop_clse.png" alt="닫기"></button>
 	</div>
 </div>
 <!-- // 구매 확인 레이어 -->

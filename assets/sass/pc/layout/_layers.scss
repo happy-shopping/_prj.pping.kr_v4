@@ -51,6 +51,45 @@
 			}
 		}
 	}
+	//장바구니 담기 수량  .osset_body , assembly_body ,as_body ,cart_add 네 개에서 사용
+	.each_input {
+		position: relative;
+		float: left;
+		margin-left: 10px;
+		padding: 0 28px;
+		border: 1px solid $base_color2;
+
+		.btn_cnt_minus,
+		.btn_cnt_plus {
+			position: absolute;
+			top: 0;
+			font-size: 21px;
+			@include btn(28px, 28px, 0, $base_color2, #fff);
+			&:hover{
+				background:#f6f6f6;
+			}
+		}
+
+		.btn_cnt_minus {
+			left: 0;
+		}
+
+		.btn_cnt_plus {
+			right: 0;
+		}
+
+		.inum {
+			width: 32px;
+			height: 28px;
+			border-width: 0 1px;
+			border-style: solid;
+			border-color: $base_color2;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 0;
+		}
+	}
+
 }
 
 // 간단 툴팁
@@ -872,42 +911,6 @@
 					font-weight: bold;
 					line-height: 30px;
 				}
-
-				.each_input {
-					position: relative;
-					float: left;
-					margin-left: 10px;
-					padding: 0 28px;
-					border: 1px solid $base_color2;
-
-					.btn_cnt_minus,
-					.btn_cnt_plus {
-						position: absolute;
-						top: 0;
-						font-size: 21px;
-						@include btn(28px, 28px, 0, $base_color2, #fff);
-					}
-
-					.btn_cnt_minus {
-						left: 0;
-					}
-
-					.btn_cnt_plus {
-						right: 0;
-					}
-
-					.inum {
-						width: 32px;
-						height: 28px;
-						border-width: 0 1px;
-						border-style: solid;
-						border-color: $base_color2;
-						font-weight: bold;
-						text-align: center;
-						letter-spacing: 0;
-					}
-				}
-
 				.as-price {
 					float: left;
 					height: 30px;
@@ -1123,42 +1126,6 @@
 					font-weight: bold;
 					line-height: 30px;
 				}
-
-				.each_input {
-					position: relative;
-					float: left;
-					margin-left: 10px;
-					padding: 0 28px;
-					border: 1px solid $base_color2;
-
-					.btn_cnt_minus,
-					.btn_cnt_plus {
-						position: absolute;
-						top: 0;
-						font-size: 21px;
-						@include btn(28px, 28px, 0, $base_color2, #fff)
-					}
-
-					.btn_cnt_minus {
-						left: 0;
-					}
-
-					.btn_cnt_plus {
-						right: 0;
-					}
-
-					.inum {
-						width: 32px;
-						height: 28px;
-						border-width: 0 1px;
-						border-style: solid;
-						border-color: $base_color2;
-						font-weight: bold;
-						text-align: center;
-						letter-spacing: 0;
-					}
-				}
-
 				.as-price {
 					float: left;
 					height: 30px;
@@ -1500,42 +1467,6 @@
 					font-weight: bold;
 					line-height: 30px;
 				}
-
-				.each_input {
-					position: relative;
-					float: left;
-					margin-left: 10px;
-					padding: 0 28px;
-					border: 1px solid $base_color2;
-
-					.btn_cnt_minus,
-					.btn_cnt_plus {
-						position: absolute;
-						top: 0;
-						font-size: 21px;
-						@include btn(28px, 28px, 0, $base_color2, #fff)
-					}
-
-					.btn_cnt_minus {
-						left: 0;
-					}
-
-					.btn_cnt_plus {
-						right: 0;
-					}
-
-					.inum {
-						width: 32px;
-						height: 28px;
-						border-width: 0 1px;
-						border-style: solid;
-						border-color: $base_color2;
-						font-weight: bold;
-						text-align: center;
-						letter-spacing: 0;
-					}
-				}
-
 				.as-price {
 					float: left;
 					height: 30px;
@@ -2933,6 +2864,7 @@
 
 				img {
 					max-height: 100%;
+					@include imgOverEff;
 				}
 			}
 
@@ -2947,51 +2879,18 @@
 					line-height: 34px;
 					@include truncate();
 				}
-
 				.conts_bot {
 					@include clear;
-
-					.inunmer {
-						position: relative;
-						float: left;
-						display: block;
+					.each_input {
 						height: 28px;
 						margin-top: 4px;
-						padding: 0 28px;
-						border: 1px solid $base_color2;
-
+						margin-left:0;
 						input[type="text"] {
-							width: 32px;
-							height: 28px;
-							border-top: 0;
-							border-bottom: 0;
-							border-left: 1px solid $base_color2;
-							border-right: 1px solid $base_color2;
 							font-size: 20px;
 							font-weight: bold;
-							line-height: 28px;
-							text-align: center;
-							vertical-align: top;
 							letter-spacing: 0;
 						}
-
-						.btn_cnt {
-							position: absolute;
-							top: 0;
-							font-size: 24px;
-							@include btn(28px, 28px, 0, null, #fff);
-							line-height: 1;
-
-							&.up {
-								right: 0;
-							}
-
-							&.down {
-								left: 0;
-							}
-						}
 					}
-
 					.price_sum {
 						float: left;
 						height: 38px;
@@ -3010,14 +2909,13 @@
 						float: right;
 
 						.btn_cart_add {
-							padding: 0 10px;
+							padding: 0 9px;
 							font-size: 16px;
 							@include btn(null, 38px, 0, #fff, $point_color1);
-
 							[class^="icon-"] {
-								margin-right: 6px;
-								font-size: 21px;
-								vertical-align: -1px;
+								  margin-right: 5px;
+									font-size: 19px;
+									vertical-align: middle;
 							}
 
 							&:hover {
@@ -3032,28 +2930,26 @@
 		.pop_cart_add_info {
 			margin-top: 10px;
 			color: $base_color3;
-
 			.bar {
 				position: relative;
 				top: -1px;
 				padding:0 5px;
 				color: #dbdbdb;
 			}
-
 			.free {
-				color: #ff6600;
+				color: $point_color3;
 			}
-
 			.day {
-				color: #ff6600;
+				color: $point_color3;
 				letter-spacing: 0;
 			}
-
 			.sellerinfo {
 				margin-top: 5px;
-
 				strong {
 					color: $base_color1;
+				}
+				.badge{
+					vertical-align: super;
 				}
 			}
 		}
@@ -3075,6 +2971,7 @@
 
 				img {
 					max-width: 100%;
+					@include imgOverEff;
 				}
 			}
 
@@ -3099,7 +2996,7 @@
 					}
 
 					.date {
-						color: $point_color2;
+						color: $point_color3;
 					}
 
 				}
@@ -3165,16 +3062,16 @@
 
 					.product_price {
 						display: inline-block;
-						padding: 0 10px 0 30px;
-						text-align: left;
-						letter-spacing: 0;
-						line-height: 1.4;
-
+				    padding: 0 0 0 30px;
+				    text-align: right;
+				    letter-spacing: 0;
+				    line-height: 1.4;
+				    width: 107px;
 						strong {
 							font-size: 16px;
 							color: #888;
 
-							&.price {
+							&.lowprice {
 								color: $point_color2;
 							}
 						}
@@ -3230,21 +3127,24 @@
 
 				th:first-child,
 				td:first-child {
-					width: 148px;
+					width: 153px;
 				}
 
 				th:first-child + th,
 				td:first-child + td {
-					width: 90px;
+					width: 85px;
+					.deliveryfee.free{
+						color:$point-color3;
+					}
 				}
 
 				th:first-child + th + th,
 				td:first-child + td + td {
-					width: 100px;
+					width: 75px;
 				}
 
 				th:last-child {
-					width: 164px;
+					width: 189px;
 				}
 
 				td:first-child {
@@ -3252,7 +3152,15 @@
 				}
 
 				td:last-child {
-					width: 147px;
+					width: 172px;
+					text-align: left;
+					padding-left:7px;
+					.badgeArea{
+						margin-bottom:5px;
+						.badge{
+							margin:0;
+						}
+					}
 				}
 			}
 		}

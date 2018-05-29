@@ -8,6 +8,7 @@ $point_color1: #418ded;
 $point_color1_over: #3281ed;
 $point_color2: #f34522;
 $point_color2_over: #e5310c;
+$point_color3:#ff6600;
 
 $bg_color1_over: #5e7694;
 // Responsive
@@ -818,6 +819,14 @@ $size960: '(min-width: 961px)';
 	height:$hei+px;
 	line-height:$hei+px;
 }
+@mixin imgOverEff{
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	&:hover{
+		border-color:$point_color1;
+	}
+}
+
 // icons
 // 컴퓨터 주변부품
 $btn_all: -1px -4px;
