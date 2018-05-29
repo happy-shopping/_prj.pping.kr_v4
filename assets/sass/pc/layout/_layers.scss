@@ -58,13 +58,18 @@
 		margin-left: 10px;
 		padding: 0 28px;
 		border: 1px solid $base_color2;
+		border-top:0;
+		border-bottom:0;
+		height:30px;
 
 		.btn_cnt_minus,
 		.btn_cnt_plus {
 			position: absolute;
 			top: 0;
 			font-size: 21px;
-			@include btn(28px, 28px, 0, $base_color2, #fff);
+			@include btn(28px, 30px, 1px solid $base_color2, $base_color2, #fff);
+			border-left:0;
+			border-right:0;
 			&:hover{
 				background:#f6f6f6;
 			}
@@ -80,13 +85,14 @@
 
 		.inum {
 			width: 32px;
-			height: 28px;
-			border-width: 0 1px;
+			height: 30px;
+			border-width: 1px;
 			border-style: solid;
 			border-color: $base_color2;
 			font-weight: bold;
 			text-align: center;
 			letter-spacing: 0;
+			box-sizing: border-box;
 		}
 	}
 
@@ -2853,6 +2859,7 @@
 
 	.pop_cart_add_body {
 		.pop_cart_add_top {
+			padding-top:10px;
 			@include clear;
 
 			.thumb {
@@ -2882,7 +2889,6 @@
 				.conts_bot {
 					@include clear;
 					.each_input {
-						height: 28px;
 						margin-top: 4px;
 						margin-left:0;
 						input[type="text"] {

@@ -74,7 +74,7 @@
 								<i class="icon-add"></i>
 								<span class="ir">증가</span>
 							</button>
-							<input type="text" class="inum" title="개수" value="1">
+							<input type="text" class="inum" title="개수" value="1" onfocus="$(this).addClass('ifocus')"  onblur="$(this).removeClass('ifocus')">
 						</div>
 						<span class="price_sum"><strong>1,111,111</strong>원</span>
 
@@ -161,7 +161,7 @@
 						</td>
 						<td>
 							<div class="badgeArea">
-								<span class="badge badge_power">파워</span>
+								<span class="badge badge_new">뉴</span>
 								<span class="badge badge_card">카드</span>
 								<span class="badge badge_cash">현금영수증</span>
 							</div>
@@ -236,7 +236,7 @@
 						</td>
 						<td>
 							<div class="badgeArea">
-								<span class="badge badge_power">파워</span>
+								<span class="badge badge_new">뉴</span>
 								<span class="badge badge_card">카드</span>
 								<span class="badge badge_cash">현금영수증</span>
 							</div>
@@ -247,8 +247,7 @@
 				</table>
 			</div>
 		</div>
-
-		<button type="button" class="btn-layer-pop_clse"><img src="http://img.happyshopping.kr/img_static/img_pres/_v3/btn_layer_pop_clse.png" alt="닫기"></button>
+		<button type="button" class="btn-layer-pop_clse" onclick="$('.layer-pop').hide();"><img src="//img.happyshopping.kr/img_static/img_pres/_v3/btn_layer_pop_clse.png" alt="닫기"></button>
 	</div>
 </div>
 <!-- // 구매 팝업 -->
@@ -257,12 +256,10 @@
 <div class="layer-pop" style="display: none">
 	<div class="layer-pop_cart_msg">
 		<p class="msg">판매자 <span class="malltype nor">일반전문몰</span> <span class="malltype card">카드전문몰</span> 티유컴시엔에스<br />상품이 장바구니에 담겼습니다.</p>
-
     	<div class="button-group">
     		<button type="button" class="btn_border" onclick="$('.layer-pop').hide();">계속 쇼핑하기</button>
     		<a href="#" class="btn_flat">장바구니 바로가기</a>
     	</div>
-
     	<button type="button" class="btn-layer-pop_clse" onclick="$('.layer-pop').hide();"><img src="//img.happyshopping.kr/img_static/img_pres/_v3/btn_layer_pop_clse.png" alt="닫기"></button>
 	</div>
 </div>
