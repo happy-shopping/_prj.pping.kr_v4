@@ -697,193 +697,210 @@
 }
 // add 180525 jspark@pping.kr .estimate_top_banner
 .estimateTopBanner{
-  padding-top:15px;
-  margin-bottom:20px;
-  .tbTitle{
-    padding-bottom:11px;
-  }
-  .fs16px{
-    font-size:16px;
-  }
-  .pitClr{
-    color:$point_color1;
-  }
-  .TopBanLeft{
-    display:inline-block;
-    width:700px;
-    box-sizing:border-box;
-    .TopBanTabArea{
-      position:relative;
-      padding:0 36px;
-      .TopBanTabsWrap{
-        width:100%;
-        overflow: hidden;
-        position:relative;
-        z-index: 10;
-        padding-left: 1px;
-        .TopBanTabs{
-          display:block;
-          border-collapse: collapse;
-          height:38px;
-          font-size:0;
-          width:calc(157px * 13);
-          transition:0.7s;
-          .TopBanTabItem{
-            display:inline-block;
-            font-size:12px;
-            font-weight: 800;
-            width:158px;
-            height:38px;
-            line-height:36px;
-            box-sizing:border-box;
-            border:1px solid #ccc;
-            margin-left:-1px;
-            border-bottom-color:$point_color1;
-            text-align: center;
-            border-collapse:collapse;
-            background:#f5f6f9;
-            color:$base_color3;
-            cursor:pointer;
+    padding-top:15px;
+    margin-bottom:20px;
+    .tbTitle{
+        padding-bottom:11px;
+    }
+    .fs16px{
+        font-size:16px;
+    }
+    .pitClr{
+        color:$point_color1;
+    }
+    .TopBanLeft{
+        display:inline-block;
+        width:700px;
+        box-sizing:border-box;
+        .TopBanTabArea{
             position:relative;
-            z-index:1;
-            &.on{
-              @include BgwhtBdpit;
-              border-bottom-color:#fff;
-              color:$point_color1;
-              z-index:2;
+            padding:0 36px;
+            .TopBanTabsWrap{
+                width:100%;
+                overflow: hidden;
+                position:relative;
+                z-index: 10;
+                padding-left: 1px;
+                .TopBanTabs{
+                    display:block;
+                    border-collapse: collapse;
+                    height:38px;
+                    font-size:0;
+                    width:calc(157px * 13);
+                    transition:0.7s;
+                    .TopBanTabItem{
+                        display:inline-block;
+                        font-size:12px;
+                        font-weight: 800;
+                        width:158px;
+                        height:38px;
+                        line-height:36px;
+                        box-sizing:border-box;
+                        border:1px solid #ccc;
+                        margin-left:-1px;
+                        border-bottom-color:$point_color1;
+                        text-align: center;
+                        border-collapse:collapse;
+                        background:#f5f6f9;
+                        color:$base_color3;
+                        cursor:pointer;
+                        position:relative;
+                        z-index:1;
+                        &.on{
+                            @include BgwhtBdpit;
+                            border-bottom-color:#fff;
+                            color:$point_color1;
+                            z-index:2;
+                        }
+                        &:hover:not(.on){
+                            background:#fff;
+                            color:$point_color1;
+                        }
+                    }
+                }
             }
-            &:hover:not(.on){
-              background:#fff;
-              color:$point_color1;
+            .TopBanBtns{
+                position: absolute;
+                top:0;
+                width:37px;
+                height:37px;
+                border-bottom:1px solid $point_color1;
+                background-color:#f5f6f9;
+                font-size:20px;
+                color:#9f9f9f;
+                display:block;
+                z-index:5;
+                &.TopBanLeftBtn{
+                    left:0;
+                    border-right-color:#f5f6f9;
+                }
+                &.TopBanRightBtn{
+                    right:0;
+                    border-left-color:#f5f6f9;
+                }
+                &:hover{
+                    @include BgwhtBdpit;
+                    color:$point_color1;
+                }
+                &:active{
+                    @include BgwhtBdpit;
+                    color:$point_color1;
+                }
+                .TopBanBtn{
+                    border:1px solid #ccc;
+                    border-bottom-width:0;
+                    width:100%;
+                    height:100%;
+                }
             }
-          }
         }
-      }
-      .TopBanBtns{
-        position: absolute;
-        top:0;
-        width:37px;
-        height:37px;
-        border-bottom:1px solid $point_color1;
-        background-color:#f5f6f9;
-        font-size:20px;
-        color:#9f9f9f;
-        display:block;
-        z-index:5;
-        &.TopBanLeftBtn{
-          left:0;
-          border-right-color:#f5f6f9;
+        .TopBanConArea{
+            border:1px solid $point_color1;
+            border-top:0;
+            padding:10px;
+            .TopBanPointItem a.TBItemLink{
+                display:block;
+                color:#fff;
+                background: #39567b;
+                font-size:13px;
+                font-weight: 300;
+                text-align:center;
+                @include txtVer1Li(30);
+                &:hover{
+                    background:$bg_color1_over;
+                }
+                .TBItemLinkimg{
+                    display: inline-block;
+                    margin-left:5px;
+                }
+            }
+            .TBItemList{
+                padding:5px 0 6px;
+                .TBItem{
+                    display:table;
+                    font-size:13px;
+                    @include txtVer1Li(29);
+                    .TBItemTxt{
+                        display:table-cell;
+                        width:525px;
+                        .TBItemTxtLink{
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            word-wrap: normal;
+                            overflow: hidden;
+                            display: inline-block;
+                            max-width: 500px;
+                            vertical-align: bottom;
+                        }
+                        .TBItemTxtLink:hover{
+                            color:$point_color1
+                        }
+                        .TBItemTxtLink:active{
+                            color:$point_color1
+                        }
+                        .icon-movie_play{
+                            font-size: 20px;
+                            vertical-align: middle;
+                            color:$point_color1;
+                            cursor: pointer;
+                            margin-left:5px;
+                        }
+                        .icon-movie_play:active{
+                            color:#2d7ee4
+                        }
+                        .icon-movie_play:hover{
+                            color:#2d7ee4
+                        }
+                    }
+                    .itemPrice{
+                        display:table-cell;
+                        width:153px;
+                        text-align: right;
+                        .btnPriceDel{
+                            width:22px;
+                            border:1px solid #eee;
+                            height:22px;
+                            padding:5px;
+                            vertical-align:middle;
+                            img{
+                                vertical-align: top;
+                            }
+                        }
+                        .spn{
+                            font-size:12px;
+                            color:$base_color3;
+                            margin-right:5px;
+                            strong{
+                                color:#f34522;
+                                font-size:15px;
+                            }
+                        }
+                        .btn-add-to{
+                            width:22px;
+                            @include txtVer1Li(22);
+                        }
+                    }
+                }
+            }
         }
-        &.TopBanRightBtn{
-          right:0;
-          border-left-color:#f5f6f9;
-        }
-        &:hover{
-          @include BgwhtBdpit;
-          color:$point_color1;
-        }
-        &:active{
-          @include BgwhtBdpit;
-          color:$point_color1;
-        }
-        .TopBanBtn{
-          border:1px solid #ccc;
-          border-bottom-width:0;
-          width:100%;
-          height:100%;
-        }
-      }
     }
-    .TopBanConArea{
-      border:1px solid $point_color1;
-      border-top:0;
-      padding:10px;
-      .TopBanPointItem a.TBItemLink{
-        display:block;
-        color:#fff;
-        background: #39567b;
-        font-size:13px;
-        font-weight: 300;
-        text-align:center;
-        @include txtVer1Li(30);
-        &:hover{
-          background:$bg_color1_over;
+    .TopBanRight{
+        float:right;
+        width:230px;
+        a{
+            display:block;
+            &.TopBanRight2th{
+                padding:5px 0;
+            }
         }
-        .TBItemLinkimg{
-          display: inline-block;
-          margin-left:5px;
+    }
+    .layer-pop_comm_confirm{
+        width:360px;
+        padding: 60px 27px 40px;
+        .popTopBanLayMsg{
+            font-size:16px;
+            margin-bottom:6px;
+            display: block;
         }
-      }
-      .TBItemList{
-        padding:5px 0 6px;
-        .TBItem{
-          display:table;
-          font-size:13px;
-          @include txtVer1Li(29);
-          .TBItemTxt{
-            display:table-cell;
-            width:525px;
-            .TBItemTxtLink:hover{
-              color:$point_color1
-            }
-            .TBItemTxtLink:active{
-              color:$point_color1
-            }
-            .icon-movie_play{
-              font-size: 20px;
-              vertical-align: middle;
-              color:$point_color1;
-              cursor: pointer;
-            }
-            .icon-movie_play:active{color:#2d7ee4}
-            .icon-movie_play:hover{color:#2d7ee4}
-          }
-          .itemPrice{
-            display:table-cell;
-            width:153px;
-            text-align: right;
-            .btnPriceDel{
-              width:22px;
-              border:1px solid #eee;
-              height:22px;
-              padding:5px;
-              vertical-align:middle;
-              img{
-                vertical-align: top;
-              }
-            }
-            .spn{
-              font-size:12px;
-              color:$base_color3;
-              strong{
-                color:#f34522;
-                font-size:15px;
-              }
-            }
-            .btn-add-to{
-              width:22px;
-              @include txtVer1Li(22);
-            }
-          }
-        }
-      }
     }
-  }
-  .TopBanRight{
-    float:right;
-    width:230px;
-    a{
-      display:block;
-      &.TopBanRight2th{padding:5px 0;}
-    }
-  }
-  .layer-pop_comm_confirm{
-    width:360px;
-    padding: 60px 27px 40px;
-    .popTopBanLayMsg{
-      font-size:16px;
-      margin-bottom:6px;
-      display: block;
-    }
-  }
 }
