@@ -200,6 +200,7 @@
 						cursor: default;
 					}
 				}
+
 			}
 
 			.cart-body_row_botmenu {
@@ -1174,4 +1175,10 @@
 	left: 50%;
 	top: 50%;
 	margin: -290px 0 0 -297px;
+}
+.standard-pc-input {
+	@include breakpoint(min-height 300px) {
+		vertical-align: text-top;
+		padding-top: 61px;
+	}
 }
