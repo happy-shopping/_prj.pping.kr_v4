@@ -593,7 +593,7 @@
 
         &.wide {
             overflow-x: hidden;
-            position: absolute;
+            position: fixed; // IE 전체모드 깨지는 부분 수정
             left: 0;
             top: 0;
             bottom: 0;
