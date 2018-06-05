@@ -1822,21 +1822,20 @@
 												display: block;
 												height: 18px;
 												margin: 0 auto;
-                        position: relative;
-                        top: -8px;
+												position: relative;
+												top: -8px;
 											}
 											.price {
 												display: inline-block;
 												margin-left: 0px;
 												font-size: 12px;
 												vertical-align: middle;
-
 												strong {
 													font-size: 16px;
-													color: $point_color2;
+													color: $base_color1;
 													letter-spacing: 0;
+													&.lowest{color: $point_color2;}
 												}
-
 												.won {
 													color: $base_color3;
 												}
