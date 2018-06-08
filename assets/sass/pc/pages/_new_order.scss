@@ -65,9 +65,91 @@
 
 		.box-board {
 			padding-top: 0.5px;
-
 		}
-
+		.oCdPy{ //180608 카드선택부분 추가 시작
+			padding:15px 14px 0;
+			font-size:0;
+			.oItemnm{
+				display:inline-block;
+				width:100px;
+				padding:5.5px;
+				font-size: 13px;
+				@include breakpoint(max-width 1209px) {
+					padding:5px;
+				}
+				.oItemlb{
+					color:$base_color3;
+					border: 1px solid #ccc;
+				    margin: 0;
+				    padding: 0;
+				    width: 100%;
+				    height: 100%;
+				    border-radius: 3px;
+				    text-align: center;
+					cursor: pointer;
+					@include txtVer1Li(33);
+					&:hover{
+						background:#f2f2f2;
+					}
+				}
+				.oItemr{
+					display:none;
+				}
+				.oItemr:checked + .oItemlb{
+					border-color:$point_color1;
+					color:$point_color1;
+				}
+			}
+		}
+		.otherCdPy{
+			background: #f2f2f2;
+			width: 505px;
+			padding: 0 20px;
+			margin: 5px 0 16px 20px;
+			display: none;
+			&.on{display:block;}
+			&.isCard{
+				@include txtVer1Li(52);
+				.otherCard{
+					width: 200px;
+					height: 34px;
+					margin-left: 5px;
+					border:1px solid $base_color3;
+				}
+			}
+			&.isPay{
+				display:block;
+				padding: 25px 20px;
+				.payLogo{
+					padding-bottom:9px;
+				}
+				.payName{
+					font-size:18px;
+					color:$base_color3;
+				}
+				.payAlert{
+					margin-top:18px;
+					padding-top:19px;
+					border-top:1px solid #e5e5e5;
+					line-height:1.6;
+					dd{
+						font-weight: 400;
+						position:relative;
+						padding-left:7px;
+						word-wrap: break-word;
+						word-break: keep-all;
+						&:before{
+							content:'-';
+							position:absolute;
+							left:0;
+						}
+					}
+				}
+			}
+			@include breakpoint(max-width 1209px) {
+				width: 390px;
+			}
+		}//180608 카드선택부분 추가 끝
 		.igroup {
 			padding: 5px 0;
 		}
@@ -138,17 +220,31 @@
 				margin-left: 10px;
 				font-size: 20px;
 			}
-
 		}
 		.th-reset {
 			position: relative;
 			background-color: white;
+			&.bdbt0{ //180608 카드선택부분 추가 시작
+				border-bottom:0;
+			}
+			.cdWarn{
+				padding-bottom: 0px;
+				display:none;
+				&.on{
+					display:block;
+				}
+				b{
+					display: inline-block;
+    				padding: 5px 0 0;
+				}
+			} //180608 카드선택부분 추가 끝
 			.color {
 				color:#ff6600;
 				font-weight: 100;
 			}
 			.icon-card {
 				font-size: 14px;
+				padding-top:5px;
 				@include loadIcon($icon-credit-card);
 				b {
 					cursor: pointer;

@@ -1282,8 +1282,7 @@
 						</article>
 						<!-- // 할인쿠폰 -->
 
-						<!-- 결제금액/결제정보 무통장!-->
-
+						<!-- 결제금액/결제정보 신용카드!-->
 						<article class="order-body_info">
 							<h3 class="tit-h3">결제금액/결제정보</h3>
 
@@ -1299,15 +1298,15 @@
 													<div class="payment-method">
 														<ul class="igroup">
 															<li>
-																<span class="iradio">
-                                                            <input type="radio" id="id-pay1" name="name3" checked="checked">
-                                                            <label for="id-pay1"><em>신용카드</em></label>
-                                                        </span>
+																<div class="iradio">
+                                                            		<input type="radio" id="id-pay1" name="name3" checked>
+                                                            		<label for="id-pay1"><em>신용카드</em></label>
+                                                        		</div>
 															</li>
 															<li>
 																<div class="iradio">
 																	<input type="radio" id="id-pay2" name="name3" class="escrow-tooltip">
-																	<label for="id-pay2"><em>가상계좌(에스크로)</em></label>
+																	<label for="id-pay2"><em>간편결제</em></label>
 
 																	<!-- 가상계좌 레이어 -->
 																	<div class="tooltip layer-escrow">
@@ -1337,9 +1336,7 @@
 																</div>
 															</li>
 														</ul>
-
 														<span class="alert-msg fail">신용카드 결제로 변경 시, 현금 결제 쿠폰 적용이 취소됩니다.</span>
-
 													</div>
 												</div>
 											</td>
@@ -1354,11 +1351,9 @@
 															<span class="point-info">
 																<button type="button" class="btn-point-alluse">적용취소
 																</button>
-
 															</span>
 															<span class="em-red">사용가능 예치금 <strong><em>8000</em>원</strong></span>
 														</div>
-
 													</li>
 													<li>
 														<div class="box-td">
@@ -1384,11 +1379,218 @@
 											</td>
 										</tr>
 										<tr>
-											<th colspan="2" scope="row" class="th-reset"><span class="color"> ※ 카드결제시 주의사항 :<b>법인카드(개인지정카드 제외)와 체크카드</b>는 <b>할부 결제가 불가능</b>합니다.</span></th>
+											<th colspan="2" scope="row" class="th-reset bdbt0">
+												<span class="color cdWarn on"> ※ 카드결제시 주의사항 :<b>법인카드(개인지정카드 제외)와 체크카드는 할부 결제가 불가능합니다.</b></span>
+												<ul class="oCdPy">
+													<li class="oItemnm">
+														<input type="radio" id="oItem01" name="orderCard" class="oItemr" value="01">
+														<label for="oItem01" class="oItemlb">신한카드</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem02" name="orderCard" class="oItemr" value="02">
+														<label for="oItem02" class="oItemlb">KB국민카드</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem03" name="orderCard" class="oItemr" value="03">
+														<label for="oItem03" class="oItemlb">비씨카드</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem04" name="orderCard" class="oItemr" value="04">
+														<label for="oItem04" class="oItemlb">삼성카드</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem05" name="orderCard" class="oItemr" value="05">
+														<label for="oItem05" class="oItemlb">현대카드</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem06" name="orderCard" class="oItemr" value="06">
+														<label for="oItem06" class="oItemlb">롯데카드</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem07" name="orderCard" class="oItemr" value="07">
+														<label for="oItem07" class="oItemlb">KEB하나카드</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem08" name="orderCard" class="oItemr" value="08">
+														<label for="oItem08" class="oItemlb">NH농협카드</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem09" name="orderCard" class="oItemr" value="09">
+														<label for="oItem09" class="oItemlb">카카오뱅크</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem10" name="orderCard" class="oItemr" value="10" checked>
+														<label for="oItem10" class="oItemlb">기타카드</label>
+													</li>
+												</ul>
+												<div class="otherCdPy isCard on">기타카드
+													<select class="otherCard" name="">
+														<option value=""> 카드선택 </option>
+														<option value="01"> 다른카드 </option>
+														<option value="01"> 저카드 </option>
+													</select>
+												</div>
+											</th>
 										</tr>
 										<tr>
 											<th colspan="2" scope="row" class="th-reset"><span class="icon-card"><b> 무이자할부 혜택  ></b> </span></th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</article>
 
+						<!-- 결제금액/결제정보 간편결제!-->
+						<article class="order-body_info">
+							<h3 class="tit-h3">결제금액/결제정보</h3>
+
+							<div class="box-board">
+								<table class="board thead-lft">
+									<caption><span>결제 방법</span></caption>
+
+									<tbody>
+										<tr>
+											<th scope="row" class="vt" style="width:150px" ><span>결제방법</span></th>
+											<td>
+												<div class="box-td">
+													<div class="payment-method">
+														<ul class="igroup">
+															<li>
+																<div class="iradio">
+                                                            		<input type="radio" id="id-pay1" name="name3">
+                                                            		<label for="id-pay1"><em>신용카드</em></label>
+                                                        		</div>
+															</li>
+															<li>
+																<div class="iradio">
+																	<input type="radio" id="id-pay2" name="name3" checked>
+																	<label for="id-pay2"><em>간편결제</em></label>
+																</div>
+															</li>
+															<li>
+																<div class="iradio">
+																	<input type="radio" id="id-pay3" name="name3" class="nbankbook-tooltip">
+																	<label for="id-pay3"><em>무통장입금(전자보증)</em></label>
+
+																	<!-- 무통장입금 레이어 -->
+																	<div class="tooltip layer-nbankbook">
+																		<h4 class="tit-h4">서비스 안내</h4>
+																		<ul>
+																			<li>- 계좌를 선택한 후 주문 금액을 입금해 주시면 구매가 완료됩니다.</li>
+																			<li>- 전자보증을 통하여 안전거래를 보장하고 있습니다.</li>
+																		</ul>
+																	</div>
+																	<!-- // 무통장입금 레이어 -->
+																</div>
+															</li>
+														</ul>
+														<span class="alert-msg fail">간편결제로 변경 시, 현금 결제 쿠폰 적용이 취소됩니다.</span>
+													</div>
+												</div>
+											</td>
+											<td rowspan="3" style="width:50%" class="td-reset">
+												<ul>
+													<li>
+														<div class="box-td">
+															<span class="deposit-right"><b>예치금</b></span>
+															<span class=" point-input">
+																<input type="text" value="25,200 " title="사용 예치금" class="istyle" /><span>원</span>
+															</span>
+															<span class="point-info">
+																<button type="button" class="btn-point-alluse">적용취소
+																</button>
+															</span>
+															<span class="em-red">사용가능 예치금 <strong><em>8000</em>원</strong></span>
+														</div>
+													</li>
+													<li>
+														<div class="box-td">
+															<span><b>해피포인트</b></span>
+															<button type="button" class="btn-question-tip btn-happypoint"><img src="http://img.happyshopping.kr/img_static/img_pres/_v3/ico_question.png" alt="안심번호" /></button>
+
+															<!-- 해피포인트란 -->
+															<div class="tooltip layer-happypoint">
+																<div class="tit">해피포인트란?</div>
+																<p>구매확정 또는 이벤트 참여시 제공되는 무상포인트 혜택입니다.<br>상품 구매 합계액이 100,000 원 이상이고, 보유잔액이 1,000 포인트<br>이상인 경우 상품 구매시 현금처럼 사용하실 수 있습니다.</p>
+															</div>
+															<span class=" point-input">
+																<input type="text" value="5,200" title="사용 해피포인트" class="istyle"  /> P
+															</span>
+															<span class="point-info">
+																<button type="button" class="btn-point-alluse on">전체 사용</button>
+															</span>
+															<span class="em-red">사용가능 포인트 <strong><em>6,591</em>P</strong></span>
+														</div>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th colspan="2" scope="row" class="th-reset bdbt0">
+												<span class="color cdWarn"> ※ 카드결제시 주의사항 :<b>법인카드(개인지정카드 제외)와 체크카드는 할부 결제가 불가능합니다.</b></span>
+												<ul class="oCdPy">
+													<li class="oItemnm">
+														<input type="radio" id="oItem51" name="orderPay" class="oItemr" value="51" checked>
+														<label for="oItem51" class="oItemlb">PAYCO</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem52" name="orderPay" class="oItemr" value="52">
+														<label for="oItem52" class="oItemlb">KakaoPay</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem53" name="orderPay" class="oItemr" value="53">
+														<label for="oItem53" class="oItemlb">삼성페이</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem54" name="orderPay" class="oItemr" value="54">
+														<label for="oItem54" class="oItemlb">L.Pay</label>
+													</li>
+													<li class="oItemnm">
+														<input type="radio" id="oItem55" name="orderPay" class="oItemr" value="55">
+														<label for="oItem55" class="oItemlb">SSG페이</label>
+													</li>
+												</ul>
+												<div class="otherCdPy isPay">
+													<div class="payLogoArea">
+														<img class="payLogo" src="//img.happyshopping.kr/img_static/img_pres/paylogo/plogo_payco.png" alt="페이코"/>
+														<!-- <img class="payLogo" src="//img.happyshopping.kr/img_static/img_pres/paylogo/plogo_kakao.png" alt="카카오 페이"/>
+														<img class="payLogo" src="//img.happyshopping.kr/img_static/img_pres/paylogo/plogo_sam.png" alt="삼성페이"/>
+														<img class="payLogo" src="//img.happyshopping.kr/img_static/img_pres/paylogo/plogo_Lpay.png" alt="엘페이"/>
+														<img class="payLogo" src="//img.happyshopping.kr/img_static/img_pres/paylogo/plogo_ssg.png" alt="에스에스지페이"/> -->
+														<sub class="payName">페이코</sub>
+														<p class="color">
+															청구할인은 적용되지 않습니다.
+															<!-- 청구할인 대상카드 결제시 청구할인도 중복으로 적용됩니다. -->
+														</p>
+													</div>
+													<dl class="payAlert">
+														<dt>유의사항</dt>
+														<dd>PAYCO는 NHN 엔터테인먼트가 만든 안전한 간편결제 서비스 입니다.</dd>
+														<dd>휴대폰과 카드명의자가 동일해야 하며 결제 금액 제한은 없습니다.</dd>
+														<dd>결제 가능 카드 : 모든 신용/체크 카드 결제 가능</dd>
+
+														<!-- <dd>카카오톡 안에서 본인명의 카드(신용/체크)를 등록하여 다양한 곳에서 간단하게 비밀번호만으로 결제할 수 있는 모바일 간편결제 서비스 입니다.</dd>
+														<dd>지원카드 : 모든 신용/체크카드 (단, BC 카드 중 신한BC, 하나BC, 국민BC는 사용 불가)</dd>
+														<dd>무이자할부, 선할인/청구할인 결제고객은 반드시 일반 신용카드 결제를 이용하여 주시기 바랍니다.</dd>
+														<dd>5만원 이상 결제 시 할부가능, 단 할부수수료가 청구될 수 있으므로 유의하여 주시기 바랍니다.</dd>
+
+														<dd>Samsung Pay는 Samsung Electronics가 만든 간편하고 안전한 모바일 결제 서비스입니다.</dd>
+														<dd>지원 당말에서 앱이 설치되어 있어야 결제가 가능합니다.</dd>
+														<dd>결제 가능 카드 : 모든 신용/체크 카드 결제 가능</dd>
+
+														<dd>L.Pay는 롯데멤버스가 만든 간편하고 안전한 모바일 결제 서비스입니다.</dd>
+														<dd>지원 당말에서 앱이 설치되어 있어야 결제가 가능합니다.</dd>
+														<dd>결제 가능 카드 : 모든 신용/체크 카드 결제 가능</dd>
+
+														<dd>SSG Pay는 신세계가 만든 간편하고 안전한 모바일 결제 서비스입니다.</dd>
+														<dd>지원 당말에서 앱이 설치되어 있어야 결제가 가능합니다.</dd>
+														<dd>결제 가능 카드 : 모든 신용/체크 카드 결제 가능</dd>-->
+													</dl>
+												</div>
+											</th>
+										</tr>
+										<tr>
+											<th colspan="2" scope="row" class="th-reset"></th>
 										</tr>
 									</tbody>
 								</table>
