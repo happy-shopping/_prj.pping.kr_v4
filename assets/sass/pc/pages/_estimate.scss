@@ -857,6 +857,24 @@
                         display:table-cell;
                         width:153px;
                         text-align: right;
+                        &.soldout{
+                            position:relative;
+                            padding-left: 80px;
+                            box-sizing: border-box;
+                            padding-right: 10px;
+                            color: #fff;
+                            &:before{
+                                content:'';
+                                position:absolute;
+                                right:0;
+                                top: 2px;
+                                height: 25px;
+                                width:73px;
+                                background: rgba(0, 0, 0, 0.5);
+                                display: block;
+                                z-index: -1;
+                            }
+                        }
                         .btnPriceDel{
                             width:22px;
                             border:1px solid #eee;
