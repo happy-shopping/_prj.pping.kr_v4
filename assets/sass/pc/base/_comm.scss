@@ -861,6 +861,10 @@ input {
     .column-main {
         float: left;
         width: 950px;
+        min-height: 1765px;
+        @include respond-to($small_desktop) {
+            min-height:100px;
+        }
     }
 
     .column-aside {
