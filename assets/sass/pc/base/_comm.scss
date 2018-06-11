@@ -245,7 +245,9 @@ input {
         color: $base_color3;
     }
 }
-
+.blockobj{
+    display:block;
+}
 [lang=en] {
     letter-spacing: 0;
 }
@@ -370,6 +372,12 @@ input {
     &.card {
         border: 1px solid #0f4f9f;
         color: #0f4f9f;
+    }
+    &.big{
+        padding: 6px;
+        border-radius: 14px;
+        width: auto;
+        height: auto;
     }
 }
 // 판매자 뱃지 18.05.29 item-view.scss 에서 가져옴
