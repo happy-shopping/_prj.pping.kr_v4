@@ -1,14 +1,10 @@
 @charset "utf-8";
 
 .header-adv {
-	display: none;
 	overflow: hidden;
-	position: absolute;
-	left: 0;
-	top: 0;
+	position: relative;
 	width: 100%;
 	height: 80px;
-
 	.header-adv_stage1 {
 		background: #ffd249;
 	}
@@ -48,9 +44,9 @@
 
 	.btn-clse {
 		position: absolute;
-		bottom: 3px;
+		bottom: 15px;
 		left: 50%;
-		margin-left: 555px;
+		margin-left: 565px;
 		font-size: 40px;
 		color: #fff;
 		line-height: 40px;
@@ -77,13 +73,6 @@
 		margin: 0 !important;
 
 		.adv-mainbanner_items_item {
-			float: left;
-			margin-left: 10px;
-
-			&:first-child {
-				margin-left: 0;
-			}
-
 			a {
 				display: block;
 				width: 288px;
@@ -198,17 +187,10 @@
 		}
 
 	}
-
 	.slick-slider {
 		.slick-list {
 			height: 425px;
 		}
-
-		.slick-track {
-			left: 50%;
-			margin-left: -595px;
-		}
-
 	}
 
 	.btn_adv-mainbanner_prev,
@@ -228,7 +210,7 @@
 		z-index: 2;
 
 		&:before {
-			font-size: 50px;
+			font-size: 20px;
 		}
 
 		&:hover {

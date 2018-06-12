@@ -1,8 +1,6 @@
 @charset "utf-8";
-
 #header {
     border-bottom: 2px solid $point_color1;
-
     .header-body {
         position: relative;
         z-index: 100;
@@ -713,14 +711,6 @@
             .gnb {
                 margin-left: 210px;
             }
-        }
-    }
-
-    &.viewads {
-        padding-top: 80px;
-
-        .header-adv {
-            display: block;
         }
     }
 }
