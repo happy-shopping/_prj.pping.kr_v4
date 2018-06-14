@@ -152,10 +152,20 @@
 }
 
 .iradio input:checked + label {
-	@include loadIcon($icon-lens);
-
+	&:after{
+		content: '';
+		width: 16px;
+		height: 16px;
+		background: $point_color1;
+		display: block;
+		position: absolute;
+		top: 4px;
+		border-radius: 9px;
+		left: 4px;
+	}
 	&:before {
-		color: $point_color1;
+		color: #fff;
+		font-size: 0;
 	}
 
 	&:hover:before {
