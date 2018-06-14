@@ -129,6 +129,10 @@ $size960: '(min-width: 961px)';
 	text-overflow: ellipsis;
 }
 
+@mixin wordbraker {
+	word-wrap: break-word;
+	word-break: keep-all;
+}
 // icon
 // @mixin icon($word, $font_size:null, $direction:"before", $color:null) {
 // 	@if $direction == "before" {
@@ -1932,6 +1936,7 @@ $icon-wrench: "\e95e";
 $icon-cart_B: "\e96a";
 $icon-hand_like: "\e96b";
 $icon-hand_unlike: "\e96c";
+$icon-bell: "\e968";
 $icon-bell2: "\e969";
 $icon-sound: "\e96e";
 $icon-menu3line: "\e96f";
