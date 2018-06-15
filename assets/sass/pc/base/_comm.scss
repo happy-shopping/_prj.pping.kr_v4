@@ -4350,7 +4350,19 @@ input {
 }
 .ifocus-before-2px {
     &:before {
+
+        width: 18px !important;
+        height: 18px !important;
         border:2px solid $point_color1 !important;
+        box-sizing:border-box !important;
+    }
+}
+.ifocus-radio-before-2px {
+    &:before {
+        width: 24px !important;
+        height: 24px !important;
+        border:2px solid $point_color1 !important;
+        box-sizing:border-box !important;
     }
 }
 .ifocus-4px {
