@@ -4352,25 +4352,29 @@ input {
     border:4px solid $point_color1 !important;
 }
 .ifocus-gray-1px {
-    border:1px solid gray !important;
+    border:1px solid #999 !important;
 }
 .ifocus-black-1px {
     border:1px solid black !important;
 }
 .ifocus-gray-2px {
-    border:2px solid gray !important;
+    border:2px solid #999 !important;
 }
 .ifocus-black-2px {
     border:2px solid black !important;
 }
 .ifocus-gray-4px {
-    border:4px solid gray !important;
+    border:4px solid #999 !important;
 }
 .ifocus-black-4px {
     border:4px solid black !important;
 }
 .ifocus-background {
     background: #3281ed !important;
+}
+
+.ialarm-2px {
+    border:2px solid #f34522 !important;
 }
 
 // :after, :before {
