@@ -4348,6 +4348,11 @@ input {
 .ifocus-2px {
     border:2px solid $point_color1 !important;
 }
+.ifocus-before-2px {
+    &:before {
+        border:2px solid $point_color1 !important;
+    }
+}
 .ifocus-4px {
     border:4px solid $point_color1 !important;
 }
