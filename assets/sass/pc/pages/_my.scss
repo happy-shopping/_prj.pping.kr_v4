@@ -813,6 +813,14 @@
 			padding: 0 10px;
 			text-align: right;
 
+			display: inline-block;
+			float: right;
+			margin-bottom: 15px;
+			a {
+				outline: none;
+			}
+			border:2px solid white;
+
 			span {
 				margin-right: 5px;
 				color: $point_color2;
