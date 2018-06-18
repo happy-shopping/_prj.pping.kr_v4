@@ -678,7 +678,7 @@
 
 							    .price {
 			                        margin-top: 10px;
-			                        font-size: 0;
+			                        font-size: 13px;
 			                        text-align: right;
 
 			                        .price_lower {
@@ -697,11 +697,14 @@
 			                                color: $point_color2;
 			                            }
 			                        }
-
-			                        .btn_direct_buy {
-			                            @include btn_direct_buy(27px, 15px, 14px, top);
-			                        }
-
+			                        button{
+										width: 27px;
+										height: 27px;
+										line-height: 27px;
+										&.btn-cart-to{
+											margin-right: 5px;
+										}
+									}
 			                        &.special {
 			                            margin-top: 5px;
 
