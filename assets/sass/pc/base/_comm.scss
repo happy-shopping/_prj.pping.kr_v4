@@ -246,13 +246,21 @@ input {
         color: $base_color3;
     }
 }
-.blockobj{
-    display:block;
-}
 [lang=en] {
     letter-spacing: 0;
 }
-
+main > section{
+    box-sizing: border-box;
+    width: 1190px;
+    margin: 0 auto;
+    &.wideST{
+        width:100%;
+    }
+    &.sideST{
+        width:950px;
+        margin:0;
+    }
+}
 #wrap {
     min-width: 320px;
 
@@ -271,10 +279,15 @@ input {
     }
 }
 
+.blockobj{
+    display:block;
+}
 .blind {
     display: none;
 }
-
+.rltvObj{
+    position:relative;
+}
 .visible {
     visibility: hidden;
 }
