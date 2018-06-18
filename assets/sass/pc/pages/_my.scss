@@ -586,10 +586,10 @@
 
 							.btn_cncl {
 								position: absolute;
-								right: 4px;
-								top: 1px;
+								right: 5px;
+								top: 2px;
 								font-size: 24px;
-								@include btn(32px, 42px, 0, $base_color2, #fff);
+								@include btn(32px, 40px, 0, $base_color2, #fff);
 							}
 						}
 
@@ -1129,10 +1129,10 @@
 
 								.btn_email_select_cncl {
 									position: absolute;
-									right: 1px;
-									top: 1px;
+									right: 2px;
+									top: 2px;
 									font-size: 24px;
-									@include btn(32px, 41px, 0, $base_color2, #fff);
+									@include btn(32px, 40px, 0, $base_color2, #fff);
 								}
 							}
 
