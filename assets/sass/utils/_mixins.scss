@@ -162,6 +162,8 @@ $size960: '(min-width: 961px)';
 	background-color: $background_color;
 	text-align: $text_align;
 	line-height: $line_height;
+
+
 	vertical-align: middle;
 	letter-spacing: 0;
 	cursor: pointer;
@@ -192,18 +194,15 @@ $size960: '(min-width: 961px)';
 	text-align: center;
 	vertical-align: middle;
 	line-height: 15px;
-
 	a {
 		color: $clr;
 	}
-
 	&.m {
 		min-width: 38px;
 		height: 16px;
 		padding-top: 2px;
 		line-height: 16px;
 	}
-
 }
 
 @mixin badge_coupon($clr) {
@@ -226,18 +225,15 @@ $size960: '(min-width: 961px)';
 		font-family: 'ppingkr_v4' !important;
 		speak: none;
 		font-style: normal;
-		// font-weight: normal;
 		font-variant: normal;
 		text-transform: none;
 		line-height: 1;
-		// Better Font Rendering
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		content: $icon;
 		font-size: $fontsize;
 		color: $color;
 	}
-
 }
 
 // 바로구매
@@ -1955,4 +1951,8 @@ $icon-truck2: "\e97b";
 $icon-warning: "\e97e";
 $icon-MY_phone:  "\e982";
 $icon-MY_commenting: "\e981";
-$movie_play : "\e987";
+$icon-movie_play : "\e987";
+$icon-navertalk_02 : "\e989";
+$icon-minus : "\e985";
+$icon-up_arrow : "\e988";
+$icon-down_arrow : "\e983";
