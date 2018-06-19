@@ -704,6 +704,9 @@
 										&.btn-cart-to{
 											margin-right: 5px;
 										}
+										&.btn_direct_buy{
+											display:none;//바로구매 코드 사라지면 지워도 됨
+										}
 									}
 			                        &.special {
 			                            margin-top: 5px;
