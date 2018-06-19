@@ -4374,6 +4374,15 @@ main > section{
         box-sizing:border-box !important;
     }
 }
+.ialarm-before-2px {
+    &:before {
+
+        width: 18px !important;
+        height: 18px !important;
+        border:2px solid #f34522 !important;
+        box-sizing:border-box !important;
+    }#f34522
+}
 .ifocus-radio-before-2px {
     &:before {
         width: 24px !important;
