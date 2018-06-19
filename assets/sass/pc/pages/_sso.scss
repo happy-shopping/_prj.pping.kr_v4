@@ -3049,10 +3049,10 @@ input:disabled {
 
 					.btn_email2_select_cncl {
 						position: absolute;
-						right: 1px;
-						top: 1px;
+						right: 2px;
+						top: 2px;
 						font-size: 24px;
-						@include btn(32px, 41px, 0, $base_color2, #fff);
+						@include btn(32px, 38px, 0, $base_color2, #fff);
 					}
 				}
 			}
