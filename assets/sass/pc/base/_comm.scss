@@ -4342,6 +4342,12 @@ main > section{
 }
 
 // 벨리데이션
+.border-1px-white {
+    border:1px solid #ffffff;
+}
+.border-2px-white {
+    border:2px solid #ffffff;
+}
 .ifocus {
     border-color: $point_color1 !important;
 }
@@ -4363,6 +4369,10 @@ main > section{
 }
 .ifocus-2px {
     border:2px solid $point_color1 !important;
+}
+.ifocus-box-1px {
+    border:1px solid $point_color1 !important;
+    box-sizing: border-box !important;
 }
 .ifocus-box-2px {
     border:2px solid $point_color1 !important;
@@ -4462,9 +4472,25 @@ main > section{
         color: #418ded !important;
     }
 }
+.hover-contents {
+    &:hover {
+        border:1px solid #418ded !important;
+        color: #418ded !important;
+    }
+}
+.hover-contents-2px {
+    &:hover {
+        border:2px solid #418ded !important;
+        color: #418ded !important;
+    }
+}
+.background-hover {
+    background: #f8f8f8 !important;
+}
 .outline-none {
     outline: none !important;
 }
+
 
 
 // :after, :before {
