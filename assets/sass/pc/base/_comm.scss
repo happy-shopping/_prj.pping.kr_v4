@@ -4485,7 +4485,14 @@ main > section{
     }
 }
 .background-hover {
-    background: #f8f8f8 !important;
+    &:hover {
+        background: #f8f8f8 !important;
+    }
+}
+.text-hover {
+    &:hover {
+        background: #418ded !important;
+    }
 }
 .outline-none {
     outline: none !important;
