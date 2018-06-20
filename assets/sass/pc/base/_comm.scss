@@ -4440,13 +4440,27 @@ main > section{
     border:1px solid #418ded !important;
     color: #418ded !important;
 }
+.focus-contents {
+    &:focus {
+        border:1px solid #418ded !important;
+        color: #418ded !important;
+    }
+}
 .ifocus-contents-2px {
     border:2px solid #418ded !important;
     color: #418ded !important;
 }
+.focus-contents-2px {
+    &:focus {
+        
+        border:2px solid #418ded !important;
+        color: #418ded !important;
+    }
+}
 .outline-none {
     outline: none !important;
 }
+
 
 // :after, :before {
 //     box-sizing: border-box;
