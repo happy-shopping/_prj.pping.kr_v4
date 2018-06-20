@@ -4421,6 +4421,11 @@ main > section{
         border:2px solid #999 !important;
     }
 }
+.focus-1px {
+    &:focus {
+        border:1px solid #418ded !important;
+    }
+}
 .ifocus-black-2px {
     border:2px solid black !important;
 }
@@ -4491,7 +4496,7 @@ main > section{
 }
 .text-hover {
     &:hover {
-        background: #418ded !important;
+        color: #418ded !important;
     }
 }
 .outline-none {
