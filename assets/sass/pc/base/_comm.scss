@@ -4358,6 +4358,9 @@ main > section{
 .itext-focus {
     border:1px solid $point_color1 !important;
 }
+.ifocus-1px {
+    border:1px solid $point_color1 !important;
+}
 .ifocus-2px {
     border:2px solid $point_color1 !important;
 }
@@ -4420,7 +4423,9 @@ main > section{
 .ifocus-background {
     background: #3281ed !important;
 }
-
+.ialarm-1px {
+    border:1px solid #f34522 !important;
+}
 .ialarm-2px {
     border:2px solid #f34522 !important;
 }
@@ -4452,7 +4457,7 @@ main > section{
 }
 .focus-contents-2px {
     &:focus {
-        
+
         border:2px solid #418ded !important;
         color: #418ded !important;
     }
