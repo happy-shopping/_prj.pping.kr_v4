@@ -4403,6 +4403,11 @@ main > section{
 .ifocus-gray-2px {
     border:2px solid #999 !important;
 }
+.focus-gray-2px {
+    &:focus {
+        border:2px solid #999 !important;
+    }
+}
 .ifocus-black-2px {
     border:2px solid black !important;
 }
