@@ -4407,6 +4407,14 @@ main > section{
         box-sizing:border-box !important;
     }
 }
+.ifocus-radio-before-25px {
+    &:before {
+        width: 25px !important;
+        height: 25px !important;
+        border:2px solid $point_color1 !important;
+        box-sizing:border-box !important;
+    }
+}
 .before-width {
     &:before {
         width: 0 !important;
