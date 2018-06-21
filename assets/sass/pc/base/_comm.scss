@@ -4404,6 +4404,11 @@ main > section{
         box-sizing:border-box !important;
     }
 }
+.before-width {
+    &:before {
+        width: 0 !important;
+    }
+}
 .ifocus-4px {
     border:4px solid $point_color1 !important;
 }
@@ -4437,6 +4442,11 @@ main > section{
 }
 .ifocus-background {
     background: #3281ed !important;
+}
+.ifocus-background {
+    &:focus{
+        background: #3281ed !important;
+    }
 }
 .ialarm-1px {
     border:1px solid #f34522 !important;
