@@ -4434,6 +4434,11 @@ main > section{
         border:1px solid #418ded !important;
     }
 }
+.focus-2px {
+    &:focus {
+        border:2px solid #418ded !important;
+    }
+}
 .ifocus-black-2px {
     border:2px solid black !important;
 }
