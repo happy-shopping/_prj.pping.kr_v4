@@ -137,7 +137,10 @@ a:hover {
     cursor: pointer;
 }
 
-a:focus,
+a:focus {
+    outline: thin dotted;
+}
+
 a:active,
 a:hover {
     outline: 0;
@@ -246,12 +249,6 @@ input {
 [lang=en] {
     letter-spacing: 0;
 }
-body .ADTWrap{//ADapTive Wrap
-    width: 1190px;
-    @include breakpoint(max-width 1209px) {
-        width:950px;
-    }
-}
 main > section{
     box-sizing: border-box;
     width: 1190px;
@@ -262,9 +259,6 @@ main > section{
     &.sideST{
         width:950px;
         margin:0;
-    }
-    @include breakpoint(max-width 1209px) {
-        width:950px;
     }
 }
 #wrap {
@@ -4348,6 +4342,12 @@ main > section{
 }
 
 // 벨리데이션
+.border-1px-white {
+    border:1px solid #ffffff;
+}
+.border-2px-white {
+    border:2px solid #ffffff;
+}
 .ifocus {
     border-color: $point_color1 !important;
 }
@@ -4364,8 +4364,15 @@ main > section{
 .itext-focus {
     border:1px solid $point_color1 !important;
 }
+.ifocus-1px {
+    border:1px solid $point_color1 !important;
+}
 .ifocus-2px {
     border:2px solid $point_color1 !important;
+}
+.ifocus-box-1px {
+    border:1px solid $point_color1 !important;
+    box-sizing: border-box !important;
 }
 .ifocus-box-2px {
     border:2px solid $point_color1 !important;
@@ -4397,6 +4404,11 @@ main > section{
         box-sizing:border-box !important;
     }
 }
+.before-width {
+    &:before {
+        width: 0 !important;
+    }
+}
 .ifocus-4px {
     border:4px solid $point_color1 !important;
 }
@@ -4414,6 +4426,11 @@ main > section{
         border:2px solid #999 !important;
     }
 }
+.focus-1px {
+    &:focus {
+        border:1px solid #418ded !important;
+    }
+}
 .ifocus-black-2px {
     border:2px solid black !important;
 }
@@ -4426,7 +4443,14 @@ main > section{
 .ifocus-background {
     background: #3281ed !important;
 }
-
+.focus-background {
+    &:focus{
+        background: #3281ed !important;
+    }
+}
+.ialarm-1px {
+    border:1px solid #f34522 !important;
+}
 .ialarm-2px {
     border:2px solid #f34522 !important;
 }
@@ -4463,9 +4487,32 @@ main > section{
         color: #418ded !important;
     }
 }
+.hover-contents {
+    &:hover {
+        border:1px solid #418ded !important;
+        color: #418ded !important;
+    }
+}
+.hover-contents-2px {
+    &:hover {
+        border:2px solid #418ded !important;
+        color: #418ded !important;
+    }
+}
+.background-hover {
+    &:hover {
+        background: #f8f8f8 !important;
+    }
+}
+.text-hover {
+    &:hover {
+        color: #418ded !important;
+    }
+}
 .outline-none {
     outline: none !important;
 }
+
 
 
 // :after, :before {
