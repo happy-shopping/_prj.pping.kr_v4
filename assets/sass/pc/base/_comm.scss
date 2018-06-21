@@ -4499,8 +4499,28 @@ main > section{
         color: #418ded !important;
     }
 }
+.hover-focus-contents {
+    &:hover {
+        border:1px solid #418ded !important;
+        color: #418ded !important;
+    }
+    &:focus {
+        border:1px solid #418ded !important;
+        color: #418ded !important;
+    }
+}
 .hover-contents-2px {
     &:hover {
+        border:2px solid #418ded !important;
+        color: #418ded !important;
+    }
+}
+.hover-focus-contents-2px {
+    &:hover {
+        border:2px solid #418ded !important;
+        color: #418ded !important;
+    }
+    &:focus {
         border:2px solid #418ded !important;
         color: #418ded !important;
     }
