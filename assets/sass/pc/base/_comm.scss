@@ -247,24 +247,21 @@ input {
     letter-spacing: 0;
 }
 body .ADTWrap{//ADapTive Wrap
+    box-sizing: border-box;
     width: 1190px;
+    margin: 0 auto;
     @include breakpoint(max-width 1209px) {
         width:950px;
     }
 }
 main > section{
-    box-sizing: border-box;
-    width: 1190px;
-    margin: 0 auto;
+    @extend .ADTWrap;
     &.wideST{
         width:100%;
     }
     &.sideST{
         width:950px;
         margin:0;
-    }
-    @include breakpoint(max-width 1209px) {
-        width:950px;
     }
 }
 #wrap {
