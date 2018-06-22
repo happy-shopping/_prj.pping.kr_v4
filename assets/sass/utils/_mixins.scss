@@ -90,7 +90,14 @@ $size960: '(min-width: 961px)';
 	width: $width;
 	height: $height;
 }
-
+@mixin sizeCir($width, $height:$width,$line:$height,$radius:$width) {
+	width: $width;
+	height: $height;
+	line-height:$line;
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
 // 상품 해피트리 팝업 버튼
 @mixin btn_happytree {
 	position: absolute;
