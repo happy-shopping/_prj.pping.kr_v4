@@ -1967,10 +1967,6 @@
 		color: $base_color3;
 		font-weight: bold;
 		white-space: nowrap;
-
-		.malltype {
-			font-weight: normal;
-		}
 	}
 
 	.btn_product_add_view {
@@ -3197,16 +3193,7 @@
 		font-weight: bold;
 		text-align: center;
 		line-height: 1.4;
-
-		.malltype {
-			width: 100px;
-			height: 34px;
-			font-weight: normal;
-			border-radius: 17px;
-			line-height: 32px;
-		}
 	}
-
 	.button-group {
 		margin-top: 20px;
 		font-size: 0;

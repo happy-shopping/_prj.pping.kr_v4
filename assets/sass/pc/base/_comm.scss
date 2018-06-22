@@ -376,11 +376,11 @@ main > section{
 // 일반/카드몰
 .malltype {
     display: inline-block;
-    width: 77px;
-    height: 19px;
-    line-height: 17px;
+    padding:3px;
+    line-height: 1;
     text-align: center;
-    border-radius: 9.5px;
+    font-weight: normal;
+    border-radius: 10px;
     @include box-sizing;
     &.nor {
         border: 1px solid #956ccc;

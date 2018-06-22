@@ -638,11 +638,9 @@
                     }
 
                 }
-
                 .btn_prev {
                     left: 0;
                 }
-
                 .btn_next {
                     right: 0;
                 }
@@ -688,7 +686,6 @@
 			position: relative;
 			float: left;
 			width: calc(50% - 10px);
-			margin-left: 20px;
 			padding: 10px;
 			border: 1px solid #ccc;
 			@include box-sizing();
@@ -832,10 +829,6 @@
 				.thumb {
 					outline: 1px solid $point_color1;
 				}
-			}
-
-			&:first-child {
-				margin-left: 0;
 			}
 		}
 	}
