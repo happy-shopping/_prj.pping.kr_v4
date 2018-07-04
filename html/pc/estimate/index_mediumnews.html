@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>컴퓨터 견적 · 행복쇼핑</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="keywords" content="행복쇼핑, 행복, 쇼핑, 컴퓨터, PC, 조립PC, 조립컴퓨터, 노트북, 태블릿, 상품 추천, 가격비교, 가격비교사이트, 가격비교 싸이트, 가격 검색, 최저가, 추천, 인터넷쇼핑, 온라인쇼핑, 쇼핑, 쇼핑몰, 싸게 파는 곳, 싸게 살 수 있는 곳" />
+	<meta name="description" content="행복쇼핑은 컴퓨터, 조립PC에 특화된 온라인 견적 가격비교 사이트 입니다. 안전구매시스템(전자보증,에스크로)을 갖춘 쇼핑몰, 미니샵의 최저 가격 정보를 보여드립니다. 쇼핑의 행복! 행복쇼핑" />
+	<link rel="shortcut icon" type="image/x-icon" href="//img.happyshopping.kr/img_static/img/_v3/pping.ico" />
+
+    <!-- 웹폰트용 -->
+    <script src="https://ajax.pping.kr/font/js/hpping.webfont.js"></script>
+    <script>
+        const hpping = new hppingFont();
+        hpping.init({
+            href: 'https://ajax.pping.kr/font/css/hpping.webfont.css'
+        });
+    </script>
+    <!-- // 웹폰트용 -->
+	<link rel="stylesheet" href="//ajax.pping.kr/_v3/css/pc/style.css" />
+	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/comm.css" />
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/buttons.css" />
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/header.css" />
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/footer.css" />
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/board.css" />
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/forms.css" />
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/adv.css" />
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/layers.css" />
+    <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/minishop.css" />
+	<link rel="stylesheet" href="../../../assets/css/pc/list.css" />
+    <!-- <link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/list.css" /> -->
+
+    <!-- <link rel="stylesheet" href="../../../assets/css/pc/comm.css" />
+    <link rel="stylesheet" href="../../../assets/css/buttons.css" />
+    <link rel="stylesheet" href="../../../assets/css/header.css" />
+    <link rel="stylesheet" href="../../../assets/css/footer.css" />
+    <link rel="stylesheet" href="../../../assets/css/board.css" />
+    <link rel="stylesheet" href="../../../assets/css/pc/forms.css" />
+    <link rel="stylesheet" href="../../../assets/css/pc/adv.css" />
+    <link rel="stylesheet" href="../../../assets/css/pc/layers.css" />
+    <link rel="stylesheet" href="../../../assets/css/pc/minishop.css" />
+    <link rel="stylesheet" href="../../../assets/css/pc/list.css" />
+</head> -->
+
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="header">
+        <div class="header-body">
+            <div class="header-body_main">
+                <h1 class="tit-h1"><a href="#"><img src="http://img.happyshopping.kr/img_static/img_pres/_v3/img_happyshopping_ci.png" alt="행복쇼핑" /></a></h1>
+
+                <!-- 통합검색 -->
+                <div class="header-body_search">
+                    <form>
+                        <fieldset>
+                            <legend><span>통합검색</span></legend>
+                            <input type="text" title="통합검색" placeholder="통합검색 서비스를 제공할 예정입니다" class="isearch" readonly="readonly" disabled />
+                            <button type="button" class="btn-voice"></button>
+                            <em class="bar"></em>
+                            <span class="btn-search"><input type="submit" class="btn-submit"  disabled="disabled" /></span>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- // 통합검색 -->
+
+                <!-- 배너 -->
+                <div class="header-body_adv">
+                    <div class="slider">
+                        <ul>
+                            <li><a href="http://www.pping.kr/cardinfo" target="_blank"><img src="https://img.happyshopping.kr/img_static/img_pres/_v3/bnr_header_card_rgt.png" alt="행복쇼핑이 드리는 특별한 신용카드 혜택" /></a></li>
+                            <li><a href="http//www.pping.kr/eventview/55/" target="_blank"><img src="https://img.happyshopping.kr/img_static/img_pres/_v3/bnr_header_coupon_rgt.png" alt="행복쇼핑이 재공하는 쿠폰 전체보기" /></a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn-prev"><span class="ir">이전</span></button>
+                    <button type="button" class="btn-next"><span class="ir">다음</span></button>
+                </div>
+                <!-- // 배너 -->
+            </div>
+
+            <!-- header-body_top -->
+            <div class="header-body_top">
+                <div class="header-body_top_body">
+                    <button type="button" class="btn-favorite">즐겨찾기</button>
+                    <!-- 여백제거용
+                --><a href="http://minishop.wbp.pping.kr/join" target="_blank" class="btn-shop-join">입점신청</a>
+
+                    <div class="header-body_top_info">
+                        <strong class="cell user">홍길동<em>님</em> <a href="https://sso.pping.kr/logout" class="btn-log btn-logout">로그아웃</a></strong>
+
+                        <span class="cell join"><a href="#">회원가입</a></span>
+
+                        <div class="cell my">
+                            <span class="tit">마이쇼핑</span>
+                            <ul class="sub">
+                                <li><a href="http://mypage.minishop.pping.kr/main/order_check">구매·배송 조회</a></li>
+                                <li><a href="http://mypage.minishop.pping.kr/main/cbe">취소·환불 조회</a></li>
+                                <li class="contour"><a href="http://point.minishop.pping.kr/">해피 포인트</a></li>
+                                <li><a href="http://event.minishop.pping.kr/main/coupon">할인 쿠폰</a></li>
+                                <li class="contour"><a href="http://mypage.minishop.pping.kr/zzim">찜한 상품</a></li>
+                                <li><a href="http://mypage.minishop.pping.kr/estimate">찜한 견적</a></li>
+                                <li><a href="http://minishop.pping.kr/partner/?w_type=2&wm_type=1&wmm_type=2">찜한 쇼핑몰</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="cell servicecenter">
+                            <span class="tit">고객센터</span>
+                            <ul class="sub">
+                                <li><a href="http://help.minishop.pping.kr/">자주묻는 질문</a></li>
+                                <li><a href="http://help.minishop.pping.kr/main/faq_write">1:1 문의하기</a></li>
+                                <li><a href="http://help.minishop.pping.kr/main/support_notice">공지사항</a></li>
+                                <li><a href="http://help.minishop.pping.kr/">환불/교환 안내</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="cell estimate">
+                            <span class="tit">상품견적 <em class="cnt">99</em></span>
+                            <div class="sub">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="item-product_landscape">
+                                                <span class="thumb"><img src="http://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/200.jpg" alt="상품명" /></span>
+                                                <div class="item-product_landscape_info">
+                                                    <span class="corpname">웰컴</span>
+                                                    <span class="productname">PRIME B250M-A STCOM</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="item-product_landscape">
+                                                <span class="thumb"><img src="http://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/200.jpg" alt="상품명" /></span>
+                                                <div class="item-product_landscape_info">
+                                                    <span class="corpname">웰컴</span>
+                                                    <span class="productname">PRIME B250M-A STCOM</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <a href="http://pc.pping.kr" target="_blank" class="btn-all-view">상품견적 전체보기</a>
+                            </div>
+                        </div>
+
+                        <div class="cell basket">
+                            <span class="tit">장비구니 <em class="cnt">99</em></span>
+                            <div class="sub">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="item-product_landscape">
+                                                <span class="thumb"><img src="http://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/200.jpg" alt="상품명" /></span>
+                                                <div class="item-product_landscape_info">
+                                                    <span class="corpname">웰컴</span>
+                                                    <span class="productname">PRIME B250M-A STCOM</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="item-product_landscape">
+                                                <span class="thumb"><img src="http://img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/200.jpg" alt="상품명" /></span>
+                                                <div class="item-product_landscape_info">
+                                                    <span class="corpname">웰컴</span>
+                                                    <span class="productname">PRIME B250M-A STCOM</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <a href="http://minishop.pping.kr/main/cart/" class="btn-all-view">장바구니 전체보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // header-body_top -->
+        </div>
+
+        <div class="header-bot">
+            <div class="header-bot_body">
+                <!-- gnb -->
+                <div class="gnb">
+                    <ul>
+                        <li><a href="https://pc.pping.kr" target="_blank" class="btn-estimate">컴퓨터 견적</a></li>
+                        <li><a href="http://stdpc.pping.kr" target="_blank" class="btn-stdpc">행쇼 표준PC</a></li>
+                        <li><a href="https://notebook.pping.kr/" class="btn-notebook">노트북</a></li>
+                        <li><a href="https://www.pping.kr/event">이벤트 &amp; 기획전</a></li>
+                        <li><a href="http://talk.pping.kr/estpc" target="_blank">PC견적 상담</a></li>
+                        <li><a href="http://talk.pping.kr/dauc" target="_blank">PC견적 입찰</a></li>
+                    </ul>
+                </div>
+                <!-- // gnb -->
+
+                <div class="nav">
+                    <div class="nav-category">
+                        <h2 class="tit-h2">상품 분류</h2>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="#" class="btn1">컴퓨터 주요부품</a></li>
+                                <li><a href="#" class="btn2">컴퓨터 주변기기</a></li>
+                                <li><a href="#" class="btn3">소프트웨어/전산소모품</a></li>
+                                <li><a href="#" class="btn4">DSLR/디카/캠코더</a></li>
+                                <li><a href="#" class="btn5">디지털 완제품</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- nav-brand -->
+                    <div class="nav-brand">
+                        <h2 class="tit-h2">브랜드</h2>
+
+                        <div class="sub">
+                            <div class="sub_keyword">
+                                <button type="button" class="btn-sub_keyword_all">전체</button>
+                                <div class="sub_keyword_word">
+                                    <div class="sub_keyword_word_kr">
+                                        <button type="button">ㄱ</button>
+                                        <button type="button">ㄴ</button>
+                                        <button type="button">ㄷ</button>
+                                        <button type="button">ㄹ</button>
+                                        <button type="button">ㅁ</button>
+                                        <button type="button">ㅂ</button>
+                                        <button type="button">ㅅ</button>
+                                        <button type="button">ㅇ</button>
+                                        <button type="button">ㅈ</button>
+                                        <button type="button">ㅋ</button>
+                                        <button type="button">ㅌ</button>
+                                        <button type="button">ㅍ</button>
+                                        <button type="button">ㅎ</button>
+                                        <button type="button" class="number">0~9</button>
+                                        <button type="button">기타</button>
+                                    </div>
+                                    <div class="sub_keyword_word_en">
+                                        <button type="button">A</button>
+                                        <button type="button">B</button>
+                                        <button type="button">C</button>
+                                        <button type="button">D</button>
+                                        <button type="button">E</button>
+                                        <button type="button">F</button>
+                                        <button type="button">G</button>
+                                        <button type="button">H</button>
+                                        <button type="button">I</button>
+                                        <button type="button">J</button>
+                                        <button type="button">K</button>
+                                        <button type="button">L</button>
+                                        <button type="button">M</button>
+                                        <button type="button">N</button>
+                                        <button type="button">O</button>
+                                        <button type="button">P</button>
+                                        <button type="button">Q</button>
+                                        <button type="button">R</button>
+                                        <button type="button">S</button>
+                                        <button type="button">T</button>
+                                        <button type="button">U</button>
+                                        <button type="button">V</button>
+                                        <button type="button">W</button>
+                                        <button type="button">X</button>
+                                        <button type="button">Y</button>
+                                        <button type="button">Z</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 랜덤 노출 -->
+                            <div class="nav-brand_sub_bnr">
+                                <div class="nav-brand_sub_bnr_stage">
+                                    <div class="nav-brand_sub_bnr_stage1">
+                                        <a href="#"><img src="https://img.happyshopping.kr/img_static/img_pres/_v3/bnr_1127_106.jpg" alt="ZOTAC" /></a>
+                                    </div>
+
+                                    <div class="brand_sub_bnr_stage2">
+                                        <a href="#"><img src="https://img.happyshopping.kr/img_static/img_pres/_v3/bnr_1127_106.jpg" alt="ZOTAC" /></a>
+                                    </div>
+
+                                    <div class="brand_sub_bnr_stage3">
+                                        <a href="#"><img src="https://img.happyshopping.kr/img_static/img_pres/_v3/bnr_1127_106.jpg" alt="ZOTAC" /></a>
+                                    </div>
+                                </div>
+
+                                <span class="nav-brand_sub_bnr_stage_cnt"><strong>1</strong>/3</span>
+
+                                <button type="button" class="btn_prev"><i class="icon-chevron-thin-left"></i><span class="ir">이전</span></button>
+                                <button type="button" class="btn_next"><i class="icon-chevron-thin-right"></i><span class="ir">다음</span></button>
+                            </div>
+
+                            <div class="nav-brand_sub_list">
+                                <span class="total-cnt">전체 ( <strong>9,999개</strong> )</span>
+                                <ul class="special">
+                                    <li><a href="#">ABKO</a></li>
+                                    <li><a href="#">가나웨이브시스</a></li>
+                                    <li><a href="#">ABKO</a></li>
+                                    <li><a href="#">가나웨이브시스</a></li>
+                                    <li><a href="#">ABKO</a></li>
+                                    <li><a href="#">가나웨이브시스</a></li>
+                                    <li><a href="#">ABKO</a></li>
+                                </ul>
+
+                                <ul class="basic">
+                                    <li><a href="#">가나웨이브시스</a></li>
+                                    <li><a href="#">ABKO</a></li>
+                                    <li><a href="#">가나웨이브시스</a></li>
+                                    <li><a href="#">ABKO</a></li>
+                                    <li><a href="#">가나웨이브시스</a></li>
+                                    <li><a href="#">ABKO</a></li>
+                                    <li><a href="#">가나웨이브시스</a></li>
+                                </ul>
+
+                                <!-- paging -->
+                                <div class="paging-circle">
+                                    <a href="#" class="btn-first"><span class="ir">처음</span></a>
+                                    <a href="#" class="btn-prev"><span class="ir">이전</span></a>
+                                    <a href="#">1</a>
+                                    <a href="#" class="active">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#" class="btn-next"><span class="ir">다음</span></a>
+                                    <a href="#" class="btn-last"><span class="ir">마지막</span></a>
+                                </div>
+                                <!-- // paging -->
+                            </div>
+
+                            <button type="button" class="btn-clse"><span class="ir">닫기</span></button>
+                        </div>
+                    </div>
+                    <!-- // nav-brand -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <section class="list-body">
+            <div class="list-body_main">
+                <div class="column-wrap width-fixed">
+                    <div class="column-main">
+                        <div class="list-body_items estimate_compare">
+                            <h2 class="ir">컴퓨터 견적</h2>
+
+                            <div class="list-body_items_main">
+                                <!-- lnb 플로팅시 fixed -->
+                                <div class="lnb_cates">
+                                    <div class="lnb_1depth">
+                                        <strong class="tit">전체 상품분류 보기</strong>
+
+                                        <ul>
+                                            <li><button type="button" class="btn active">컴퓨터 주요부품</button></li>
+                                            <li><button type="button" class="btn">컴퓨터 주변기기</button></li>
+                                            <li><button type="button" class="btn">소프트웨어/전산소모품</button></li>
+                                            <li><button type="button" class="btn">DSLR/디카/캠코더</button></li>
+                                            <li><button type="button" class="btn">디저털 완제품</button></li>
+                                            <li><button type="button" class="btn">행쇼 표준PC</button></li>
+                                        </ul>
+
+                                        <!-- <button type="button" class="btn_lnb_1depth_clse"><i class="icon-close"></i><span class="ir">닫기</span></button> -->
+                                    </div>
+
+                                    <div class="lnb_2depth">
+                                        <strong class="tit"><span>컴퓨터 주요부품</span></strong>
+
+                                        <div class="lnb_2depth_list">
+                                            <!-- 컴퓨터 주변부품 -->
+                                            <ul>
+                                                <li><a href="#" class="btn_cpu active"><span>CPU</span></a></li>
+                                                <li><a href="#" class="btn_mainboard"><span>메인보드</span></a></li>
+                                                <li><a href="#" class="btn_memory"><span>메모리</span></a></li>
+                                                <li><a href="#" class="btn_hdd"><span>하드디스크</span></a></li>
+                                                <li><a href="#" class="btn_ssd"><span>SSD</span></a></li>
+                                                <li><a href="#" class="btn_graphic"><span>그래픽카드</span></a></li>
+                                                <li><a href="#" class="btn_odd"><span>ODD</span></a></li>
+                                                <li><a href="#" class="btn_case"><span>케이스</span></a></li>
+                                                <li><a href="#" class="btn_power"><span>파워</span></a></li>
+                                                <li><a href="#" class="btn_cooler"><span>쿨러/튜닝</span></a></li>
+                                                <li><a href="#" class="btn_keyboard"><span>키보드</span></a></li>
+                                                <li><a href="#" class="btn_mouse"><span>마우스</span></a></li>
+                                                <li><a href="#" class="btn_tablet"><span>타블렛</span></a></li>
+                                            </ul>
+                                            <!-- // 컴퓨터 주변부품 -->
+
+                                            <!-- 컴퓨터 주변기기 -->
+                                            <ul>
+                                                <li><a href="#" class="btn_monitor active"><span>모니터</span></a></li>
+                                                <li><a href="#" class="btn_speaker"><span>스피커</span></a></li>
+                                                <li><a href="#" class="btn_headset"><span>헤드셋/이어폰</span></a></li>
+                                                <li><a href="#" class="btn_sound"><span>사운드</span></a></li>
+                                                <li><a href="#" class="btn_printer"><span>프린터</span></a></li>
+                                                <li><a href="#" class="btn_combo"><span>복합기</span></a></li>
+                                                <li><a href="#" class="btn_scaner"><span>스캐너</span></a></li>
+                                                <li><a href="#" class="btn_cam"><span>영상/TV/PC캠</span></a></li>
+                                                <li><a href="#" class="btn_cctv"><span>CCTV/보안</span></a></li>
+                                                <li><a href="#" class="btn_wifi"><span>IP공유기/무선랜</span></a></li>
+                                                <li><a href="#" class="btn_network"><span>네트워크/장비</span></a></li>
+                                                <li><a href="#" class="btn_usb"><span>USB</span></a></li>
+                                                <li><a href="#" class="btn_exthdd"><span>외장하드</span></a></li>
+                                                <li><a href="#" class="btn_nas"><span>NAS</span></a></li>
+                                                <li><a href="#" class="btn_cable"><span>케이블</span></a></li>
+                                                <li><a href="#" class="btn_controller"><span>컨트롤러</span></a></li>
+                                                <li><a href="#" class="btn_dvi"><span>DVI/HDMI</span></a></li>
+                                                <li><a href="#" class="btn_usbhub"><span>USB허브</span></a></li>
+                                            </ul>
+                                            <!-- // 컴퓨터 주변기기 -->
+
+                                            <!-- 소프트웨어/전산소모품 -->
+                                            <ul>
+                                                <li><a href="#" class="btn_soft active"><span>소프트웨어</span></a></li>
+                                                <li><a href="#" class="btn_emptymedia"><span>공미디어</span></a></li>
+                                                <li><a href="#" class="btn_paper"><span>종이/용지</span></a></li>
+                                                <li><a href="#" class="btn_exp"><span>소모품</span></a></li>
+                                                <li><a href="#" class="btn_ink"><span>잉크</span></a></li>
+                                                <li><a href="#" class="btn_toner"><span>토너</span></a></li>
+                                            </ul>
+                                            <!-- // 소프트웨어/전산소모품 -->
+
+                                             <!-- DSLR/디카/캠코더 -->
+                                            <ul>
+                                                <li><a href="#" class="btn_memorycard active"><span>메모리카드</span></a></li>
+                                                <li><a href="#" class="btn_reader"><span>리더기</span></a></li>
+                                            </ul>
+                                            <!-- // DSLR/디카/캠코더 -->
+
+                                            <!-- 디지털 완제품 -->
+                                            <ul>
+                                                <li><a href="#" class="btn_notebook active"><span>노트북</span></a></li>
+                                                <li><a href="#" class="btn_tabletpc"><span>태블릿</span></a></li>
+                                                <li><a href="#" class="btn_adapter"><span>어댑터</span></a></li>
+                                                <li><a href="#" class="btn_battery"><span>배터리</span></a></li>
+                                                <li><a href="#" class="btn_notebookskin"><span>노트북 스킨</span></a></li>
+                                                <li><a href="#" class="btn_keyboardskin"><span>키보드 스킨</span></a></li>
+                                                <li><a href="#" class="btn_protectfilm"><span>액정 보호필름</span></a></li>
+                                                <li><a href="#" class="btn_notebookbag"><span>노트북 가방</span></a></li>
+                                                <li><a href="#" class="btn_protect"><span>도난 방지장치</span></a></li>
+                                                <li><a href="#" class="btn_cooler"><span>쿨러</span></a></li>
+                                                <li><a href="#" class="btn_coolpad"><span>쿨링패드</span></a></li>
+                                                <li><a href="#" class="btn_stand"><span>받침대/스탠드</span></a></li>
+                                                <li><a href="#" class="btn_doking"><span>도킹스테이션</span></a></li>
+                                                <li><a href="#" class="btn_multiboost"><span>멀티부스트</span></a></li>
+                                                <li><a href="#" class="btn_portlink"><span>변환젠터</span></a></li>
+                                                <li><a href="#" class="btn_tabletcase"><span>태블릿 케이스</span></a></li>
+                                                <li><a href="#" class="btn_tabletfilm"><span>태블릿 필름</span></a></li>
+                                                <li><a href="#" class="btn_minipc"><span>미니PC</span></a></li>
+                                                <li><a href="#" class="btn_brandpc"><span>브랜드PC</span></a></li>
+                                            </ul>
+                                            <!-- // 디지털 완제품 -->
+
+                                            <!-- 표준pc -->
+                                            <ul>
+                                                <li><a href="#" class="btn_brandpc"><span>행쇼 표준PC</span></a></li>
+                                                <li><a href="#" class="btn_planpc active"><span>행쇼 기획PC</span></a></li>
+                                            </ul>
+                                            <!-- // 표준pc -->
+
+                                            <!-- 이동 가능시 on -->
+                                            <button type="button" class="btn_prev on"><i class="icon-angle-up"></i><span class="ir">이전</span></button>
+
+                                            <button type="button" class="btn_next"><i class="icon-angle-down"></i><span class="ir">다음</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // lnb -->
+
+                                <div class="list-body_items_main_box">
+
+                                    <div class="list-body_items_main_box_head">
+                                        <div class="box_tab">
+                                            <button type="button" class="btn">가격비교 <span>377</span></button>
+                                            <button type="button" class="btn">미디엄 가이드 <span>377</span></button>
+											<button type="button" class="btn active">미디엄 뉴스&리뷰 <span>377</span></button>
+                                            <button type="button" class="btn">큐레이션</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- 미디엄 가이드 -->
+                                    <div class="list-body_items_main_box_mediumguide mnews">
+                                        <div class="mediumguide_head">
+                                            <h2 class="tit-h2"><img src="//img.happyshopping.kr/img_static/img_pres/_v3/tit_estimate_mediumnews.png" alt="행복쇼핑이 제안하는 구매의 기준! 미디엄 가이드" /></h2>
+                                        </div>
+
+
+                                        <div class="mediumguide_contents">
+                                            <div class="mediumguide_contents_top">
+                                                <strong class="mediumnewsTit">뉴스</strong>
+                                            </div>
+
+                                            <div class="mediumguide_contents_body">
+                                                <div class="mediumguide_contents_headline">
+                                                    <p class="subject"><strong>커피레이크의 등장. 그리고 2018년의 인기 프로세서는?</strong></p>
+                                                    <span class="date">기사입력 2017.01.03 12:03:41</span>
+                                                </div>
+
+                                                <div class="mediumguide_contents_conts">
+                                                    <!-- 기사 -->
+                                                    <div class="mediumguide_contents_conts_article">
+                                                        <!-- 설명 -->
+                                                        <div class="mediumguide_contents_conts_article_cont">
+                                                            AMD 불도저의 아픈 기억을 공유하고 있을 유저라면, 옥타 코어 프로세서의 의미를 애써 축소하고 있을지도 모를 일. 불도저 당시에도 AMD는 옥타(8) 코어 프로세서라는 점을 강조했지만, 기실 하나의 ALU를 두 개로 나눈 것과 같은 구조, 여기에 절반에 불과한 FPU 등으로 옥타 코어라 자랑하기엔 부족해도 한참 부족한 성능을 내는 데 그쳤다. 차라리 성능 좋은 쿼드코어로 - 불도저의 아키텍쳐는 그만큼 애매했다 - 포장했더라면 오히려 조금은 나은
+                                                            반응을 이끌어냈을 지도 모를 일. 하지만 라이젠 7 시대의 옥타 코어는 말 그대로 리얼(Real) 옥타코어이다. 코어당 성능 역시 인텔의 코어 시리즈에 근접해 있다는 사실이 여러 벤치마크 등을 통해 확인되고 있는 만큼 라이젠 7은 적어도 불도저처럼 허무하게 주저앉지는 않을 것 같은 느낌이다.출시된 라이젠 7 중 가장 하위 모델인 1700은 8개의 코어, 16개의 스레드를 지원한다. 비슷한 가격의 인텔 코어 i7 7700K가
+                                                            4개의 코어와 8개의 스레드를 제공하는 것에 비하면 딱 두 배의 수치이다. 인텔의 7700K가 4.2GHz로 동작하는 데 비해 AMD 라이젠 7 1700은 3.0GHz의 비교적 낮은 동작속도를 갖는다. 인텔이 네 개의 코어를 빠른 속도로 구동해 성능을 얻었다면, AMD는 8개의 코어를 활용해 조금 낮은 속도에서도 동일한 수준의 성능을 내는 방식으로 프로세서를 개발했다. 오버클럭이 자유로운 프로세서임을 감안하면, 3.0GHz의
+                                                            높지 않은 동작속도는 오히려 넉넉한 오버클럭 헤드룸으로 이어질 개연성도 보인다. 데스크톱 프로세서로는 이미 비싼(?) 축의 제품이긴 하지만, 다양한 가능성과 튜닝 및 오버클럭의 재미를 줄 수 있는 프로세서로 자리매김 할 수 있을 것으로 기대된다.
+                                                        </div>
+														<div class="mediumguide_contents_conts_article_img">
+                                                            <img src="//img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/300.jpg" alt="이름" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+										<div class="mediumguide_contents">
+                                            <div class="mediumguide_contents_top">
+                                                <strong class="mediumnewsTit">리뷰</strong>
+                                            </div>
+
+                                            <div class="mediumguide_contents_body">
+                                                <div class="mediumguide_contents_headline">
+                                                    <p class="subject"><strong>커피레이크의 등장. 그리고 2018년의 인기 프로세서는?</strong></p>
+                                                    <span class="date">기사입력 2017.01.03 12:03:41</span>
+                                                </div>
+
+                                                <div class="mediumguide_contents_conts">
+                                                    <!-- 기사 -->
+                                                    <div class="mediumguide_contents_conts_article">
+                                                        <!-- 설명 -->
+                                                        <div class="mediumguide_contents_conts_article_cont">
+                                                            AMD 불도저의 아픈 기억을 공유하고 있을 유저라면, 옥타 코어 프로세서의 의미를 애써 축소하고 있을지도 모를 일. 불도저 당시에도 AMD는 옥타(8) 코어 프로세서라는 점을 강조했지만, 기실 하나의 ALU를 두 개로 나눈 것과 같은 구조, 여기에 절반에 불과한 FPU 등으로 옥타 코어라 자랑하기엔 부족해도 한참 부족한 성능을 내는 데 그쳤다. 차라리 성능 좋은 쿼드코어로 - 불도저의 아키텍쳐는 그만큼 애매했다 - 포장했더라면 오히려 조금은 나은
+                                                            반응을 이끌어냈을 지도 모를 일. 하지만 라이젠 7 시대의 옥타 코어는 말 그대로 리얼(Real) 옥타코어이다. 코어당 성능 역시 인텔의 코어 시리즈에 근접해 있다는 사실이 여러 벤치마크 등을 통해 확인되고 있는 만큼 라이젠 7은 적어도 불도저처럼 허무하게 주저앉지는 않을 것 같은 느낌이다.출시된 라이젠 7 중 가장 하위 모델인 1700은 8개의 코어, 16개의 스레드를 지원한다. 비슷한 가격의 인텔 코어 i7 7700K가
+                                                            4개의 코어와 8개의 스레드를 제공하는 것에 비하면 딱 두 배의 수치이다. 인텔의 7700K가 4.2GHz로 동작하는 데 비해 AMD 라이젠 7 1700은 3.0GHz의 비교적 낮은 동작속도를 갖는다. 인텔이 네 개의 코어를 빠른 속도로 구동해 성능을 얻었다면, AMD는 8개의 코어를 활용해 조금 낮은 속도에서도 동일한 수준의 성능을 내는 방식으로 프로세서를 개발했다. 오버클럭이 자유로운 프로세서임을 감안하면, 3.0GHz의
+                                                            높지 않은 동작속도는 오히려 넉넉한 오버클럭 헤드룸으로 이어질 개연성도 보인다. 데스크톱 프로세서로는 이미 비싼(?) 축의 제품이긴 하지만, 다양한 가능성과 튜닝 및 오버클럭의 재미를 줄 수 있는 프로세서로 자리매김 할 수 있을 것으로 기대된다.
+                                                        </div>
+														<div class="mediumguide_contents_conts_article_img">
+                                                            <img src="//img.happyshopping.kr/img_shopping/img_goods/img_1449000/img_1448592/300.jpg" alt="이름" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- // 미디엄 가이드 -->
+                                </div>
+                            </div>
+                            <!-- // 공유 -->
+                        </div>
+                    </div>
+
+                    <!-- aside -->
+                    <aside class="column-aside">
+                        <div class="aside-medium">
+                            <h2 class="tit-h2"><img src="//img.happyshopping.kr/img_static/img_pres/_v3/tit_medium_aside.png" alt="미디엄"></h2>
+
+                            <article class="aside-medium_box">
+								<div class="MdmNews">
+			                        <strong class="BdTxt">뉴스</strong>
+			                        <p>
+			                            <a href="#">
+			                                노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’ 노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’
+			                                노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’
+			                            </a>
+			                        </p>
+			                        <p>
+			                            <a href="#">
+			                                노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’ 노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’
+			                                노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’
+			                            </a>
+			                        </p>
+			                    </div>
+								<div class="MdmNews">
+			                        <strong class="BdTxt">리뷰</strong>
+			                        <p>
+			                            <a href="#">
+			                                노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’ 노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’
+			                                노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’
+			                            </a>
+			                        </p>
+			                        <p>
+			                            <a href="#">
+			                                노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’ 노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’
+			                                노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’
+			                            </a>
+			                        </p>
+			                    </div>
+                                <h3 class="tit-h3"><a href="#">미디엄 가이드<br><span>구매의 기준을 바꾸다!</span></a></h3>
+
+                                <div class="aside-medium_box_cate">
+                                    <h4 class="tit-h4">노트북</h4>
+                                    <p><a href="#">노트북 상반기 시장의 키워드는 ‘온종일 컴퓨팅’ 그리고 ‘카비레이크’</a></p>
+                                </div>
+
+                                <div class="aside-medium_box_cate">
+                                    <h4 class="tit-h4">표준PC</h4>
+                                    <p><a href="#">간편하게 고민없이 PC를 구입하고 싶을 땐! 행복쇼핑 표준PC</a></p>
+                                </div>
+
+                                <div class="aside-medium_box_cate">
+                                    <h4 class="tit-h4">CPU</h4>
+                                    <p><a href="#">라이젠(RYZEN)이냐 카비레이크(Kaby Lake)냐, 이것이 문제로다!</a></p>
+                                </div>
+
+                                <div class="aside-medium_box_cate">
+                                    <h4 class="tit-h4">메인보드</h4>
+                                    <p><a href="#">신제품으로 박빙인 CPU의 열기, 메인보드에도 전해진다</a></p>
+                                </div>
+
+                                <div class="aside-medium_box_cate">
+                                    <h4 class="tit-h4">메모리</h4>
+                                    <p><a href="#">컴퓨터 시장 키워드 ‘LED’ ··· 메모리, LED로 화려함 더하다</a></p>
+                                </div>
+
+                                <div class="commercial_break">
+                                    <span>무얼 살지 고민된다면</span><br>미디엄 가이드부터 읽자!
+                                </div>
+
+                                <div class="aside-medium_box_cate">
+                                    <h4 class="tit-h4">SSD</h4>
+                                    <p><a href="#">뜨는 3D NAND, 그리고 NVMe SSD</a></p>
+                                </div>
+
+                                <div class="aside-medium_box_cate">
+                                    <h4 class="tit-h4">HDD</h4>
+                                    <p><a href="#">4K 영상, VR 시대를 대비하는 합리적 선택이 필요할 때</a></p>
+                                </div>
+
+                                <div class="aside-medium_box_cate">
+                                    <h4 class="tit-h4">그래픽카드</h4>
+                                    <p><a href="#">GTX1050부터 GTX1080까지, 선택지가 많으므로 더욱 신중하게...</a></p>
+                                </div>
+
+                                <div class="aside-medium_box_cate">
+                                    <h4 class="tit-h4">케이스</h4>
+                                    <p><a href="#">시스템 전체의 디자인과 편의성을 결정한다, PC 케이스</a></p>
+                                </div>
+
+                                <div class="aside-medium_box_cate">
+                                    <h4 class="tit-h4">파워</h4>
+                                    <p><a href="#">새로운 프로세서,  파워 서플라이 선택도 신중하게</a></p>
+                                </div>
+
+                                <div class="aside-medium_box_cate">
+                                    <h4 class="tit-h4">모니터</h4>
+                                    <p><a href="#">좋은 모니터’가 아닌 ‘내게 필요한 모니터’ 선택하세요</a></p>
+                                </div>
+                            </article>
+                        </div>
+                    </aside>
+                    <!-- // aside -->
+                </div>
+
+                <!-- 미니샵 리스트 / 정보 -->
+                <div class="seller-collection">
+                    <!-- 셀러 리스트 -->
+                    <div class="seller-wrap">
+                        <h3 class="tit-h3">행복쇼핑 파워셀러 <button type="button" class="btn_pwr"><i class="icon-chat_bubble ico-pwr"></i></button> / 뉴셀러 <button type="button" class="btn_ns"><i class="icon-chat_bubble ico-ns"></i></button></h3>
+
+                        <!-- 파워셀러? -->
+                        <div class="explanation exp-powerseller" style="display: none">
+                            <span class="explanation_badge"><em class="ir">POWER Sellder</em></span>
+                            <dl>
+                                <dt>파워셀러는</dt>
+                                <dd>
+                                    매월 모니터링을 통해 배송완료율/<br> 상품만족평/고객응대율 등 규정을 달성하면서<br> 3개월 이상 정상 운영중인 미니샵을 대상으로<br>
+                                    <strong>행복쇼핑이 직접 부여하는<br>
+                                    우수 판매 미니샵 인증마크입니다.</strong>
+                                </dd>
+                            </dl>
+
+                            <button type="button" class="icon-close btn-clse"><span class="ir">닫기</span></button>
+                        </div>
+                        <!-- // 파워셀러? -->
+
+                        <!-- 뉴셀러? -->
+                        <div class="explanation exp-newseller" style="display: none">
+                            <span class="explanation_badge"><em class="ir">NEW Sellder</em></span>
+                            <dl>
+                                <dt>뉴셀러는</dt>
+                                <dd>
+                                    행복쇼핑에 최근 3개월 내 입점한 신규 미니샵을<br> 대상으로 파워셀러 정책에 준하는 규정을<br> 달성하면서 정상 영업중인 미니샵을 대상으로<br>
+                                    <strong>행복쇼핑이 직접 부여하는<br>
+                                    우수 판매 미니샵 인증마크입니다.</strong>
+                                </dd>
+                            </dl>
+
+                            <button type="button" class=" icon-close btn-clse"><span class="ir">닫기</span></button>
+                        </div>
+                        <!-- // 뉴셀러? -->
+
+                        <div class="seller-wrap_list">
+                            <div class="seller-wrap_list_cell">
+                                <!-- 미니샵 -->
+                                <div class="cell">
+                                    <span class="mark-power">파워셀러</span>
+                                    <div class="ci">
+                                        <img src="https://img.happyshopping.kr/img_static/img_logo/1064_80_35.png" alt="미니샵이름">
+                                    </div>
+                                    <button type="button" class="btn-minishop_open">미니샵 <i class="icon-triangle-right"></i></button>
+                                    <button type="button" class="btn-minishop_report">후기 <i class="icon-triangle-right"></i></button>
+                                </div>
+                                <!-- // 미니샵 -->
+
+                                <!-- 미니샵 -->
+                                <div class="cell">
+                                    <span class="mark-power">파워셀러</span>
+                                    <div class="ci">
+                                        <img src="https://img.happyshopping.kr/img_static/img_logo/1064_80_35.png" alt="미니샵이름">
+                                    </div>
+                                    <button type="button" class="btn-minishop_open">미니샵 <i class="icon-triangle-right"></i></button>
+                                    <button type="button" class="btn-minishop_report">후기 <i class="icon-triangle-right"></i></button>
+                                </div>
+                                <!-- // 미니샵 -->
+
+                                <!-- 미니샵 -->
+                                <div class="cell">
+                                    <div class="ci">
+                                        바른컴퓨터
+                                    </div>
+                                    <button type="button" class="btn-minishop_open">미니샵 <i class="icon-triangle-right"></i></button>
+                                    <button type="button" class="btn-minishop_report">후기 <i class="icon-triangle-right"></i></button>
+                                </div>
+                                <!-- // 미니샵 -->
+
+                                <!-- 미니샵 -->
+                                <div class="cell">
+                                    <span class="mark-power">파워셀러</span>
+                                    <div class="ci">
+                                        <img src="https://img.happyshopping.kr/img_static/img_logo/3034_80_35.png" alt="미니샵이름">
+                                    </div>
+                                    <button type="button" class="btn-minishop_open">미니샵 <i class="icon-triangle-right"></i></button>
+                                    <button type="button" class="btn-minishop_report">후기 <i class="icon-triangle-right"></i></button>
+                                </div>
+                                <!-- // 미니샵 -->
+
+                                <!-- 미니샵 -->
+                                <div class="cell">
+                                    <span class="mark-new">뉴셀러</span>
+                                    <div class="ci">
+                                        <img src="https://img.happyshopping.kr/img_static/img_logo/1064_80_35.png" alt="미니샵이름">
+                                    </div>
+                                    <button type="button" class="btn-minishop_open">미니샵 <i class="icon-triangle-right"></i></button>
+                                    <button type="button" class="btn-minishop_report">후기 <i class="icon-triangle-right"></i></button>
+                                </div>
+                                <!-- // 미니샵 -->
+                            </div>
+
+                            <button type="button" class="icon-chevron-thin-left btn-prev"><span class="ir">이전</span></button>
+                            <button type="button" class="icon-chevron-thin-right btn-next"><span class="ir">다음</span></button>
+                        </div>
+
+                        <!-- carousel -->
+                        <div class="carousel">
+                            <button type="button" class="btn-carousel active"><span class="ir">1</span></button>
+                            <button type="button" class="btn-carousel"><span class="ir">2</span></button>
+                            <button type="button" class="btn-carousel"><span class="ir">3</span></button>
+                            <button type="button" class="btn-carousel"><span class="ir">4</span></button>
+                            <button type="button" class="btn-carousel"><span class="ir">5</span></button>
+                        </div>
+                        <!-- // carousel -->
+
+                        <a href="#" class="btn-minishop-all">전체보기 <span>+</span></a>
+                    </div>
+                    <!-- // 셀러 리스트 -->
+
+                    <!-- 셀러 정보 -->
+                    <div class="seller-info powerseller">
+                        <div class="seller-info_name">
+                            <span class="mark-power">파워셀러</span>
+                            <span class="mark-new">뉴셀러</span>
+                            <strong class="name"><a href="#">홍길동길동</a></strong>
+                            <ul>
+                                <li><a href="#" target="_blank" class="btn-minishop"> <i class="icon-shop"></i>미니샵</a></li>
+                                <li><button type="button" class="btn-fork on"><i class="icon-favorite"></i>찜하기</button></li>
+                                <li><button type="button" class="btn-report"><i class="icon-typing"></i>후기</button></li>
+                            </ul>
+                        </div>
+                        <span class="seller-info_logo">
+                            <a href="#" target="_blank"><img src="http://img.happyshopping.kr/img_static/img_logo/1052_80_35.png" alt="홍길동길동"></a>
+                        </span>
+
+                        <div class="seller-info_detail">
+                            <span class="nor">일반전문몰</span>
+                            <span class="warranty">전자보증</span>
+                            <span class="escrow">에스크로</span>
+                            <span class="tel">02-2120-2388</span>
+                            <button type="button" class="btn-tel-detail">연락처 상세보기</button>
+
+                            <address>
+                            서울 용산구 한강로2가 선인상가 21동 2012호
+                            <button type="button" class="btn-map-detail">약도보기</button>
+                        </address>
+
+                            <p class="seller-info_detail_corp">사업자등록번호:106-08-79330 | 대표자:권오훈 | 통신판매신고번호:제2007-서울용산-06514</p>
+
+                            <div class="seller-info_detail_info">
+                                <span class="name">피씨하우스</span>
+                                <button type="button" class="btn-corp-intro">회사소개</button>
+                                <button type="button" class="btn-corp-time">영업시간</button>
+                                <button type="button" class="btn-corp-return">반품/교환</button>
+                                <button type="button" class="btn-corp-accuse">신고</button>
+                            </div>
+                        </div>
+
+                        <!-- 후기 -->
+                        <div class="seller-info_report blind">
+                            <h4 class="tit-h4"> 미니샵 이용 후기</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="photo"><img src="http://img.happyshopping.kr/img_static/img_pres/_v3/noimage_review.png" alt="이미지없음"></span>
+
+                                        <div class="conts">
+                                            <span class="t">케이메모리 깔끔하고 믿음직 합니다.</span>
+
+                                            <div class="txt">조립 컴퓨터 사면서 제일 중요시 하는게 깔끔한 선정리와, 구성품 박스 유무, 그리고 구성품 박스 유무, 그리고</div>
+
+                                            <div class="conts_bot">
+                                                <span class="writer">jinusma</span> <em class="bar">|</em> <span class="date">2015-10-15</span> <span class="btn-more"> 자세히보기</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span>
+                                        <a href="#">잘 받았어요
+                                            <span class="date">2017-03-12</span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <a href="#">잘 받았어요
+                                            <span class="date">2017-03-12</span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <a href="#">잘 받았어요
+                                            <span class="date">2017-03-12</span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <a href="#">잘 받았어요
+                                            <span class="date">2017-03-12</span>
+                                        </a>
+                                    </span>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="btn-report-more"><em>+</em> 더보기</a>
+                        </div>
+                        <!-- // 후기 -->
+
+                        <div class="seller-info_descwarranty">
+                            <dl>
+                                <dt>전자보증 서비스</dt>
+                                <dd><strong>소비자에게 보험증서를 발급</strong>하여,<br>인터넷 쇼핑몰에서 발생할 수 있는<br>소비자 피해를 공인된 금융 기관인<br><strong>서울보증보험(주)이 100% 보상</strong>하는<br>서비스입니다.</dd>
+                                <dd>
+                                    <span class="protect protect1"><em class="ir">SGI 서울보증</em></span>
+                                    <a href="https://mall.sgic.co.kr/csh/iutf/sh/shop/CSHINFO004VM0.mvc?q_cp=1&amp;q_sk=2&amp;q_sv=8981600179#_searchArea" target="_blank">서비스가입사실확인</a>
+                                </dd>
+                            </dl>
+
+                            <dl style="display: none">
+                                <dt>에스크로 서비스</dt>
+                                <dd><strong>제3자(공식 에스크로 사업자)가<br>전자상거래대금의 입출금을 공정하게<br>관리</strong>하여, <strong>매매보호 및 안전거래를<br>구현</strong>하는 서비스입니다.</dd>
+                                <dd>
+                                    <span class="protect protect2"><em class="ir">NICE</em></span>
+                                    <a href="https://pg.nicepay.co.kr/issue/IssueEscrow.jsp?Mid=pping1865m&amp;CoNo=">서비스가입사실확인</a>
+                                </dd>
+                            </dl>
+
+                            <dl style="display: none">
+                                <dt>전자보증 + 에스크로 서비스</dt>
+                                <dd>두가지 매매보호 방식이 모두 적용되는<br>방법으로,쇼핑에 불편이 없도록 구현된<br><strong>가장 최적화된 서비스</strong>입니다.</dd>
+                                <dd>
+                                    <span class="protect protect1"><em class="ir">SGI 서울보증</em></span>
+                                    <a href="https://mall.sgic.co.kr/csh/iutf/sh/shop/CSHINFO004VM0.mvc?q_cp=1&amp;q_sk=2&amp;q_sv=8981600179#_searchArea" target="_blank">서비스가입사실확인</a>
+                                </dd>
+                                <dd>
+                                    <span class="protect protect2"><em class="ir">NICE</em></span>
+                                    <a href="https://pg.nicepay.co.kr/issue/IssueEscrow.jsp?Mid=pping1865m&amp;CoNo=">서비스가입사실확인</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!-- // 셀러 정보 -->
+                </div>
+                <!-- // 미니샵 리스트 / 정보 -->
+            </div>
+        </section>
+    </div>
+    <!-- // container -->
+</div>
+
+<!-- 테스트용 개발시 제거 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+    $(".items_main_box_search_menu li:first-child .btn, .items_main_box_search_menu li:nth-child(2) .btn").click(function() {
+        $(".layer_item_search").toggle();
+    });
+
+    $(".layer_item_search .item_search_head .btn:first-child").click(function() {
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".item_search_spec").show();
+        $(".item_search_price").hide();
+    });
+    $(".layer_item_search .item_search_head .btn:last-child").click(function() {
+         $(this).addClass("active").siblings().removeClass("active");
+        $(".item_search_spec").hide();
+        $(".item_search_price").show();
+    });
+
+    $(".layer_item_search .btn_layer_item_search_clse").click(function() {
+        $(".layer_item_search").hide();
+    });
+
+    $(document).on("click", ".product-stdpc .btn_direct_buy", function() {
+        $(".layer-pop_stdpc").parent().show();
+    });
+
+    $(document).on("click", ".layer-pop_stdpc .btn-layer-pop_clse", function() {
+        $(".layer-pop").hide();
+    });
+</script>
+</body>
+
+</html>

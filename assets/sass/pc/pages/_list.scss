@@ -630,6 +630,20 @@
 
 				// 미디엄가이드
 				.list-body_items_main_box_mediumguide {
+					&.mnews{
+						.mediumguide_head {
+							background-image: url("//img.happyshopping.kr/img_static/img_pres/_v3/bg_estimate_mediumnews_head.png");
+						}
+						.mediumguide_contents{
+							margin-top:30px;
+							.mediumguide_contents_top{
+								height: 30px;
+							}
+						}
+						.mediumnewsTit{
+							font-size: 20px;
+						}
+					}
 					.mediumguide_head {
 						height: 156px;
 						padding: 42px 0 0 13px;
@@ -963,7 +977,7 @@
 					// 미디엄 가이드 내용
 					.mediumguide_contents {
 						position: relative;
-						margin-top: 70px;
+						margin-top: 50px;
 
 						.mediumguide_contents_top {
 							height: 58px;
