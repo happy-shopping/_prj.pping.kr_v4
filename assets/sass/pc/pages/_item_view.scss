@@ -1,4 +1,16 @@
 @charset "utf-8";
+// 이벤트 진행상품에 사용
+.event-wrap{
+	overflow:hidden;
+	position:relative;
+	background:#f9f9f9;
+	img{
+		position:relative;
+		left:50%;
+		margin-left:-952px
+	}
+}
+// 이벤트 진행상품에 사용
 
 .view-body {
 	margin-bottom: 50px;
