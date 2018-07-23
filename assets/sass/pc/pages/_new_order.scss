@@ -1123,7 +1123,6 @@
 				.order-items_cell,
 				.order-items_item {
 					display: table-cell;
-
 					.name {
 						display: block;
 						margin-top: 5px;
@@ -1223,8 +1222,8 @@
 
 	.order-item-amount {
 		display: block;
-		padding-right: 40px;
-		text-align: right;
+		//padding-right: 40px;
+		text-align:center;
 		letter-spacing: 0;
 
 		strong {
