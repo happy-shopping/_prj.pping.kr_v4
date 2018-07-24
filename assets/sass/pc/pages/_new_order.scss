@@ -124,6 +124,7 @@
 					padding-bottom:9px;
 				}
 				.payName{
+					margin-left: 10px;
 					font-size:18px;
 					color:$base_color3;
 				}
@@ -250,6 +251,9 @@
 					cursor: pointer;
 					&:hover{
 						color: #418ded;
+					}
+					i {
+						margin-left: 3px;
 					}
 				}
 
@@ -1123,6 +1127,7 @@
 				.order-items_cell,
 				.order-items_item {
 					display: table-cell;
+
 					.name {
 						display: block;
 						margin-top: 5px;
