@@ -382,13 +382,24 @@ input {
 		.list {
 			margin-top: 30px;
 			@include clear;
-
+			.tit-h3 {
+				font-size: 15px;
+				color: $point_color1;
+			}
 			.list_box {
 				display: none;
 				@include clear;
 
 				&.active {
 					display: block;
+				}
+				>ul{
+					> li {
+						margin-top: 15px;
+						padding-bottom: 15px;
+						border-bottom: 1px solid #eee;
+						line-height: 1.4;
+					}
 				}
 			}
 
@@ -397,11 +408,6 @@ input {
 				width: 48%;
 
 				> li {
-					margin-top: 15px;
-					padding-bottom: 15px;
-					border-bottom: 1px solid #eee;
-					line-height: 1.4;
-
 					&.git {
 						font-weight: bold;
 						text-align: right;
@@ -421,11 +427,6 @@ input {
 					}
 
 					> a {
-						.tit-h3 {
-							font-size: 15px;
-							color: $point_color1;
-						}
-
 						.items_item_url {
 							padding-left: 12px;
 						}
