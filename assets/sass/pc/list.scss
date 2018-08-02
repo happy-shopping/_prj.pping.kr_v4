@@ -10,3 +10,12 @@
 
 @import
 	'pages/list';
+	//'pages/o_market';
+
+.breadLine{
+	border-bottom:2px solid $base_color1;
+	padding:10px 0;
+	select{
+		min-width:110px;
+	}
+}
