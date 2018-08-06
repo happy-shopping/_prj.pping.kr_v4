@@ -11,3 +11,94 @@
 
 @import
 	'pages/item_view';
+
+.main-view_product{
+	.clrbs1{
+		color:$base_color1 !important;
+	}
+	&.openMarket{
+		.main-view_product_photo{
+			.thumb-list{
+				display:none;
+			}
+		}
+		.main-view_product_info{
+			.benefitInfo{
+				strong{
+					line-height: 1;
+					border-right:1px solid  #e5e5e5;
+					padding-right:8px;
+					margin-right:5px;
+					display:inline-block;
+				}
+				em{
+					color:$point_color3;
+					position:relative;
+					height:12px;
+					display: inline-block;
+					padding-right: 4px;
+					&:after{
+						content: "/";
+						color:$base_color3;
+						position: absolute;
+						font-family: "Malgun gothic";
+						top: -1px;
+						right: -3px;
+					}
+					&:last-child{
+						&:after{
+							display: none;
+						}
+					}
+				}
+			}
+			.lowMarket{
+				.lowPrice{
+					font-size:32px;
+					color:$point_color2;
+					word-spacing: -10px;
+					margin-top:10px;
+					sub{
+						color:$base_color3;
+						bottom:0;
+						font-size: 18px;
+					}
+					a{
+						float: right;
+						font-size:14px;
+						word-spacing: 0;
+						color:#fff;
+						background: $point_color1;
+						padding:0 10px;
+						@include txtVer1Li(32);
+					}
+				}
+			}
+			.markList{
+				width:100%;
+				margin-top:30px;
+				border-bottom: 1px solid #dfdfdf;
+				th{
+					color:$base_color2;
+					padding:10px 0;
+					background:#dfdfdf;
+				}
+				td{
+					padding:8px 10px;
+					text-align: right;
+					img{
+						max-width: 100px;
+						max-height: 14px;
+					}
+					&:first-child{
+						text-align: left;
+					}
+					&:last-child{
+						text-align: center;
+					}
+				}
+
+			}
+		}
+	}
+}

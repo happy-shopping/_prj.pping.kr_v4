@@ -30,12 +30,6 @@
 	<link rel="stylesheet" href="//dev-ajax.pping.kr:8080/_v3/css/pc/new/item_view.css" /> -->
 
 	<link rel="stylesheet" href="../../../assets/css/pc/comm.css" />
-	<link rel="stylesheet" href="../../../assets/css/pc/forms.css" />
-	<link rel="stylesheet" href="../../../assets/css/buttons.css" />
-	<link rel="stylesheet" href="../../../assets/css/board.css" />
-	<link rel="stylesheet" href="../../../assets/css/pc/layers.css" />
-	<link rel="stylesheet" href="../../../assets/css/header.css" />
-	<link rel="stylesheet" href="../../../assets/css/footer.css" />
 	<link rel="stylesheet" href="../../../assets/css/pc/item_view.css" />
 </head>
 
@@ -60,43 +54,15 @@
 								<li>등록일 <span>2017.01</span></li>
 								<li>
 									<button type="button" class="icon-favorite_border btn_fork active">찜하기 <span class="cnt">(<em>0</em>)</span></button>
-
-									<!-- 찜하기 레이어 -->
-									<div class="layer-pop_fork" style="display: none">
-										<div class="pop_fork_head">
-											상품 찜하기
-										</div>
-
-										<div class="pop_fork_body">
-											<span class="dsc">상품을 선택한 그룹에 저장합니다.</span>
-											<div class="pop_fork_body_in">
-												<span class="row group-list">
-													<label for="id-grouppppp">그룹선택</label>
-													<select id="id-grouppppp" class="sstyle">
-														<option>그룹1</option>
-													</select>
-												</span>
-
-												<span class="row">
-													원하는 그룹이 없으면 <button type="button" class="btn_group_add"><i class="icon-add"></i>그룹 추가하기</button>
-												</span>
-
-												<div class="group-reg">
-													<input type="text" class="istyle" title="그룹명" style="width: 162px" />
-													<button type="button" class="btn_group_reg">등록</button>
-													<button type="button" class="btn_group_cncl">취소</button>
-												</div>
-											</div>
-
-											<div class="button-group ctr">
-												<button type="button" class="btn_product_fork">찜하기</button>
-												<button type="button" class="btn_product_cncl">취소</button>
-											</div>
-										</div>
-
-										<button type="button" class="icon-close btn-layer-pop_clse"><span class="ir">닫기</span></button>
+								</li>
+								<li>
+									<div class="product_grade">
+										<span class="star">
+											<span class="star_grade" style="width:50%">
+												<strong class="star_grade_point"><em>3</em>/10</strong>
+											</span>
+										</span>
 									</div>
-									<!-- // 찜하기 레이어 -->
 								</li>
 							</ul>
 							<p>
@@ -108,7 +74,7 @@
 					<!-- // main-view_head -->
 
 					<!-- main-view_product -->
-					<div class="main-view_product">
+					<div class="main-view_product openMarket">
 						<!-- main-view_product_photo -->
 						<div class="main-view_product_photo">
 							<div class="photo-list">
@@ -143,377 +109,72 @@
 							</div>
 						</div>
 						<!-- // main-view_product_photo -->
-
 						<div class="main-view_product_info">
-							<h4 class="tit-h4">견적비교 상품</h4>
-							<p class="dsc">먼저 상품견적 담기를 하고 견적비교 후 미니샵을 선택하여 구매하시는<br />상품입니다</p>
-
-							<div class="low-higi-price">
-								<span class="t">최저가/최고가</span>
-								<strong class="price"><span>334,000</span><em>원 </em>~ 390,000<em>원</em></strong>
-							</div>
-
-							<!-- 가격비교예정 -->
-							<div class="low-higi-price comparison">
-								<strong class="price"><span>가격비교예정</span></strong>
-							</div>
-							<!-- // 가격비교예정 -->
-
-							<div class="product_type_price">
-								<ul class="igroup">
-									<li>
-										<span class="iradio">
-											<input type="radio" id="id-di1" name="name1" checked="checked">
-											<label for="id-di1"><em>정품</em></label>
-										</span>
-									</li>
-									<li>
-										<span class="iradio">
-											<input type="radio" id="id-di2" name="name1">
-											<label for="id-di2"><em>병행수입 박스</em></label>
-										</span>
-									</li>
-									<li>
-										<span class="iradio">
-											<input type="radio" id="id-di3" name="name1">
-											<label for="id-di3"><em>벌크 + 쿨러</em></label>
-										</span>
-									</li>
-									<li>
-										<span class="iradio">
-											<input type="radio" id="id-di4" name="name1">
-											<label for="id-di4"><em>벌크</em></label>
-										</span>
-									</li>
-								</ul>
-
-								<div class="product_type_price_seller">
-									<span class="mark-power">파워셀러</span>
-									<span class="sellername">티유컴</span>
-									<button type="button" class="btn_other_event">
-										9
-										<span class="dsc">선택한 상품의 다른 이벤트</span>
-									</button>
-
-									<!-- 다른 이벤트 -->
-									<div class="layer-pop_other_event" style="display: none">
-										<div class="pop_other_event_head">
-											선택한 상품의 다른 이벤트 <span class="cnt">55</span>
-										</div>
-
-										<div class="pop_other_event_body">
-											<div class="pop_other_event_body_top">
-												<span class="thumb"><img src="//img.happyshopping.kr/img_shopping/img_goods/img_496000/img_495216/500.jpg" alt="" /></span>
-												<div class="info">
-													<span class="name">MSI B150M 바주카MSI B150M 바주SI M 바B150M 바주MSI B150M 바MSI 바주바B15MSI B150M 바주</span>
-
-													<span class="lowhighprice">
-														<strong class="lowprice">100,000</strong>원 ~ <strong>173,500</strong>원
-													</span>
-												</div>
-											</div>
-
-											<div class="pop_other_event_body_list">
-												<table class="board">
-													<caption><span>미니샵 상품</span></caption>
-													<thead>
-													<tr>
-														<th scope="col">미니샵명</th>
-														<th scope="col">이벤트가</th>
-														<th scope="col">배송 예정일</th>
-													</tr>
-													</thead>
-													<tbody>
-													<tr>
-														<td>
-															<span class="mark-power">파워셀러</span> <span class="sellername">마인드PC</span>
-														</td>
-														<td class="eventprice">
-															<div class="cartto">
-																<span class="price">
-																	<strong>112,000</strong>원
-																</span>
-																<button type="button" class="btn-cart-to">
-																	<span>장바구니 담기</span>
-																</button>
-
-																<!-- 담기 팝업 -->
-																<div class="product_add_btn_layer">
-																	상품이 장바구니에 담겼습니다.<br />
-																	<a href="#" class="btn_product_add_view">장바구니 바로가기 <em class="icon-triangle-right"></em></a>
-
-																	<button type="button" class="icon-close btn_clse"><span class="ir">닫기</span></button>
-																</div>
-																<!-- // 담기 팝업 -->
-															</div>
-														</td>
-														<td>부픔 2일, 조립 3일</td>
-													</tr>
-													<tr>
-														<td>
-															<span class="mark-power">파워셀러</span> <span class="sellername">마인드PC</span>
-														</td>
-														<td class="eventprice">
-															<div class="cartto">
-																<span class="price">
-																	<strong>112,000</strong>원
-																</span>
-																<button type="button" class="btn-cart-to">
-																	<span>장바구니 담기</span>
-																</button>
-
-																<!-- 담기 팝업 -->
-																<div class="product_add_btn_layer">
-																	상품이 장바구니에 담겼습니다.<br />
-																	<a href="#" class="btn_product_add_view">장바구니 바로가기 <em class="icon-triangle-right"></em></a>
-
-																	<button type="button" class="icon-close btn_clse"><span class="ir">닫기</span></button>
-																</div>
-																<!-- // 담기 팝업 -->
-															</div>
-														</td>
-														<td>부픔 2일, 조립 3일</td>
-													</tr>
-													<tr>
-														<td>
-															<span class="mark-power">파워셀러</span> <span class="sellername">마인드PC</span>
-														</td>
-														<td class="eventprice">
-															<div class="cartto">
-																<span class="price">
-																	<strong>112,000</strong>원
-																</span>
-																<button type="button" class="btn-cart-to">
-																	<span>장바구니 담기</span>
-																</button>
-
-																<!-- 담기 팝업 -->
-																<div class="product_add_btn_layer">
-																	상품이 장바구니에 담겼습니다.<br />
-																	<a href="#" class="btn_product_add_view">장바구니 바로가기 <em class="icon-triangle-right"></em></a>
-
-																	<button type="button" class="icon-close btn_clse"><span class="ir">닫기</span></button>
-																</div>
-																<!-- // 담기 팝업 -->
-															</div>
-														</td>
-														<td>부픔 2일, 조립 3일</td>
-													</tr>
-													<tr>
-														<td>
-															<span class="mark-power">파워셀러</span> <span class="sellername">마인드PC</span>
-														</td>
-														<td class="eventprice">
-															<div class="cartto">
-																<span class="price">
-																	<strong>112,000</strong>원
-																</span>
-																<button type="button" class="btn-cart-to">
-																	<span>장바구니 담기</span>
-																</button>
-
-																<!-- 담기 팝업 -->
-																<div class="product_add_btn_layer">
-																	상품이 장바구니에 담겼습니다.<br />
-																	<a href="#" class="btn_product_add_view">장바구니 바로가기 <em class="icon-triangle-right"></em></a>
-
-																	<button type="button" class="icon-close btn_clse"><span class="ir">닫기</span></button>
-																</div>
-																<!-- // 담기 팝업 -->
-															</div>
-														</td>
-														<td>부픔 2일, 조립 3일</td>
-													</tr>
-													<tr>
-														<td>
-															<span class="mark-power">파워셀러</span> <span class="sellername">마인드PC</span>
-														</td>
-														<td class="eventprice">
-															<div class="cartto">
-																<span class="price">
-																	<strong>112,000</strong>원
-																</span>
-																<button type="button" class="btn-cart-to">
-																	<span>장바구니 담기</span>
-																</button>
-
-																<!-- 담기 팝업 -->
-																<div class="product_add_btn_layer">
-																	상품이 장바구니에 담겼습니다.<br />
-																	<a href="#" class="btn_product_add_view">장바구니 바로가기 <em class="icon-triangle-right"></em></a>
-
-																	<button type="button" class="icon-close btn_clse"><span class="ir">닫기</span></button>
-																</div>
-																<!-- // 담기 팝업 -->
-															</div>
-														</td>
-														<td>부픔 2일, 조립 3일</td>
-													</tr>
-													</tbody>
-												</table>
-											</div>
-										</div>
-
-										<button type="button" class="icon-close btn-layer-pop_clse"><span class="ir">닫기</span></button>
-									</div>
-									<!-- // 다른 이벤트 -->
-
-									<div class="product_type_price_seller_add">
-										<span class="price">
-											<strong>112,000</strong>원
-										</span>
-										<button type="button" class="btn-cart-to">
-											<span>장바구니 담기</span>
-										</button>
-
-										<!-- 담기 팝업 -->
-										<div class="product_add_btn_layer">
-											<div class="product_add_btn_seller">
-												판매자 <span class="malltype nor">일반전물몰</span> 컴퓨터 사랑 티유컴씨앤에스
-											</div>
-
-											상품이 견적에 담겼습니다.<br />
-											<a href="#" class="btn_product_add_view">상품견적 바로가기 <em class="icon-triangle-right"></em></a>
-
-											<button type="button" class="icon-close btn_clse"><span class="ir">닫기</span></button>
-										</div>
-										<!-- // 담기 팝업 -->
-									</div>
+							<div class="lowMarket">
+								<div class="benefitInfo">
+									<strong>CPU나라</strong>
+									<em class="icon-truck-o">무료</em>
+									<em>카드할인</em>
+								</div>
+								<div class="lowPrice">
+									<sub>최저</sub>
+									<strong>1,221,000</strong>
+									<sub>원</sub>
+									<a href="#" class="lowLink">최저가 사러가기</a>
 								</div>
 							</div>
-
-							<p class="delivery-arrive">
-								<span class="icon-add">2,500원 배송비</span>
-								<em>7/15 (토)요일</em> 도착 예정
-							</p>
-
-							<div class="minishp_view">
-								<button type="button" class="btn_minishp_list">미니샵 보기(22)</button>
-
-								<!-- 미니샵 보기 팝업 normalshop -->
-								<div class="layer-pop_minishoplist normalshop" style="display: none">
-									<h4 class="tit-h4">선택한 상품을 판매하는 미니샵(22)</h4>
-
-									<div class="layer-pop_minishoplist_body">
-										<div class="product_box">
-											<span class="thumb"><img src="//img.happyshopping.kr/img_shopping/img_goods/img_1436000/img_1435866/64.jpg" alt="인텔 코어i7-7세대 7700 (카비레이크) (정품)" /></span>
-											<div class="product_box_name">
-												<span>인텔 코어i7-7세대 7700 (카비레이크) (정품)</span>
-											</div>
-										</div>
-
-										<div class="sell_minishop_list">
-											<table class="board">
-												<caption><span class="ir">판매하는 미니샵</span></caption>
-												<thead>
-												<tr>
-													<th>상품가</th>
-													<th>결제서비스</th>
-													<th>배송예정일</th>
-													<th>판매자</th>
-												</tr>
-												</thead>
-												<tbody>
-												<tr>
-													<td>
-														<span class="product_price">
-															<strong class="price">375,000</strong>원<br />
-															<span class="deliveryfee">2,500원</span>
-														</span>
-													</td>
-													<td>
-														<span class="malltype nor">일반전물몰</span>
-													</td>
-													<td>
-														7/15 (토)요일
-													</td>
-													<td>
-														<span class="mark-power">파워셀러</span> <span class="sellername"><a href="#">EnterPC</a></span>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<span class="product_price">
-															<strong class="price">75,000</strong>원<br />
-															<span class="deliveryfee">2,500원</span>
-														</span>
-													</td>
-													<td>
-														<span class="malltype nor">일반전물몰</span>
-													</td>
-													<td>
-														7/15 (토)요일
-													</td>
-													<td>
-														<span class="mark-power">파워셀러</span> <span class="sellername"><a href="#">EnterPCerPC EnterPC</a></span>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<span class="product_price">
-															<strong class="price">19,375,000</strong>원<br />
-															<span class="deliveryfee">2,500원</span>
-														</span>
-													</td>
-													<td>
-														<span class="malltype card">카드전물몰</span>
-													</td>
-													<td>
-														7/15 (토)요일
-													</td>
-													<td>
-														<span class="mark-new">뉴셀러</span> <span class="sellername"><a href="#">EnterPC</a></span>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<span class="product_price">
-															<strong class="price">1,375,000</strong>원<br />
-															<span class="deliveryfee">2,500원</span>
-														</span>
-													</td>
-													<td>
-														<span class="malltype card">카드전물몰</span>
-													</td>
-													<td>
-														7/15 (토)요일
-													</td>
-													<td>
-														<span class="mark-new">뉴셀러</span> <span class="sellername"><a href="#">EnterPC</a></span>
-													</td>
-												</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-
-									<button type="button" class="btn-layer-pop_clse"><img src="//img.happyshopping.kr/img_static/img_pres/_v3/btn_layer_pop_clse.png" alt="닫기"></button>
-								</div>
-								<!-- // 미니샵 보기 팝업 -->
-							</div>
-
-							<div class="product_add">
-								<div class="cnt-change_number big">
-									<input type="text" class="istyle" title="개수" value="99">
-									<button type="button" class="icon-angle-up up"><em class="ir">추가</em></button>
-									<button type="button" class="icon-angle-down dn"><em class="ir">삭제</em></button>
-								</div>
-
-								<div class="product_add_btn">
-									<button type="button" class="btn_estimate_add" disabled><i class="icon-in"></i> 상품견적 담기</button>
-
-									<!-- 담기 팝업 -->
-									<div class="product_add_btn_layer">
-										상품이 견적에 담겼습니다.<br />
-										<a href="#" class="btn_product_add_view">상품견적 바로가기 <em class="icon-triangle-right"></em></a>
-
-										<button type="button" class="icon-close btn_clse"><span class="ir">닫기</span></button>
-									</div>
-									<!-- // 담기 팝업 -->
-								</div>
-							</div>
-
-							<span class="product_code">• 상품번호 1431930</span>
+							<table class="markList">
+								<tr>
+									<th>판매처</th>
+									<th>판매가</th>
+									<th>차액</th>
+									<th>배송비/혜택</th>
+								</tr>
+								<tr>
+									<td>
+										<img src="http://img.danawa.com/cmpny_info/images/TH201_logo.gif" alt="11번가">
+									</td>
+									<td>512,150</td>
+									<td>+50</td>
+									<td class="benefitInfo">
+										<em class="icon-truck-o">무료</em>
+										<em>카드할인</em>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										케이 메모리
+									</td>
+									<td>1,512,150</td>
+									<td>+150</td>
+									<td class="benefitInfo">
+										<em class="icon-truck-o">무료</em>
+										<em>카드할인</em>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										PC링크
+									</td>
+									<td>512,150</td>
+									<td>+1150</td>
+									<td class="benefitInfo">
+										<em class="icon-truck-o">무료</em>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="http://img.danawa.com/cmpny_info/images/TH201_logo.gif" alt="11번가">
+									</td>
+									<td>512,150</td>
+									<td>+50</td>
+									<td class="benefitInfo">
+										<em class="clrbs1">2,500</em>
+										<em>카드할인</em>
+									</td>
+								</tr>
+							</table>
+							<img src="//img.happyshopping.kr/img_static/img/tmp/graph.png" style="margin-top:30px;"/>
 						</div>
 					</div>
 					<!-- // main-view_product -->

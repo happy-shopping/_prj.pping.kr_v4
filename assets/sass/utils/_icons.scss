@@ -15,7 +15,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'ppingkr_v4' !important;
+  font-family: 'ppingkr_v4','Spoqa Han Sans', "맑은 고딕", "Malgun Gothic", "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo","돋움" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -27,7 +27,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-truck-o:before {
+  content: "\e997";
+}
 .icon-d_menu_1:before {
   content: "\e950";
 }
@@ -86,7 +88,7 @@
   content: "\e99a";
 }
 .icon-search2:before {
-  content: "\e997";
+  content: "\1f550";
 }
 .icon-pause:before {
   content: "\e994";
