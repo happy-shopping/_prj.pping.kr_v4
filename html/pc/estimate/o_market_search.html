@@ -56,69 +56,274 @@
             <div class="list-body_main">
                 <div class="column-wrap width-fixed">
                     <div class="column-main">
-                        <div class="list-body_items openMarket">
+                        <div class="list-body_items searchList">
                         <!-- <div class="list-body_items estimate_compare"> -->
-                            <div class="openMarkTop">
-                                <div class="breadLine">
-                                    <font>전체 <i class="icon-angle-right"></i> DSLR/디카/캠코더 <i class="icon-angle-right"></i></font>
-                                    <select>
-                                        <option>미러리스</option>
-                                        <option>DSLR</option>
-                                        <option>컴팩트</option>
-                                    </select>
-                                    <i class="icon-angle-right"></i>
-                                    <select>
-                                        <option>캐논</option>
-                                        <option>소니</option>
-                                        <option>니콘</option>
-                                    </select>
-                                </div>
-                                <div class="topBanner">
-                                    <a href="#"><img src="//img.happyshopping.kr/img_static/img_curation/1020202000/1/950.jpg" alt=""/></a>
-                                </div>
-                                <div class="subCateDiv">
-                                    <a href="#" alt="니콘">니콘</a>
-                                </div>
+                            <div class="relatedQuery">
+                                <a href="#" alt="니콘">니콘</a>
                             </div>
+                            <p class="whatKWD">
+                                <strong>{검색어}</strong>에대한 통합검색 결과입니다.
+                            </p>
+                            <table class="searchOptTbl">
+                                <tr>
+                                    <th>
+                                        카테고리
+                                        <button class="icon-add"></button>
+                                    </th>
+                                    <td class="optCate">
+                                        <div class="optBtns">
+                                            <button type="button" class="on">
+                                                <span>
+                                                    컴퓨터 주요부품
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    컴퓨터 주변기기
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    소프트웨어/전산 소모품
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    DSLR/디카/캠코더
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    디지털 완제품
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    생활가전
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    자동차용품
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        브랜드
+                                        <button class="icon-add"></button>
+                                    </th>
+                                    <td class="optBrd">
+                                        <div class="optBtns">
+                                            <button type="button" class="on">
+                                                <span>인텔</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>에이수스</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>기가바이트</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>애즈락</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>LG전자</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>HP</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>MSI</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        가격
+                                    </th>
+                                    <td class="rltvObj">
+                                        <div class="optBtns">
+                                            <button type="button">
+                                                <span>~13만원</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>13만원~29만원</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>29만원~</span>
+                                            </button>
+                                        </div>
+                                        <div class="rightOpts">
+                                            직접입력
+                                            <input type="text" class="minPrice istyle ifocus"/>
+                                            <font class="unit"></font>
+                                            <font>~</font>
+                                            <input type="text" class="minPrice istyle"/>
+                                            <font class="unit"></font>
+                                            <button type="text" class="icon-search2"></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        혜택
+                                    </th>
+                                    <td>
+                                        <div class="optBtns">
+                                            <button type="button" class="on">
+                                                <span>무료혜택</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>카드할인</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>쿠폰</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>적립</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>추가할인</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br/><br/><br/><!--영약구분-->
+                            <table class="searchOptTbl">
+                                <tr>
+                                    <th class="on">
+                                        카테고리
+                                        <button class="icon-add"></button>
+                                    </th>
+                                    <td class="optCate active">
+                                        <strong>대분류 총 99개의 카테고리</strong>
+                                        <strong>
+                                            <button class="icon-arrow_back"></button>
+                                            <font>네비게이션/하이패스</font>
+                                            <em class="cntCate">511,111</em>
+                                        </strong>
+                                        <div class="optBtns on">
+                                            <button type="button" class="on">
+                                                <span>
+                                                    컴퓨터 주요부품
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button" class="on">
+                                                <span>
+                                                    컴퓨터 주변기기
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    소프트웨어/전산 소모품
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    DSLR/디카/캠코더
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button" class="on">
+                                                <span>
+                                                    디지털 완제품
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    생활가전
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                            <button type="button">
+                                                <span>
+                                                    자동차용품
+                                                    <em class="cntCate">511,111</em>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="on">
+                                        브랜드
+                                        <button class="icon-add"></button>
+                                    </th>
+                                    <td class="optBrd active">
+                                        <div class="optBtns">
+                                            <button type="button" class="on">
+                                                <span>인텔</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>에이수스</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>기가바이트</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>애즈락</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>LG전자</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>HP</span>
+                                            </button>
+                                            <button type="button">
+                                                <span>MSI</span>
+                                            </button>
+                                        </div>
+                                        <div class="brdItems">
+                                            <div class="brdOptCls">
+                                                <button class="icon-check on">상품수순</button>
+                                                <button class="icon-check">가나다순</button>
+                                            </div>
+                                            <div class="brdBtns">
+                                                <button type="button" class="on">
+                                                    <span>인텔</span>
+                                                </button>
+                                                <button type="button">
+                                                    <span>에이수스</span>
+                                                </button>
+                                                <button type="button">
+                                                    <span>기가바이트</span>
+                                                </button>
+                                                <button type="button">
+                                                    <span>애즈락</span>
+                                                </button>
+                                                <button type="button">
+                                                    <span>LG전자</span>
+                                                </button>
+                                                <button type="button">
+                                                    <span>HP</span>
+                                                </button>
+                                                <button type="button">
+                                                    <span>MSI</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
                             <div class="list-body_items_main">
                                 <div class="list-body_items_main_box">
                                     <div class="items_main_box_search">
-                                        <ul class="items_main_box_search_menu">
-                                            <li>
-                                                <span><strong>상품스펙</strong>으로 찾아보기</span>
-                                                <p>제조사 등 원하는 옵션을 선택하여<br />상품을 빠르게 찾을 수 있습니다.</p>
-
-                                                <button type="button" class="btn">
-                                                    <i class="icon-chevron-thin-right"></i>
-                                                    <span>
-                                                        찾아보기<i class="icon-chevron-thin-right"></i>
-                                                    </span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <span><strong>가격</strong>으로 찾아보기</span>
-                                                <p>원하는 가격대의 상품을 빠르게<br />찾을 수 있습니다.</p>
-
-                                                <button type="button" class="btn">
-                                                    <i class="icon-chevron-thin-right"></i>
-                                                    <span>
-                                                        찾아보기<i class="icon-chevron-thin-right"></i>
-                                                    </span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <span><strong>행쇼 표준PC</strong> 구매하기</span>
-                                                <p>엄선된 부품으로 구성된<br />PC를 구매할 수 있습니다.</p>
-
-                                                <button type="button" class="btn">
-                                                    <i class="icon-chevron-thin-right"></i>
-                                                    <span>
-                                                        찾아보기<i class="icon-chevron-thin-right"></i>
-                                                    </span>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                        <!-- 검색 선택 -->
                                         <div class="items_main_box_search_option">
                                             <span class="t">
                                                 <button type="button"><i class="icon-repeat"></i><span class="ir">새로고침</span> 전체해제</button>
@@ -166,7 +371,6 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- // 검색 선택 -->
                                     </div>
                                     <div class="list-body_items_main_box_head">
                                         <!-- <div class="box_tab">
@@ -180,17 +384,10 @@
                                             <button type="button" class="btn">행쇼윈도 <span>37</span></button>
                                             <button type="button" class="btn">중고 <span>1137</span></button>
                                         </div>
-                                        <!-- 검색 -->
+                                        <!-- 검색
                                         <div class="box_search">
-                                            <form>
-                                                <fieldset>
-                                                    <legend><span>페이지내 검색</span></legend>
-                                                    <input type="text" placeholder="리스트 내에 검색하기" title="검색어" class="isearch" />
-                                                    <button type="button" class="btn_isearch"><i class="icon-search"></i><span class="ir">검색</span></button>
-                                                </fieldset>
-                                            </form>
                                         </div>
-                                        <!-- // 검색 -->
+                                        // 검색 -->
                                         <div class="box_sort">
                                             <!-- 정렬 -->
                                             <button type="button" class="btn_sort active"><i class="icon-check"></i> 인기상품순</button>
@@ -221,408 +418,6 @@
                                     <!-- 리스트 -->
                                     <div class="list-body_items_main_box_list type_list">
                                         <h3 class="ir">가격비교</h3>
-
-                                        <div class="adv_items">
-                                            <div class="adv_items_top">
-                                                애드리스트 광고상품입니다. <a href="#" class="btn">광고문의</a>
-                                            </div>
-
-                                            <div class="adv_items_list">
-                                                <!-- item -->
-
-                                                <div class="item-product_conts happytree">
-                                                    <div class="in">
-                                                        <div class="item-product_conts_photo">
-                                                            <div class="thumb">
-                                                                <a href="#"><img src="//img.happyshopping.kr/img_shopping/img_goods/img_964000/img_963934/300.jpg" alt="상품이름"></a>
-
-                                                                <button type="button" class="btn-happytree"><span class="ir">해피트리</span></button>
-                                                            </div>
-
-                                                            <span class="best_buy_item"><i class="icon-hand_like"></i> 최근 구매가 많은 상품</span>
-                                                        </div>
-                                                        <div class="item-product_conts_box search">
-                                                            <div class="item-product_conts_box_top">
-                                                                <span class="mark-hit"><em>HIT</em>99</span>
-                                                                <span class="mark-event"><a href="#">이벤트</a></span>
-                                                                <span class="mark-hotdeal"><a href="#">행복핫딜</a></span>
-                                                            </div>
-                                                            <strong class="name"><a href="#">인텔 코어i7-7세대 7700 (카비레이크) (정품) 인텔 코어i7-7세대 7700 (카비레이크) (정품) 인텔 코어i7-7세대 7700 (카비레이크) (정품)</a></strong>
-                                                            <strong class="lowprice">
-                                                                최저 <em>212,000</em>원 <span>판매처 344</span>
-                                                            </strong>
-                                                            <div class="open_market">
-                                                                <strong class="logo">
-                                                                    <img src="//img.happyshopping.kr/img_static/img_pres/_v3/dummy_canon.png" alt="Canon">
-                                                                </strong>
-                                                                <ul>
-                                                                    <li class="active"><a href="">
-                                                                        <strong>G마켓</strong>
-                                                                        <span class="price">
-                                                                            <i class="icon-low"></i>
-                                                                            <em>212,000</em>
-                                                                        </span>
-                                                                    </a></li>
-                                                                    <li><a href="">
-                                                                        <strong>옥션</strong>
-                                                                        <span class="price">
-                                                                            <i class="icon-low"></i>
-                                                                            <em>232,000</em>
-                                                                        </span>
-                                                                    </a></li>
-                                                                    <li><a href="">
-                                                                        <strong>11번가</strong>
-                                                                        <span class="price">
-                                                                            <i class="icon-low"></i>
-                                                                            <em>252,000</em>
-                                                                        </span>
-                                                                    </a></li>
-                                                                    <li><a href="">
-                                                                        <strong>인터파크</strong>
-                                                                        <span class="price">
-                                                                            <i class="icon-low"></i>
-                                                                            <em>262,000</em>
-                                                                        </span>
-                                                                    </a></li>
-                                                                    <li><a href="">
-                                                                        <strong>모아카메라</strong>
-                                                                        <span class="price">
-                                                                            <i class="icon-low"></i>
-                                                                            <em>272,000</em>
-                                                                        </span>
-                                                                    </a></li>
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="item-product_conts_box_main">
-                                                                <div class="cate_location">
-                                                                    컴퓨터 주요부품 &gt; CPU
-                                                                </div>
-
-                                                                <div class="speclist">
-                                                                    <!-- 선택시 해당 지원 상품만 -->
-                                                                    <span>백라이트 지원</span>
-                                                                    <span>등시야각 지원</span>
-                                                                    <span>SSD 256GB</span>
-                                                                    <span>운영체제 미포함</span>
-                                                                    <span>1Gbps 유선</span>
-                                                                    <span>802.11 n/ac</span>
-                                                                    <span>HDMI 지원</span>
-                                                                    <span>인텔</span>
-                                                                    <span>등캠 지원</span>
-                                                                    <span>USB 3.0 Type-C 지원</span>
-                                                                    <span class="active">USB 3.0 지원</span>
-                                                                    <span>멀티 리더기 지원</span>
-                                                                    <span>아이솔레이션</span>
-                                                                    <span>키보드 등라이트 지원</span>
-                                                                    <span>8GB</span>
-                                                                </div>
-
-                                                                <div class="related_info search">
-                                                                    <strong>행쇼 TIP. 회원가입하면 5% 할인 이벤트</strong>
-                                                                    <dl>
-                                                                        <dt>이벤트&amp;기획전 <span>10</span></dt>
-                                                                        <dd>
-                                                                            <ul>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월) </a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                            </ul>
-
-                                                                            <button type="button" class="btn_list_more"><i class="icon-add"></i><span class="ir">열기</span></button>
-                                                                        </dd>
-                                                                    </dl>
-
-                                                                    <dl>
-                                                                        <dt>미디엄 뉴스 <span>10</span></dt>
-                                                                        <dd>
-                                                                            <!-- open 열림 -->
-                                                                            <ul class="open">
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월) 효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월) 효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                            </ul>
-
-                                                                            <button type="button" class="btn_list_more"><i class="icon-remove"></i><span class="ir">닫기</span></button>
-                                                                        </dd>
-                                                                    </dl>
-
-                                                                    <dl>
-                                                                        <dt>전문가 리뷰</dt>
-                                                                        <dd>
-                                                                            <ul>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                            </ul>
-                                                                        </dd>
-                                                                    </dl>
-                                                                </div>
-
-                                                                <div class="item-product_conts_box_main_bot">
-                                                                    <ul>
-                                                                        <li class="cell_grade">
-                                                                            <div class="product_grade">
-                                                                                <span class="t">상품평</span>
-                                                                                <span class="star">
-                                                                                    <span class="star_grade" style="width:50%">
-                                                                                        <span class="star_grade_point"><em>5</em></span>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li class="cell_date">등록일 2017.05</li>
-                                                                        <li>
-                                                                            <button type="button" class="btn_item_fork">
-                                                                                <i class="icon-favorite_border"></i> 찜하기 <span class="cnt">2</span></button>
-                                                                        </li>
-                                                                        <li>
-                                                                            <button type="button" class="btn_item_report">신고하기</button>
-                                                                        </li>
-                                                                        <li><img src="//img.happyshopping.kr/img_static/img_pres/_v3/icon_medium.png" alt="medium" class="icon_medium"> 미디엄 <span class="cnt">25</span></li>
-                                                                    </ul>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="box">
-                                                            <ul>
-                                                                <li>
-                                                                    <strong>정품</strong>
-                                                                    <span class="price">500,000원</span>
-                                                                    <span class="quantity">180개</span>
-                                                                </li>
-                                                                <li>
-                                                                    <strong>본체 + 40mm, 18-55mm</strong>
-                                                                    <span class="price">2,900,000원</span>
-                                                                    <span class="quantity">999개</span>
-                                                                </li>
-                                                                <li>
-                                                                    <strong>벌크</strong>
-                                                                    <span class="price">500,000원</span>
-                                                                    <span class="quantity">180개</span>
-                                                                </li>
-                                                                <li>
-                                                                    <strong>벌크벌크</strong>
-                                                                    <span class="price">500,000원</span>
-                                                                    <span class="quantity">180개</span>
-                                                                </li>
-                                                                <li>
-                                                                    <strong>본체 + 18-135mm</strong>
-                                                                    <span class="price">500,000원</span>
-                                                                    <span class="quantity">180개</span>
-                                                                </li>
-                                                                <li>
-                                                                    <strong>정품</strong>
-                                                                    <span class="price">590,000원</span>
-                                                                    <span class="quantity">180개</span>
-                                                                </li>
-                                                            </ul>
-                                                            <button type="button" class="more icon-control_point"><span class="ir">접기</span></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- // item -->
-                                                <div class="item-product_conts happytree">
-                                                    <div class="in">
-                                                        <div class="item-product_conts_photo">
-                                                            <div class="thumb">
-                                                                <a href="#"><img src="//img.happyshopping.kr/img_shopping/img_goods/img_4911000/img_4910618/200.jpg" alt="상품이름"></a>
-
-                                                                <button type="button" class="btn-happytree"><span class="ir">해피트리</span></button>
-                                                            </div>
-
-                                                            <span class="best_buy_item"><i class="icon-hand_like"></i> 최근 구매가 많은 상품</span>
-                                                        </div>
-                                                        <div class="item-product_conts_box search">
-                                                            <div class="item-product_conts_box_top">
-                                                                <span class="mark-hit"><em>HIT</em>99</span>
-                                                                <span class="mark-event"><a href="#">이벤트</a></span>
-                                                                <span class="mark-hotdeal"><a href="#">행복핫딜</a></span>
-                                                            </div>
-                                                            <strong class="name"><a href="#">인텔 코어i7-7세대 7700 (카비레이크) (정품) 인텔 코어i7-7세대 7700 (카비레이크) (정품) 인텔 코어i7-7세대 7700 (카비레이크) (정품)</a></strong>
-                                                            <strong class="lowprice">
-                                                                최저 <em>212,000</em>원 <span>판매처 344</span>
-                                                            </strong>
-                                                            <div class="open_market">
-                                                                <strong class="logo">
-                                                                    <img src="//img.happyshopping.kr/img_static/img_pres/_v3/dummy_canon.png" alt="Canon">
-                                                                </strong>
-                                                                <ul>
-                                                                    <li class="active"><a href="">
-                                                                        <strong>G마켓</strong>
-                                                                        <span class="price">
-                                                                            <i class="icon-low"></i>
-                                                                            <em>212,000</em>
-                                                                        </span>
-                                                                    </a></li>
-                                                                    <li><a href="">
-                                                                        <strong>옥션</strong>
-                                                                        <span class="price">
-                                                                            <i class="icon-low"></i>
-                                                                            <em>232,000</em>
-                                                                        </span>
-                                                                    </a></li>
-                                                                    <li><a href="">
-                                                                        <strong>11번가</strong>
-                                                                        <span class="price">
-                                                                            <i class="icon-low"></i>
-                                                                            <em>252,000</em>
-                                                                        </span>
-                                                                    </a></li>
-                                                                    <li><a href="">
-                                                                        <strong>인터파크</strong>
-                                                                        <span class="price">
-                                                                            <i class="icon-low"></i>
-                                                                            <em>262,000</em>
-                                                                        </span>
-                                                                    </a></li>
-                                                                    <li><a href="">
-                                                                        <strong>모아카메라</strong>
-                                                                        <span class="price">
-                                                                            <i class="icon-low"></i>
-                                                                            <em>272,000</em>
-                                                                        </span>
-                                                                    </a></li>
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="item-product_conts_box_main">
-                                                                <div class="cate_location">
-                                                                    컴퓨터 주요부품 &gt; CPU
-                                                                </div>
-
-                                                                <div class="speclist">
-                                                                    <!-- 선택시 해당 지원 상품만 -->
-                                                                    <span>백라이트 지원</span>
-                                                                    <span>등시야각 지원</span>
-                                                                    <span>SSD 256GB</span>
-                                                                    <span>운영체제 미포함</span>
-                                                                    <span>1Gbps 유선</span>
-                                                                    <span>802.11 n/ac</span>
-                                                                    <span>HDMI 지원</span>
-                                                                    <span>인텔</span>
-                                                                    <span>등캠 지원</span>
-                                                                    <span>USB 3.0 Type-C 지원</span>
-                                                                    <span class="active">USB 3.0 지원</span>
-                                                                    <span>멀티 리더기 지원</span>
-                                                                    <span>아이솔레이션</span>
-                                                                    <span>키보드 등라이트 지원</span>
-                                                                    <span>8GB</span>
-                                                                </div>
-
-                                                                <div class="related_info search">
-                                                                    <strong>행쇼 TIP. 회원가입하면 5% 할인 이벤트</strong>
-                                                                    <dl>
-                                                                        <dt>이벤트&amp;기획전 <span>10</span></dt>
-                                                                        <dd>
-                                                                            <ul>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월) </a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                            </ul>
-
-                                                                            <button type="button" class="btn_list_more"><i class="icon-add"></i><span class="ir">열기</span></button>
-                                                                        </dd>
-                                                                    </dl>
-
-                                                                    <dl>
-                                                                        <dt>미디엄 뉴스 <span>10</span></dt>
-                                                                        <dd>
-                                                                            <!-- open 열림 -->
-                                                                            <ul class="open">
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월) 효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월) 효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                            </ul>
-
-                                                                            <button type="button" class="btn_list_more"><i class="icon-remove"></i><span class="ir">닫기</span></button>
-                                                                        </dd>
-                                                                    </dl>
-
-                                                                    <dl>
-                                                                        <dt>전문가 리뷰</dt>
-                                                                        <dd>
-                                                                            <ul>
-                                                                                <li><a href="#">효율만점 워크스테이션급 행쇼 표준PC+27형 모니터 (7월)</a></li>
-                                                                            </ul>
-                                                                        </dd>
-                                                                    </dl>
-                                                                </div>
-
-                                                                <div class="item-product_conts_box_main_bot">
-                                                                    <ul>
-                                                                        <li class="cell_grade">
-                                                                            <div class="product_grade">
-                                                                                <span class="t">상품평</span>
-                                                                                <span class="star">
-                                                                                    <span class="star_grade" style="width:50%">
-                                                                                        <span class="star_grade_point"><em>5</em></span>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li class="cell_date">등록일 2017.05</li>
-                                                                        <li>
-                                                                            <button type="button" class="btn_item_fork active">
-                                                                                <i class="icon-favorite_border"></i> 찜하기 <span class="cnt">8</span></button>
-                                                                        </li>
-                                                                        <li>
-                                                                            <button type="button" class="btn_item_report">신고하기</button>
-                                                                        </li>
-                                                                        <li><img src="//img.happyshopping.kr/img_static/img_pres/_v3/icon_medium.png" alt="medium" class="icon_medium"> 미디엄 <span class="cnt">25</span></li>
-                                                                    </ul>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="box">
-                                                            <ul>
-                                                                <li>
-                                                                    <strong>정품</strong>
-                                                                    <span class="price">500,000원</span>
-                                                                    <span class="quantity">180개</span>
-                                                                </li>
-                                                                <li>
-                                                                    <strong>본체 + 40mm, 18-55mm</strong>
-                                                                    <span class="price">2,900,000원</span>
-                                                                    <span class="quantity">999개</span>
-                                                                </li>
-                                                                <li>
-                                                                    <strong>벌크</strong>
-                                                                    <span class="price">500,000원</span>
-                                                                    <span class="quantity">180개</span>
-                                                                </li>
-                                                                <li>
-                                                                    <strong>벌크벌크</strong>
-                                                                    <span class="price">500,000원</span>
-                                                                    <span class="quantity">180개</span>
-                                                                </li>
-                                                                <li>
-                                                                    <strong>본체 + 18-135mm</strong>
-                                                                    <span class="price">500,000원</span>
-                                                                    <span class="quantity">180개</span>
-                                                                </li>
-                                                                <li>
-                                                                    <strong>정품</strong>
-                                                                    <span class="price">590,000원</span>
-                                                                    <span class="quantity">180개</span>
-                                                                </li>
-                                                            </ul>
-                                                            <button type="button" class="more icon-control_point"><span class="ir">접기</span></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- 3개씩 노출 -->
-                                            <button type="button" class="btn_adv_items"><i class="icon-angle-down"></i><span class="ir">더보기</span></button>
-
-                                            <button type="button" class="btn_adv_items"><i class="icon-angle-up"></i><span class="ir">접기</span></button>
-                                        </div>
-
                                         <div class="normal_items">
                                             <div class="item-product_conts">
                                                 <div class="in">
@@ -816,19 +611,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <!-- 광고 -->
-                                            <div class="item-product_conts except">
-                                                <div class="adv-itembox">
-                                                    <div class="adv-itembox_top">
-                                                        <strong>애드리스트</strong> 광고상품입니다. <a href="#" class="btn">광고문의</a>
-                                                    </div>
-                                                    <div class="adv-itembox_conts">
-                                                        <embed type="text/html" src="//img.happyshopping.kr/img_ad/dp_est_main_b/img_2936/img_1/" class="adv-itembox_conts_frame" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- // 광고 -->
                                         </div>
                                     </div>
                                     <!-- // 리스트 -->
