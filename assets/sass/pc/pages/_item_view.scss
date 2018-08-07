@@ -1374,7 +1374,7 @@
 			}
 
 			.main-view_info_body {
-				margin-top: 40px;
+				margin-top: 20px;
 
 				#priceCompare,
 				#productInfo,
@@ -1390,6 +1390,9 @@
 
 				// 가격비교
 				.main-view_info_body_compare {
+					>div{
+						margin-top:20px;
+					}
 					@include clear;
 
 					.main-view_info_body_compare_lft {

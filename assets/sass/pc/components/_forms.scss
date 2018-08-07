@@ -178,7 +178,7 @@
 }
 
 .icheck input:checked + label {
-	@include loadIcon($icon-done);
+	@include loadIcon('\e911');
 
 	&:before {
 		border-color: $base_color3;
