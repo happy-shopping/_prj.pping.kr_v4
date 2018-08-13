@@ -165,7 +165,6 @@
 				padding:10px 0;
 				line-height: 1.5;
 				a{
-					@include truncate2;
 					strong{
 						font-size:14px;
 						color:$point_color1;
