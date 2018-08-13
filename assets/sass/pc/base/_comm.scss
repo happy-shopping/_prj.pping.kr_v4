@@ -4663,7 +4663,9 @@ main > section{
     .MdmNews p a:hover {
         text-decoration: underline;
     }
-    .aside-medium_box .aside-medium_box_cate .tit-h4 span img{
+    .aside-medium_box img{
         border-radius: 50%;
+        vertical-align: -4px;
+        margin-right:2px;
     }
 }
