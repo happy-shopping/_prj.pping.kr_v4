@@ -1179,13 +1179,15 @@
 
 				// 큐레이션
 				.list-body_items_main_box_curation {
+					img{
+						max-width:100%;
+					}
 					.curation_head {
 						padding: 41px 0 0 0;
 						background: url("//img.happyshopping.kr/img_static/img_pres/_v3/bg_estimate_curation_head.png") no-repeat 95% 10px;
 						@include box-sizing();
 
 						.curation_tab {
-							height: 50px;
 							margin-top: 30px;
 							font-size: 0;
 
@@ -1220,6 +1222,7 @@
 							&.tab3 {
 								.btn {
 									width: calc((100% / 3) + 0.5px);
+									margin-bottom:-1px;
 								}
 							}
 
