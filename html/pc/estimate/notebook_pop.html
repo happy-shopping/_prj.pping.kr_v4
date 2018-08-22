@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/forms.css" />
     <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/layers.css" />
     <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/minishop.css" />
+    <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/pc/event.css" />
     <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/common/header.css?ver=1.111" />
     <link rel="stylesheet" href="//ajax.pping.kr/_v4/css/common/footer.css" />
 
@@ -45,28 +46,29 @@
     <link rel="stylesheet" href="../../../assets/css/pc/adv.css" />
     <link rel="stylesheet" href="../../../assets/css/pc/list.css" />
     <link rel="stylesheet" href="../../../assets/css/pc/estimate.css?ver=1.112" />
-
+    <script>
+    function bookmark(){
+        var agent = navigator.userAgent.toLowerCase();
+        if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+            window.external.AddFavorite('https://www.pping.kr/', '쇼핑 큐레이션 · 행복쇼핑');
+        }else{
+            alert("Ctrl + D 키를 눌러 즐겨찾기에 등록하실 수 있습니다.");
+        }
+    }
+    </script>
 </head>
 
 <body>
 <div id="wrap">
-    <div class="noteBookPop">
-        <div class="ntPopCon">
-            <img src="//img.happyshopping.kr/img_static/img/popup/notebook_pop.png" alt="노트북 싸게 잘사는 행복쇼핑만의 TIP"/>
-            <p>
-                <button class="addFavSite">즐겨찾기 추가</button>
-            </p>
-            <div class="bottomBar">
-                <span class="icheck">
-                    <input type="checkbox" id="todayNo">
-                    <label for="todayNo">
-                        <span>오늘하루 보지않기</span>
-                    </label>
-                </span>
-                <button class="closeNpop">닫기 <i class="icon-X_close"></i></button>
+    <table id="lyrPop" class="bgdark">
+        <tbody><tr><td>
+            <div class="noteBookPop">
+                <img src="//img.happyshopping.kr/img_static/img/popup/notebook_pop.png" alt="노트북 싸게 잘사는 행복쇼핑만의 TIP"/>
+                <button class="addFavSite" onclick="bookmark()">즐겨찾기 추가 <i class="icon-chevron-right"></i></button>
+                <button class="icon-X_close" onclick="$('#lyrPop').hide()"></button>
             </div>
-        </div>
-    </div>
+        </td></tr></tbody>
+    </table>
     <!-- container -->
     <div id="container">
         <section class="list-body">
