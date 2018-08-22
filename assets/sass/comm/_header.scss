@@ -1,6 +1,9 @@
 @charset "utf-8";
 #header {
     border-bottom: 2px solid $point_color1;
+    &.noBline{
+        border-bottom: 0;
+    }
     .header-body {
         position: relative;
         z-index: 100;
