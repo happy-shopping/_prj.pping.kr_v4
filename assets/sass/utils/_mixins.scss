@@ -19,7 +19,7 @@ $responsive_break_minwidth: 350px;
 $size320: '(max-width: 320px)';
 $size480: '(max-width: 480px)';
 $size640: '(min-width: 481px)';
-$size960: '(min-width: 961px)';
+$size900: '(max-width: 900px)';
 
 @mixin respond-to($media) {
 	@media only screen and #{$media} {

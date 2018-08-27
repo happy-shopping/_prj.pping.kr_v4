@@ -23,20 +23,23 @@ html body{
     background: rgba(255,255,255,0.5);
     z-index: 220;
     text-align: center;
+	@include respond-to($size900) {
+        display:block;
+    }
     &.bgdark{
         background: rgba(0,0,0,0.6);
     }
 }
 .noteBookPop{ // 외부링크로 들어오는경우 노출되는 팝업
-	min-width: 950px;
+	width: 950px;
 	display:inline-block;
 	position: relative;
-	padding:0 10px;
+	@include respond-to($size900) {
+        width:930px;
+		padding:10px;
+    }
 	img{
 		max-width: 100%;
-		height: 100vh;
-		max-height: 802px;
-		min-height: 640px;
 	}
 	button{
 		position: absolute;
