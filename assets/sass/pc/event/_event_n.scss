@@ -31,11 +31,11 @@ html body{
     }
 }
 .noteBookPop{ // 외부링크로 들어오는경우 노출되는 팝업
-	width: 950px;
+	max-width: 950px;
 	display:inline-block;
 	position: relative;
 	@include respond-to($size900) {
-        width:930px;
+        max-width:930px;
 		padding:10px;
     }
 	img{
@@ -65,5 +65,14 @@ html body{
 		right:30px;
 		font-size:30px;
 		font-weight:bold;
+	}
+	.closeBtn{
+		margin: -100px auto 0;
+	    border: 1px solid #fff;
+	    padding: 7px 15px;
+	    font-size: 30px;
+	    width: 90px;
+	    position: relative;
+	    display: block;
 	}
 }
