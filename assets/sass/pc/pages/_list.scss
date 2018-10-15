@@ -15,7 +15,6 @@
 
 	.list-body_items {
 		position: relative;
-		padding-top: 42px;
 		&.openMarket{
 			padding-top:0;
 			.items_main_box_search_menu{
@@ -234,11 +233,6 @@
 
 			}
 
-		}
-
-		// 중간 광고
-		.list-body_items_adv {
-			margin-top: 40px;
 		}
 
 		.list-body_items_main {
@@ -684,7 +678,6 @@
 						background: url("//img.happyshopping.kr/img_static/img_pres/_v3/bg_estimate_mediumguide_head.png") no-repeat 97% 100%;
 						@include box-sizing();
 					}
-
 					.mediumguide_main {
 						.mediumguide_main_box {
 							position: relative;
@@ -1362,7 +1355,10 @@
 			}
 
 		}
-
+		fieldset.estiList{
+			padding-top:42px;
+			margin-bottom:40px;
+		}
 		// 브랜드
 		&.brand_items {
 			.list-body_items_brand {
@@ -1506,7 +1502,6 @@
 		}
 	}
 }
-
 // 찾아보기
 .items_main_box_search {
 	.items_main_box_search_menu {
@@ -1590,7 +1585,6 @@
 			}
 		}
 	}
-
 	.items_main_box_search_option {
 		overflow: hidden;
 		margin-top: 30px;
@@ -1598,7 +1592,6 @@
 		border: 1px solid #d3d3d3;
 		background: #f7f7fa;
 		@include clear;
-
 		.t {
 			float: left;
 			margin-right: 10px;

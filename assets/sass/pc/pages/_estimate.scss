@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+#header{// v4,v5 중복 스타일 임시 처리
+    border-bottom:0;
+}
 .estimate-body {
     padding-bottom: 100px;
     line-height: 1;
@@ -798,7 +800,6 @@
             border:1px solid $point_color1;
             border-top:0;
             padding:10px;
-            min-height: 162px;
             .TopBanPointItem a.TBItemLink{
                 display:block;
                 color:#fff;
@@ -816,7 +817,9 @@
                 }
             }
             .TBItemList{
-                padding:5px 0 6px;
+                padding: 10px 0 0;
+                height: 120px;
+                overflow: hidden;
                 .TBItem{
                     display:table;
                     font-size:13px;
@@ -894,7 +897,7 @@
                                 font-size:15px;
                             }
                         }
-                        .btn-add-to{
+                        [class^="btn-"]{
                             width:22px;
                             @include txtVer1Li(22);
                         }
