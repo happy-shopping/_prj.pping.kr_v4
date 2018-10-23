@@ -27,6 +27,123 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-coin:before {
+  content: "\e9ad";
+}
+.icon-zap:before {
+  content: "\e9ae";
+}
+.icon-credit-card1:before {
+  content: "\e9af";
+}
+.icon-clipboard1:before {
+  content: "\e9b0";
+}
+.icon-bubble-dots:before {
+  content: "\e9b1";
+}
+.icon-bubble-text:before {
+  content: "\e9b2";
+}
+.icon--:before {
+  content: "\e9b3";
+}
+.icon-lock-stroke:before {
+  content: "\e9b4";
+}
+.icon-edit-3:before {
+  content: "\e9b5";
+}
+.icon-book-open:before {
+  content: "\e9b6";
+}
+.icon-box1:before {
+  content: "\e9b7";
+}
+.icon-X_close1:before {
+  content: "\e9b8";
+}
+.icon-view_list:before {
+  content: "\e9b9";
+}
+.icon-stars:before {
+  content: "\e9ba";
+}
+.icon-typing1:before {
+  content: "\e9bb";
+}
+.icon-image-inverted:before {
+  content: "\e9bc";
+}
+.icon-shopping-bag:before {
+  content: "\e9bd";
+}
+.icon-drive:before {
+  content: "\e9be";
+}
+.icon-pie-chart:before {
+  content: "\e9bf";
+}
+.icon-folder:before {
+  content: "\e9c0";
+}
+.icon-layers:before {
+  content: "\e9c1";
+}
+.icon-user21:before {
+  content: "\e9c2";
+}
+.icon-share1:before {
+  content: "\e9c3";
+}
+.icon-chevron01:before {
+  content: "\e9c4";
+}
+.icon-chevron011:before {
+  content: "\e9c5";
+}
+.icon-notifications:before {
+  content: "\e9c6";
+}
+.icon-line:before {
+  content: "\e9c7";
+}
+.icon-o_pause:before {
+  content: "\e9a9";
+}
+.icon-o_play:before {
+  content: "\e9aa";
+}
+.icon-redo2:before {
+  content: "\e9a2";
+}
+.icon-cog:before {
+  content: "\e999";
+}
+.icon-bubble:before {
+  content: "\e995";
+}
+.icon-pencil:before {
+  content: "\e996";
+}
+.icon-picture:before {
+  content: "\e998";
+}
+.icon-page:before {
+  content: "\e966";
+}
+.icon-alarm:before {
+  content: "\e967";
+}
+.icon-add:before {
+  content: "\e956";
+}
+.icon-calendar:before {
+  content: "\e90a";
+}
+.icon-gear:before {
+  content: "\e963";
+}
 .icon-truck-o:before {
   content: "\e997";
 }
@@ -44,6 +161,9 @@
 }
 .icon-d_menu_5:before {
   content: "\e954";
+}
+.icon-d_menu_6:before {
+  content: "\e9c8";
 }
 .icon-d_menu_7:before {
   content: "\e9a3";
@@ -119,7 +239,7 @@
   content: "\e98c";
   color: rgb(254, 110, 15);
 }
-.icon-Ndot:after{
+.icon-Ndot:after {
   content: "\e98d";
   margin-left: -0.857421875em;
   color: rgb(255, 255, 255);
@@ -132,6 +252,12 @@
 }
 .icon-down_arrow:before {
   content: "\e983";
+}
+.icon-right_arrow:before {
+  content: "\e9ab";
+}
+.icon-left_arrow:before {
+  content: "\e9ac";
 }
 .icon-up_arrow:before {
   content: "\e988";
@@ -244,9 +370,6 @@
 }
 .icon-man:before {
   content: "\e962";
-}
-.icon-gear:before {
-  content: "\e963";
 }
 .icon-building:before {
   content: "\e964";
@@ -395,9 +518,6 @@
 .icon-arrow-up:before {
   content: "\e909";
 }
-.icon-calendar:before {
-  content: "\e90a";
-}
 .icon-caret-down:before {
   content: "\e90b";
 }
@@ -524,35 +644,6 @@
 .icon-favorite_heart:before {
   content: "\e990";
 }
-.icon-redo2:before {
-  content: "\e9a2";
-}
-.icon-cog:before {
-  content: "\e999";
-}
-.icon-bubble:before {
-  content: "\e995";
-}
-.icon-pencil:before {
-  content: "\e996";
-}
-.icon-picture:before {
-  content: "\e998";
-}
-.icon-page:before {
-  content: "\e966";
-}
-.icon-alarm:before {
-  content: "\e967";
-}
-.icon-add:before {
-  content: "\e956";
-}
 .icon-bell:before {
   content: "\e968";
-}
-//임시 아이콘 헤더 브랜드 순위에 사용됩니다.
-.icon-new:before {
-  content: "NEW";
-  font-size:0.7em;
 }

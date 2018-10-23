@@ -17,21 +17,6 @@
 		position: relative;
 		&.openMarket{
 			padding-top:0;
-			.items_main_box_search_menu{
-				width: 950px;
-			    height: 94px;
-			    overflow: hidden;
-			    margin-left: -60px;
-				margin-bottom: 30px;
-				li{
-					width: calc((100% - 16px) / 2);
-					p{
-						br{
-							display:none;
-						}
-					}
-				}
-			}
 			.list-body_items_main{
 				.lnb_cates{
 					top:124px;
@@ -163,7 +148,7 @@
 		}
 
 		.cart-body_compare_other {
-			margin-top: 30px;
+			margin: 30px 0 40px;
 			border-top: 1px solid #e8e7ea;
 
 			ul {
@@ -1312,12 +1297,8 @@
 
 		// 견적 공유
 		.list-body_items_share {
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
 			text-align: right;
-
+			margin-bottom:5px;
 			.in {
 				font-size: 0;
 
@@ -1354,10 +1335,6 @@
 
 			}
 
-		}
-		fieldset.estiList{
-			padding-top:42px;
-			margin-bottom:40px;
 		}
 		// 브랜드
 		&.brand_items {
@@ -1504,8 +1481,24 @@
 }
 // 찾아보기
 .items_main_box_search {
+	margin-top:20px;
 	.items_main_box_search_menu {
 		@include clear;
+		&.twoMode{
+			// margin-left: -60px;
+			// width: 950px;
+			height: 100px;
+			overflow: hidden;
+			margin-bottom: 10px;
+			li{
+				width: calc((100% - 16px) / 2);
+				p{
+					br{
+						display:none;
+					}
+				}
+			}
+		}
 
 		li {
 			position: relative;
@@ -1587,7 +1580,7 @@
 	}
 	.items_main_box_search_option {
 		overflow: hidden;
-		margin-top: 30px;
+		margin-top: 10px;
 		padding: 15px 20px;
 		border: 1px solid #d3d3d3;
 		background: #f7f7fa;
@@ -1885,4 +1878,50 @@
 
 .mainList4{
 	margin-top:30px;
+}
+.noteBookPop{ // 외부링크로 들어오는경우 노출되는 팝업
+	max-width: 950px;
+	display:inline-block;
+	position: relative;
+	@include respond-to($size900) {
+        max-width:930px;
+		padding:10px;
+    }
+	img{
+		max-width: 100%;
+	}
+	button{
+		position: absolute;
+		color:#fff;
+		&:hover{
+			border-color:$point_color1_over;
+			color:$point_color1_over;
+		}
+	}
+	.addFavSite{
+		height:30px;
+		width:140px;
+		border:1px solid #ccccff;
+		font-size:14px;
+		bottom:40px;
+		right:50px;
+		i{
+			vertical-align: -2px;
+		}
+	}
+	.icon-X_close{
+		top:20px;
+		right:30px;
+		font-size:30px;
+		font-weight:bold;
+	}
+	.closeBtn{
+		margin: -100px auto 0;
+	    border: 1px solid #fff;
+	    padding: 7px 15px;
+	    font-size: 30px;
+	    width: 90px;
+	    position: relative;
+	    display: block;
+	}
 }
