@@ -5,7 +5,7 @@
 	content: "";
 	position: absolute;
 	@include size(7px);
-	background: url('//img.happyshopping.kr/img_static/img_mobile/admin/comm/ico_reddot.png') no-repeat 0 0;
+	background: url('//cdnimg.happyshopping.kr/img_static/img_mobile/admin/comm/ico_reddot.png') no-repeat 0 0;
 	background-size: 7px 7px;
 }
 
@@ -29,7 +29,7 @@
 .btn_exel_dn {
 	padding: 0 10px 0 31px;
 	font-size: 12px;
-	background: url('//img.happyshopping.kr/img_static/img_mobile/admin/comm/icon_exel.png') no-repeat 11px 50%;
+	background: url('//cdnimg.happyshopping.kr/img_static/img_mobile/admin/comm/icon_exel.png') no-repeat 11px 50%;
 	background-size: 15px 15px;
 	letter-spacing: 0;
 	@include btn(null, 30px, 0, #fff, #1f7246);
@@ -384,7 +384,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: url('//img.happyshopping.kr/img_static/img_mobile/admin/comm/icon_checkbox.png') no-repeat 50% 50%;
+	background: url('//cdnimg.happyshopping.kr/img_static/img_mobile/admin/comm/icon_checkbox.png') no-repeat 50% 50%;
 	@include size(18px);
 }
 
@@ -497,7 +497,7 @@
 		display: none;
 		margin-left: -1px;
 		@include btn(30px, 30px, 1px solid $base_color3, $base_color3);
-		background: #e8e7ea url("//img.happyshopping.kr/img_static/img_mobile/admin/comm/ico_cal.png") no-repeat 50% 50%;
+		background: #e8e7ea url("//cdnimg.happyshopping.kr/img_static/img_mobile/admin/comm/ico_cal.png") no-repeat 50% 50%;
 	}
 
 	@include respond-to($desktop) {

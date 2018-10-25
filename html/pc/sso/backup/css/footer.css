@@ -85,7 +85,7 @@
         width: 136px;
         height: 50px;
         margin: 10px 29px 0 0;
-        background: url("https://img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -192px -92px; }
+        background: url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -192px -92px; }
       #footer .footer-body .footer-body_conts .footer-body_conts_info {
         overflow: hidden; }
         #footer .footer-body .footer-body_conts .footer-body_conts_info > ul > li {
@@ -221,7 +221,7 @@
             position: absolute;
             right: 0;
             top: 1.5px;
-            background: url("https://img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -167px -70px;
+            background: url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -167px -70px;
             width: 95px;
             height: 15px; }
         #footer .footer-body .footer-body_aside .sgi dd {
@@ -270,7 +270,7 @@
             width: 81px;
             height: 74px;
             margin: 10px auto 0;
-            background: url("https://img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -76px -70px; }
+            background: url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -76px -70px; }
         #footer .footer-body .footer-body_aside .escrow dd {
           overflow: hidden;
           position: relative;
@@ -286,7 +286,7 @@
             display: block;
             width: 61px;
             height: 126px;
-            background: url("https://img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -5px -5px; }
+            background: url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -5px -5px; }
           #footer .footer-body .footer-body_aside .escrow dd strong {
             color: #0f4f9f; }
           @media (max-width: 1209px) {
@@ -316,7 +316,7 @@
   width: 890px;
   padding: 20px;
   border: 2px solid #418ded;
-  background: #fff url("https://img.happyshopping.kr/img_static/img_pres/_v3/bg_pop_ars_top.png") no-repeat 0 0;
+  background: #fff url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/bg_pop_ars_top.png") no-repeat 0 0;
   box-shadow: #d3d3d3 3px 3px 3px; }
   .layer-pop-ars .pop-ars_body {
     text-align: center;
@@ -336,7 +336,7 @@
       margin-right: 10px;
       font-size: 26px;
       color: #0f4f9f;
-      background: url("https://img.happyshopping.kr/img_static/img_pres/_v3/bg_pop_ars_guide.png") no-repeat 50% 150px; }
+      background: url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/bg_pop_ars_guide.png") no-repeat 50% 150px; }
       .layer-pop-ars .pop-ars_body .pop-ars_body_guide p {
         margin-top: 20px;
         font-size: 14px;

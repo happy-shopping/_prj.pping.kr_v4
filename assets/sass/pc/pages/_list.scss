@@ -645,7 +645,7 @@
 				.list-body_items_main_box_mediumguide {
 					&.mnews{
 						.mediumguide_head {
-							background-image: url("//img.happyshopping.kr/img_static/img_pres/_v3/bg_estimate_mediumnews_head.png");
+							background-image: url("//cdnimg.happyshopping.kr/img_static/img_pres/_v3/bg_estimate_mediumnews_head.png");
 						}
 						.mediumguide_contents{
 							margin-top:30px;
@@ -660,7 +660,7 @@
 					.mediumguide_head {
 						height: 156px;
 						padding: 42px 0 0 13px;
-						background: url("//img.happyshopping.kr/img_static/img_pres/_v3/bg_estimate_mediumguide_head.png") no-repeat 97% 100%;
+						background: url("//cdnimg.happyshopping.kr/img_static/img_pres/_v3/bg_estimate_mediumguide_head.png") no-repeat 97% 100%;
 						@include box-sizing();
 					}
 					.mediumguide_main {
@@ -1162,7 +1162,7 @@
 					}
 					.curation_head {
 						padding: 41px 0 0 0;
-						background: url("//img.happyshopping.kr/img_static/img_pres/_v3/bg_estimate_curation_head.png") no-repeat 95% 10px;
+						background: url("//cdnimg.happyshopping.kr/img_static/img_pres/_v3/bg_estimate_curation_head.png") no-repeat 95% 10px;
 						@include box-sizing();
 
 						.curation_tab {
@@ -1383,7 +1383,7 @@
 					}
 
 					&.naverblog {
-						background: url("//img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -779px -415px;
+						background: url("//cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -779px -415px;
 
 						&:hover {
 							background-position: -779px -473px;
@@ -1391,7 +1391,7 @@
 					}
 
 					&.facebook {
-						background: url("//img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -840px -415px;
+						background: url("//cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -840px -415px;
 
 						&:hover {
 							background-position: -840px -473px;
@@ -1399,7 +1399,7 @@
 					}
 
 					&.facebook {
-						background: url("//img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -840px -415px;
+						background: url("//cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -840px -415px;
 
 						&:hover {
 							background-position: -840px -473px;
@@ -1408,7 +1408,7 @@
 
 					&.brandinfo {
 						margin-left: 0;
-						background: url("//img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -901px -415px;
+						background: url("//cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -901px -415px;
 
 						&:hover {
 							background-position: -901px -473px;

@@ -844,7 +844,7 @@
                 top: 50%;
                 margin-top: -15px;
                 @include btn(30px, 30px, 0, null, transparent);
-                background: url('//img.happyshopping.kr/img_static/img_mobile/comm/btn_flat.png') no-repeat 0 50%;
+                background: url('//cdnimg.happyshopping.kr/img_static/img_mobile/comm/btn_flat.png') no-repeat 0 50%;
                 background-size: auto 20px;
             }
 
@@ -880,7 +880,7 @@
                     }
 
                     &.btn-estimate {
-                        background: url('//img.happyshopping.kr/img_static/img_mobile/comm/icon_paper.png') no-repeat 50% 50%;
+                        background: url('//cdnimg.happyshopping.kr/img_static/img_mobile/comm/icon_paper.png') no-repeat 50% 50%;
                         background-size: auto 20px;
 
                         span {
@@ -889,7 +889,7 @@
                     }
 
                     &.btn-cart {
-                        background: url('//img.happyshopping.kr/img_static/img_mobile/comm/icon_cart.png') no-repeat 50% 50%;
+                        background: url('//cdnimg.happyshopping.kr/img_static/img_mobile/comm/icon_cart.png') no-repeat 50% 50%;
                         background-size: auto 20px;
                         span {
                             background: $point_color2;
@@ -930,14 +930,14 @@
             font-size: 0;
 
             .btn-voice {
-                background: url('//img.happyshopping.kr/img_static/img_mobile/comm/icon_mic_dis.png') no-repeat 50% 50%;
+                background: url('//cdnimg.happyshopping.kr/img_static/img_mobile/comm/icon_mic_dis.png') no-repeat 50% 50%;
                 background-size: 13px 19px;
                 @include btn(40px, 40px, 0, null, transparent);
             }
 
             .btn-submit {
                 text-indent: -9999px;
-                background: url('//img.happyshopping.kr/img_static/img_mobile/comm/icon_magnifying_glass_on.png') no-repeat 50% 50%;
+                background: url('//cdnimg.happyshopping.kr/img_static/img_mobile/comm/icon_magnifying_glass_on.png') no-repeat 50% 50%;
                 background-size: 18px 18px;
                 @include btn(40px, 40px, 0, null, transparent);
             }

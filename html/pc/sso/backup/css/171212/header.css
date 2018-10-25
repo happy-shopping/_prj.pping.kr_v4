@@ -33,15 +33,15 @@
         .gnb ul li a.btn-estimate {
           height: 22px;
           padding-left: 26px;
-          background: url("https://img.happyshopping.kr/img_static/img_pres/_v3/ico_gnb_estimate.png") no-repeat 0 0; }
+          background: url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/ico_gnb_estimate.png") no-repeat 0 0; }
         .gnb ul li a.btn-notebook {
           height: 22px;
           padding-left: 26px;
-          background: url("https://img.happyshopping.kr/img_static/img_pres/_v3/ico_gnb_notebook.png") no-repeat 0 0; }
+          background: url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/ico_gnb_notebook.png") no-repeat 0 0; }
         .gnb ul li a.btn-happyhotdeal {
           width: 74px;
           height: 39px;
-          background: url("https://img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -127px -1390px;
+          background: url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -127px -1390px;
           line-height: 39px;
           text-indent: -99999px; }
       .gnb ul li.happyhotdeal {
@@ -120,7 +120,7 @@
         width: 13px;
         height: 7px;
         margin-left: -6.5px;
-        background: url("https://img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -76px -5px; }
+        background: url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -76px -5px; }
       .nav .nav-category .sub li {
         position: relative;
         margin-top: 1px; }
@@ -146,7 +146,7 @@
             top: 0;
             width: 54px;
             height: 54px;
-            background: #0f4f9f url("https://img.happyshopping.kr/img_static/img_pres/_v3/sprite_2.png") no-repeat; }
+            background: #0f4f9f url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_2.png") no-repeat; }
           .nav .nav-category .sub li a.btn1:before {
             background-position: 0 -665px; }
           .nav .nav-category .sub li a.btn2:before {
@@ -197,7 +197,7 @@
         right: 34px;
         width: 13px;
         height: 7px;
-        background: url("https://img.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -76px -5px; }
+        background: url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png") no-repeat -76px -5px; }
       .nav .nav-brand .sub .sub_keyword {
         *zoom: 1; }
         .nav .nav-brand .sub .sub_keyword:after {

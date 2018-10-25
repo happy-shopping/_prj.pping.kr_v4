@@ -520,7 +520,7 @@ select {
   display: inline-block;
   width: 11px;
   height: 11px;
-  background: url("//img.happyshopping.kr/img_static/img_pres/_v3/ico_grayplus.png") no-repeat 0 0;
+  background: url("//cdnimg.happyshopping.kr/img_static/img_pres/_v3/ico_grayplus.png") no-repeat 0 0;
   background-size: cover; }
 
 .ico-minus:before {
@@ -528,7 +528,7 @@ select {
   display: inline-block;
   width: 11px;
   height: 11px;
-  background: url("//img.happyshopping.kr/img_static/img_pres/_v3/ico_redminus.png") no-repeat 0 0;
+  background: url("//cdnimg.happyshopping.kr/img_static/img_pres/_v3/ico_redminus.png") no-repeat 0 0;
   background-size: cover; }
 
 #wrap {
@@ -788,10 +788,10 @@ select {
   font-weight: bold;
   line-height: 20px; }
   .sellertype.powerseller {
-    background: url("//img.happyshopping.kr/img_static/img_mobile/comm/bg_sellertype_power.png") no-repeat 0 0;
+    background: url("//cdnimg.happyshopping.kr/img_static/img_mobile/comm/bg_sellertype_power.png") no-repeat 0 0;
     background-size: cover; }
   .sellertype.newseller {
-    background: url("//img.happyshopping.kr/img_static/img_mobile/comm/bg_sellertype_new.png") no-repeat 0 0;
+    background: url("//cdnimg.happyshopping.kr/img_static/img_mobile/comm/bg_sellertype_new.png") no-repeat 0 0;
     background-size: cover; }
 
 .mark-event {
@@ -1325,7 +1325,7 @@ select {
       font-size: 14px;
       color: #999;
       font-weight: bold;
-      background: url("//img.happyshopping.kr/img_static/img_mobile/comm/m_happytree.png") no-repeat 36px 50%;
+      background: url("//cdnimg.happyshopping.kr/img_static/img_mobile/comm/m_happytree.png") no-repeat 36px 50%;
       background-size: 57px auto;
       line-height: 1.3;
       -webkit-box-sizing: border-box;
