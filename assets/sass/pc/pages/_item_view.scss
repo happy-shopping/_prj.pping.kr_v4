@@ -10,6 +10,12 @@
 		margin-left:-952px
 	}
 }
+.evt_img{
+	position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
 // 이벤트 진행상품에 사용
 
 .layer-pop_cart_add .pop_cart_add_body .pop_cart_add_top .conts .conts_bot .product_add{// 노트북 뷰페이지 장바구니 담기 레이어 스타일 보정
