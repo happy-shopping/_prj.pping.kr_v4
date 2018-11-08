@@ -118,6 +118,10 @@
         border-width:1px 0;
         span{
             width:calc( 100% / 7 - 8px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
         }
     }
     span{
