@@ -337,7 +337,7 @@
 						&.slickList {
 							width: 64px !important;
 						    height: 64px !important;
-						    background-size: cover;
+						    background-size:91%;
 						    background-repeat: no-repeat;
 						    background-position: 50% 50%;
 						    text-indent: -10000px;
@@ -1822,7 +1822,6 @@
 											.mark-power, .mark-new {
 												display: inline-block;
 											}
-
 											.malltype {
 												width: 72px;
 												height: 18px;
@@ -1832,7 +1831,6 @@
 												line-height: 16px;
 												color: $base_color2;
 											}
-
 											.ci {
 												overflow: hidden;
 												display: block;
@@ -1844,6 +1842,7 @@
 
 												img {
 													max-height: 100%;
+													max-width: 100%;
 												}
 											}
 											.btn_market_report {

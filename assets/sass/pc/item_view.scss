@@ -11,194 +11,194 @@
 
 @import
 	'pages/item_view';
-
-.clrbs1{
-	color:$base_color1 !important;
-}
-.clrpt2{
-	color:$point_color2 !important;
-}
-.main-view_product{
-	&.openMarketTop{
-		.main-view_product_photo{
-			.thumb-list{
-				display:none;
-			}
-		}
-	}
-	.main-view_product_info{
-		.benefitInfo{
-			strong{
-				line-height: 1;
-				border-right:1px solid  #e5e5e5;
-				padding-right:8px;
-				margin-right:5px;
-				display:inline-block;
-			}
-			em{
-				color:$point_color3;
-				position:relative;
-				height:12px;
-				display: inline-block;
-				padding-right: 4px;
-				&:after{
-					content: "/";
-					color:$base_color3;
-					position: absolute;
-					font-family: "Malgun gothic";
-					top: -1px;
-					right: -3px;
-				}
-				&:last-child{
-					&:after{
-						display: none;
-					}
-				}
-			}
-		}
-		.lowMarket{
-			.lowPrice{
-				font-size:32px;
-				color:$point_color2;
-				word-spacing: -10px;
-				margin-top:10px;
-				sub{
-					color:$base_color3;
-					bottom:0;
-					font-size: 18px;
-				}
-				a{
-					float: right;
-					font-size:14px;
-					word-spacing: 0;
-					color:#fff;
-					background: $point_color1;
-					padding:0 10px;
-					@include txtVer1Li(32);
-					&:hover{
-						color:$base_color1;
-					}
-				}
-			}
-		}
-		.markList{
-			width:100%;
-			margin-top:30px;
-			border-bottom: 1px solid #dfdfdf;
-			.mLcol2{
-				width:80px;
-				padding-left:0;
-			}
-			.mLcol3{
-				width:70px;
-			}
-			th{
-				color:$base_color2;
-				padding:10px 0;
-				background:#dfdfdf;
-			}
-			td{
-				padding:8px 4px;
-				text-align: right;
-				img{
-					max-width: 100px;
-					max-height: 14px;
-				}
-				&:first-child{
-					text-align: left;
-					padding-left:10px;
-				}
-				&:last-child{
-					text-align: center;
-					padding-right:10px;
-				}
-			}
-
-		}
-	}
-}
-.main-view_info{
-	.byPackage{
-		font-size: 0;
-		.iradio{
-			font-size: 12px;
-			width:calc(100% / 3);
-			margin:5px 0;
-			em{
-				margin-right: 5px;
-				display:inline-block;
-				@include truncate(200px);
-			}
-			&:after{
-				content:'원';
-				margin-left: -3px;
-			}
-		}
-	}
-	.powerLink{
-		.pLTit{
-			padding-bottom: 10px;
-			border-bottom: 1px solid #ccc;
-			strong{
-				font-size: 18px;
-				vertical-align: middle;
-			}
-			em{
-				display: inline-block;
-				border:1px solid #ccc;
-				padding:3px;
-				vertical-align: middle;
-				color:$base_color3;
-			}
-			a{
-				color:$base_color3;
-				vertical-align: middle;
-			}
-		}
-		.pLItems{
-			font-size: 0;
-			.pLItem{
-				font-size:12px;
-				display: inline-block;
-				width:50%;
-				border-bottom:1px solid #e5e5e5;
-				padding:10px 0;
-				line-height: 1.5;
-				a{
-					strong{
-						font-size:14px;
-						color:$point_color1;
-						margin-right:5px;
-					}
-					font{
-						color:$base_color3;
-					}
-				}
-			}
-		}
-	}
-}
-.clear{
-	@include clear;
-}
-.legalNotice{
-	border:1px solid #ccc;
-	padding:20px;
-	color:$base_color3;
-	line-height: 1.5;
-	letter-spacing: -1px;
-	@include wordbraker;
-	strong{
-		color:$base_color1;
-		margin-bottom: 4px;
-	    display: inline-block;
-	}
-	a{
-		padding:2px 5px;
-		border:1px solid #ccc;
-		font-size: 10px;
-		&:hover{
-			background: #f5f5f5;
-		}
-	}
-}
+// 
+// .clrbs1{
+// 	color:$base_color1 !important;
+// }
+// .clrpt2{
+// 	color:$point_color2 !important;
+// }
+// .main-view_product{
+// 	&.openMarketTop{
+// 		.main-view_product_photo{
+// 			.thumb-list{
+// 				display:none;
+// 			}
+// 		}
+// 	}
+// 	.main-view_product_info{
+// 		.benefitInfo{
+// 			strong{
+// 				line-height: 1;
+// 				border-right:1px solid  #e5e5e5;
+// 				padding-right:8px;
+// 				margin-right:5px;
+// 				display:inline-block;
+// 			}
+// 			em{
+// 				color:$point_color3;
+// 				position:relative;
+// 				height:12px;
+// 				display: inline-block;
+// 				padding-right: 4px;
+// 				&:after{
+// 					content: "/";
+// 					color:$base_color3;
+// 					position: absolute;
+// 					font-family: "Malgun gothic";
+// 					top: -1px;
+// 					right: -3px;
+// 				}
+// 				&:last-child{
+// 					&:after{
+// 						display: none;
+// 					}
+// 				}
+// 			}
+// 		}
+// 		.lowMarket{
+// 			.lowPrice{
+// 				font-size:32px;
+// 				color:$point_color2;
+// 				word-spacing: -10px;
+// 				margin-top:10px;
+// 				sub{
+// 					color:$base_color3;
+// 					bottom:0;
+// 					font-size: 18px;
+// 				}
+// 				a{
+// 					float: right;
+// 					font-size:14px;
+// 					word-spacing: 0;
+// 					color:#fff;
+// 					background: $point_color1;
+// 					padding:0 10px;
+// 					@include txtVer1Li(32);
+// 					&:hover{
+// 						color:$base_color1;
+// 					}
+// 				}
+// 			}
+// 		}
+// 		.markList{
+// 			width:100%;
+// 			margin-top:30px;
+// 			border-bottom: 1px solid #dfdfdf;
+// 			.mLcol2{
+// 				width:80px;
+// 				padding-left:0;
+// 			}
+// 			.mLcol3{
+// 				width:70px;
+// 			}
+// 			th{
+// 				color:$base_color2;
+// 				padding:10px 0;
+// 				background:#dfdfdf;
+// 			}
+// 			td{
+// 				padding:8px 4px;
+// 				text-align: right;
+// 				img{
+// 					max-width: 100px;
+// 					max-height: 14px;
+// 				}
+// 				&:first-child{
+// 					text-align: left;
+// 					padding-left:10px;
+// 				}
+// 				&:last-child{
+// 					text-align: center;
+// 					padding-right:10px;
+// 				}
+// 			}
+//
+// 		}
+// 	}
+// }
+// .main-view_info{
+// 	.byPackage{
+// 		font-size: 0;
+// 		.iradio{
+// 			font-size: 12px;
+// 			width:calc(100% / 3);
+// 			margin:5px 0;
+// 			em{
+// 				margin-right: 5px;
+// 				display:inline-block;
+// 				@include truncate(200px);
+// 			}
+// 			&:after{
+// 				content:'원';
+// 				margin-left: -3px;
+// 			}
+// 		}
+// 	}
+// 	.powerLink{
+// 		.pLTit{
+// 			padding-bottom: 10px;
+// 			border-bottom: 1px solid #ccc;
+// 			strong{
+// 				font-size: 18px;
+// 				vertical-align: middle;
+// 			}
+// 			em{
+// 				display: inline-block;
+// 				border:1px solid #ccc;
+// 				padding:3px;
+// 				vertical-align: middle;
+// 				color:$base_color3;
+// 			}
+// 			a{
+// 				color:$base_color3;
+// 				vertical-align: middle;
+// 			}
+// 		}
+// 		.pLItems{
+// 			font-size: 0;
+// 			.pLItem{
+// 				font-size:12px;
+// 				display: inline-block;
+// 				width:50%;
+// 				border-bottom:1px solid #e5e5e5;
+// 				padding:10px 0;
+// 				line-height: 1.5;
+// 				a{
+// 					strong{
+// 						font-size:14px;
+// 						color:$point_color1;
+// 						margin-right:5px;
+// 					}
+// 					font{
+// 						color:$base_color3;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// .clear{
+// 	@include clear;
+// }
+// .legalNotice{
+// 	border:1px solid #ccc;
+// 	padding:20px;
+// 	color:$base_color3;
+// 	line-height: 1.5;
+// 	letter-spacing: -1px;
+// 	@include wordbraker;
+// 	strong{
+// 		color:$base_color1;
+// 		margin-bottom: 4px;
+// 	    display: inline-block;
+// 	}
+// 	a{
+// 		padding:2px 5px;
+// 		border:1px solid #ccc;
+// 		font-size: 10px;
+// 		&:hover{
+// 			background: #f5f5f5;
+// 		}
+// 	}
+// }
