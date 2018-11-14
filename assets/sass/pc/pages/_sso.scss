@@ -2863,12 +2863,15 @@ input:disabled {
 				display: block
 			}
 
-			a img:first-child {
-				position: relative;
-				left: 50%;
-				margin-left: -960px;
+			iframe {
+				display: block;
+                position: relative;
+                left: 50%;
+                width: 1920px;
+                height: 583px;
+                margin-left: -960px;
+                border: 0;
 			}
-
 		}
 
 		.happytree-event .btn-e {
