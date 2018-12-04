@@ -1,4 +1,10 @@
 @charset "utf-8";
+// .dummmmy{//더미스타일 캐시제거용
+// 	position: relative;
+//     left: 50%;
+//     -webkit-transform: translate(-50%, 0);
+//     transform: translate(-50%, 0);
+// }
 // 이벤트 진행상품에 사용
 .event-wrap{
 	overflow:hidden;
@@ -17,7 +23,20 @@
     transform: translate(-50%, 0);
 }
 // 이벤트 진행상품에 사용
-
+.main-view_product_info{
+	.ntkBtn{
+	    background: #24ce48;
+	    color: #fff;
+	    margin-top: 5px;
+		padding:8px;
+		word-spacing: -0.3em;
+		font-size:14px;
+		float: right;
+		&:after{
+			content:" 톡톡문의";
+		}
+	}
+}
 .layer-pop_cart_add .pop_cart_add_body .pop_cart_add_top .conts .conts_bot .product_add{// 노트북 뷰페이지 장바구니 담기 레이어 스타일 보정
 	margin-top: 0;
     border-top: 0;

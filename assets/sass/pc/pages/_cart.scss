@@ -7,7 +7,21 @@
 	@include breakpoint(max-width 1209px) {
 		width: 950px;
 	}
-
+	.ntkBtn{
+		background: #24ce48;
+		color: #fff;
+		word-spacing: -0.3em;
+		font-size: 24px;
+		border: 0;
+		font-weight: bold;
+		height: 70px;
+		vertical-align: middle;
+		width: 300px;
+		margin-right: 10px;
+		&:after{
+			content:" 톡톡문의";
+		}
+	}
 	.cart-body_top {
 		position: relative;
 		height: 50px;
@@ -337,7 +351,8 @@
 	}
 
 	.button-group {
-		margin-top: 30px
+		margin-top: 30px;
+		padding-bottom:40px;
 	}
 
 	.btn-continue-shopping {
