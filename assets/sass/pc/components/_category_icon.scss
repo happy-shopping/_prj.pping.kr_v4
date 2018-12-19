@@ -162,6 +162,9 @@ a {
     &.icos_1040202000:before {
         background-position: $btn_reader;
     }
+    &.icos_1041301000:before {
+        background-position: $btn_action_cam;
+    }
 
     // 디지털 완제품
     &.icos_1050101000:before {
@@ -733,6 +736,11 @@ a {
         &.icos_1040202000:before {
             background-position: $btn_reader_on;
         }
+
+        &.icos_1041301000:before {
+            background-position: $btn_action_cam_on;
+        }
+
 
         // 디지털 완제품
         &.icos_1050101000:before {
