@@ -45,7 +45,8 @@ gulp.task('browserSync', ['html', 'sass'], function () {
     return browserSync.init({
         port : 3333,
         server: {
-            baseDir: 'D:/wk/DEV/Happy-Shopping/pc.html.pping.kr'
+            baseDir: './',
+            directory: true
         }
     });
 });
