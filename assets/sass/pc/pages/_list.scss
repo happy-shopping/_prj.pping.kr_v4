@@ -1885,7 +1885,7 @@
 .mainList4{
 	margin-top:30px;
 }
-.noteBookPop{ // 외부링크로 들어오는경우 노출되는 팝업
+.noteBookPop{ // 외부링크로 들어오는경우 노출되는 팝업 180822 진행 181220 현재 진행 되고 있지 않음
 	max-width: 950px;
 	display:inline-block;
 	position: relative;
@@ -1929,5 +1929,20 @@
 	    width: 90px;
 	    position: relative;
 	    display: block;
+	}
+}
+.noteBookPop2{//181220 등록
+	div{
+		background:#333;
+		text-align:left;
+		padding:10px 20px;
+		color:#fff;
+	    width: 384px;
+	    margin: 0 auto;
+		button{
+			float:right;
+			color:#fff;
+			padding:5px;
+		}
 	}
 }
