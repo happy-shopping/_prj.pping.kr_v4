@@ -17,7 +17,15 @@
 		text-align: center;
 	}
 }
-
+.clrpont2 {
+    color: #f34522;
+}
+textarea.caveat {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f34522!important;
+    background: #fffbfb;
+}
 // select
 .sstyle {
 	min-width: 100px;
@@ -79,7 +87,13 @@
 		position: absolute;
 		z-index: -1;
 	}
-
+	&.caveat{
+		label{
+			&:before{
+				border-color: #f34522!important;
+			}
+		}
+	}
 	label {
 		display: inline-block;
 
@@ -91,8 +105,8 @@
 		&:before {
 			content: "";
 			display: inline-block;
-			width: 16px;
-			height: 16px;
+			width: 10px;
+			height: 10px;
 			margin-right: 5px;
 			border: 1px solid $base_color3;
 			font-size: 16px;
@@ -154,14 +168,14 @@
 .iradio input:checked + label {
 	&:after{
 		content: '';
-		width: 16px;
-		height: 16px;
+		width: 12px;
+		height: 12px;
 		background: $point_color1;
 		display: block;
 		position: absolute;
-		top: 4px;
+		top: 3px;
 		border-radius: 9px;
-		left: 4px;
+		left: 3px;
 	}
 	&:before {
 		color: #fff;
