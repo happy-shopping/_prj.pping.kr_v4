@@ -1946,3 +1946,18 @@
 		}
 	}
 }
+.estiList .thead-top_noline
+{
+	.icheck label:before,
+	.iradio label:before {
+		width:16px;
+		height:16px;
+		font-size: 16px;
+	}
+	.iradio input:checked+label:after{
+		width: 16px;
+    	height: 16px;
+	    left: 4px;
+	    top: 4px;
+	}
+}
