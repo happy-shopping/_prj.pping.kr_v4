@@ -3,7 +3,4 @@ node_modules
 sftp-config.json
 assets/css
 assets/sass/utils/_vivify.scss
-<<<<<<< HEAD
-=======
 assets/maps
->>>>>>> 6b53eb02ae102ac2b8164a3ad2b839bdfe16ca1c
