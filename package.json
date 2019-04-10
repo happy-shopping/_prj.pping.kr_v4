@@ -1,25 +1,17 @@
 {
-  "name": "happyshopping",
+  "name": "scss-lint",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "description": "sass lint",
   "devDependencies": {
-    "browser-sync": "^2.22.0",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.1",
-    "gulp-ruby-sass": "^2.1.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemap": "^1.0.1"
+      "prettier": "^1.16.4",
+      "sass-lint": "^1.12.1"
   },
+  "scripts": {
+      "watch": "node-sass --watch --output-style compressed assets/sass --output assets/css",
+      "watch-default": "node-sass --watch src/sass --output src/dist/css"
+  },
+  "license": "MIT",
   "dependencies": {
-    "global": "^4.3.2",
-    "gulp-sourcemaps": "^2.6.2",
-    "sass": "^0.5.0",
-    "sourcemap": "^0.1.0"
+      "node-sass": "^4.11.0"
   }
 }
