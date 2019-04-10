@@ -1,21 +1,26 @@
-@charset "utf-8";
-#header{// v4,v5 중복 스타일 임시 처리
-    border-bottom:0;
+@charset 'utf-8';
+
+#header {
+    // v4,v5 중복 스타일 임시 처리
+    border-bottom: 0;
 }
+
 .estimate-body {
-    .ntkBtn{
+    .ntkBtn {
         width: 78px;
         margin-bottom: 5px;
-        border:0;
+        border: 0;
     }
     padding-bottom: 100px;
     line-height: 1;
+
     @include default_width;
 
     .estimate-body_top {
         position: relative;
         height: 50px;
         padding-top: 40px;
+
         @include clear;
 
         .tit-h2 {
@@ -25,10 +30,27 @@
         }
     }
 
+    .estimate-body-move {
+        text-align: right;
+        margin-bottom: 10px;
+
+        a {
+            display: inline-block;
+            border: 1px solid #dcdcdc;
+            padding: 10px;
+            color: #666;
+        }
+    }
+
+    .estimate-body-ad-top {
+        background: #c1c1f9;
+    }
+
     .estimate-body_menu {
         font-size: 0;
+        margin-top: 30px;
 
-        [class^="btn-estimate-body_"] {
+        [class^='btn-estimate-body_'] {
             font-size: 20px;
             font-weight: bold;
             @include btn(50%, 60px, 2px solid #d1d0d5, $base_color2, #f4f4f4, null, 56px);
@@ -80,7 +102,7 @@
         .estimate_compare {
             float: left;
             width: 720px;
-            border-right: 1px solid #747475;
+            // border-right: 1px solid #747475;
 
             .estimate_compare_list {
                 .estimate_compare_list_top {
@@ -143,7 +165,7 @@
                             @include clear;
                             @include box-sizing();
 
-                            [class^="mark-"] {
+                            [class^='mark-'] {
                                 float: left;
                                 margin-right: 3px;
                             }
@@ -213,7 +235,7 @@
 
             .policy {
                 padding-right: 10px;
-                text-align: right
+                text-align: right;
             }
 
             .total_price {
@@ -221,6 +243,7 @@
                 font-size: 18px;
                 text-align: right;
                 line-height: 128px;
+
                 span {
                     margin-left: 15px;
                     font-size: 28px;
@@ -229,6 +252,21 @@
                 }
             }
         }
+
+        .estimate-curation-area {
+            border-top: 2px solid #333333;
+            height: 280px;
+            position: relative;
+
+            &.first > div {
+                position: absolute;
+                width: 1190px;
+                background: #fff;
+                height: 280px;
+                z-index: 1;
+            }
+        }
+
         .policy {
             border-top: 2px solid $point_color1;
             padding: 15px 0;
@@ -241,12 +279,12 @@
 
                 span {
                     color: #ff0000;
-                    letter-spacing: 0
+                    letter-spacing: 0;
                 }
 
                 em {
                     color: $point_color1;
-                    letter-spacing: 0
+                    letter-spacing: 0;
                 }
 
                 .btn_delivery_info {
@@ -277,14 +315,15 @@
 
         .estimate_minishop {
             float: right;
-            width: calc(100% - 721px);
+            width: calc(100% - 720px);
 
             .estimate_minishop_seller_list {
                 @include clear;
             }
 
             .estimate_minishop_seller {
-                border-left: 1px solid #747475;
+                border-right: 1px solid #747475;
+
                 .tit-h4 {
                     position: relative;
                     height: 34px;
@@ -294,26 +333,35 @@
                     text-align: center;
                 }
 
-                &:first-child {
-                    border-left: 0;
-                }
-
                 &.powerseller {
                     float: left;
                     width: 85px;
 
+                    &.echo {
+                        border-left: 2px solid #39567b;
+                        border-right: 2px solid #39567b;
+
+                        .tit-h4 {
+                            span {
+                                position: absolute;
+                                top: -36px;
+                                left: -2px;
+                                width: 100%;
+                                height: 34px;
+                                background: #39567b;
+                                border: 2px solid #39567b;
+                                border-bottom: 0;
+                                font-size: 12px;
+
+                                img {
+                                    margin-bottom: 3px;
+                                }
+                            }
+                        }
+                    }
+
                     .tit-h4 {
                         background: #9162d0;
-
-                        &:after {
-                            content: "";
-                            position: absolute;
-                            top: -38px;
-                            left: -5px;
-                            width: 48px;
-                            height: 51px;
-                            background: url('//cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png') no-repeat -511px -155px;
-                        }
                     }
 
                     .sellername {
@@ -328,22 +376,13 @@
                         }
                     }
                 }
+
                 &.newseller {
                     float: left;
                     width: 85px;
 
                     .tit-h4 {
                         background: #f2745f;
-
-                        &:after {
-                            content: "";
-                            position: absolute;
-                            top: -38px;
-                            left: -5px;
-                            width: 48px;
-                            height: 51px;
-                            background: url('//cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png') no-repeat -606px -155px;
-                        }
                     }
 
                     .sellername {
@@ -377,7 +416,7 @@
                     a {
                         display: inline-block;
                         font-size: 11px;
-                        @include btn(38px, 20px, 1px solid #d3d3d3, $base_color2, #fff, center, 18px);
+                        @include btn(50px, 20px, 1px solid #d3d3d3, $base_color2, #fff, center, 18px);
 
                         &.btn-minishop {
                             margin-right: 2px;
@@ -443,7 +482,7 @@
                         font-size: 14px;
                         font-weight: bold;
                         margin-bottom: 5px;
-                        @include btn (78px, 32px, 0, #fff);
+                        @include btn(78px, 32px, 0, #fff);
                     }
 
                     .ico-cash-receipt {
@@ -452,18 +491,17 @@
                         height: 21px;
                         font-size: 11px;
                         text-align: center;
-                        background: url('//cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png') no-repeat 0px -1369px;
+                        background: url('//cdnimg.happyshopping.kr/img_static/img_pres/_v3/sprite_1.png') no-repeat 0 -1369px;
                         display: inline-block;
                         padding-top: 6px;
                         box-sizing: border-box;
 
                         &:hover {
                             color: $point_color1;
-                            background-position: 0px -1346px;
+                            background-position: 0 -1346px;
                             cursor: pointer;
                         }
                     }
-
                 }
 
                 &.greatseller {
@@ -592,7 +630,7 @@
 
                 .btn-more-seller {
                     font-size: 28px;
-                    @include btn(40px, 40px,0, $point_color1, #fff);
+                    @include btn(40px, 40px, 0, $point_color1, #fff);
                 }
             }
         }
@@ -621,7 +659,7 @@
             //     background: #fff;
             // }
 
-            [class^="estimate-body_minishop_"] {
+            [class^='estimate-body_minishop_'] {
                 position: relative;
                 z-index: 2;
             }
@@ -641,8 +679,6 @@
             .btn-more-seller-clse {
                 display: block;
             }
-
-
         }
 
         .btn-more-seller-clse {
@@ -651,13 +687,39 @@
             top: 30px;
             display: none;
             font-size: 28px;
-            @include btn(40px, 40px,0, $point_color1, #fff);
+            @include btn(40px, 40px, 0, $point_color1, #fff);
         }
     }
 
     .compare_add_service {
         margin-top: 15px;
-        border-bottom: 2px solid $base_color1;
+        border: 0;
+        width: 450px;
+
+        .assembly_service {
+            float: none;
+            display: inline-block;
+            padding: 0;
+        }
+
+        .os_service {
+            float: none;
+            display: inline-block;
+            border: 0;
+            width: 220px;
+            padding: 0;
+        }
+
+        .tip {
+            float: none;
+            display: block;
+            width: 450px;
+            padding: 0;
+        }
+
+        &:after {
+
+        }
     }
 
     .adv-minishop {
@@ -702,136 +764,136 @@
     }
 }
 // add 180525 jspark@pping.kr .estimate_top_banner
-.estimateTopBanner{
-    padding-top:15px;
-    margin-bottom:20px;
-    .tbTitle{
-        padding-bottom:11px;
+.estimateTopBanner {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    .tbTitle {
+        padding-bottom: 11px;
     }
-    .fs16px{
-        font-size:16px;
+    .fs16px {
+        font-size: 16px;
     }
-    .pitClr{
-        color:$point_color1;
+    .pitClr {
+        color: $point_color1;
     }
-    .TopBanLeft{
-        display:inline-block;
-        width:700px;
-        box-sizing:border-box;
-        .TopBanTabArea{
-            position:relative;
-            padding:0 36px;
-            .TopBanTabsWrap{
-                width:100%;
+    .TopBanLeft {
+        display: inline-block;
+        width: 700px;
+        box-sizing: border-box;
+        .TopBanTabArea {
+            position: relative;
+            padding: 0 36px;
+            .TopBanTabsWrap {
+                width: 100%;
                 overflow: hidden;
-                position:relative;
+                position: relative;
                 z-index: 10;
                 padding-left: 1px;
-                .TopBanTabs{
-                    display:block;
+                .TopBanTabs {
+                    display: block;
                     border-collapse: collapse;
-                    height:38px;
-                    font-size:0;
-                    width:calc(157px * 13);
-                    transition:0.7s;
-                    .TopBanTabItem{
-                        display:inline-block;
-                        font-size:12px;
+                    height: 38px;
+                    font-size: 0;
+                    width: calc(157px * 13);
+                    transition: 0.7s;
+                    .TopBanTabItem {
+                        display: inline-block;
+                        font-size: 12px;
                         font-weight: 800;
                         width: 157.75px !important;
-                        height:38px;
-                        line-height:36px;
-                        box-sizing:border-box;
-                        border:1px solid #ccc;
-                        margin-left:-1px;
-                        border-bottom-color:$point_color1;
+                        height: 38px;
+                        line-height: 36px;
+                        box-sizing: border-box;
+                        border: 1px solid #ccc;
+                        margin-left: -1px;
+                        border-bottom-color: $point_color1;
                         text-align: center;
-                        border-collapse:collapse;
-                        background:#f5f6f9;
-                        color:$base_color3;
-                        cursor:pointer;
-                        position:relative;
-                        z-index:1;
-                        &.on{
+                        border-collapse: collapse;
+                        background: #f5f6f9;
+                        color: $base_color3;
+                        cursor: pointer;
+                        position: relative;
+                        z-index: 1;
+                        &.on {
                             @include BgwhtBdpit;
-                            border-bottom-color:#fff;
-                            color:$point_color1;
-                            z-index:2;
+                            border-bottom-color: #fff;
+                            color: $point_color1;
+                            z-index: 2;
                         }
-                        &:hover:not(.on){
-                            background:#fff;
-                            color:$point_color1;
+                        &:hover:not(.on) {
+                            background: #fff;
+                            color: $point_color1;
                         }
                     }
                 }
             }
-            .TopBanBtns{
+            .TopBanBtns {
                 position: absolute;
-                top:0;
-                width:37px;
-                height:37px;
-                border-bottom:1px solid $point_color1;
-                background-color:#f5f6f9;
-                font-size:20px;
-                color:#9f9f9f;
-                display:block;
-                z-index:5;
-                &.TopBanLeftBtn{
-                    left:0;
-                    border-right-color:#f5f6f9;
+                top: 0;
+                width: 37px;
+                height: 37px;
+                border-bottom: 1px solid $point_color1;
+                background-color: #f5f6f9;
+                font-size: 20px;
+                color: #9f9f9f;
+                display: block;
+                z-index: 5;
+                &.TopBanLeftBtn {
+                    left: 0;
+                    border-right-color: #f5f6f9;
                 }
-                &.TopBanRightBtn{
-                    right:0;
-                    border-left-color:#f5f6f9;
+                &.TopBanRightBtn {
+                    right: 0;
+                    border-left-color: #f5f6f9;
                 }
-                &:hover{
+                &:hover {
                     @include BgwhtBdpit;
-                    color:$point_color1;
+                    color: $point_color1;
                 }
-                &:active{
+                &:active {
                     @include BgwhtBdpit;
-                    color:$point_color1;
+                    color: $point_color1;
                 }
-                .TopBanBtn{
-                    border:1px solid #ccc;
-                    border-bottom-width:0;
-                    width:100%;
-                    height:100%;
+                .TopBanBtn {
+                    border: 1px solid #ccc;
+                    border-bottom-width: 0;
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }
-        .TopBanConArea{
-            border:1px solid $point_color1;
-            border-top:0;
-            padding:10px;
-            .TopBanPointItem a.TBItemLink{
-                display:block;
-                color:#fff;
+        .TopBanConArea {
+            border: 1px solid $point_color1;
+            border-top: 0;
+            padding: 10px;
+            .TopBanPointItem a.TBItemLink {
+                display: block;
+                color: #fff;
                 background: #39567b;
-                font-size:13px;
+                font-size: 13px;
                 font-weight: 300;
-                text-align:center;
+                text-align: center;
                 @include txtVer1Li(30);
-                &:hover{
-                    background:$bg_color1_over;
+                &:hover {
+                    background: $bg_color1_over;
                 }
-                .TBItemLinkimg{
+                .TBItemLinkimg {
                     display: inline-block;
-                    margin-left:5px;
+                    margin-left: 5px;
                 }
             }
-            .TBItemList{
+            .TBItemList {
                 padding: 10px 0 0;
                 height: 120px;
                 overflow: hidden;
-                .TBItem{
-                    display:table;
-                    font-size:13px;
+                .TBItem {
+                    display: table;
+                    font-size: 13px;
                     @include txtVer1Li(29);
-                    .TBItemTxt{
-                        display:table-cell;
-                        width:525px;
-                        .TBItemTxtLink{
+                    .TBItemTxt {
+                        display: table-cell;
+                        width: 525px;
+                        .TBItemTxtLink {
                             text-overflow: ellipsis;
                             white-space: nowrap;
                             word-wrap: normal;
@@ -840,69 +902,69 @@
                             max-width: 500px;
                             vertical-align: bottom;
                         }
-                        .TBItemTxtLink:hover{
-                            color:$point_color1
+                        .TBItemTxtLink:hover {
+                            color: $point_color1;
                         }
-                        .TBItemTxtLink:active{
-                            color:$point_color1
+                        .TBItemTxtLink:active {
+                            color: $point_color1;
                         }
-                        .icon-movie_play{
+                        .icon-movie_play {
                             font-size: 20px;
                             vertical-align: middle;
-                            color:$point_color1;
+                            color: $point_color1;
                             cursor: pointer;
-                            margin-left:5px;
+                            margin-left: 5px;
                         }
-                        .icon-movie_play:active{
-                            color:#2d7ee4
+                        .icon-movie_play:active {
+                            color: #2d7ee4;
                         }
-                        .icon-movie_play:hover{
-                            color:#2d7ee4
+                        .icon-movie_play:hover {
+                            color: #2d7ee4;
                         }
                     }
-                    .itemPrice{
-                        display:table-cell;
-                        width:153px;
+                    .itemPrice {
+                        display: table-cell;
+                        width: 153px;
                         text-align: right;
-                        &.soldout{
-                            position:relative;
+                        &.soldout {
+                            position: relative;
                             padding-left: 80px;
                             box-sizing: border-box;
                             padding-right: 10px;
                             color: #fff;
-                            &:before{
-                                content:'';
-                                position:absolute;
-                                right:0;
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                right: 0;
                                 top: 2px;
                                 height: 25px;
-                                width:73px;
+                                width: 73px;
                                 background: rgba(0, 0, 0, 0.5);
                                 display: block;
                                 z-index: -1;
                             }
                         }
-                        .btnPriceDel{
-                            width:22px;
-                            border:1px solid #eee;
-                            height:22px;
-                            padding:5px;
-                            vertical-align:middle;
-                            img{
+                        .btnPriceDel {
+                            width: 22px;
+                            border: 1px solid #eee;
+                            height: 22px;
+                            padding: 5px;
+                            vertical-align: middle;
+                            img {
                                 vertical-align: top;
                             }
                         }
-                        .spn{
-                            font-size:12px;
-                            color:$base_color3;
-                            margin-right:5px;
-                            strong{
-                                color:#f34522;
-                                font-size:15px;
+                        .spn {
+                            font-size: 12px;
+                            color: $base_color3;
+                            margin-right: 5px;
+                            strong {
+                                color: #f34522;
+                                font-size: 15px;
                             }
                         }
-                        [class^="btn-"]{
-                            width:22px;
+                        [class^='btn-'] {
+                            width: 22px;
                             @include txtVer1Li(22);
                         }
                     }
@@ -910,25 +972,25 @@
             }
         }
     }
-    .TopBanRight{
+    .TopBanRight {
         width: 230px;
         height: 100%;
         position: absolute;
         top: 42px;
         left: 719px;
-        a{
-            display:block;
-            &.TopBanRight2th{
-                padding:5px 0;
+        a {
+            display: block;
+            &.TopBanRight2th {
+                padding: 5px 0;
             }
         }
     }
-    .layer-pop_comm_confirm{
-        width:360px;
+    .layer-pop_comm_confirm {
+        width: 360px;
         padding: 60px 27px 40px;
-        .popTopBanLayMsg{
-            font-size:16px;
-            margin-bottom:6px;
+        .popTopBanLayMsg {
+            font-size: 16px;
+            margin-bottom: 6px;
             display: block;
         }
     }

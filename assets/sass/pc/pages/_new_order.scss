@@ -1,2277 +1,2233 @@
 @charset "utf-8";
 
 .order-body {
-	padding-bottom: 100px;
-	line-height: 1;
-	@include default_width;
-
-	.order-body_top {
-		position: relative;
-		height: 50px;
-		padding-top: 40px;
-		border-bottom: 2px solid #333333;
-
-		.tit-h2 {
-			font-size: 30px;
-			color: #000;
-		}
-
-		ol {
-			position: absolute;
-			top: 47px;
-			right: 0px;
-			@include clear;
-
-			li {
-				position: relative;
-				float: left;
-				margin-left: 10px;
-				font-size: 16px;
-				color: #ccc;
-				font-weight: bold;
-				@include loadIcon($icon-chevron-right);
-
-				&:before {
-					margin-right: 10px;
-				}
-
-				&:first-child {
-					margin-left: 100;
-
-					&:before {
-						display: none;
-					}
-				}
-
-				// span {
-				// 	font-size: 24px;
-				// }
-
-				strong {
-					color: #000;
-				}
-			}
-		}
-	}
-	.order-body_info {
-		position: relative;
-		margin-top: 60px;
-
-		.tit-h3 {
-			min-height: 37px;
-			font-size: 18px;
-			color: $base_color1;
-		}
-
-		.box-board {
-			padding-top: 0.5px;
-		}
-		.oCdPy{ //180608 카드선택부분 추가 시작
-			padding:15px 14px 0;
-			font-size:0;
-			.oItemnm{
-				display:inline-block;
-				width:100px;
-				padding:5.5px;
-				font-size: 13px;
-				@include breakpoint(max-width 1209px) {
-					padding:5px;
-				}
-				.oItemlb{
-					color:$base_color3;
-					border: 1px solid #ccc;
-				    margin: 0;
-				    padding: 0;
-				    width: 100%;
-				    border-radius: 3px;
-				    text-align: center;
-					cursor: pointer;
-					@include txtVer1Li(33);
-					&:hover{
-						background:#f2f2f2;
-					}
-				}
-				.oItemr{
-					display:none;
-				}
-				.oItemr:checked + .oItemlb{
-					border-color:$point_color1;
-					color:$point_color1;
-				}
-			}
-		}
-		.otherCdPy{
-			background: #f2f2f2;
-			width: 505px;
-			padding: 0 20px;
-			margin: 5px 0 16px 20px;
-			display: none;
-			&.on{display:block;}
-			&.isCard{
-				@include txtVer1Li(52);
-				margin-bottom: 0;
-				.otherCard{
-					width: 200px;
-					height: 34px;
-					margin-left: 5px;
-					border:1px solid $base_color3;
-				}
-			}
-			&.isPay{
-				display:block;
-				padding: 25px 20px;
-				.payLogo{
-					padding-bottom:9px;
-				}
-				.payName{
-					margin-left: 10px;
-					font-size:18px;
-					color:$base_color3;
-				}
-				.payAlert{
-					margin-top:18px;
-					padding-top:19px;
-					border-top:1px solid #e5e5e5;
-					line-height:1.6;
-					dd{
-						font-weight: 400;
-						position:relative;
-						padding-left:7px;
-						word-wrap: break-word;
-						word-break: keep-all;
-						&:before{
-							content:'-';
-							position:absolute;
-							left:0;
-						}
-					}
-				}
-			}
-			@include breakpoint(max-width 1209px) {
-				width: 390px;
-			}
-		}//180608 카드선택부분 추가 끝
-		.igroup {
-			padding: 5px 0;
-		}
-
-		.box-board_body {
-			float: left;
-			width: 949px;
-			border-right: 1px solid #e8e7ea;
-			@include breakpoint(max-width 1209px) {
-				float: none;
-				width: auto;
-				border-right: 0;
-			}
-		}
-
-		.btn-phone-change {
-			font-weight: bold;
-			@include btn(78px, 34px, 0, #fff, $base_color3);
-		}
-
-		.responsive {
-			border-bottom: 1px solid #e8e7ea;
-			@include clear;
-
-			.box-board_body {
-				margin-bottom: -1px;
-			}
-		}
-
-		.certi-number {
-			.btn-certi-cncl,
-			.btn-certi-number {
-				font-weight: bold;
-				@include btn(78px, 34px, 0, #fff, $base_color3);
-			}
-
-			.certi-number_time em {
-				color: $point_color2;
-			}
-		}
-
-		.certi-number_time,
-		.phone-number_noti {
-			display: inline-block;
-			margin-left: 20px;
-			color: $base_color3;
-			vertical-align: middle;
-		}
-		.except {
-			//display: inline-block;
-			padding:13px 0;
-			font-size: 15px;
-			border-top: 2px solid #333333;
-			border-bottom: 2px solid #333333;
-			text-align: center;
-			vertical-align: middle;
-
-			.circle {
-				border-radius: 50%;
-				padding: 3px;
-				border-color: #418ded;
-				font-size: 15px;
-				color: white;
-				background-color: #418ded;
-
-			}
-			i {
-				margin-left: 10px;
-				font-size: 20px;
-			}
-		}
-		.th-reset {
-			position: relative;
-			background-color: white;
-			&.bdbt0{ //180608 카드선택부분 추가 시작
-				border-bottom:0;
-			}
-			.cdWarn{
-				padding-bottom: 0px;
-				display:none;
-				&.on{
-					display:block;
-				}
-				b{
-					display: inline-block;
-    				padding: 5px 0 0;
-				}
-			} //180608 카드선택부분 추가 끝
-			.color {
-				color:#ff6600;
-				font-weight: 100;
-			}
-			.icon-card {
-				font-size: 14px;
-				padding-top:15px;
-				@include loadIcon($icon-credit-card);
-				b {
-					cursor: pointer;
-					&:hover{
-						color: #418ded;
-					}
-					i {
-						margin-left: 3px;
-					}
-				}
-
-
-			}
-			.go {
-				position: absolute;
-				top:18px;
-				left:150px;
-				font-size: 20px;
-				@include loadIcon($icon-angle-right);
-
-			}
-		}
-		.td-reset {
-			border-left: 1px solid #e8e7ea;
-			padding-top: 20px;
-			vertical-align: top;
-		}
-	}
-	.happy-pointbar{
-
-		background-color: #65c5e8;
-		font-size: 20px;
-		padding:27px;
-		div {
-			color: #ffffff;
-		}
-		strong{
-			color: #ffff33;
-		}
-		em{
-			color: #ffff33;
-		}
-	}
-
-	.order-body_bottom {
-		position: relative;
-		margin-bottom: 20px;
-		height:200px;
-
-		.agree {
-
-			width:599px;
-			//padding: 28px 20px 20px;
-			padding: 28px 0px 20px;
-			border-bottom: 2px solid $point_color1;
-			font-size: 11px;
-			h3 {
-				padding: 0px 20px;
-			}
-
-			.all-agree {
-				margin: 10px 20px;
-				border-top: 1px solid #333;
-				padding: 10px 0px 4px;
-				font-size: 12px;
-			}
-			.all-agree_list {
-				padding: 0px 20px;
-				ul {
-					margin-top: 10px;
-					border-top: 1px solid #e5e5e5;
-					padding-top: 10px;
-					height: 89px;
-				}
-				li {
-
-					margin-bottom: 5px;
-					font-size: 12px;
-
-				}
-				button {
-					margin-left: 5px;
-					border: 1px solid #cccccc;
-					padding:0 5px;
-					background-color: white;
-					&:hover {
-						background: #f6f6f6;
-					}
-					&.focus {
-						background: #f6f6f6 !important;
-					}
-
-				}
-
-
-			}
-		}
-
-		.payment {
-
-			width:551px;
-			background-color: #ecf3fd;
-			border-bottom: 1px solid $point_color1;
-			padding: 28px 20px 30px;
-			font-size: 14px;
-
-			ul {
-				margin-top: 10px;
-				border-top: 1px solid #333;
-				padding-top: 13px;
-			}
-			li {
-
-				margin-bottom: 10px;
-
-			}
-			// li:first-child  {
-			// 	margin-top: 10px;
-			// 	border-top: 2px solid #333;
-			// 	padding-top: 10px;
-			// }
-		}
-		.tit-h3 {
-
-			display: inline;
-			min-height: 37px;
-			font-size: 20px;
-			color: $base_color1;
-			//margin-bottom:10px;
-		}
-		.payment-amount {
-
-			//display: block;
-			//float: right;
-			position: relative;
-			letter-spacing: 0;
-			min-height: 2px;
-
-			span {
-				position: absolute;
-				right: -425px; //-440px;
-				bottom: 0px;
-				font-size: 30px;
-				color: $point_color2;
-				@include breakpoint(max-width 1209px) {
-					right: -312px;
-				}
-			}
-			p{
-				display: inline;
-				font-size: 12px;
-				color: #333;
-				font-weight: 500;
-			}
-
-			.earn_point {
-				font-size: 12px;
-				font-weight: normal;
-
-				em {
-					color: $base-color1;
-				}
-			}
-
-			// &.ico-minus:before {
-			// 	// position: absolute;
-			// 	// right: -440px;
-			// }
-		}
-		.payment-detail {
-			display: inline;
-			float: right;
-			span{
-				font-size: 16px;
-			}
-			p{
-				display: inline;
-				font-size: 12px;
-				color: #333;
-				font-weight: 500;
-			}
-		}
-
-		.box-board {
-			padding-top: 0.5px;
-		}
-
-		.igroup {
-			padding: 5px 0;
-		}
-
-		.box-board_body {
-			float: left;
-			width: 949px;
-			border-right: 1px solid #e8e7ea;
-			@include breakpoint(max-width 1209px) {
-				float: none;
-				width: auto;
-				border-right: 0;
-			}
-		}
-
-		.btn-phone-change {
-			font-weight: bold;
-			@include btn(78px, 34px, 0, #fff, $base_color3);
-		}
-
-		.responsive {
-			border-bottom: 1px solid #e8e7ea;
-			@include clear;
-
-			.box-board_body {
-				margin-bottom: -1px;
-			}
-		}
-
-		.certi-number {
-			.btn-certi-cncl,
-			.btn-certi-number {
-				font-weight: bold;
-				@include btn(78px, 34px, 0, #fff, $base_color3);
-			}
-
-			.certi-number_time em {
-				color: $point_color2;
-			}
-		}
-
-		.certi-number_time,
-		.phone-number_noti {
-			display: inline-block;
-			margin-left: 20px;
-			color: $base_color3;
-			vertical-align: middle;
-		}
-		.except {
-			//display: inline-block;
-			padding:13px 0;
-			font-size: 15px;
-			border-top: 2px solid #333333;
-			border-bottom: 2px solid #333333;
-			text-align: center;
-			vertical-align: middle;
-
-			.circle {
-				border-radius: 50%;
-				padding: 3px;
-				border-color: #418ded;
-				font-size: 15px;
-				color: white;
-				background-color: #418ded;
-
-			}
-			i {
-
-				margin-left: 10px;
-				font-size: 20px;
-			}
-
-		}
-	}
-
-	.order-body_row {
-		position: relative;
-		margin-top: 60px;
-
-		.tit-h3 {
-			min-height: 37px;
-			font-size: 18px;
-			color: $base_color1;
-		}
-
-		.box-board {
-			padding-top: 0.5px;
-			&.none-box{
-				border-top: 0px!important;
-			}
-		}
-
-		.line-set{
-			border-top: 0px solid #333;
-		}
-
-		.igroup {
-			padding: 5px 0;
-		}
-
-		.box-board_body {
-			float: left;
-			width: 949px;
-			border-right: 1px solid #e8e7ea;
-			@include breakpoint(max-width 1209px) {
-				float: none;
-				width: auto;
-				border-right: 0;
-			}
-		}
-
-		.btn-phone-change {
-			font-weight: bold;
-			@include btn(78px, 34px, 0, #fff, $base_color3);
-		}
-
-		.responsive {
-			border-bottom: 1px solid #e8e7ea;
-			@include clear;
-
-			.box-board_body {
-				margin-bottom: -1px;
-			}
-		}
-
-		.certi-number {
-			.btn-certi-cncl,
-			.btn-certi-number {
-				font-weight: bold;
-				@include btn(78px, 34px, 0, #fff, $base_color3);
-			}
-
-			.certi-number_time em {
-				color: $point_color2;
-			}
-		}
-
-		.certi-number_time,
-		.phone-number_noti {
-			display: inline-block;
-			margin-left: 20px;
-			color: $base_color3;
-			vertical-align: middle;
-		}
-		.except {
-			//display: inline-block;
-			position: relative;
-			padding:13px 0;
-			font-size: 15px;
-			border-top: 1px solid #333333;
-			border-bottom: 1px solid #333333;
-			text-align: center;
-			vertical-align: middle;
-
-			.circle {
-
-				border-radius: 50%;
-				padding: 3px;
-				border-color: #418ded;
-				font-size: 15px;
-				color: white;
-				background-color: #418ded;
-			}
-			i {
-				position: absolute;
-				top:14px;
-				left:649px;
-				margin-left: 10px;
-				font-size: 20px;
-				@include breakpoint(max-width 1209px) {
-					left:535px;
-				}
-			}
-			&:hover {
-				background-color: #f2f2f2;
-			}
-		}
-	}
-
-	.order-body_row_head {
-		@include clear;
-
-		.tit-h3 {
-			float: left;
-		}
-
-		.noti-required {
-			float: left;
-			margin: 6px 0 0 20px;
-			padding-left: 9px;
-			color: $base_color3;
-			background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/bul_dot_red.png') no-repeat 0 50%;
-		}
-	}
-	.order-body_row_seller {
-
-
-		border-top: 2px  solid #418ded;
-		border-bottom:2px solid #418ded;
-		height:85px;
-		//margin-bottom: 40px;
-		background-color: #f2f2f2;
-		@include clear;
-
-		.seller {
-			float: left;
-			margin-left: 20px;
-			height:100%;
-			font-size: 14px;
-			line-height: 85px;
-			vertical-align: middle;
-			color:#666666;
-		}
-
-		.minishop-name {
-
-			float: left;
-			margin-left: 10px;
-			line-height: 80px;
-			width:160px;
-
-			//vertical-align: middle;
-			//height:100%;
-			.icon_shop {
-				position:relative;
-				border-radius: 50%;
-				padding: 0 7px;
-				margin-right: 5px;
-				border-color: #418ded;
-				font-size: 30px;
-				color: white;
-				background-color: #418ded;
-				@include loadIcon($icon-shop);
-			}
-			.name {
-				position:absolute;
-				top: 39px;
-				left: 115px;
-				font-size: 24px;
-				&:hover {
-						text-decoration: underline;
-				}
-			}
-
-		}
-
-		.info {
-			position:relative;
-			float: right;
-			vertical-align: middle;
-			font-size:12px;
-			color:#666666;
-			margin :25px 20px 0px;
-			line-height: 1.4;
-			// @include breakpoint(max-width 1209px) {
-			// 	width: 450px;
-			// 	margin :15px 20px;
-			// }
-
-			.icon_warn {
-				position:absolute;
-				top: -2px;
-				left:-34px;
-				font-size: 28px;
-				color: #f36042;
-				background-color: #f2f2f2;
-				margin-right: 5px;
-				@include loadIcon($icon-warning);
-
-			}
-			.text {
-				strong {
-					//margin-left: 30px;
-				}
-			}
-			// p {
-			// 	//margin-left: 145px;
-			// 	@include breakpoint(max-width 1209px) {
-			// 		display: inline;
-			// 		margin-left: 0px;
-			// 	}
-			// }
-		}
-
-		.noti-required {
-			float: left;
-			margin: 6px 0 0 20px;
-			padding-left: 9px;
-			color: $base_color3;
-			background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/bul_dot_red.png') no-repeat 0 50%;
-		}
-	}
-
-	.order-body_noti {
-		margin-top: 50px;
-		font-size: 14px;
-		font-weight: bold;
-		text-align: center;
-		em {
-			color: $point_color1;
-		}
-		span {
-			color: $point_color2;
-		}
-	}
-
-	.delivery-noti {
-		position: absolute;
-		top: 6px;
-		right: 0;
-		color: $base_color3;
-	}
-
-	.base_color1 {
-		color: $base_color1;
-	}
-
-	.base_color3 {
-		color: $base_color3;
-	}
-
-	.point_color {
-		font-weight: bold;
-		//color: $point_color2;
-	}
-
-	.delivery {
-		position: relative;
-
-		.delivery-recent {
-			position: absolute;
-			left: 76px;
-			top: 35px;
-			padding: 10px 0;
-			border: 1px solid #000;
-			background: #fff;
-			z-index: 10;
-
-			&:after {
-				content: "";
-				position: absolute;
-				left: 36px;
-				top: -7px;
-				width: 13px;
-				height: 7px;
-				background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/arw_delivery_recent.gif') no-repeat 0 0;
-			}
-
-			li {
-				position: relative;
-				height: 30px;
-				padding: 0 65px 0 20px;
-				line-height: 30px;
-				cursor: pointer;
-				white-space: nowrap;
-				box-sizing: border-box;
-
-				.btn_del {
-					position: absolute;
-					right: 20px;
-					top: 50%;
-					margin-top: -15px;
-					@include btn(30px, 30px, 0, $base_color3, transparent);
-				}
-
-				&:hover {
-					border-top: 1px solid #e8e7ea;
-					border-bottom: 1px solid #e8e7ea;
-					background: #fafafc;
-					line-height: 28px;
-				}
-			}
-		}
-	}
-
-	.delivery-name {
-		display: inline-block;
-		margin-right: 10px;
-		vertical-align: middle;
-	}
-
-	.delivery-logo {
-		vertical-align: middle;
-	}
-
-	.safe-number {
-		display: inline-block;
-		margin-left: 20px;
-		color: $base_color3;
-		vertical-align: middle;
-	}
-
-	.btn-question-tip {
-		margin:0 0 5px 3px;
-		@include size(18px);
-		border: 0;
-		background: none;
-		vertical-align: middle;
-	}
-
-	.zipcode {
-		margin-bottom: 10px;
-		font-size: 0;
-
-		* {
-			font-size: 12px;
-		}
-
-		.btn-zipcode {
-			background: $base_color3;
-			@include btn(78px, 34px, 0, #fff, $base_color3, center, 34px);
-			&.ifocus {
-				background: #828282;
-			}
-			&:hover {
-				background: #828282;
-			}
-		}
-
-		.defalut-delivery {
-			margin-left: 20px;
-		}
-
-	}
-
-	.zipcode + .istyle {
-		margin-right: 10px;
-	}
-
-	.memo-slt {
-		min-width: 306px;
-		font-weight: normal;
-	}
-
-	.direct-memo {
-		position: relative;
-		margin-top: 10px;
-		padding-right: 60px;
-
-		.itext {
-			height: 76px;
-		}
-
-		.word-cnt {
-			position: absolute;
-			bottom: 0;
-			right: 18px;
-
-			em {
-				color: $base_color1;
-			}
-		}
-	}
-
-	.paymentdate {
-		@include clear;
-
-		.t {
-			float: left;
-			width: 90px;
-			font-weight: bold;
-			line-height: 34px;
-		}
-
-		.igroup {
-			float: left;
-		}
-	}
-
-	.quickservice {
-		margin-top: 10px;
-		font-size: 0;
-
-		* {
-			font-size: 12px;
-		}
-
-		&:first-child {
-			margin-top: 0;
-		}
-
-		em,
-		label,
-		span {
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		label {
-			width: 90px; //width: 150px;
-			font-weight: bold;
-		}
-
-		span {
-			margin-left: 5px;
-		}
-
-		em {
-			margin-right: 10px;
-		}
-
-		.sstyle {
-			width: 80px;
-			min-width: 80px;
-			margin-right: -1px;
-		}
-	}
-	.noti-box {
-		border-top: 1px solid #e8e7ea;
-		margin:15px 20px 0px;
-		padding:20px 0px;
-	}
-
-	.service-noti {
-		border-top: 1px solid #e8e7ea;
-		margin-top: 15px;
-		font-size: 11px;
-		color: $base_color3;
-		line-height: 20px;
-	}
-
-	.btn-office-find {
-		font-weight: bold;
-		@include btn(96px, 34px, 0, #fff, $base_color3);
-	}
-
-	.officefind-noti {
-
-		margin-top: 5px;
-		color: $base_color3;
-		line-height: 20px;
-	}
-
-	.agent-info_slt {
-		padding-top: 5px;
-
-		.add-bottom {
-			margin-bottom:5px;
-		}
-
-		.agent-info_slt_chk {
-			overflow: hidden;
-			margin-top: 10px;
-			padding: 15px 20px 0px;
-			border: 2px solid #ccc;
-
-
-			ul {
-
-				margin-top: 15px;
-				border-top: 1px solid #ccc;
-				padding:10px 0px;
-
-				li {
-					float:left;
-					margin: 12px 30px 0px 0px;
-					font-size: 0;
-
-					* {
-						font-size: 12px;
-					}
-
-
-					label {
-						display: inline-block;
-						width: 79px;
-						vertical-align: middle;
-					}
-				}
-			}
-
-			.alert-msg {
-				margin-left: 80px;
-			}
-		}
-	}
-
-	.buyer-info {
-		position: relative;
-		float: right;
-		width: 220px;
-		padding: 20px 0 0 20px;
-
-		.tit-h4 {
-			height: 15px;
-			margin-bottom: 11px;
-
-		}
-
-		.buyer-info_step {
-			margin-right: 20px;
-			ul > li {
-				font-size: 12px;
-				line-height: 18px;
-				color:#333333;
-			}
-
-			.btn-buyer{
-			//	@include btn(null, null, 0, $point_color1, transparent);
-			//	@include btn(96px, 34px, 0, , $base_color3);
-				@include btn(104px, 28px, 1px solid #cccccc, #333333, white, center);
-				margin: 10px 0px;
-				&:hover {
-					background: #f6f6f6;
-				}
-				&.ifocus {
-					background: #f6f6f6;
-				}
-			}
-		}
-
-		@include breakpoint(max-width 1209px) {
-			display: none;
-		}
-	}
-
-	.coupon_status {
-		display: inline-block;
-		margin-right: 10px;
-		font-size: 14px;
-		font-weight: bold;
-		vertical-align: middle;
-
-		.bar {
-			position: relative;
-			top: -1px;
-			padding: 0 3px;
-		}
-
-		strong {
-			color: $point_color2;
-			letter-spacing: 0;
-		}
-	}
-
-	.btn-coupon,
-	.btn-get-coupons {
-		font-weight: bold;
-		@include btn(87px, 34px, 1px solid $point_color1, $point_color1, #fff);
-
-		&.on {
-			border: 0;
-			color: #fff;
-			background: $point_color1;
-
-
-			&:hover {
-				background: $point_color1_over;
-			}
-			&.ifocus {
-				background: $point_color1_over;
-			}
-		}
-
-		&:hover {
-			background: #f8f8f8;
-		}
-		&.ifocus {
-			background: #f8f8f8;
-		}
-
-		&:disabled {
-			border-color: #ccc;
-			color: $base_color3;
-			background: #f2f2f2;
-			cursor: default;
-		}
-	}
-
-	.btn-get-coupons {
-		margin-left: 10px;
-	}
-
-	.discounted {
-		font-size: 14px;
-		color: $point_color2;
-		letter-spacing: 0;
-	}
-
-	.order-items {
-		padding: 20px 40px 20px 10px;
-
-		.order-items_table {
-			display: table;
-			width: 100%;
-			min-height: 100px;
-			text-align: left;
-
-			.order-items_row {
-				display: table-row;
-
-				.order-items_cell,
-				.order-items_item {
-					display: table-cell;
-
-					.name {
-						display: block;
-						margin-top: 5px;
-					}
-				}
-
-				.order-items_cell {
-					width: 100px;
-					padding-right: 20px;
-				}
-			}
-		}
-
-		.order-items_photo {
-			overflow: hidden;
-			display: block;
-			@include size(99px);
-			border: 1px solid white;
-
-			img {
-				max-width: 100%;
-			}
-
-		}
-		.border-hover {
-			&:hover{
-				border: 1px solid #418ded;
-				//box-sizing: border-box;
-			}
-		}
-
-		.order-items_item {
-			position: relative;
-			vertical-align: middle;
-
-			.name {
-				display: inline-block;
-				margin-right: 60px;
-				font-size: 16px;
-				color: #000;
-				vertical-align: middle;
-				line-height: 18px;
-				.seleter {
-					color:#999;
-				}
-				strong {
-					&:hover {
-						text-decoration: underline;
-					}
-				}
-				.no-hover {
-					&:hover {
-						text-decoration:none;
-						cursor: default;
-					}
-				}
-			}
-
-			.order-items_item_cnt {
-				position: absolute;
-				right: 0;
-				top: 50%;
-				margin-top: -8px;
-				font-weight: bold;
-				line-height: 16px;
-				letter-spacing: 0;
-			}
-
-			.order-items_item_lst {
-				margin-top: 5px;
-
-				li {
-					position: relative;
-					height: 28px;
-					margin-top: 5px;
-					padding: 0 60px 0 10px;
-					border: 1px solid #e8e7ea;
-					color: $base_color2;
-					background: #fafafc;
-					line-height: 28px;
-
-					&:first-child {
-						margin-top: 0;
-					}
-
-					.cnt {
-						position: absolute;
-						top: 0;
-						right: 20px;
-						font-size: 11px;
-						letter-spacing: 0;
-					}
-				}
-			}
-		}
-	}
-
-	.order-item-amount {
-		display: block;
-		//padding-right: 40px;
-		text-align:center;
-		letter-spacing: 0;
-
-		strong {
-			font-size: 16px;
-		}
-	}
-
-	.delivery-cost {
-		display: block;
-		margin-bottom: 10px;
-		text-align: center;
-
-		strong {
-			font-size: 16px;
-			letter-spacing: 0;
-		}
-	}
-
-	.free-delivery {
-		display: inline-block;
-		width: 90px;
-		height: 28px;
-		margin-bottom: 10px;
-		border: 1px solid #ff6600;
-		color: #ff6600;
-		font-weight: bold;
-		line-height: 28px;
-		text-align: center;
-	}
-
-	.delivery-date strong {
-		color: #ff6600;
-		letter-spacing: 0;
-	}
-
-	.order-body_row_head {
-		.btn-product-change {
-			display: inline-block;
-			@include btn(100px, 28px, 1px solid #ccc, #333, #fff, center, 26px);
-			padding: 0px 10px 0px 10px;
-			&:hover {
-				background: #f6f6f6;
-			}
-		}
-
-		.order-body_row_head_span {
-			float: left;
-			margin: -4px 0 0 10px;
-
-			.order-body_row_head_span_noti {
-				margin-left: 10px;
-				color: $base_color3;
-			}
-		}
-	}
-
-	.ico-plus:before {
-		content: "";
-		display: inline-block;
-		width: 16px;
-		height: 16px;
-		margin-right: 5px;
-		background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/ico_grayplus.png') no-repeat 0 0;
-		vertical-align: -2px;
-	}
-	.ico-minus:before {
-		content: "";
-		display: inline-block;
-		width: 16px;
-		height: 16px;
-		margin-right: 5px;
-		background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/ico_redminus.png') no-repeat 0 0;
-		vertical-align: -2px;
-	}
-
-
-
-	.point-info {
-		display: inline-block;
-		vertical-align: middle;
-
-		.btn-point-alluse {
-			margin-left: 9px;
-			margin-right: 9px;
-			font-weight: bold;
-			@include btn(89px, 34px, 1px solid #ccc, $base_color3, #f2f2f2);
-			cursor: default;
-
-			&.on {
-				border-color: $point_color1;
-				color: $point_color1;
-				background: #fff;
-				cursor: pointer;
-
-				&:hover {
-					background: #f6f6f6;
-				}
-			}
-		}
-	}
-	.deposit-right {
-		margin-right: 45px;
-	}
-
-	.point-input {
-		position: relative;
-		display: inline-block;
-		//width: 200px;
-		font-size: 14px;
-		font-weight: bold;
-		vertical-align: middle;
-
-		.istyle {
-			font-size: 20px;
-			text-align: right;
-		}
-		input {
-
-			width: 200px;
-			border: none;
-			border-bottom:1px solid #999999;
-			margin-left:5px;
-			@include breakpoint(max-width 1209px) {
-				width: 220px;
-			}
-		}
-		// span {
-		// 	position: absolute;
-		// 	top:13px;
-		// 	left:138px;
-		// }
-	}
-
-
-
-	.em-red {
-		letter-spacing: 0;
-
-		em {
-			color: $point_color2;
-		}
-		@include breakpoint(max-width 1209px) {
-			margin-top: 10px;
-			margin-left: 42%;
-			display: block;
-		}
-	}
-
-	.payment-method {
-		.payment-method_detail {
-			position: relative;
-			//width: 725px;
-			width: 555px;
-			margin: 0px 20px 10px;
-			//padding: 10px 10px 10px 20px;
-			//padding-bottom: 10px;
-			border: 2px solid #ccc;
-			@include breakpoint(max-width 1209px) {
-				width: 430px;
-			}
-
-			li {
-				font-size: 0;
-
-				* {
-					font-size: 12px;
-				}
-			}
-
-			.t {
-				display: inline-block;
-				vertical-align: middle;
-				padding-left: 10px;
-			}
-
-			.creditcard {
-				li {
-					margin-top: 5px;
-
-					&:first-child {
-						margin-top: 0;
-					}
-
-					.t {
-						width: 55px;
-					}
-				}
-
-				.sstyle {
-					width: 200px;
-				}
-
-				.inst-dsc {
-					display: inline-block;
-					margin-left: 10px;
-					color: $base_color3;
-					letter-spacing: 0;
-					vertical-align: middle;
-				}
-
-				.btn-inst-benefit {
-					color: $base_color1;
-					font-weight: bold;
-					letter-spacing: 0;
-
-					[class^='icon-'] {
-						margin-left: 4px;
-						font-size: 9px;
-					}
-				}
-			}
-
-			.nbankbook {
-				li {
-
-					//padding: 10px 0;
-					select {
-						margin:10px 10px 0px 10px;
-						// &:first-child {
-						// 	margin:10px 10px 0px 10px;
-						// }
-					}
-					input {
-						margin:10px 10px 5px 10px;
-
-					}
-					label {
-
-						cursor: pointer;
-					}
-
-
-					&:first-child {
-						border-top: 0;
-					}
-
-					.t {
-						width: 50px;
-						margin-left: 20px;
-						padding: 5px 0 7px !important;
-					}
-					span {
-						margin-left: 0px;
-						padding: 0px;
-					}
-					.left-10 {
-						margin-left: 10px;
-
-						label{
-							margin-left:0px;
-						}
-
-					}
-
-					.nbankbook_noti {
-
-						border: 1px solid #f9f9fa;
-						background-color: #f9f9fa;
-						display: inline-block;
-						margin-left: 80px;
-						padding: 10px;
-						color: $base_color3;
-						font-weight: normal;
-						vertical-align: middle;
-
-
-						b {
-							color:#ff6600;
-						}
-					}
-
-					.calendar {
-						position: relative;
-						display: inline-block;
-						margin-left: 0px !important;
-						//padding-right: 33px;
-						vertical-align: middle;
-
-						label {
-							display: inline-block;
-						    margin-left: 10px !important;
-							padding: 21px 0 23px !important;
-							vertical-align: middle;
-						}
-
-						.istyle {
-							width: 110px;
-							border-right: 0;
-							margin:5px -5px 10px 10px;
-							padding: 0px 0px !important;
-							//margin-right: -5px;
-							// @include breakpoint(max-width 1209px) {
-							// 	width: 85px;
-							// }
-						}
-
-
-						.btn-cal {
-							// position: absolute;
-							// right: -23px;
-							// top: 9px;
-							@include btn(33px, 34px, 1px solid $base_color3, null, #e8e7ea);
-							border-left: 0;
-							margin-bottom: 5px;
-
-							&:before {
-								content: "";
-								display: inline-block;
-								width: 32px;
-								height: 32px;
-								background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/ico_calendar.gif') no-repeat 54% 50%;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.refund-method {
-		.refund-method_default {
-			width: 715px;
-			margin-top: 10px;
-			padding: 10px 20px;
-			border: 2px solid #ccc;
-			.refund-method_default_info {
-				position: relative;
-				ul {
-					width: 320px;
-					padding: 5px 0;
-					border-right: 1px solid #ccc;
-					li {
-						padding-left: 10px;
-						line-height: 20px;
-						background: url("https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/bul_dot_333.png") no-repeat 0 49%;
-					}
-				}
-				.btn_refund_reset {
-					position: absolute;
-					left: 370px;
-					top: 50%;
-					margin-top: -14px;
-					@include btn(55px, 28px, 1px solid #ccc, null, #fff);
-				}
-			}
-
-			.refund-method_default_new {
-				position: relative;
-				width: 320px;
-				border-right: 1px solid #ccc;
-				.refund-method_default_new_input {
-					font-size: 0;
-					* {
-						font-size: 12px;
-					}
-					.sstyle {
-						width: 150px;
-						margin-left: 5px;
-					}
-					.refund_number {
-						margin: 5px 0 10px;
-						font-size: 0;
-						.istyle {
-							width: 198px;
-						}
-						.btn_refund_number_cert {
-							font-weight: bold;
-							@include btn(77px, 34px, 0, #fff, $base_color3);
-						}
-					}
-				}
-				.btn_refund_cncl {
-					position: absolute;
-					left: 370px;
-					top: 50%;
-					margin-top: -14px;
-					@include btn(55px, 28px, 1px solid #ccc, null, #fff);
-				}
-			}
-		}
-
-		.refund-method_detail {
-			width: 715px;
-			margin-top: 10px;
-			padding: 10px 20px;
-			border: 2px solid #ccc;
-			font-size: 0;
-
-			* {
-				font-size: 12px;
-			}
-
-			label {
-				display: inline-block;
-				width: 82px;
-				padding-left: 10px;
-				background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/bul_dot_333.png') no-repeat 0 49%;
-				vertical-align: middle;
-			}
-
-			.sstyle {
-				min-width: 260px;
-				font-weight: normal;
-			}
-
-			.box {
-				margin-top: 10px;
-				padding-left: 92px;
-				font-size: 0;
-
-				* {
-					font-size: 12px;
-				}
-
-				.sstyle {
-					min-width: 110px;
-					margin: 0 5px;
-				}
-			}
-		}
-	}
-
-	.doc-evidence {
-		.doc-evidence_noti {
-
-			margin: 6px 20px;
-			font-size: 11px;
-			color: $base_color3;
-			line-height: 18px;
-			font-weight: 500;
-		}
-
-		.doc-evidence_detail {
-			width: 515px;
-			margin: 10px 20px;
-			padding: 10px 20px 10px;
-			border: 2px solid #ccc;
-			font-size: 0;
-			@include breakpoint(max-width 1209px) {
-				width: 380px;
-			}
-
-			* {
-				font-size: 12px;
-			}
-
-			.doc-evidence_detail_slt {
-				margin-top: 10px;
-				font-size: 0;
-
-				* {
-					font-size: 12px;
-				}
-
-				.sstyle:first-child {
-					margin-right: 10px;
-				}
-				span {
-					padding: 0px;
-				}
-			}
-			.padding-0{
-				padding: 0px;
-				label {
-					cursor: pointer;
-				}
-			}
-
-			.doc-line {
-				border-bottom: 1px solid #ccc;
-				padding-bottom: 10px;
-			}
-		}
-	}
-
-	.tooltip {
-		&.layer-safenumber {
-			&:before {
-				display: none;
-			}
-
-			ol {
-				margin-top: 7px;
-				padding: 7px 0 0 9px;
-				border-top: 1px solid $base_color2;
-
-				li:first-letter {
-					margin-left: -9px;
-				}
-			}
-		}
-
-		&.layer-happypoint {
-			&:before {
-				display: none;
-			}
-		}
-
-		&.layer-escrow {
-			&:after {
-				display: none;
-			}
-		}
-
-		&.layer-nbankbook {
-			&:after {
-				display: none;
-			}
-		}
-	}
-
-	.btn-happypoint:hover ~ .layer-happypoint {
-		opacity: 1;
-		left: 645px;
-		margin-top: -5px;
-		@include breakpoint(max-width 1209px) {
-			left: 524px;
-			margin-top: -5px;
-		}
-	}
-
-	.btn-safenumber-guide:hover ~ .layer-safenumber {
-		opacity: 1;
-		left: 550px;
-	}
-
-	.escrow-tooltip:hover ~ .layer-escrow {
-		opacity: 1;
-		left: -32px;
-		bottom: 31px;
-	}
-
-	.nbankbook-tooltip:hover ~ .layer-nbankbook {
-		opacity: 1;
-		left: -32px;
-		bottom: 31px;
-	}
-
-	.tab-box {
-		border-top: 2px solid $base_color1;
-
-		ul {
-			overflow: hidden;
-			position: relative;
-			height: 200px;
-			margin-top: 20px;
-			@include clear;
-
-			li {
-				float: left;
-				margin-right: -1px;
-
-				.tit-h4 {
-					width: 208px;
-					height: 49px;
-					border-width: 1px 1px 0;
-					border-style: solid;
-					border-color: #ccc;
-					font-size: 14px;
-					background: #fff;
-					line-height: 49px;
-					text-align: center;
-					cursor: pointer;
-
-					&:hover {
-						color: $point_color1;
-					}
-				}
-
-				.conts {
-					opacity: 0;
-					overflow-y: auto;
-					position: absolute;
-					left: -9999px;
-					bottom: 0;
-					width: 1%;
-					height: 151px;
-					padding: 15px 20px;
-					border: 1px solid $point_color1;
-					color: $base_color2;
-					line-height: 20px;
-					box-sizing: border-box;
-				}
-
-				&.active .tit-h4 {
-					position: relative;
-					border-color: $point_color1;
-					color: $point_color1;
-					z-index: 1;
-				}
-
-				&.active .conts {
-					opacity: 1;
-					left: 0;
-					width: 100%;
-				}
-			}
-		}
-
-		&.payment-agency {
-			padding-top: 10px;
-
-			ul {
-				margin-top: 10px;
-			}
-		}
-	}
-
-	.privacy-check {
-		margin-top: 10px;
-		@include clear;
-
-		li {
-			float: left;
-			margin-right: 20px;
-		}
-	}
-
-	.order-body_row_head {
-		.btn-conts-view {
-			float: left;
-			margin: -4px 0 0 10px;
-			font-size: 11px;
-			line-height: 26px;
-
-			&:hover {
-				background: #f6f6f6;
-			}
-
-			span {
-				display: inline-block;
-				vertical-align: middle;
-			}
-			@include btn(96px, 28px, 1px solid #ccc, #333, #fff, center);
-
-			[class^='icon-'] {
-				display: inline-block;
-				vertical-align: middle;
-				margin: 0 0 3px 4px;
-				font-size: 15px;
-			}
-		}
-	}
-
-	.payment-check {
-		padding: 10px 0 20px;
-		border-bottom: 1px solid #e8e7ea;
-	}
-
-	.button-group {
-		margin-top: 50px;
-	}
-
-	.btn-continue-shopping {
-		display: inline-block;
-		font-size: 24px;
-		font-weight: bold;
-		margin-right: 10px;
-		@include btn(300px, 70px, 2px solid $point_color1, $point_color1, #fff, center, 66px);
-
-		&:hover {
-			background: #f6f6f6;
-		}
-		&.focus {
-			background: #f6f6f6;
-		}
-	}
-
-	.btn-buy-submit {
-		font-size: 24px;
-		font-weight: bold;
-		@include btn(300px, 70px, 0, #fff, $point_color1, center, 70px);
-
-		&:hover {
-			background: #2d7ee4;
-		}
-		&.focus {
-			background: #2d7ee4;
-		}
-	}
-	@include breakpoint(max-width 1209px) {
-		width: 950px;
-	}
+    padding-bottom: 100px;
+    line-height: 1;
+    @include default_width;
+
+    .order-body_top {
+        position: relative;
+        height: 50px;
+        padding-top: 40px;
+        border-bottom: 2px solid #333333;
+
+        .tit-h2 {
+            font-size: 30px;
+            color: #000;
+        }
+
+        ol {
+            position: absolute;
+            top: 47px;
+            right: 0px;
+            @include clear;
+
+            li {
+                position: relative;
+                float: left;
+                margin-left: 10px;
+                font-size: 16px;
+                color: #ccc;
+                font-weight: bold;
+                @include loadIcon($icon-chevron-right);
+
+                &:before {
+                    margin-right: 10px;
+                }
+
+                &:first-child {
+                    margin-left: 100;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                // span {
+                // 	font-size: 24px;
+                // }
+
+                strong {
+                    color: #000;
+                }
+            }
+        }
+    }
+    .order-body_info {
+        position: relative;
+        margin-top: 60px;
+
+        .tit-h3 {
+            min-height: 37px;
+            font-size: 18px;
+            color: $base_color1;
+        }
+
+        .box-board {
+            padding-top: 0.5px;
+        }
+        .oCdPy {
+            //180608 카드선택부분 추가 시작
+            padding: 15px 14px 0;
+            font-size: 0;
+            .oItemnm {
+                display: inline-block;
+                width: 100px;
+                padding: 5.5px;
+                font-size: 13px;
+                @include breakpoint(max-width 1209px) {
+                    padding: 5px;
+                }
+                .oItemlb {
+                    color: $base_color3;
+                    border: 1px solid #ccc;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    border-radius: 3px;
+                    text-align: center;
+                    cursor: pointer;
+                    @include txtVer1Li(33);
+                    &:hover {
+                        background: #f2f2f2;
+                    }
+                }
+                .oItemr {
+                    display: none;
+                }
+                .oItemr:checked + .oItemlb {
+                    border-color: $point_color1;
+                    color: $point_color1;
+                }
+            }
+        }
+        .otherCdPy {
+            background: #f2f2f2;
+            width: 505px;
+            padding: 0 20px;
+            margin: 5px 0 16px 20px;
+            display: none;
+            &.on {
+                display: block;
+            }
+            &.isCard {
+                @include txtVer1Li(52);
+                margin-bottom: 0;
+                .otherCard {
+                    width: 200px;
+                    height: 34px;
+                    margin-left: 5px;
+                    border: 1px solid $base_color3;
+                }
+            }
+            &.isPay {
+                display: block;
+                padding: 25px 20px;
+                .payLogo {
+                    padding-bottom: 9px;
+                }
+                .payName {
+                    margin-left: 10px;
+                    font-size: 18px;
+                    color: $base_color3;
+                }
+                .payAlert {
+                    margin-top: 18px;
+                    padding-top: 19px;
+                    border-top: 1px solid #e5e5e5;
+                    line-height: 1.6;
+                    dd {
+                        font-weight: 400;
+                        position: relative;
+                        padding-left: 7px;
+                        word-wrap: break-word;
+                        word-break: keep-all;
+                        &:before {
+                            content: '-';
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+            @include breakpoint(max-width 1209px) {
+                width: 390px;
+            }
+        } //180608 카드선택부분 추가 끝
+        .igroup {
+            padding: 5px 0;
+        }
+
+        .box-board_body {
+            float: left;
+            width: 949px;
+            border-right: 1px solid #e8e7ea;
+            @include breakpoint(max-width 1209px) {
+                float: none;
+                width: auto;
+                border-right: 0;
+            }
+        }
+
+        .btn-phone-change {
+            font-weight: bold;
+            @include btn(78px, 34px, 0, #fff, $base_color3);
+        }
+
+        .responsive {
+            border-bottom: 1px solid #e8e7ea;
+            @include clear;
+
+            .box-board_body {
+                margin-bottom: -1px;
+            }
+        }
+
+        .certi-number {
+            .btn-certi-cncl,
+            .btn-certi-number {
+                font-weight: bold;
+                @include btn(78px, 34px, 0, #fff, $base_color3);
+            }
+
+            .certi-number_time em {
+                color: $point_color2;
+            }
+        }
+
+        .certi-number_time,
+        .phone-number_noti {
+            display: inline-block;
+            margin-left: 20px;
+            color: $base_color3;
+            vertical-align: middle;
+        }
+        .except {
+            //display: inline-block;
+            padding: 13px 0;
+            font-size: 15px;
+            border-top: 2px solid #333333;
+            border-bottom: 2px solid #333333;
+            text-align: center;
+            vertical-align: middle;
+
+            .circle {
+                border-radius: 50%;
+                padding: 3px;
+                border-color: #418ded;
+                font-size: 15px;
+                color: white;
+                background-color: #418ded;
+            }
+            i {
+                margin-left: 10px;
+                font-size: 20px;
+            }
+        }
+        .th-reset {
+            position: relative;
+            background-color: white;
+            &.bdbt0 {
+                //180608 카드선택부분 추가 시작
+                border-bottom: 0;
+            }
+            .cdWarn {
+                padding-bottom: 0px;
+                display: none;
+                &.on {
+                    display: block;
+                }
+                b {
+                    display: inline-block;
+                    padding: 5px 0 0;
+                }
+            } //180608 카드선택부분 추가 끝
+            .color {
+                color: #ff6600;
+                font-weight: 100;
+            }
+            .icon-card {
+                font-size: 14px;
+                padding-top: 15px;
+                @include loadIcon($icon-credit-card);
+                b {
+                    cursor: pointer;
+                    &:hover {
+                        color: #418ded;
+                    }
+                    i {
+                        margin-left: 3px;
+                    }
+                }
+            }
+            .go {
+                position: absolute;
+                top: 18px;
+                left: 150px;
+                font-size: 20px;
+                @include loadIcon($icon-angle-right);
+            }
+        }
+        .td-reset {
+            border-left: 1px solid #e8e7ea;
+            padding-top: 20px;
+            vertical-align: top;
+        }
+    }
+    .happy-pointbar {
+        background-color: #65c5e8;
+        font-size: 20px;
+        padding: 27px;
+        div {
+            color: #ffffff;
+        }
+        strong {
+            color: #ffff33;
+        }
+        em {
+            color: #ffff33;
+        }
+    }
+
+    .order-body_bottom {
+        position: relative;
+        margin-bottom: 20px;
+        height: 200px;
+
+        .agree {
+            width: 599px;
+            //padding: 28px 20px 20px;
+            padding: 28px 0px 20px;
+            border-bottom: 2px solid $point_color1;
+            font-size: 11px;
+            h3 {
+                padding: 0px 20px;
+            }
+
+            .all-agree {
+                margin: 10px 20px;
+                border-top: 1px solid #333;
+                padding: 10px 0px 4px;
+                font-size: 12px;
+            }
+            .all-agree_list {
+                padding: 0px 20px;
+                ul {
+                    margin-top: 10px;
+                    border-top: 1px solid #e5e5e5;
+                    padding-top: 10px;
+                    height: 89px;
+                }
+                li {
+                    margin-bottom: 5px;
+                    font-size: 12px;
+                }
+                button {
+                    margin-left: 5px;
+                    border: 1px solid #cccccc;
+                    padding: 0 5px;
+                    background-color: white;
+                    &:hover {
+                        background: #f6f6f6;
+                    }
+                    &.focus {
+                        background: #f6f6f6 !important;
+                    }
+                }
+            }
+        }
+
+        .payment {
+            width: 551px;
+            background-color: #ecf3fd;
+            border-bottom: 1px solid $point_color1;
+            padding: 28px 20px 30px;
+            font-size: 14px;
+
+            ul {
+                margin-top: 10px;
+                border-top: 1px solid #333;
+                padding-top: 13px;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+            // li:first-child  {
+            // 	margin-top: 10px;
+            // 	border-top: 2px solid #333;
+            // 	padding-top: 10px;
+            // }
+        }
+        .tit-h3 {
+            display: inline;
+            min-height: 37px;
+            font-size: 20px;
+            color: $base_color1;
+            //margin-bottom:10px;
+        }
+        .payment-amount {
+            //display: block;
+            //float: right;
+            position: relative;
+            letter-spacing: 0;
+            min-height: 2px;
+
+            span {
+                position: absolute;
+                right: -425px; //-440px;
+                bottom: 0px;
+                font-size: 30px;
+                color: $point_color2;
+                @include breakpoint(max-width 1209px) {
+                    right: -312px;
+                }
+            }
+            p {
+                display: inline;
+                font-size: 12px;
+                color: #333;
+                font-weight: 500;
+            }
+
+            .earn_point {
+                font-size: 12px;
+                font-weight: normal;
+
+                em {
+                    color: $base-color1;
+                }
+            }
+
+            // &.ico-minus:before {
+            // 	// position: absolute;
+            // 	// right: -440px;
+            // }
+        }
+        .payment-detail {
+            display: inline;
+            float: right;
+            span {
+                font-size: 16px;
+            }
+            p {
+                display: inline;
+                font-size: 12px;
+                color: #333;
+                font-weight: 500;
+            }
+        }
+
+        .box-board {
+            padding-top: 0.5px;
+        }
+
+        .igroup {
+            padding: 5px 0;
+        }
+
+        .box-board_body {
+            float: left;
+            width: 949px;
+            border-right: 1px solid #e8e7ea;
+            @include breakpoint(max-width 1209px) {
+                float: none;
+                width: auto;
+                border-right: 0;
+            }
+        }
+
+        .btn-phone-change {
+            font-weight: bold;
+            @include btn(78px, 34px, 0, #fff, $base_color3);
+        }
+
+        .responsive {
+            border-bottom: 1px solid #e8e7ea;
+            @include clear;
+
+            .box-board_body {
+                margin-bottom: -1px;
+            }
+        }
+
+        .certi-number {
+            .btn-certi-cncl,
+            .btn-certi-number {
+                font-weight: bold;
+                @include btn(78px, 34px, 0, #fff, $base_color3);
+            }
+
+            .certi-number_time em {
+                color: $point_color2;
+            }
+        }
+
+        .certi-number_time,
+        .phone-number_noti {
+            display: inline-block;
+            margin-left: 20px;
+            color: $base_color3;
+            vertical-align: middle;
+        }
+        .except {
+            //display: inline-block;
+            padding: 13px 0;
+            font-size: 15px;
+            border-top: 2px solid #333333;
+            border-bottom: 2px solid #333333;
+            text-align: center;
+            vertical-align: middle;
+
+            .circle {
+                border-radius: 50%;
+                padding: 3px;
+                border-color: #418ded;
+                font-size: 15px;
+                color: white;
+                background-color: #418ded;
+            }
+            i {
+                margin-left: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .order-body_row {
+        position: relative;
+        margin-top: 60px;
+
+        .tit-h3 {
+            min-height: 37px;
+            font-size: 18px;
+            color: $base_color1;
+        }
+
+        .box-board {
+            padding-top: 0.5px;
+            &.none-box {
+                border-top: 0px !important;
+            }
+        }
+
+        .line-set {
+            border-top: 0px solid #333;
+        }
+
+        .igroup {
+            padding: 5px 0;
+        }
+
+        .box-board_body {
+            float: left;
+            width: 949px;
+            border-right: 1px solid #e8e7ea;
+            @include breakpoint(max-width 1209px) {
+                float: none;
+                width: auto;
+                border-right: 0;
+            }
+        }
+
+        .btn-phone-change {
+            font-weight: bold;
+            @include btn(78px, 34px, 0, #fff, $base_color3);
+        }
+
+        .responsive {
+            border-bottom: 1px solid #e8e7ea;
+            @include clear;
+
+            .box-board_body {
+                margin-bottom: -1px;
+            }
+        }
+
+        .certi-number {
+            .btn-certi-cncl,
+            .btn-certi-number {
+                font-weight: bold;
+                @include btn(78px, 34px, 0, #fff, $base_color3);
+            }
+
+            .certi-number_time em {
+                color: $point_color2;
+            }
+        }
+
+        .certi-number_time,
+        .phone-number_noti {
+            display: inline-block;
+            margin-left: 20px;
+            color: $base_color3;
+            vertical-align: middle;
+        }
+        .except {
+            //display: inline-block;
+            position: relative;
+            padding: 13px 0;
+            font-size: 15px;
+            border-top: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+            text-align: center;
+            vertical-align: middle;
+
+            .circle {
+                border-radius: 50%;
+                padding: 3px;
+                border-color: #418ded;
+                font-size: 15px;
+                color: white;
+                background-color: #418ded;
+            }
+            i {
+                position: absolute;
+                top: 14px;
+                left: 649px;
+                margin-left: 10px;
+                font-size: 20px;
+                @include breakpoint(max-width 1209px) {
+                    left: 535px;
+                }
+            }
+            &:hover {
+                background-color: #f2f2f2;
+            }
+        }
+    }
+
+    .order-body_row_head {
+        @include clear;
+
+        .tit-h3 {
+            float: left;
+        }
+
+        .noti-required {
+            float: left;
+            margin: 6px 0 0 20px;
+            padding-left: 9px;
+            color: $base_color3;
+            background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/bul_dot_red.png') no-repeat 0 50%;
+        }
+    }
+    .order-body_row_seller {
+        border-top: 2px solid #418ded;
+        border-bottom: 2px solid #418ded;
+        height: 85px;
+        //margin-bottom: 40px;
+        background-color: #f2f2f2;
+        @include clear;
+
+        .seller {
+            float: left;
+            margin-left: 20px;
+            height: 100%;
+            font-size: 14px;
+            line-height: 85px;
+            vertical-align: middle;
+            color: #666666;
+        }
+
+        .minishop-name {
+            float: left;
+            margin-left: 10px;
+            line-height: 80px;
+            width: 160px;
+
+            //vertical-align: middle;
+            //height:100%;
+            .icon_shop {
+                position: relative;
+                border-radius: 50%;
+                padding: 0 7px;
+                margin-right: 5px;
+                border-color: #418ded;
+                font-size: 30px;
+                color: white;
+                background-color: #418ded;
+                @include loadIcon($icon-shop);
+            }
+            .name {
+                position: absolute;
+                top: 39px;
+                left: 115px;
+                font-size: 24px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .info {
+            position: relative;
+            float: right;
+            vertical-align: middle;
+            font-size: 12px;
+            color: #666666;
+            margin: 25px 20px 0px;
+            line-height: 1.4;
+            // @include breakpoint(max-width 1209px) {
+            // 	width: 450px;
+            // 	margin :15px 20px;
+            // }
+
+            .icon_warn {
+                position: absolute;
+                top: -2px;
+                left: -34px;
+                font-size: 28px;
+                color: #f36042;
+                background-color: #f2f2f2;
+                margin-right: 5px;
+                @include loadIcon($icon-warning);
+            }
+            .text {
+                strong {
+                    //margin-left: 30px;
+                }
+            }
+            // p {
+            // 	//margin-left: 145px;
+            // 	@include breakpoint(max-width 1209px) {
+            // 		display: inline;
+            // 		margin-left: 0px;
+            // 	}
+            // }
+        }
+
+        .noti-required {
+            float: left;
+            margin: 6px 0 0 20px;
+            padding-left: 9px;
+            color: $base_color3;
+            background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/bul_dot_red.png') no-repeat 0 50%;
+        }
+    }
+
+    .order-body_noti {
+        margin-top: 50px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        em {
+            color: $point_color1;
+        }
+        span {
+            color: $point_color2;
+        }
+    }
+
+    .delivery-noti {
+        position: absolute;
+        top: 6px;
+        right: 0;
+        color: $base_color3;
+    }
+
+    .base_color1 {
+        color: $base_color1;
+    }
+
+    .base_color3 {
+        color: $base_color3;
+    }
+
+    .point_color {
+        font-weight: bold;
+        //color: $point_color2;
+    }
+
+    .delivery {
+        position: relative;
+
+        .delivery-recent {
+            position: absolute;
+            left: 76px;
+            top: 35px;
+            padding: 10px 0;
+            border: 1px solid #000;
+            background: #fff;
+            z-index: 10;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 36px;
+                top: -7px;
+                width: 13px;
+                height: 7px;
+                background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/arw_delivery_recent.gif')
+                    no-repeat 0 0;
+            }
+
+            li {
+                position: relative;
+                height: 30px;
+                padding: 0 65px 0 20px;
+                line-height: 30px;
+                cursor: pointer;
+                white-space: nowrap;
+                box-sizing: border-box;
+
+                .btn_del {
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    margin-top: -15px;
+                    @include btn(30px, 30px, 0, $base_color3, transparent);
+                }
+
+                &:hover {
+                    border-top: 1px solid #e8e7ea;
+                    border-bottom: 1px solid #e8e7ea;
+                    background: #fafafc;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+    .delivery-name {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .delivery-logo {
+        vertical-align: middle;
+    }
+
+    .safe-number {
+        display: inline-block;
+        margin-left: 20px;
+        color: $base_color3;
+        vertical-align: middle;
+    }
+
+    .btn-question-tip {
+        margin: 0 0 5px 3px;
+        @include size(18px);
+        border: 0;
+        background: none;
+        vertical-align: middle;
+    }
+
+    .zipcode {
+        margin-bottom: 10px;
+        font-size: 0;
+
+        * {
+            font-size: 12px;
+        }
+
+        .btn-zipcode {
+            background: $base_color3;
+            @include btn(78px, 34px, 0, #fff, $base_color3, center, 34px);
+            &.ifocus {
+                background: #828282;
+            }
+            &:hover {
+                background: #828282;
+            }
+        }
+
+        .defalut-delivery {
+            margin-left: 20px;
+        }
+    }
+
+    .zipcode + .istyle {
+        margin-right: 10px;
+    }
+
+    .memo-slt {
+        min-width: 306px;
+        font-weight: normal;
+    }
+
+    .direct-memo {
+        position: relative;
+        margin-top: 10px;
+        padding-right: 60px;
+
+        .itext {
+            height: 76px;
+        }
+
+        .word-cnt {
+            position: absolute;
+            bottom: 0;
+            right: 18px;
+
+            em {
+                color: $base_color1;
+            }
+        }
+    }
+
+    .paymentdate {
+        @include clear;
+
+        .t {
+            float: left;
+            width: 90px;
+            font-weight: bold;
+            line-height: 34px;
+        }
+
+        .igroup {
+            float: left;
+        }
+    }
+
+    .quickservice {
+        margin-top: 10px;
+        font-size: 0;
+
+        * {
+            font-size: 12px;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        em,
+        label,
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        label {
+            width: 90px; //width: 150px;
+            font-weight: bold;
+        }
+
+        span {
+            margin-left: 5px;
+        }
+
+        em {
+            margin-right: 10px;
+        }
+
+        .sstyle {
+            width: 80px;
+            min-width: 80px;
+            margin-right: -1px;
+        }
+    }
+    .noti-box {
+        border-top: 1px solid #e8e7ea;
+        margin: 15px 20px 0px;
+        padding: 20px 0px;
+    }
+
+    .service-noti {
+        border-top: 1px solid #e8e7ea;
+        margin-top: 15px;
+        font-size: 11px;
+        color: $base_color3;
+        line-height: 20px;
+    }
+
+    .btn-office-find {
+        font-weight: bold;
+        @include btn(96px, 34px, 0, #fff, $base_color3);
+    }
+
+    .officefind-noti {
+        margin-top: 5px;
+        color: $base_color3;
+        line-height: 20px;
+    }
+
+    .agent-info_slt {
+        padding-top: 5px;
+
+        .add-bottom {
+            margin-bottom: 5px;
+        }
+
+        .agent-info_slt_chk {
+            overflow: hidden;
+            margin-top: 10px;
+            padding: 15px 20px 0px;
+            border: 2px solid #ccc;
+
+            ul {
+                margin-top: 15px;
+                border-top: 1px solid #ccc;
+                padding: 10px 0px;
+
+                li {
+                    float: left;
+                    margin: 12px 30px 0px 0px;
+                    font-size: 0;
+
+                    * {
+                        font-size: 12px;
+                    }
+
+                    label {
+                        display: inline-block;
+                        width: 79px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .alert-msg {
+                margin-left: 80px;
+            }
+        }
+    }
+
+    .buyer-info {
+        position: relative;
+        float: right;
+        width: 220px;
+        padding: 20px 0 0 20px;
+
+        .tit-h4 {
+            height: 15px;
+            margin-bottom: 11px;
+        }
+
+        .buyer-info_step {
+            margin-right: 20px;
+            ul > li {
+                font-size: 12px;
+                line-height: 18px;
+                color: #333333;
+            }
+
+            .btn-buyer {
+                //	@include btn(null, null, 0, $point_color1, transparent);
+                //	@include btn(96px, 34px, 0, , $base_color3);
+                @include btn(104px, 28px, 1px solid #cccccc, #333333, white, center);
+                margin: 10px 0px;
+                &:hover {
+                    background: #f6f6f6;
+                }
+                &.ifocus {
+                    background: #f6f6f6;
+                }
+            }
+        }
+
+        @include breakpoint(max-width 1209px) {
+            display: none;
+        }
+    }
+
+    .coupon_status {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        vertical-align: middle;
+
+        .bar {
+            position: relative;
+            top: -1px;
+            padding: 0 3px;
+        }
+
+        strong {
+            color: $point_color2;
+            letter-spacing: 0;
+        }
+    }
+
+    .btn-coupon,
+    .btn-get-coupons {
+        font-weight: bold;
+        @include btn(87px, 34px, 1px solid $point_color1, $point_color1, #fff);
+
+        &.on {
+            border: 0;
+            color: #fff;
+            background: $point_color1;
+
+            &:hover {
+                background: $point_color1_over;
+            }
+            &.ifocus {
+                background: $point_color1_over;
+            }
+        }
+
+        &:hover {
+            background: #f8f8f8;
+        }
+        &.ifocus {
+            background: #f8f8f8;
+        }
+
+        &:disabled {
+            border-color: #ccc;
+            color: $base_color3;
+            background: #f2f2f2;
+            cursor: default;
+        }
+    }
+
+    .btn-get-coupons {
+        margin-left: 10px;
+    }
+
+    .discounted {
+        font-size: 14px;
+        color: $point_color2;
+        letter-spacing: 0;
+    }
+
+    .order-items {
+        padding: 20px 40px 20px 10px;
+
+        .order-items_table {
+            display: table;
+            width: 100%;
+            min-height: 100px;
+            text-align: left;
+
+            .order-items_row {
+                display: table-row;
+
+                .order-items_cell,
+                .order-items_item {
+                    display: table-cell;
+
+                    .name {
+                        display: block;
+                        margin-top: 5px;
+                    }
+                }
+
+                .order-items_cell {
+                    width: 100px;
+                    padding-right: 20px;
+                }
+            }
+        }
+
+        .order-items_photo {
+            overflow: hidden;
+            display: block;
+            @include size(99px);
+            border: 1px solid white;
+
+            img {
+                max-width: 100%;
+            }
+        }
+        .border-hover {
+            &:hover {
+                border: 1px solid #418ded;
+                //box-sizing: border-box;
+            }
+        }
+
+        .order-items_item {
+            position: relative;
+            vertical-align: middle;
+
+            .name {
+                display: inline-block;
+                margin-right: 60px;
+                font-size: 16px;
+                color: #000;
+                vertical-align: middle;
+                line-height: 18px;
+                .seleter {
+                    color: #999;
+                }
+                strong {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .no-hover {
+                    &:hover {
+                        text-decoration: none;
+                        cursor: default;
+                    }
+                }
+            }
+
+            .order-items_item_cnt {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -8px;
+                font-weight: bold;
+                line-height: 16px;
+                letter-spacing: 0;
+            }
+
+            .order-items_item_lst {
+                margin-top: 5px;
+
+                li {
+                    position: relative;
+                    height: 28px;
+                    margin-top: 5px;
+                    padding: 0 60px 0 10px;
+                    border: 1px solid #e8e7ea;
+                    color: $base_color2;
+                    background: #fafafc;
+                    line-height: 28px;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    .cnt {
+                        position: absolute;
+                        top: 0;
+                        right: 20px;
+                        font-size: 11px;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .order-item-amount {
+        display: block;
+        //padding-right: 40px;
+        text-align: center;
+        letter-spacing: 0;
+
+        strong {
+            font-size: 16px;
+        }
+    }
+
+    .delivery-cost {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+
+        strong {
+            font-size: 16px;
+            letter-spacing: 0;
+        }
+    }
+
+    .free-delivery {
+        display: inline-block;
+        width: 90px;
+        height: 28px;
+        margin-bottom: 10px;
+        border: 1px solid #ff6600;
+        color: #ff6600;
+        font-weight: bold;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .delivery-date strong {
+        color: #ff6600;
+        letter-spacing: 0;
+    }
+
+    .order-body_row_head {
+        .btn-product-change {
+            display: inline-block;
+            @include btn(100px, 28px, 1px solid #ccc, #333, #fff, center, 26px);
+            padding: 0px 10px 0px 10px;
+            &:hover {
+                background: #f6f6f6;
+            }
+        }
+
+        .order-body_row_head_span {
+            float: left;
+            margin: -4px 0 0 10px;
+
+            .order-body_row_head_span_noti {
+                margin-left: 10px;
+                color: $base_color3;
+            }
+        }
+    }
+
+    .ico-plus:before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/ico_grayplus.png') no-repeat 0 0;
+        vertical-align: -2px;
+    }
+    .ico-minus:before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/ico_redminus.png') no-repeat 0 0;
+        vertical-align: -2px;
+    }
+
+    .point-info {
+        display: inline-block;
+        vertical-align: middle;
+
+        .btn-point-alluse {
+            margin-left: 9px;
+            margin-right: 9px;
+            font-weight: bold;
+            @include btn(89px, 34px, 1px solid #ccc, $base_color3, #f2f2f2);
+            cursor: default;
+
+            &.on {
+                border-color: $point_color1;
+                color: $point_color1;
+                background: #fff;
+                cursor: pointer;
+
+                &:hover {
+                    background: #f6f6f6;
+                }
+            }
+        }
+    }
+    .deposit-right {
+        margin-right: 45px;
+    }
+
+    .point-input {
+        position: relative;
+        display: inline-block;
+        //width: 200px;
+        font-size: 14px;
+        font-weight: bold;
+        vertical-align: middle;
+
+        .istyle {
+            font-size: 20px;
+            text-align: right;
+        }
+        input {
+            width: 200px;
+            border: none;
+            border-bottom: 1px solid #999999;
+            margin-left: 5px;
+            @include breakpoint(max-width 1209px) {
+                width: 220px;
+            }
+        }
+        // span {
+        // 	position: absolute;
+        // 	top:13px;
+        // 	left:138px;
+        // }
+    }
+
+    .em-red {
+        letter-spacing: 0;
+
+        em {
+            color: $point_color2;
+        }
+        @include breakpoint(max-width 1209px) {
+            margin-top: 10px;
+            margin-left: 42%;
+            display: block;
+        }
+    }
+
+    .payment-method {
+        .payment-method_detail {
+            position: relative;
+            //width: 725px;
+            width: 555px;
+            margin: 0px 20px 10px;
+            //padding: 10px 10px 10px 20px;
+            //padding-bottom: 10px;
+            border: 2px solid #ccc;
+            @include breakpoint(max-width 1209px) {
+                width: 430px;
+            }
+
+            li {
+                font-size: 0;
+
+                * {
+                    font-size: 12px;
+                }
+            }
+
+            .t {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 10px;
+            }
+
+            .creditcard {
+                li {
+                    margin-top: 5px;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    .t {
+                        width: 55px;
+                    }
+                }
+
+                .sstyle {
+                    width: 200px;
+                }
+
+                .inst-dsc {
+                    display: inline-block;
+                    margin-left: 10px;
+                    color: $base_color3;
+                    letter-spacing: 0;
+                    vertical-align: middle;
+                }
+
+                .btn-inst-benefit {
+                    color: $base_color1;
+                    font-weight: bold;
+                    letter-spacing: 0;
+
+                    [class^='icon-'] {
+                        margin-left: 4px;
+                        font-size: 9px;
+                    }
+                }
+            }
+
+            .nbankbook {
+                li {
+                    //padding: 10px 0;
+                    select {
+                        margin: 10px 10px 0px 10px;
+                        // &:first-child {
+                        // 	margin:10px 10px 0px 10px;
+                        // }
+                    }
+                    input {
+                        margin: 10px 10px 5px 10px;
+                    }
+                    label {
+                        cursor: pointer;
+                    }
+
+                    &:first-child {
+                        border-top: 0;
+                    }
+
+                    .t {
+                        width: 50px;
+                        margin-left: 20px;
+                        padding: 5px 0 7px !important;
+                    }
+                    span {
+                        margin-left: 0px;
+                        padding: 0px;
+                    }
+                    .left-10 {
+                        margin-left: 10px;
+
+                        label {
+                            margin-left: 0px;
+                        }
+                    }
+
+                    .nbankbook_noti {
+                        border: 1px solid #f9f9fa;
+                        background-color: #f9f9fa;
+                        display: inline-block;
+                        margin-left: 80px;
+                        padding: 10px;
+                        color: $base_color3;
+                        font-weight: normal;
+                        vertical-align: middle;
+
+                        b {
+                            color: #ff6600;
+                        }
+                    }
+
+                    .calendar {
+                        position: relative;
+                        display: inline-block;
+                        margin-left: 0px !important;
+                        //padding-right: 33px;
+                        vertical-align: middle;
+
+                        label {
+                            display: inline-block;
+                            margin-left: 10px !important;
+                            padding: 21px 0 23px !important;
+                            vertical-align: middle;
+                        }
+
+                        .istyle {
+                            width: 110px;
+                            border-right: 0;
+                            margin: 5px -5px 10px 10px;
+                            padding: 0px 0px !important;
+                            //margin-right: -5px;
+                            // @include breakpoint(max-width 1209px) {
+                            // 	width: 85px;
+                            // }
+                        }
+
+                        .btn-cal {
+                            // position: absolute;
+                            // right: -23px;
+                            // top: 9px;
+                            @include btn(33px, 34px, 1px solid $base_color3, null, #e8e7ea);
+                            border-left: 0;
+                            margin-bottom: 5px;
+
+                            &:before {
+                                content: '';
+                                display: inline-block;
+                                width: 32px;
+                                height: 32px;
+                                background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/ico_calendar.gif')
+                                    no-repeat 54% 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .refund-method {
+        .refund-method_default {
+            width: 715px;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 2px solid #ccc;
+            .refund-method_default_info {
+                position: relative;
+                ul {
+                    width: 320px;
+                    padding: 5px 0;
+                    border-right: 1px solid #ccc;
+                    li {
+                        padding-left: 10px;
+                        line-height: 20px;
+                        background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/bul_dot_333.png')
+                            no-repeat 0 49%;
+                    }
+                }
+                .btn_refund_reset {
+                    position: absolute;
+                    left: 370px;
+                    top: 50%;
+                    margin-top: -14px;
+                    @include btn(55px, 28px, 1px solid #ccc, null, #fff);
+                }
+            }
+
+            .refund-method_default_new {
+                position: relative;
+                width: 320px;
+                border-right: 1px solid #ccc;
+                .refund-method_default_new_input {
+                    font-size: 0;
+                    * {
+                        font-size: 12px;
+                    }
+                    .sstyle {
+                        width: 150px;
+                        margin-left: 5px;
+                    }
+                    .refund_number {
+                        margin: 5px 0 10px;
+                        font-size: 0;
+                        .istyle {
+                            width: 198px;
+                        }
+                        .btn_refund_number_cert {
+                            font-weight: bold;
+                            @include btn(77px, 34px, 0, #fff, $base_color3);
+                        }
+                    }
+                }
+                .btn_refund_cncl {
+                    position: absolute;
+                    left: 370px;
+                    top: 50%;
+                    margin-top: -14px;
+                    @include btn(55px, 28px, 1px solid #ccc, null, #fff);
+                }
+            }
+        }
+
+        .refund-method_detail {
+            width: 715px;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 2px solid #ccc;
+            font-size: 0;
+
+            * {
+                font-size: 12px;
+            }
+
+            label {
+                display: inline-block;
+                width: 82px;
+                padding-left: 10px;
+                background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/bul_dot_333.png') no-repeat 0
+                    49%;
+                vertical-align: middle;
+            }
+
+            .sstyle {
+                min-width: 260px;
+                font-weight: normal;
+            }
+
+            .box {
+                margin-top: 10px;
+                padding-left: 92px;
+                font-size: 0;
+
+                * {
+                    font-size: 12px;
+                }
+
+                .sstyle {
+                    min-width: 110px;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    .doc-evidence {
+        .doc-evidence_noti {
+            margin: 6px 20px;
+            font-size: 11px;
+            color: $base_color3;
+            line-height: 18px;
+            font-weight: 500;
+        }
+
+        .doc-evidence_detail {
+            width: 515px;
+            margin: 10px 20px;
+            padding: 10px 20px 10px;
+            border: 2px solid #ccc;
+            font-size: 0;
+            @include breakpoint(max-width 1209px) {
+                width: 380px;
+            }
+
+            * {
+                font-size: 12px;
+            }
+
+            .doc-evidence_detail_slt {
+                margin-top: 10px;
+                font-size: 0;
+
+                * {
+                    font-size: 12px;
+                }
+
+                .sstyle:first-child {
+                    margin-right: 10px;
+                }
+                span {
+                    padding: 0px;
+                }
+            }
+            .padding-0 {
+                padding: 0px;
+                label {
+                    cursor: pointer;
+                }
+            }
+
+            .doc-line {
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    .tooltip {
+        &.layer-safenumber {
+            &:before {
+                display: none;
+            }
+
+            ol {
+                margin-top: 7px;
+                padding: 7px 0 0 9px;
+                border-top: 1px solid $base_color2;
+
+                li:first-letter {
+                    margin-left: -9px;
+                }
+            }
+        }
+
+        &.layer-happypoint {
+            &:before {
+                display: none;
+            }
+        }
+
+        &.layer-escrow {
+            &:after {
+                display: none;
+            }
+        }
+
+        &.layer-nbankbook {
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .btn-happypoint:hover ~ .layer-happypoint {
+        opacity: 1;
+        left: 645px;
+        margin-top: -5px;
+        @include breakpoint(max-width 1209px) {
+            left: 524px;
+            margin-top: -5px;
+        }
+    }
+
+    .btn-safenumber-guide:hover ~ .layer-safenumber {
+        opacity: 1;
+        left: 550px;
+    }
+
+    .escrow-tooltip:hover ~ .layer-escrow {
+        opacity: 1;
+        left: -32px;
+        bottom: 31px;
+    }
+
+    .nbankbook-tooltip:hover ~ .layer-nbankbook {
+        opacity: 1;
+        left: -32px;
+        bottom: 31px;
+    }
+
+    .tab-box {
+        border-top: 2px solid $base_color1;
+
+        ul {
+            overflow: hidden;
+            position: relative;
+            height: 200px;
+            margin-top: 20px;
+            @include clear;
+
+            li {
+                float: left;
+                margin-right: -1px;
+
+                .tit-h4 {
+                    width: 208px;
+                    height: 49px;
+                    border-width: 1px 1px 0;
+                    border-style: solid;
+                    border-color: #ccc;
+                    font-size: 14px;
+                    background: #fff;
+                    line-height: 49px;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $point_color1;
+                    }
+                }
+
+                .conts {
+                    opacity: 0;
+                    overflow-y: auto;
+                    position: absolute;
+                    left: -9999px;
+                    bottom: 0;
+                    width: 1%;
+                    height: 151px;
+                    padding: 15px 20px;
+                    border: 1px solid $point_color1;
+                    color: $base_color2;
+                    line-height: 20px;
+                    box-sizing: border-box;
+                }
+
+                &.active .tit-h4 {
+                    position: relative;
+                    border-color: $point_color1;
+                    color: $point_color1;
+                    z-index: 1;
+                }
+
+                &.active .conts {
+                    opacity: 1;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        &.payment-agency {
+            padding-top: 10px;
+
+            ul {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .privacy-check {
+        margin-top: 10px;
+        @include clear;
+
+        li {
+            float: left;
+            margin-right: 20px;
+        }
+    }
+
+    .order-body_row_head {
+        .btn-conts-view {
+            float: left;
+            margin: -4px 0 0 10px;
+            font-size: 11px;
+            line-height: 26px;
+
+            &:hover {
+                background: #f6f6f6;
+            }
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            @include btn(96px, 28px, 1px solid #ccc, #333, #fff, center);
+
+            [class^='icon-'] {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 0 3px 4px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .payment-check {
+        padding: 10px 0 20px;
+        border-bottom: 1px solid #e8e7ea;
+    }
+
+    .button-group {
+        margin-top: 50px;
+    }
+
+    .btn-continue-shopping {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 10px;
+        @include btn(300px, 70px, 2px solid $point_color1, $point_color1, #fff, center, 66px);
+
+        &:hover {
+            background: #f6f6f6;
+        }
+        &.focus {
+            background: #f6f6f6;
+        }
+    }
+
+    .btn-buy-submit {
+        font-size: 24px;
+        font-weight: bold;
+        @include btn(300px, 70px, 0, #fff, $point_color1, center, 70px);
+
+        &:hover {
+            background: #2d7ee4;
+        }
+        &.focus {
+            background: #2d7ee4;
+        }
+    }
+    @include breakpoint(max-width 1209px) {
+        width: 950px;
+    }
 }
 
 .order-body-result {
-	@include clear;
+    @include clear;
 
-	.order-body-result_view {
-		float: left;
-		width: 950px;
+    .order-body-result_view {
+        float: left;
+        width: 950px;
 
-		.order-body_top {
-			border-bottom-color: $base_color1;
-			.thead-top_line{
-				th {
-					border-bottom: 1px solid #333333;
+        .order-body_top {
+            border-bottom-color: $base_color1;
+            .thead-top_line {
+                th {
+                    border-bottom: 1px solid #333333;
+                }
+            }
+        }
 
-				}
-			}
-		}
+        .order-body-result_main {
+            width: 610px;
+            margin: 76px auto 0;
 
-		.order-body-result_main {
-			width: 610px;
-			margin: 76px auto 0;
+            .tit-h3 {
+                height: 72px;
+                font-size: 34px;
+                text-align: center;
 
-			.tit-h3 {
-				height: 72px;
-				font-size: 34px;
-				text-align: center;
+                span {
+                    color: $point_color1;
 
-				span {
-					color: $point_color1;
+                    &.fail {
+                        color: $point_color2;
+                    }
+                }
+            }
 
-					&.fail {
-						color: $point_color2;
-					}
-				}
-			}
+            .deposit-amount {
+                font-size: 20px;
+                color: $point_color2;
+                letter-spacing: 0;
 
-			.deposit-amount {
-				font-size: 20px;
-				color: $point_color2;
-				letter-spacing: 0;
+                em {
+                    font-size: 14px;
+                    color: $base_color1;
+                }
+            }
 
-				em {
-					font-size: 14px;
-					color: $base_color1;
-				}
-			}
+            .btn-ibaak {
+                display: inline-block;
+                margin-left: 10px;
+                @include btn(137px, 28px, 1px solid #ccc, $base_color1, #fff, center, 26px);
 
-			.btn-ibaak {
-				display: inline-block;
-				margin-left: 10px;
-				@include btn(137px, 28px, 1px solid #ccc, $base_color1, #fff, center, 26px);
+                &:hover {
+                    background: #f6f6f6;
+                }
+            }
 
-				&:hover {
-					background: #f6f6f6;
-				}
-			}
+            .cardname {
+                font-size: 14px;
+            }
 
-			.cardname {
-				font-size: 14px;
-			}
+            .ordercode {
+                display: inline-block;
+                margin-top: 8px;
+                letter-spacing: 0;
+            }
 
-			.ordercode {
-				display: inline-block;
-				margin-top: 8px;
-				letter-spacing: 0;
-			}
+            .sum {
+                background: #ecf3fd;
+            }
 
-			.sum {
-				background: #ecf3fd;
-			}
+            .price {
+                position: relative;
 
-			.price {
-				position: relative;
+                .price_t {
+                    display: block;
+                    line-height: 34px;
 
-				.price_t {
-					display: block;
-					line-height: 34px;
+                    &.price_total {
+                        font-size: 16px;
+                        color: $point_color2;
+                    }
+                }
 
-					&.price_total {
-						font-size: 16px;
-						color: $point_color2;
-					}
-				}
+                .price_price {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 34px;
+                    line-height: 34px;
 
-				.price_price {
-					position: absolute;
-					right: 0;
-					top: 0;
-					height: 34px;
-					line-height: 34px;
+                    .price_price_save {
+                        position: relative;
+                        display: inline-block;
+                        height: 24px;
+                        margin: -3px 10px 0 0;
+                        padding: 0 10px;
+                        border: 1px solid $base_color3;
+                        font-size: 11px;
+                        line-height: 24px;
+                        background: #fff;
+                        vertical-align: middle;
 
-					.price_price_save {
-						position: relative;
-						display: inline-block;
-						height: 24px;
-						margin: -3px 10px 0 0;
-						padding: 0 10px;
-						border: 1px solid $base_color3;
-						font-size: 11px;
-						line-height: 24px;
-						background: #fff;
-						vertical-align: middle;
+                        em {
+                            color: #000;
+                            letter-spacing: 0;
+                        }
 
-						em {
-							color: #000;
-							letter-spacing: 0;
-						}
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            right: -5px;
+                            top: 50%;
+                            width: 5px;
+                            height: 8px;
+                            margin-top: -4px;
+                            background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/arw_price_price_save.gif')
+                                no-repeat 0 0;
+                        }
+                    }
 
-						&:after {
-							content: "";
-							position: absolute;
-							right: -5px;
-							top: 50%;
-							width: 5px;
-							height: 8px;
-							margin-top: -4px;
-							background: url('https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/arw_price_price_save.gif') no-repeat 0 0;
-						}
-					}
+                    .price_price_sum {
+                        font-size: 20px;
+                        letter-spacing: 0;
 
-					.price_price_sum {
-						font-size: 20px;
-						letter-spacing: 0;
+                        em {
+                            font-size: 14px;
+                        }
 
-						em {
-							font-size: 14px;
-						}
+                        &.ico-minus:before {
+                            position: relative;
+                            top: -2px;
+                        }
+                    }
 
-						&.ico-minus:before {
-							position: relative;
-							top: -2px;
-						}
-					}
+                    .price_price_save + .price_price_sum {
+                        display: inline-block;
+                        height: 34px;
+                        margin-top: -3px;
+                        color: $point_color2;
+                        vertical-align: middle;
 
-					.price_price_save + .price_price_sum {
-						display: inline-block;
-						height: 34px;
-						margin-top: -3px;
-						color: $point_color2;
-						vertical-align: middle;
+                        em {
+                            color: $base_color1;
+                        }
+                    }
+                }
+            }
 
-						em {
-							color: $base_color1;
-						}
-					}
-				}
-			}
+            .earn-point {
+                margin-top: 10px;
+                padding: 20px 0 10px;
+                border-top: 1px solid #e8e7ea;
+                text-align: right;
 
-			.earn-point {
-				margin-top: 10px;
-				padding: 20px 0 10px;
-				border-top: 1px solid #e8e7ea;
-				text-align: right;
+                span {
+                    letter-spacing: 0;
+                }
+            }
 
-				span {
-					letter-spacing: 0;
-				}
-			}
+            .order-body-result_main_noti {
+                margin-top: 17px;
+                font-size: 11px;
+                color: $base_color2;
+                line-height: 18px;
 
-			.order-body-result_main_noti {
-				margin-top: 17px;
-				font-size: 11px;
-				color: $base_color2;
-				line-height: 18px;
+                a {
+                    color: $base_color1;
+                    font-weight: bold;
+                }
 
-				a {
-					color: $base_color1;
-					font-weight: bold;
-				}
+                strong {
+                    color: $base_color1;
+                }
+            }
 
-				strong {
-					color: $base_color1;
-				}
-			}
+            .button-group {
+                margin-top: 37px;
+            }
 
-			.button-group {
-				margin-top: 37px;
-			}
+            .btn-repurchase,
+            .btn-shopping-history {
+                display: inline-block;
+                font-size: 24px;
+                font-weight: bold;
+                @include btn(300px, 70px, 0, #fff, $point_color1, center, 70px);
 
-			.btn-repurchase,
-			.btn-shopping-history {
-				display: inline-block;
-				font-size: 24px;
-				font-weight: bold;
-				@include btn(300px, 70px, 0, #fff, $point_color1, center, 70px);
+                &:hover {
+                    background: #2d7ee4;
+                }
+            }
 
-				&:hover {
-					background: #2d7ee4;
-				}
-			}
+            .box-board + .box-board {
+                margin-top: 20px;
+            }
+        }
 
-			.box-board + .box-board {
-				margin-top: 20px;
-			}
-		}
+        .order-body-result_bnr {
+            margin-top: 80px;
+            border: 1px solid #d3d3d3;
+        }
 
-		.order-body-result_bnr {
-			margin-top: 80px;
-			border: 1px solid #d3d3d3;
-		}
+        .order-body-result_bot {
+            margin-top: 60px;
 
-		.order-body-result_bot {
-			margin-top: 60px;
+            .tit-h3 {
+                font-size: 18px;
+            }
 
-			.tit-h3 {
-				font-size: 18px;
-			}
+            .product-basket {
+                margin-top: 50px;
+            }
 
-			.product-basket {
-				margin-top: 50px;
-			}
+            .product_paging {
+                position: absolute;
+                right: 0;
+                top: -5px;
 
-			.product_paging {
-				position: absolute;
-				right: 0;
-				top: -5px;
+                .btn-round {
+                    display: inline-block;
+                    margin-right: 18px;
+                }
 
-				.btn-round {
-					display: inline-block;
-					margin-right: 18px;
-				}
+                .paging-number {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+        @include breakpoint(max-width 1209px) {
+            float: none;
+            margin: 0 auto;
+        }
+    }
 
-				.paging-number {
-					display: inline-block;
-					vertical-align: middle;
-				}
-			}
-		}
-		@include breakpoint(max-width 1209px) {
-			float: none;
-			margin: 0 auto;
-		}
-	}
-
-	.aside {
-		float: right;
-		width: 220px;
-		height: 100px;
-		margin-top: 90px;
-		background: #ccc;
-		@include breakpoint(max-width 1209px) {
-			display: none;
-		}
-	}
+    .aside {
+        float: right;
+        width: 220px;
+        height: 100px;
+        margin-top: 90px;
+        background: #ccc;
+        @include breakpoint(max-width 1209px) {
+            display: none;
+        }
+    }
 }
 
 .order-box {
-	margin-top: 50px;
-	text-align: center;
+    margin-top: 50px;
+    text-align: center;
 }
 
 // 레이어팝업 공통
 .layer-pop {
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	z-index: 90;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 90;
 
-	&:before {
-		content: "";
-		position: fixed;
-		left: 0;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		background: rgba(255, 255, 255, 0.75);
-	}
+    &:before {
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.75);
+    }
 
-	.layer-pop_header {
-		[class^="tit-"] {
-			height: 40px;
-			font-size: 20px;
-			border-bottom: 1px solid #333;
-		}
+    .layer-pop_header {
+        [class^='tit-'] {
+            height: 40px;
+            font-size: 20px;
+            border-bottom: 1px solid #333;
+        }
 
-		@include clear;
-	}
+        @include clear;
+    }
 
-	.btn-layer-pop_clse {
-		position: absolute;
-		top: 23px;
-		right: 20px;
-		@include btn(15px, 15px, 0, null, transparent);
-	}
-
+    .btn-layer-pop_clse {
+        position: absolute;
+        top: 23px;
+        right: 20px;
+        @include btn(15px, 15px, 0, null, transparent);
+    }
 }
 .coupon_reset {
-	position: fixed;
-	left: -40px;
-	top: -40px;
-	bottom:-0px;
-	width: 100%;
-	z-index: -10;
-	&:before {
-		content: "";
-		background:0;
-
-	}
+    position: fixed;
+    left: -40px;
+    top: -40px;
+    bottom: -0px;
+    width: 100%;
+    z-index: -10;
+    &:before {
+        content: '';
+        background: 0;
+    }
 }
 .layer_terms {
-	z-index: 100;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	@include box-sizing;
-	width: 800px;
-	height: 600px;
-	margin: -300px 0 0 -400px;
-	padding: 20px;
-	border: #333 solid 2px;
-	background-color: white(1);
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include box-sizing;
+    width: 800px;
+    height: 600px;
+    margin: -300px 0 0 -400px;
+    padding: 20px;
+    border: #333 solid 2px;
+    background-color: white(1);
 
-	.pcon {
-		position: relative;
-		height: 490px;
-		margin-top: 20px;
-		overflow: auto;
-		color: #999;
-		line-height: 1.5em;
-	}
+    .pcon {
+        position: relative;
+        height: 490px;
+        margin-top: 20px;
+        overflow: auto;
+        color: #999;
+        line-height: 1.5em;
+    }
 
-	@include breakpoint(0 $responsive_break_width) {
-		position: fixed;
-		left: 0;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		margin: 0;
-		width: auto;
-		height: auto;
-		padding-left: 10px;
-		padding-right: 10px;
-		background-color: white(.9);
+    @include breakpoint(0 $responsive_break_width) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: white(0.9);
 
-		.layer-pop_header {
-			position: absolute;
-			top: 20px;
-			left: 10px;
-			right: 10px;
-		}
+        .layer-pop_header {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            right: 10px;
+        }
 
-		.pcon {
-			position: absolute;
-			top: 51px;
-			left: 10px;
-			right: 10px;
-			bottom: 10px;
-			height: auto;
-		}
-
-	}
-
+        .pcon {
+            position: absolute;
+            top: 51px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            height: auto;
+        }
+    }
 }
 
-
-.box-main{
-	position: absolute;
+.box-main {
+    position: absolute;
     left: 50%;
     top: 40%;
     //width: 430px;
@@ -2282,84 +2238,78 @@
     background: #fff;
     z-index: 100;
     //text-align: center;
-	.set {
-		display: inline-block;
-	    width: 66px;
-	    height: 24px;
-	    border: 1px solid #d3d3d3;
-	    color: #333;
+    .set {
+        display: inline-block;
+        width: 66px;
+        height: 24px;
+        border: 1px solid #d3d3d3;
+        color: #333;
 
-	    text-align: center;
-	    line-height: 24px;
-	    //vertical-align: middle;
-	    letter-spacing: 0;
-	    cursor: pointer;
-	    -webkit-box-sizing: border-box;
-	    -moz-box-sizing: border-box;
-	    box-sizing: border-box;
-		margin-left: 10px;
-		.icon-shop {
-			display: inline-block;
-			font-size: 16px;
-			color: #418ded;
-			vertical-align: middle;
-			margin: -3px 4px 0 0;
-		}
-		&:hover {
-			background-color: #f7f7f7;
-		}
-	}
+        text-align: center;
+        line-height: 24px;
+        //vertical-align: middle;
+        letter-spacing: 0;
+        cursor: pointer;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-left: 10px;
+        .icon-shop {
+            display: inline-block;
+            font-size: 16px;
+            color: #418ded;
+            vertical-align: middle;
+            margin: -3px 4px 0 0;
+        }
+        &:hover {
+            background-color: #f7f7f7;
+        }
+    }
 
-	.box-info {
-		margin-top: 20px;
-		border-top: 1px solid black;
-		width:386px;
-		tr {
-				background: white;
-				font-size: 12px;
-			th {
-				border-bottom: 1px solid #e8e7ea;
-				text-align: left;
-				width:70px;
-				height: 40px;
-				padding-left: 20px;
-				background: white;
-				&:first-child {
-					background-color: #f7f7f7;
-				}
-
-			}
-			td {
-				border-bottom: 1px solid #e8e7ea;
-				height: 40px;
-				padding-left: 20px;
-				&:first-child {
-					background-color: #f7f7f7;
-				}
-			}
-
-
-		}
-	}
-
+    .box-info {
+        margin-top: 20px;
+        border-top: 1px solid black;
+        width: 386px;
+        tr {
+            background: white;
+            font-size: 12px;
+            th {
+                border-bottom: 1px solid #e8e7ea;
+                text-align: left;
+                width: 70px;
+                height: 40px;
+                padding-left: 20px;
+                background: white;
+                &:first-child {
+                    background-color: #f7f7f7;
+                }
+            }
+            td {
+                border-bottom: 1px solid #e8e7ea;
+                height: 40px;
+                padding-left: 20px;
+                &:first-child {
+                    background-color: #f7f7f7;
+                }
+            }
+        }
+    }
 }
 .title {
-
-	font-size: 20px;
-	text-align:left;
+    font-size: 20px;
+    text-align: left;
 }
-.btn-set{
-	border-top: 1px solid black;
-	padding-left: 160px;
-	.btn-set_pos{
-		margin: 20px auto 0px;
-		font-weight: bold;
-		@include btn(100px, 40px, 2px solid $point_color1, $point_color1, #fff);
-	}
-
+.btn-set {
+    border-top: 1px solid black;
+    padding-left: 160px;
+    .btn-set_pos {
+        margin: 20px auto 0px;
+        font-weight: bold;
+        @include btn(100px, 40px, 2px solid $point_color1, $point_color1, #fff);
+    }
 }
 .url-link-hover {
-	&:hover {
-		color: #418ded;
-	}
+    &:hover {
+        color: #418ded;
+    }
 }
