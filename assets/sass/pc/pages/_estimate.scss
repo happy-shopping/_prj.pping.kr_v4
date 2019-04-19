@@ -18,7 +18,7 @@
 
     .estimate-body_top {
         position: relative;
-        height: 50px;
+        // height: 50px;
         padding-top: 40px;
 
         @include clear;
@@ -44,6 +44,20 @@
 
     .estimate-body-ad-top {
         background: #c1c1f9;
+        font-size: 0;
+        overflow: hidden;
+
+        .left {
+            display: inline-block;
+            width: 950px;
+            overflow: hidden;
+        }
+
+        .right {
+            display: inline-block;
+            width: 240px;
+            overflow: hidden;
+        }
     }
 
     .estimate-body_menu {
@@ -256,6 +270,7 @@
         }
 
         .estimate-curation-area {
+            display: none;
             border-top: 2px solid #333333;
             height: 280px;
             position: relative;
@@ -335,13 +350,15 @@
                     text-align: center;
                 }
 
-                &.powerseller {
+                &.powerseller,
+                &.newseller {
                     float: left;
                     width: 85px;
 
                     &.echo {
                         border-left: 2px solid #39567b;
                         border-right: 2px solid #39567b;
+                        width: 82px;
 
                         .tit-h4 {
                             span {
@@ -349,14 +366,68 @@
                                 top: -36px;
                                 left: -2px;
                                 width: 100%;
-                                height: 34px;
+                                height: 32px;
                                 background: #39567b;
                                 border: 2px solid #39567b;
                                 border-bottom: 0;
                                 font-size: 12px;
 
                                 img {
+                                    margin-left: 1px;
                                     margin-bottom: 3px;
+                                }
+
+                                button {
+                                    border: 0;
+                                    background: inherit;
+                                }
+                            }
+
+                            .tooltip {
+                                // opacity: 1;
+                                background: #ffffff;
+                                border: 1px solid #000000;
+                                top: -3px;
+                                left: -12px;
+                                height: 15px;
+                                width: 86px;
+
+                                &.on {
+                                    opacity: 1;
+                                    width: 84px;
+                                }
+
+                                &::after {
+                                    left: 76px;
+                                }
+
+                                &::before {
+                                    display: none;
+                                }
+                            }
+
+                        }
+
+                        &.empty {
+                            position: relative;
+
+                            .tit-h4 {
+                                span {
+                                    width: 82px;
+                                }
+                            }
+
+                            .echo_empty {
+                                position: absolute;
+                                background: #224160;
+                                width: 84px;
+                                z-index: 1;
+                                height: 100%;
+                                overflow: hidden;
+
+                                img {
+                                    position: absolute;
+                                    bottom: 0;
                                 }
                             }
                         }
@@ -525,11 +596,11 @@
                         .btn_scroll_first {
                             position: absolute;
                             top: 50%;
-                            right: 10px;
-                            opacity: .8;
+                            right: 0;
+                            opacity: .5;
                             margin-top: -22px;
                             font-size: 32px;
-                            @include btn(null, null, 0, $point_color1, transparent);
+                            @include btn(40px, 80px, 0, #fff, #000);
                         }
 
                         .estimate_minishop_greatseller_cell {
@@ -682,6 +753,10 @@
             .btn-more-seller-clse {
                 display: block;
             }
+
+            .btn-more-seller-top {
+                display: none;
+            }
         }
 
         .btn-more-seller-clse {
@@ -692,9 +767,23 @@
             font-size: 28px;
             @include btn(40px, 40px, 0, $point_color1, #ffffff);
         }
+
+        .btn-more-seller-top {
+            position: relative;
+
+            .btn-more-seller {
+                top: -40px;
+                right: 0;
+                position: absolute;
+                font-size: 28px;
+                @include btn(40px, 40px, 0, $point_color1, #ffffff);
+            }
+        }
+
     }
 
     .compare_add_service {
+        display: none;
         margin-top: 15px;
         border: 0;
         width: 450px;
@@ -725,6 +814,210 @@
         // }
     }
 
+    // 전문가 조립, 정품 운영체제 설치
+    .compare_add_service_old {
+        margin-top: 15px;
+        border-bottom: 2px solid #333;
+        padding: 20px 0;
+        border-top: 2px solid $base_color1;
+        @include clear;
+
+        .assembly_service {
+            width: 310px;
+        }
+
+        .assembly_service,
+        .os_service {
+            float: left;
+
+            padding: 10px;
+
+            .tit-h3 {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+
+            ul {
+                margin-bottom: 10px;
+            }
+
+            li {
+                position: relative;
+                height: 24px;
+                margin-top: 5px;
+                color: $base_color2;
+                font-weight: bold;
+                line-height: 22px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                .btn-question-tip {
+                    margin: -3px 0 0 5px;
+                    @include btn(16px, 16px, 0, null, transparent);
+
+                    img {
+                        width: 16px;
+                        vertical-align: top;
+                    }
+                }
+
+                .btn-add {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    margin-top: -11px;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                    @include btn(105px, 24px, 1px solid #ccc, $base_color1, #fff);
+
+                    i {
+                        display: inline-block;
+                        width: 18px;
+                        height: 20px;
+                        vertical-align: top;
+                        line-height: 20px;
+
+                        &:before {
+                            font-size: 18px;
+                            color: #c0c0c0;
+                        }
+                    }
+
+                    span {
+                        display: inline-block;
+                        height: 20px;
+                        width: 60px;
+                        padding-left: 5px;
+                        text-align: left;
+                        vertical-align: top;
+                        line-height: 20px;
+                        letter-spacing: 0;
+                    }
+
+                    &:hover {
+                        border-color: $point_color1;
+
+                        i:before {
+                            color: $point_color1;
+                        }
+                    }
+
+                    &.active {
+                        border-color: $point_color1;
+                        color: #fff;
+                        background: $point_color1;
+
+                        i:before {
+                            color: #fff;
+                        }
+
+                        &:hover {
+                            border-color: $point_color1;
+                            color: $base_color1;
+                            background: #fff;
+
+                            i:before {
+                                color: $point_color1;
+                            }
+                        }
+                    }
+
+                    &.alert {
+                        border-color: #f54522;
+                        color: #fff;
+                        background: #f54522;
+
+                        i:before {
+                            color: #fff;
+                        }
+
+                        &:hover {
+                            border-color: $point_color1;
+                            color: $base_color1;
+                            background: #fff;
+
+                            i:before {
+                                color: $point_color1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .alert-msg {
+                min-height: auto;
+                margin-bottom: 5px;
+                padding: 0;
+            }
+        }
+
+        .os_service {
+            width: 260px;
+            border-left: 1px solid #e8e7ea;
+
+            p {
+                margin-top: 5px;
+                font-size: 11px;
+                color: $base_color3;
+                line-height: 22px;
+            }
+        }
+
+        .tip {
+            float: right;
+            width: 296px;
+            padding: 15px 10px;
+            border: 1px solid #ccc;
+
+            ol {
+                margin-bottom: 6px;
+            }
+
+            li {
+                position: relative;
+                margin-top: 5px;
+                padding-left: 25px;
+                color: $base_color3;
+                line-height: 18px;
+
+                &:before {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 9px;
+                    font-size: 11px;
+                    color: #fff;
+                    font-weight: bold;
+                    background: #c6c6c6;
+                    line-height: 18px;
+                    text-align: center;
+                }
+
+                &:first-child:before {
+                    content: '1';
+                }
+
+                &:nth-child(2):before {
+                    content: '2';
+                }
+
+                span {
+                    color: $base_color1;
+                }
+            }
+
+            .btn-powerseller {
+                margin-left: 25px;
+                color: $point_color1;
+            }
+        }
+    }
+
+
     .adv-minishop {
         margin-top: 70px;
     }
@@ -745,6 +1038,10 @@
                 float: left;
                 width: 300px;
             }
+        }
+
+        .estimate-body-ad-top .right {
+            display: none;
         }
     }
 

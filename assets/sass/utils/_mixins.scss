@@ -22,7 +22,7 @@ $size640: '(min-width: 481px)';
 $size900: '(max-width: 900px)';
 
 @mixin respond-to($media) {
-	@media only screen and #{$media} {
+	@media only screen and (#{$media}) {
 		@content;
 	}
 }
@@ -72,7 +72,6 @@ $size900: '(max-width: 900px)';
 
 // float clear
 @mixin clear {
-	*zoom: 1;
 
 	&:after {
 		display: block;
