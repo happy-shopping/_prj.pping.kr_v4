@@ -176,7 +176,7 @@
 
 					&:last-child {
 						width: 34%;
-					}
+                    }
 
 					div {
 						display: inline-block;
@@ -239,7 +239,8 @@
 
     		// 견적리스트
     		.list-body_items_main_box {
-    			margin: 0 0 30px 60px;
+                position: relative;
+                margin: 0 0 30px 60px;
 
                 &.result {
                     margin-left: 0;
