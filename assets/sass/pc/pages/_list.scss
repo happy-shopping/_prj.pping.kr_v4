@@ -239,7 +239,6 @@
 
     		// 견적리스트
     		.list-body_items_main_box {
-                position: relative;
                 margin: 0 0 30px 60px;
 
                 &.result {
@@ -426,7 +425,11 @@
 	    					}
 	    				}
 	    			}
-    			}
+                }
+
+                .list-body_items_main_box_list {
+                    position: relative;
+                }
 
     			.list-body_items_main_box_paging {
 					margin-top: 50px;

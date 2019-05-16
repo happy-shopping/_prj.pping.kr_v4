@@ -944,8 +944,17 @@
                     margin-right: 3px;
                 }
             }
-             .name {
+
+            .name {
                 display: block;
+
+                .keyword {
+                    padding: 0 4px;
+                    color: #fff;
+                    font-style: normal;
+                    background: #f34522;
+                }
+
             }
 
             .item-product_conts_box_main {
