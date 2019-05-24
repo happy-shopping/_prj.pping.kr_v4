@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 .header-adv {
 	overflow: hidden;
 	position: relative;
@@ -652,7 +653,7 @@
 // 행복핫딜
 .adv-hotdeal {
 	position: relative;
-	padding: 17px 20px 20px;
+	padding: 14px 20px 20px;
 	border: 1px solid $point_color1;
 	background: #fff;
 	overflow: hidden;
@@ -661,20 +662,22 @@
 		font-size: 20px;
 
 		img {
-			margin-right: 15px;
+			margin-right: 18px;
 			vertical-align: -11px;
 		}
 
 		.btn_hotdeal_more {
 			position: relative;
-			top: -2px;
+            top: -2px;
+            left:8px;
 			font-size: 12px;
 			color: $point_color1;
 			font-weight: normal;
 
 			[class^="icon-"] {
 				font-size: 13px;
-				font-weight: bold;
+                font-weight: normal;
+                vertical-align: -1px;
 			}
 		}
 	}
@@ -687,7 +690,7 @@
 			position: relative;
 			float: left;
 			width: calc(50% - 10px);
-			padding: 10px;
+			padding: 25px 10px 10px;
 			border: 1px solid #ccc;
 			@include box-sizing();
 			@include clear;
@@ -708,15 +711,22 @@
 
 			.adv-hotdeal_main_item_info {
 				overflow: hidden;
-				padding: 10px;
+				padding: 0 10px 10px;
+
+                .adv_marks {
+                    height:20px;
+                }
 
 				.adv-hotdeal_main_item_info_name {
 					display: block;
-					height: 77px;
-					font-size: 18px;
+                    height: 66px;
+                    overflow: hidden;
+					font-size: 15px;
 					word-break: keep-all;
 					word-wrap: break-word;
-					line-height: 1.2;
+                    line-height: 1.47;
+                    margin-top: 0;
+                    margin-bottom: 10px;
 				}
 
 				.adv-hotdeal_main_item_info_bot {
@@ -734,7 +744,8 @@
 						@include size(50px);
 
 						span {
-							font-size: 20px;
+							font-size: 12px;
+                            font-weight: 400;
 						}
 					}
 
@@ -745,20 +756,19 @@
 
 						.default {
 							display: block;
-							font-size: 14px;
 							color: $base_color3;
 							text-align: right;
 
 							.nor,
 							.card {
-								display: inline-block;
-								height: 16px;
-								padding: 0 5px;
-								border-radius: 9px;
-								font-size: 11px;
-								line-height: 16px;
-								text-align: center;
-								vertical-align: 1px;
+                                display: inline-block;
+                                height: 18px;
+                                padding: 0px 9px;
+                                border-radius: 9px;
+                                font-size: 12px;
+                                line-height: 16px;
+                                text-align: center;
+                                vertical-align: 1px;
 							}
 
 							.nor {
@@ -772,8 +782,16 @@
 							}
 
 							.through {
-								font-weight: bold;
-								text-decoration: line-through;
+                                margin-left: 5px;
+                                font-size: 15px;
+                                text-decoration: line-through;
+
+                                &:after {
+                                    color: #999;
+                                    content: '원';
+                                    font-size: 13px;
+                                    font-weight: normal;
+                                }
 							}
 						}
 
@@ -786,14 +804,30 @@
 							line-height: 25px;
 
 							strong {
-								font-size: 28px;
-								color: $point_color2;
+								font-size: 24px;
+                                color: $point_color2;
+
+                                &:before {
+                                    color: #333;
+                                    content: '핫딜가';
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    margin-right: 5px;
+                                }
+
+                                &:after {
+                                    color: #999;
+                                    content: '원';
+                                    font-size: 14px;
+                                    font-weight: normal;
+                                }
 							}
 						}
 					}
 
 					[class^="btn-"] {
-						float: left;
+                        float: left;
+                        top: 4px;
 						font-size: 20px;
 						line-height: 43px;
 						@include size(43px);
@@ -871,6 +905,7 @@
         }
 	}
 }
+
 
 // 광고 팝업
 .layer-pop_estimate_adv {
