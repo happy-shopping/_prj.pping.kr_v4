@@ -587,6 +587,7 @@
 // 표준pc
 .product-stdpc {
     .product-stdpc_tab {
+
         font-size: 0;
 
         .btn {
@@ -628,13 +629,21 @@
         }
 
         &.tab3 {
-            .btn {
-                width: calc(33% + 1px);
 
-                 &:first-child {
-                    width: 34%;
-                }
+            display: -webkit-box;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+
+            .btn {
+
+                -webkit-box-flex: 1;
+                -moz-flex: 1 1;
+                -ms-flex: 1 1;
+                flex: 1 1;
+
             }
+
         }
 
         &.tab4 {
