@@ -337,13 +337,17 @@ main > section{
     @include mark_badge(#db00f5);
 }
 
+.mark-gift {
+    @include mark_badge(#0bb0c5);
+}
+
+.mark-stock {
+    @include mark_badge(#005796);
+}
+
+
 .mark-std {
     @include mark_badge($point_color2);
-    background: $point_color2;
-
-    a {
-        color: #fff;
-    }
 }
 
 .mark-stdpc {
