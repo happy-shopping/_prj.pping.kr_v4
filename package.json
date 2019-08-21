@@ -1,17 +1,18 @@
 {
-  "name": "scss-lint",
-  "version": "1.0.0",
-  "description": "sass lint",
-  "devDependencies": {
-      "prettier": "^1.16.4",
-      "sass-lint": "^1.12.1"
-  },
-  "scripts": {
-      "watch": "node-sass --watch --output-style compressed assets/sass --output assets/css",
-      "watch-default": "node-sass --watch src/sass --output src/dist/css"
-  },
-  "license": "MIT",
-  "dependencies": {
-      "node-sass": "^4.11.0"
-  }
+    "name": "scss-lint",
+    "version": "1.0.0",
+    "description": "sass lint",
+    "devDependencies": {
+        "prettier": "^1.16.4",
+        "sass-lint": "^1.12.1"
+    },
+    "scripts": {
+        "watch": "node-sass --watch --output-style compressed assets/sass --output assets/css",
+        "watch-default": "node-sass --watch src/sass --output src/dist/css",
+        "all": "node-sass --output-style compressed assets/sass --output assets/css"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "node-sass": "^4.11.0"
+    }
 }
