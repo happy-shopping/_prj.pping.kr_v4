@@ -13,6 +13,7 @@
     }
     padding-bottom: 100px;
     line-height: 1;
+    overflow: hidden;
 
     @include default_width;
 
@@ -123,7 +124,7 @@
         .estimate_compare {
             float: left;
             width: 720px;
-            // border-right: 1px solid #747475;
+            border-right: 2px solid #39567b;
 
             .estimate_compare_list {
                 .estimate_compare_list_top {
@@ -133,9 +134,9 @@
                     span {
                         display: block;
                         float: left;
-                        height: 90px;
+                        height: 89.5px;
                         font-weight: bold;
-                        line-height: 90px;
+                        line-height: 89.5px;
                         text-align: center;
 
                         &.tit1 {
@@ -337,10 +338,13 @@
 
         .estimate_minishop {
             float: right;
-            width: calc(100% - 720px);
+            width: calc(100% - 722px);
 
             .estimate_minishop_seller_list {
                 @include clear;
+                > .echo_mall.border_left {
+                    border-left: 0!important
+                }
             }
 
             .estimate_minishop_seller {
@@ -348,133 +352,164 @@
 
                 .tit-h4 {
                     position: relative;
-                    height: 34px;
                     font-size: 14px;
                     color: #ffffff;
                     line-height: 34px;
                     text-align: center;
                 }
 
-                &.powerseller,
-                &.newseller {
-                    float: left;
-                    width: 85px;
+                float: left;
 
-                    &.echo {
-                        border-left: 2px solid #39567b;
-                        border-right: 2px solid #39567b;
-                        width: 84px;
+                &.echo {
+                    width: 84px;
 
-                        .tit-h4 {
-                            span {
-                                position: absolute;
-                                top: -36px;
-                                left: -2px;
-                                width: 100%;
-                                height: 32px;
-                                background: #39567b;
-                                border: 2px solid #39567b;
-                                border-bottom: 0;
-                                font-size: 12px;
+                    .tit-h4 {
+                        span {
+                            position: absolute;
+                            top: -36px;
+                            left: -2px;
+                            width: calc(100% - 1px);
+                            height: 32px;
+                            background: #39567b;
+                            border: 2px solid #39567b;
+                            border-bottom: 0;
+                            font-size: 12px;
+                            border-right: 1px solid #39567b;
 
-                                img {
-                                    margin-left: 1px;
-                                    margin-bottom: 3px;
-                                }
-
-                                button {
-                                    border: 0;
-                                    background: inherit;
-                                }
+                            img {
+                                margin-left: 1px;
+                                margin-bottom: 3px;
                             }
 
-                            .tooltip {
-                                // opacity: 1;
-                                background: #ffffff;
-                                border: 1px solid #000000;
-                                top: -3px;
-                                left: -12px;
-                                height: 15px;
-                                width: 86px;
-
-                                &.on {
-                                    opacity: 1;
-                                    width: 84px;
-                                }
-
-                                &::after {
-                                    left: 76px;
-                                }
-
-                                &::before {
-                                    display: none;
-                                }
+                            button {
+                                border: 0;
+                                background: inherit;
                             }
-
                         }
 
-                        &.empty {
-                            position: relative;
+                        .tooltip {
+                            // opacity: 1;
+                            background: #ffffff;
+                            border: 1px solid #000000;
+                            top: -3px;
+                            left: -13px;
+                            height: 15px;
+                            width: 86px;
 
-                            .tit-h4 {
-                                span {
-                                    width: 82px;
-                                }
-                            }
-
-                            .echo_empty {
-                                position: absolute;
-                                background: #224160;
+                            &.on {
+                                opacity: 1;
                                 width: 84px;
-                                z-index: 1;
-                                height: 100%;
-                                overflow: hidden;
+                            }
 
-                                img {
-                                    position: absolute;
-                                    bottom: 0;
-                                }
+                            &::after {
+                                left: 76px;
+                            }
+
+                            &::before {
+                                display: none;
+                            }
+                        }
+
+                    }
+
+                    &.empty {
+                        position: relative;
+
+                        .echo_empty {
+                            position: absolute;
+                            background: #224160;
+                            width: 100%;
+                            z-index: 1;
+                            height: 100%;
+                            overflow: hidden;
+
+                            img {
+                                position: absolute;
+                                bottom: 0;
                             }
                         }
                     }
-
-                    .tit-h4 {
-                        background: #9162d0;
-                    }
-
                     .sellername {
-                        color: #9162d0;
+                        color: #9162d0!important;
                     }
 
                     .total_price {
-                        color: #9162d0;
+                        color: #9162d0!important;
 
                         .btn-buy {
-                            background: #9162d0;
+                            background: #9162d0!important;
                         }
                     }
                 }
+                &.echo2 {
+                    width: 171px;
+                    .tit-h4 {
+                        .tooltip {
+                            left: 30px;
+                        }
+                    }
+                    &.empty {
+                        .echo_empty {
+                            img {
 
-                &.newseller {
-                    float: left;
-                    width: 85px;
+                            }
+                        }
+                        .tit-h4 {
+                            &:before {
+                                content: '　';
+                            }
+                        }
+                    }
+                }
+                &.echo_mall {
+                    border-right: 2px solid #39567b;
+                    border-left: 0;
 
                     .tit-h4 {
-                        background: #f2745f;
-                    }
-
-                    .sellername {
-                        color: #f2745f;
-                    }
-
-                    .total_price {
-                        color: #f2745f;
-
-                        .btn-buy {
-                            background: #f2745f;
+                        .tooltip {
+                            left: 30px;
+                        }
+                        span {
+                            left: -2px;
+                            top: -36px;
+                            width: calc(200% + 2px);
+                            height: 33px;
+                        }
+                        button {
+                            vertical-align: middle;
                         }
                     }
                 }
+                &.echo_mall.border_left {
+                    border-left: 2px solid #39567b;
+                }
+
+                .tit-h4 {
+                    background: #9162d0;
+                }
+
+
+                // 뉴셀러 삭제 191008
+                // &.newseller {
+                //     float: left;
+                //     width: 85px;
+
+                //     .tit-h4 {
+                //         background: #f2745f;
+                //     }
+
+                //     .sellername {
+                //         color: #f2745f;
+                //     }
+
+                //     .total_price {
+                //         color: #f2745f;
+
+                //         .btn-buy {
+                //             background: #f2745f;
+                //         }
+                //     }
+                // }
 
                 .estimate_minishop_seller_head {
                     height: 56px;
@@ -487,6 +522,7 @@
                         height: 29px;
                         padding: 10px 3px 0;
                         font-size: 14px;
+                        color:#333;
                         @include box-sizing;
                         @include truncate(100%);
                     }
@@ -494,7 +530,7 @@
                     a {
                         display: inline-block;
                         font-size: 11px;
-                        @include btn(50px, 20px, 1px solid #d3d3d3, $base_color2, #ffffff, center, 18px);
+                        @include btn(65px, 20px, 1px solid #d3d3d3, $base_color2, #ffffff, center, 18px);
 
                         &.btn-minishop {
                             margin-right: 2px;
@@ -583,18 +619,37 @@
                 }
 
                 &.greatseller {
-                    overflow: hidden;
+                    width: calc(100% - 173px);
 
                     .tit-h4 {
                         background: #4576d1;
                     }
+                    .echo {
+                        .tit-h4 {
+                            background: #9162d0;
+                        }
+                    }
+
+                    .estimate_minishop_greatseller_cell {
+                        margin: 34px 0 0;
+                    }
 
                     .estimate_minishop_greatseller_list {
-                        overflow: hidden;
                         position: relative;
+                        padding: 36px 0 0;
+                        margin: -36px 0 0;
+
+                        .slick-list {
+                            padding: 36px 0 0px;
+                            margin: -70px 0 0;
+                            width: calc(100% + 1px);
+                        }
 
                         .scroll {
                             @include clear;
+                            .border_left {
+                                margin-left: -1px!important;
+                            }
                         }
 
                         .btn_scroll_next,
@@ -745,6 +800,8 @@
 
             .estimate_minishop_greatseller_list {
                 overflow-x: scroll !important;
+                padding: 36px 0 0;
+                margin: -36px 0 0;
 
                 .scroll {
                     padding-bottom: 34px;
@@ -762,6 +819,26 @@
             .btn-more-seller-top {
                 display: none;
             }
+
+            .estimate_minishop_greatseller_list {
+                padding: 69px 0 0!important;
+                margin: -69px 0 0!important;
+                .estimate_minishop_greatseller_cell {
+                    margin: 0!important;
+                    // &:last-child {
+                    //     border-right: 0!important;
+                    // }
+                }
+            }
+            .echo_mall {
+                margin: 0 0 0;
+            }
+            .scroll {
+                .echo_mall {
+                    margin: -34px 0 0;
+                }
+            }
+
         }
 
         .btn-more-seller-clse {
@@ -1041,7 +1118,7 @@
 
             .estimate_minishop {
                 float: left;
-                width: 300px;
+                width: 299px;
             }
         }
 
@@ -1064,6 +1141,87 @@
 
             &:hover {
                 background: #f8f8f8;
+            }
+        }
+    }
+
+    .adv_echo {
+        margin: 20px 0 0;
+        .adv_echo_head {
+            padding: 0 10px;
+            height: 30px;
+            border: solid 1px #ccc;
+
+            h4 {
+                float: left;
+                font-weight: 400;
+                line-height: 30px;
+                color: #999;
+            }
+            .link {
+                float: right;
+                margin: 5px 0 0;
+                padding: 0 5px;
+                border-radius: 3px;
+                height: 19px;
+                line-height: 17px;
+                border: 1px solid #ccc;
+                font-size: 12px;
+                color: #999;
+            }
+        }
+        .adv_echo_content {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border: solid 1px #ccc;
+            border-top: 0;
+            padding: 10px;
+
+            &:after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            .list {
+                float: left;
+                width: 19%;
+                margin: 0 0 15px;
+                margin-right: 1.2%;
+
+                &:nth-child(5n) {
+                    margin-right: 0;
+                }
+
+                @include breakpoint(max-width 1209px) {
+                    width: 24%;
+                    margin-right: 1.2%;
+
+                    &:nth-child(5n) {
+                        margin-right: 1.2%;
+                    }
+                    &:nth-child(4n) {
+                        margin-right: 0;
+                    }
+                }
+
+                .thumb {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .info {
+                    padding: 3px 5px;
+                    height: 30px;
+                    border: 1px solid #ccc;
+                    border-top: 0;
+
+                    img {
+                        width: auto;
+                        height: 90%;
+                    }
+                }
             }
         }
     }
