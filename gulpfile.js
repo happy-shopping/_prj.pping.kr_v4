@@ -8,7 +8,7 @@ module.exports = gulp;
 var src  = 'assets';
 var loot  = 'html';
 
-gulp.task('default',['html', 'sass', 'watch', 'browserSync']);
+gulp.task('default',['html', 'sass', ' ', 'browserSync']);
 
 gulp.task('html', function () {
     return gulp .src(loot + '/**/*.html')

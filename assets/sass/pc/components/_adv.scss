@@ -515,13 +515,19 @@
 		border: 1px solid $point_color1;
 
 		.adv-event_main_subject {
+            position: relative;
+            width: calc(100% - 110px);
+            line-height: 26px;
+
 			strong {
-				font-size: 28px;
+                font-size: 28px;
 			}
 
 			.btn_event_more {
+                display: inline-block;
+                vertical-align: top;
 				position: relative;
-				top: -6px;
+				top: 0px;
 				margin-left: 10px;
 				color: $point_color1;
 
