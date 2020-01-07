@@ -428,6 +428,10 @@
                                 bottom: 0;
                             }
                         }
+
+                        .total_price {
+                            height: 149px;
+                        }
                     }
                     .sellername {
                         color: #9162d0!important;
@@ -449,16 +453,14 @@
                         }
                     }
                     &.empty {
-                        .echo_empty {
-                            img {
-
-                            }
-                        }
                         .tit-h4 {
                             &:before {
                                 content: '　';
                             }
                         }
+                    }
+                    .total_price {
+                        height: 115px!important;
                     }
                 }
                 &.echo_mall {

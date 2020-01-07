@@ -109,6 +109,10 @@ a {
         background-position: $btn_exthdd;
     }
 
+    &.icos_1020604000:before {
+        background-position: $btn_exthdd;
+    }
+
     &.icos_1020603000:before {
         background-position: $btn_nas;
     }
@@ -680,6 +684,10 @@ a {
         }
 
         &.icos_1020602000:before {
+            background-position: $btn_exthdd_on;
+        }
+
+        &.icos_1020604000:before {
             background-position: $btn_exthdd_on;
         }
 
