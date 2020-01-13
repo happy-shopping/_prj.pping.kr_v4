@@ -840,7 +840,13 @@
                     margin: -34px 0 0;
                 }
             }
-
+            .estimate_minishop {
+                .scroll {
+                    .estimate_minishop_seller.echo.empty {
+                        top:-34px
+                    }
+                }
+            }
         }
 
         .btn-more-seller-clse {
