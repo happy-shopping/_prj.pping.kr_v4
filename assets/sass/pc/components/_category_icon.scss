@@ -2,6 +2,9 @@
 
 a {
     // 전체
+    &[class*="icos_"]:before {
+        background-position: $btn_all;
+    }
 
     // 컴퓨터 주변부품
     &.icos_1010100000:before {
@@ -580,6 +583,11 @@ a {
     &.active {
         color: #fff;
         background: #418ded;
+
+        // all
+        &[class*="icos_"]:before {
+            background-position: $btn_all_on;
+        }
 
         // 컴퓨터 주변부품
         &.icos_1010100000:before {
