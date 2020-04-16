@@ -347,7 +347,20 @@
 					}
 				}
 			}
-		}
+        }
+        .cart_loading_wrap {
+            width: 100%;
+            text-align: center;
+            padding: 180px 0 0;
+
+            &:before {
+                content: "";
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                background: url(https://cdnimg.happyshopping.kr/img_static/img_pres/_v3/loading_w.gif);
+            }
+        }
 	}
 
 	.button-group {
