@@ -3,17 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>분리된 HTML</title>
-    <script src="/static/js/includeHTML.js"></script>
 </head>
 
 <body>
-    <header include-html="header.html"></header>
-    <nav include-html="project.html"></nav>
-    <article include-html="/static/html/article.html"></article>
-    <footer include-html="/static/html/footer.html"></footer>
+    <include src="./header.html"></include>
+    <include src="./project.html"></include>
 </body>
-<script>
-    includeHTML();
-</script>
 
 </html>
