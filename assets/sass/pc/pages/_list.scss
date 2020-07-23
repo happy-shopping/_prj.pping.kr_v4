@@ -546,7 +546,13 @@
 
 									.btn_del {
 										@include btn(34px, 25px, 1px solid #ccc, $base_color3, #f2f2f2);
-									}
+                                    }
+                                    .btn_estimate_add {
+                                        width: 18px;
+                                        height: 18px;
+                                        margin: 0 5px 0 0;
+                                        font-size: 11px;
+                                    }
 								}
 
 								&:first-child {
