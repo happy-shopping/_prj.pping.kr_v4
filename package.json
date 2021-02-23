@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "sass lint",
     "devDependencies": {
+        "node-sass": "^5.0.0",
         "prettier": "^1.16.4",
         "sass-lint": "^1.12.1"
     },
@@ -12,7 +13,5 @@
         "all": "node-sass --output-style compressed assets/sass --output assets/css"
     },
     "license": "MIT",
-    "dependencies": {
-        "node-sass": "^4.11.0"
-    }
+    "dependencies": {}
 }
